@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import time
+import math
 import warnings
 import openpyxl
 import multiprocessing as mp
@@ -14,7 +15,7 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-
+    result_dir = 'result_v021_lin_square'
     data_temperature = '1897'
     emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -56,7 +57,7 @@ def t_estimate_integration():
         for j in range(Ea_map.shape[1]):
             emi_map[i, j] = emissivity_average_cal(Ea_map[i, j], Eb_map[i, j])
 
-    save_file(t_map, data_temperature, emissivity_set, emi_map)
+    save_file(t_map, data_temperature, emissivity_set, emi_map, result_dir)
 
 
 # transfer 3d array into a 2d array for parallel computing
@@ -102,7 +103,15 @@ def integration(wl,f_array,qe_array,a,b,t):
 def emissivity_model(wl, a, b):
     wl0 = 0.5 * 10 ** (-6)
     wl1 = 1 * 10 ** (-6)
-    emissivity = a - b * (wl-wl0)/(wl1-wl0)
+    # lin emi = a + b * lambda
+    # emissivity = a - b * (wl-wl0)/(wl1-wl0)
+
+    # lin exp emi = exp(a + b * lambda)
+    # emissivity = math.exp(a + b * wl)
+
+    # lin square emi = a + b * wl**2
+    emissivity = a + b * (wl**2)
+
     return emissivity
 
 
@@ -121,13 +130,15 @@ def process_itg(intensity_array, qe_array, tr_array):
     return popt[2], popt[0], popt[1]
 
 
-def save_file(t_field, temperature_center, emissivity_set, emi_field):
+def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir):
     dir_name = 'T' + str(temperature_center) + '_' + str(emissivity_set) + '_digital'
-    if not os.path.exists(os.path.join('result_v020', dir_name)):
-        os.mkdir(os.path.join('result_v020', dir_name))
+    if not os.path.exists(result_dir):
+        os.mkdir(result_dir)
+    if not os.path.exists(os.path.join(result_dir, dir_name)):
+        os.mkdir(os.path.join(result_dir, dir_name))
 
     # t_field
-    file_t = os.path.join('result_v020', dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
+    file_t = os.path.join(result_dir, dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
     workbook_t = openpyxl.Workbook()
     worksheet_t = workbook_t.active
     plt.imshow(t_field, cmap='viridis')
@@ -135,7 +146,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field):
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Temperature_map')
-    plt.savefig(os.path.join('result_v020', dir_name, 't_cal' + '.jpg'))
+    plt.savefig(os.path.join(result_dir, dir_name, 't_cal' + '.jpg'))
     plt.clf()
 
     for row in t_field:
@@ -143,7 +154,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field):
     workbook_t.save(file_t)
 
     # emi_field
-    file_emi = os.path.join('result_v020', dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
+    file_emi = os.path.join(result_dir, dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
     workbook_emi = openpyxl.Workbook()
     worksheet_emi = workbook_emi.active
     plt.imshow(emi_field, cmap='viridis')
@@ -151,7 +162,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field):
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Emissivity_map')
-    plt.savefig(os.path.join('result_v020', dir_name, 'emi_cal' + '.jpg'))
+    plt.savefig(os.path.join(result_dir, dir_name, 'emi_cal' + '.jpg'))
     plt.clf()
 
     for row in emi_field:
