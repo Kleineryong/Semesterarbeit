@@ -15,7 +15,7 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v021_lin_square'
+    result_dir = 'result_v021_max'
     data_temperature = '1897'
     emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -110,7 +110,13 @@ def emissivity_model(wl, a, b):
     # emissivity = math.exp(a + b * wl)
 
     # lin square emi = a + b * wl**2
-    emissivity = a + b * (wl**2)
+    # emissivity = a + b * (wl**2)
+
+    # exp emi = exp(-a - b * wl)
+    # emissivity = math.exp(-a - b * wl)
+
+    # maxwell
+    emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
 
     return emissivity
 
