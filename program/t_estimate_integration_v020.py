@@ -12,11 +12,12 @@ from scipy.optimize import curve_fit, least_squares
 from scipy.integrate import quad
 from joblib import Parallel, delayed
 
+
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v021_lin'
-    data_temperature = '1897'
+    result_dir = 'result_v022_lin'
+    data_temperature = '1896'
     emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')

@@ -6,11 +6,11 @@ import pandas as pd
 import openpyxl
 
 def compare():
-    original_data = 'T1897_3_digital'
+    original_data = 'T1896_3_digital'
     original_data_address = os.path.join('data', original_data)
 
     cal_data = original_data
-    cal_data_address = os.path.join('result_v021_exp_extra_a', cal_data)
+    cal_data_address = os.path.join('result_v022_lin', cal_data)
 
     # read data from excel file
     for file in os.listdir(original_data_address):

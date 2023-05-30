@@ -22,18 +22,18 @@ def digital_value_rebuild():
     image_resolution = [50, 50]                                               # [pixel] [100 * 100]
     diameter_ratio = 0.9                                                        # adjust the visualisation of data_field
     shutter_time = 200                                                          # adjust explosure time
-    temperature_center = 1897                                                   # temperature of the center_area
+    temperature_center = 1896                                                   # temperature of the center_area
     temperature_background = 1000                                                 # set background temperature to 50K as black body
     melt_temperature = 1600                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
-    emissivity_set = 0                                                          # which data set is used, [0] stands for black body radiation
+    emissivity_set = 3                                                          # which data set is used, [0] stands for black body radiation
 
     # explosure_time = 200                                                        # explosure time of camera
     plot_channel = 'channel_3'                                                      # set plot configuration
 
     # read camera parameter
-    qe_address = os.path.join('camera_parameter','CMS22010236.xlsx')
+    qe_address = os.path.join('camera_parameter', 'CMS22010236.xlsx')
     tr_address = os.path.join('camera_parameter', 'FIFO-Lens_tr.xls')
     cam_param = read_cam(qe_address, tr_address)
     cam_efficiency = cam_param['camera_total_efficiency']
@@ -45,9 +45,9 @@ def digital_value_rebuild():
     # print(t_field)
 
     # read emissivity data and interpolation
-    emissivity_address = os.path.join("hypothetical" , "emissivity_") + str(emissivity_set) + ".txt"      # relative address of emissivity file
+    emissivity_address = os.path.join("hypothetical", "emissivity_") + str(emissivity_set) + ".txt"      # relative address of emissivity file
     data_raw = np.loadtxt(emissivity_address)                 # read raw data
-    interp_emissivity = interp1d(data_raw[:, 0], data_raw[:, 1], kind= 'linear', fill_value='extrapolate')       # linear interpolation
+    interp_emissivity = interp1d(data_raw[:, 0], data_raw[:, 1], kind='linear', fill_value='extrapolate')       # linear interpolation
 
     final_results = {}
     # start calculation in channel
@@ -64,7 +64,7 @@ def digital_value_rebuild():
                 radiation_rec = quad(radiation, 500 * (10**-9), 900 * (10**-9), limit=5)[0] * shutter_time      # 200 means the calibration factor and shutter time
             return radiation_rec
         t_field_reshape = t_field.reshape(t_field.shape[0] * t_field.shape[1])
-        digital_value = Parallel(n_jobs=-1)(delayed(radiation_integration)(t_field_reshape[i], interp_emissivity, cam_efficiency_function) for i in range(len(t_field_reshape)))
+        digital_value = Parallel(n_jobs=mp.cpu_count()-1)(delayed(radiation_integration)(t_field_reshape[i], interp_emissivity, cam_efficiency_function) for i in range(len(t_field_reshape)))
         final_results[channel] = np.array(digital_value).reshape(image_resolution).astype(int)
 
     # calculate emissivity_map
@@ -102,18 +102,21 @@ def black_body_radiation(temperature, wavelength):
 
 def factor_temperature(temperature, melt_temperature, emissivity_set):
     if emissivity_set:
-        factor = (1 / (1 + 1 / math.exp((melt_temperature - temperature) / 10))) * (1 - (temperature - 1500) / (2000 - 1500) * 0.2)
+        if temperature <= melt_temperature:
+            factor = (1 - (temperature - 1500) / (2000 - 1500) * 0.2)
+        else:
+            factor = (1 - (temperature - 1500) / (2000 - 1500) * 0.2) * 0.1
     else:
         if temperature <= melt_temperature:
             factor = 1
         else:
-            factor = 0
+            factor = 0.1
     return factor
 
 
 def emissivity(temperature, wavelength, emi_function, melt_temperature, emissivity_liquid, emissivity_set):
     fact_temp = factor_temperature(temperature, melt_temperature, emissivity_set)
-    emi = min(emi_function(wavelength * (10 ** 9)) *  fact_temp + emissivity_liquid, 1)
+    emi = min(emi_function(wavelength * (10 ** 9)) * fact_temp, 1)
     return emi
 
 
