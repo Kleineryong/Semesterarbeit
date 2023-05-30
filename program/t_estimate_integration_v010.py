@@ -32,8 +32,7 @@ def t_estimate_integration():
     intensity_digital_shape = intensity_raw_data['shape']
 
     # print(intensity_digital['channel_0'])
-    print(intensity_digital_array[1])
-
+    # print(intensity_digital_array[1])
 
 
     # set camera file address
@@ -45,10 +44,7 @@ def t_estimate_integration():
     cam_efficiency = cam_param['camera_function']
 
     shutter_time = 200
-    # print(radiation_cal(600*(10**(-9)), cam_efficiency['channel_1'], 1, 0.01, 1500))
-    # print(camera_model(cam_efficiency, 1, 0.01, 1500))
 
-    # print(difference_cal([1, 1, 1500], cam_efficiency, [-127662.40620317, -66300.46491211, -38079.56121666, -12873.14080551, -17544.34037741, -12896.67251452, -17054.00386317, -19213.3940165, -218278.61885477]))
     # start minimization
     boundary = [(0, 1), (-0.1, 0.1), (500, 2000)]
     temperature_cal = np.empty(len(intensity_digital_array))
@@ -76,23 +72,23 @@ def emissivity_average_cal(a, b):
     return emissivity
 
 
-def save_file(t_field, temperature_center, emissivity_set, emi_field):
+def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir):
     dir_name = 'T' + str(temperature_center) + '_' + str(emissivity_set) + '_digital'
-    if not os.path.exists(os.path.join('results', dir_name)):
-        os.mkdir(os.path.join('results', dir_name))
+    if not os.path.exists(result_dir):
+        os.mkdir(result_dir)
+    if not os.path.exists(os.path.join(result_dir, dir_name)):
+        os.mkdir(os.path.join(result_dir, dir_name))
 
     # t_field
-    file_t = os.path.join('results', dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
+    file_t = os.path.join(result_dir, dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
     workbook_t = openpyxl.Workbook()
     worksheet_t = workbook_t.active
-    # image_t = Image.fromarray(t_field).convert("L")
-    # image_t.save(os.path.join('data', dir_name, 't_field' + '.png'))
     plt.imshow(t_field, cmap='viridis')
     plt.colorbar()
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Temperature_map')
-    plt.savefig(os.path.join('results', dir_name, 't_cal' + '.jpg'))
+    plt.savefig(os.path.join(result_dir, dir_name, 't_cal' + '.jpg'))
     plt.clf()
 
     for row in t_field:
@@ -100,17 +96,15 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field):
     workbook_t.save(file_t)
 
     # emi_field
-    file_emi = os.path.join('results', dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
+    file_emi = os.path.join(result_dir, dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
     workbook_emi = openpyxl.Workbook()
     worksheet_emi = workbook_emi.active
-    # image_emi = Image.fromarray(emi_field).convert("L")
-    # image_emi.save(os.path.join('data', dir_name, 'emi_field' + '.png'))
     plt.imshow(emi_field, cmap='viridis')
     plt.colorbar()
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Emissivity_map')
-    plt.savefig(os.path.join('results', dir_name, 'emi_cal' + '.jpg'))
+    plt.savefig(os.path.join(result_dir, dir_name, 'emi_cal' + '.jpg'))
     plt.clf()
 
     for row in emi_field:
