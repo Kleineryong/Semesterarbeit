@@ -20,7 +20,7 @@ def t_estimate_integration():
     result_dir = 'result_v030_exp'
     result_dir = os.path.join('results', result_dir)
     data_temperature = '1896'
-    emissivity_set = '1'
+    emissivity_set = '2'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')
 
@@ -122,6 +122,24 @@ def process_itg(intensity_array, qe_array, tr_array):
             funct = quad(integration, wl0, wl1, args=(tr_array, qe[i], a, b, b_1, t), epsabs = 1e-2, limit = 5)[0]
             result_f.append(funct)
         return np.array(result_f)
+
+    # def integration_runge(qe, a, b, b_1, t):
+    #     result = []
+    #     for j in range(8):
+    #         n = int((wl1 - wl0) / 1e-9)
+    #         wl = wl0
+    #         y = 0
+    #         for i in range(n):
+    #             k1 = 1e-9 * integration(wl, tr_array, qe[j], a, b, b_1, t)
+    #             k2 = 1e-9 * integration(wl + 0.5 * 1e-9, tr_array, qe[j], a, b, b_1, t)
+    #             k3 = 1e-9 * integration(wl + 0.5 * 1e-9, tr_array, qe[j], a, b, b_1, t)
+    #             k4 = 1e-9 * integration(wl + 1e-9, tr_array, qe[j], a, b, b_1, t)
+    #
+    #             y = y + (k1 + 2 * k2 + 2 * k3 + k4) / 6
+    #             wl = wl + 1e-9
+    #         result.append(y)
+    #     return result
+
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 1958.2)), maxfev= 100000)
