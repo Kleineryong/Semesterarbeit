@@ -21,9 +21,14 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     # set save parameters
 <<<<<<< HEAD
+<<<<<<< HEAD
     temperature_center = '1896'
     emissivity_set = '3'
     result_dir = 'result_v022_exp'
+=======
+    temperature_center = 1300
+    emissivity_set = 3
+>>>>>>> parent of 9023769 (V022)
 =======
     temperature_center = 1300
     emissivity_set = 3

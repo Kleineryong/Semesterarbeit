@@ -11,7 +11,11 @@ def compare():
 
     cal_data = original_data
 <<<<<<< HEAD
+<<<<<<< HEAD
     cal_data_address = os.path.join('results', 'result_v022_exp', cal_data)
+=======
+    cal_data_address = os.path.join('result_v022_lin', cal_data)
+>>>>>>> parent of 9023769 (V022)
 =======
     cal_data_address = os.path.join('result_v022_lin', cal_data)
 >>>>>>> parent of 9023769 (V022)

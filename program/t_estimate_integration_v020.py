@@ -17,7 +17,11 @@ def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
 <<<<<<< HEAD
+<<<<<<< HEAD
     result_dir = 'result_v023_exp'
+=======
+    result_dir = 'result_v022_lin'
+>>>>>>> parent of 9023769 (V022)
 =======
     result_dir = 'result_v022_lin'
 >>>>>>> parent of 9023769 (V022)
@@ -120,7 +124,11 @@ def emissivity_model(wl, a, b):
 
     # exp emi = exp(-a - b * wl)
 <<<<<<< HEAD
+<<<<<<< HEAD
     emissivity = math.exp(-a - b * ((wl-wl0)/(wl1-wl0)))
+=======
+    # emissivity = math.exp(-a - b * wl)
+>>>>>>> parent of 9023769 (V022)
 =======
     # emissivity = math.exp(-a - b * wl)
 >>>>>>> parent of 9023769 (V022)
@@ -143,7 +151,11 @@ def process_itg(intensity_array, qe_array, tr_array):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
 <<<<<<< HEAD
+<<<<<<< HEAD
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-2, 0, 500), (2, 1, 1958.2)), maxfev= 100000)
+=======
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds = ((0, 0, 500), (1, 1, 1958.2)), maxfev= 100000)
+>>>>>>> parent of 9023769 (V022)
 =======
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds = ((0, 0, 500), (1, 1, 1958.2)), maxfev= 100000)
 >>>>>>> parent of 9023769 (V022)
