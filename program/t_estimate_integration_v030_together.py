@@ -14,13 +14,13 @@ from scipy.interpolate import interp1d
 from joblib import Parallel, delayed
 
 
-def t_estimate_integration():
+def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v030_exp'
+    # result_dir = 'result_v030_exp'
     result_dir = os.path.join('results', result_dir)
-    data_temperature = '1896'
-    emissivity_set = '2'
+    # data_temperature = '1896'
+    # emissivity_set = '2'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')
 
@@ -52,9 +52,7 @@ def t_estimate_integration():
     # parallel computing
     target_reshape = transfer_pos(target)
     print("Number of processors: ", mp.cpu_count())
-    cal_result = np.array(Parallel(n_jobs=mp.cpu_count()-1)(
-        delayed(process_itg)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0])))
-    )
+    cal_result = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0]))))
     t_map = transfer_neg(cal_result[:, 0], target)
     Ea_map = transfer_neg(cal_result[:, 1], target)
     Eb_map = transfer_neg(cal_result[:, 2], target)
@@ -65,6 +63,91 @@ def t_estimate_integration():
             emi_map[i, j] = emissivity_average_cal(Ea_map[i, j], Eb_map[i, j], Eb_1_map[i, j])
 
     save_file(t_map, data_temperature, emissivity_set, emi_map, result_dir)
+
+
+def compare(original_data):
+    # original_data = 'T1896_2_digital'
+    original_data_address = os.path.join('data', original_data)
+
+    cal_data = original_data
+    cal_data_address = os.path.join('results', 'result_v030_exp', cal_data)
+
+
+    # read data from excel file
+    for file in os.listdir(original_data_address):
+        if file.endswith('.xlsx') and file.startswith('t_field'):
+            df = pd.read_excel(os.path.join(original_data_address, file), header=None)
+            t_target = df.to_numpy()
+
+    for file in os.listdir(original_data_address):
+        if file.endswith('.xlsx') and file.startswith('emi_field'):
+            df = pd.read_excel(os.path.join(original_data_address, file), header=None)
+            emi_target = df.to_numpy()
+
+    for file in os.listdir(cal_data_address):
+        if file.endswith('.xlsx') and file.startswith('t_cal'):
+            df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
+            t_cal = df.to_numpy()
+
+    for file in os.listdir(cal_data_address):
+        if file.endswith('.xlsx') and file.startswith('emi_cal'):
+            df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
+            emi_cal = df.to_numpy()
+
+    t_bias = t_target - t_cal
+    emi_bias = emi_target - emi_cal
+
+    ######### save fig
+    # t_cal
+    plt.imshow(t_cal, cmap='viridis')
+    plt.colorbar()
+    plt.xlabel('X_position')
+    plt.ylabel('Y_position')
+    plt.title('Temperature_cal')
+    plt.savefig(os.path.join(cal_data_address, 'T_cal.jpg'))
+    plt.clf()
+
+    # emi_cal
+    plt.imshow(emi_cal, cmap='viridis')
+    plt.colorbar()
+    plt.xlabel('X_position')
+    plt.ylabel('Y_position')
+    plt.title('emissivity_calculate')
+    plt.savefig(os.path.join(cal_data_address, 'emi_cal.jpg'))
+    plt.clf()
+
+    # bias
+    file_t = os.path.join(cal_data_address, 't_bias.xlsx')
+    workbook_t = openpyxl.Workbook()
+    worksheet_t = workbook_t.active
+
+    for row in t_bias:
+        worksheet_t.append(list(row))
+    workbook_t.save(file_t)
+
+    plt.imshow(t_bias, cmap='viridis')
+    plt.colorbar()
+    plt.xlabel('X_position')
+    plt.ylabel('Y_position')
+    plt.title('Temperature_bias')
+    plt.savefig(os.path.join(cal_data_address, 'T_bias.jpg'))
+    plt.clf()
+
+    file_emi = os.path.join(cal_data_address, 'emi_bias.xlsx')
+    workbook_emi = openpyxl.Workbook()
+    worksheet_emi = workbook_emi.active
+
+    for row in emi_bias:
+        worksheet_emi.append(list(row))
+    workbook_emi.save(file_emi)
+
+    plt.imshow(emi_bias, cmap='viridis')
+    plt.colorbar()
+    plt.xlabel('X_position')
+    plt.ylabel('Y_position')
+    plt.title('emissivity_bias')
+    plt.savefig(os.path.join(cal_data_address, 'emi_bias.jpg'))
+    plt.clf()
 
 
 # transfer 3d array into a 2d array for parallel computing
@@ -125,23 +208,6 @@ def process_itg(intensity_array, qe_array, tr_array):
             result_f.append(funct)
         return np.array(result_f)
 
-    # def integration_runge(qe, a, b, b_1, t):
-    #     result = []
-    #     for j in range(8):
-    #         n = int((wl1 - wl0) / 1e-9)
-    #         wl = wl0
-    #         y = 0
-    #         for i in range(n):
-    #             k1 = 1e-9 * integration(wl, tr_array, qe[j], a, b, b_1, t)
-    #             k2 = 1e-9 * integration(wl + 0.5 * 1e-9, tr_array, qe[j], a, b, b_1, t)
-    #             k3 = 1e-9 * integration(wl + 0.5 * 1e-9, tr_array, qe[j], a, b, b_1, t)
-    #             k4 = 1e-9 * integration(wl + 1e-9, tr_array, qe[j], a, b, b_1, t)
-    #
-    #             y = y + (k1 + 2 * k2 + 2 * k3 + k4) / 6
-    #             wl = wl + 1e-9
-    #         result.append(y)
-    #     return result
-
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 1958.2)), maxfev= 100000)
@@ -190,6 +256,38 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 
 if 1:
     start_time = time.perf_counter()
-    t_estimate_integration()
+    # result_dir = 'result_v030_exp'
+    # data_temperature = '1896'
+    # emissivity_set = '0'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name)
+    #
+    # print(data_name, 'finished')
+
+    # result_dir = 'result_v030_exp'
+    # data_temperature = '1896'
+    # emissivity_set = '1'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name)
+    #
+    # print(data_name, 'finished')
+
+    result_dir = 'result_v030_exp'
+    data_temperature = '1896'
+    emissivity_set = '2'
+    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    compare(data_name)
+
+    print(data_name, 'finished')
+    result_dir = 'result_v030_exp'
+    data_temperature = '1896'
+    emissivity_set = '3'
+    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    compare(data_name)
     end_time = time.perf_counter()
+    print(data_name, 'finished')
     print("calculation time: ", end_time - start_time, " second")
