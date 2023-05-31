@@ -18,6 +18,7 @@ def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
     result_dir = 'result_v022_exp'
+    result_dir = os.path.join('results', result_dir)
     data_temperature = '1896'
     emissivity_set = '2'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
