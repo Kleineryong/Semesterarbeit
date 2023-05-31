@@ -22,6 +22,7 @@ def t_estimate_integration():
     # set save parameters
     temperature_center = '1896'
     emissivity_set = '3'
+    result_dir = 'result_v022_exp'
     # set intensity data address
     intensity_digital_address = os.path.join('data', 'T' + temperature_center + '_' + emissivity_set + '_digital',
                                              'digital_value_' + temperature_center + '.xlsx')
@@ -57,7 +58,7 @@ def t_estimate_integration():
         print('b:', opt_result.x[1])
     temperature_cal = temperature_cal.reshape(intensity_digital_shape)
     emissivity_cal = emissivity_cal.reshape(intensity_digital_shape)
-    save_file(temperature_cal, temperature_center, emissivity_set, emissivity_cal)
+    save_file(temperature_cal, temperature_center, emissivity_set, emissivity_cal, result_dir)
     return 0
 
 

@@ -50,7 +50,7 @@ def t_estimate_integration():
     # parallel computing
     target_reshape = transfer_pos(target)
     print("Number of processors: ", mp.cpu_count())
-    cal_result = np.array(Parallel(n_jobs=mp.cpu_count())(delayed(process_itg)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0]))))
+    cal_result = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0]))))
     t_map = transfer_neg(cal_result[:, 0], target)
     Ea_map = transfer_neg(cal_result[:, 1], target)
     Eb_map = transfer_neg(cal_result[:, 2], target)
@@ -81,7 +81,8 @@ def emissivity_average_cal(a, b):
 
 
 def lin_interpolation(x, x0, x1, y0, y1):
-    return y0+(y1-y0)*(x-x0)/(x1-x0)
+    return np.interp(x, [x0, x1], [y0, y1])
+    # return y0+(y1-y0)*(x-x0)/(x1-x0)
 
 
 def black_body_radiation(temperature, wavelength):
@@ -119,10 +120,10 @@ def emissivity_model(wl, a, b):
     # emissivity = math.exp(a + b * wl)
 
     # lin square emi = a + b * wl**2
-    # emissivity = a + b * (wl**2)
+    # emissivity = a + b * (((wl-wl0)/(wl1-wl0)) ** 2)    # a[-2, 2], b[0, 1]
 
     # exp emi = exp(-a - b * wl)
-    emissivity = math.exp(-a - b * wl)
+    emissivity = math.exp(-a - b * ((wl-wl0)/(wl1-wl0)))
 
     # maxwell
     # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
@@ -141,7 +142,7 @@ def process_itg(intensity_array, qe_array, tr_array):
         return np.array(result_f)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 500), (50, 50, 1958.2)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-2, 0, 500), (2, 1, 1958.2)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
