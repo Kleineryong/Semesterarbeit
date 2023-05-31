@@ -20,12 +20,16 @@ from joblib import Parallel, delayed
 ##############################################################
 def t_estimate_integration():
     # set save parameters
+<<<<<<< HEAD
     temperature_center = '1896'
     emissivity_set = '3'
     result_dir = 'result_v022_exp'
+=======
+    temperature_center = 1300
+    emissivity_set = 3
+>>>>>>> parent of 9023769 (V022)
     # set intensity data address
-    intensity_digital_address = os.path.join('data', 'T' + temperature_center + '_' + emissivity_set + '_digital',
-                                             'digital_value_' + temperature_center + '.xlsx')
+    intensity_digital_address = os.path.join('data', 'T1300_3_digital', 'digital_value_1300.xlsx')
     intensity_raw_data = intensity_reshape(read_digital_value(intensity_digital_address))
     intensity_digital_dict = intensity_raw_data['intensity_dict']
     intensity_digital_array = intensity_raw_data['intensity_array']
@@ -75,7 +79,6 @@ def emissivity_average_cal(a, b):
     wavelength = np.arange(wl0, wl1)
     emissivity = np.average([(a + b * ((wl - wl1) / (wl0 - wl1))) for wl in wavelength])
     return emissivity
-
 
 def save_file(t_field, temperature_center, emissivity_set, emi_field):
     dir_name = 'T' + str(temperature_center) + '_' + str(emissivity_set) + '_digital'
@@ -199,8 +202,8 @@ def read_cam(qe_address, tr_address):
     for channel in camera_total_efficiency.keys():
         camera_total_efficiency_array = [[int(k), v] for k, v in camera_total_efficiency[channel].items()]
         camera_efficiency_function = interp1d([i[0] for i in camera_total_efficiency_array],
-                                              [i[1] for i in camera_total_efficiency_array],
-                                              kind='linear', fill_value='extrapolate')
+                                           [i[1] for i in camera_total_efficiency_array], kind='linear',
+                                           fill_value='extrapolate')
         camera_function[channel] = camera_efficiency_function
     result['camera_function'] = camera_function
     return result

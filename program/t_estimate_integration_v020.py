@@ -10,16 +10,19 @@ import multiprocessing as mp
 from scipy.constants import c, h, k
 from scipy.optimize import curve_fit, least_squares
 from scipy.integrate import quad
-from scipy.interpolate import interp1d
 from joblib import Parallel, delayed
 
 
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
+<<<<<<< HEAD
     result_dir = 'result_v023_exp'
+=======
+    result_dir = 'result_v022_lin'
+>>>>>>> parent of 9023769 (V022)
     data_temperature = '1896'
-    emissivity_set = '2'
+    emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')
 
@@ -39,8 +42,8 @@ def t_estimate_integration():
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity
-    t_target = t_ref
+    target = intensity#[:, 15:20, 15:20]
+    t_target = t_ref#[15:20, 15:20]
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))
@@ -91,7 +94,7 @@ def black_body_radiation(temperature, wavelength):
     return param1/(wavelength**5)/(np.exp(param2/(wavelength*temperature))-1)
 
 
-def integration(wl, f_array, qe_array, a, b, t):
+def integration(wl,f_array,qe_array,a,b,t):
     wl0 = 0.5 * 10 ** (-6)
     wl1 = 1 * 10 ** (-6)
     f_i = len(f_array[0,f_array[0,:]*10**(-9)<=wl]) - 1
@@ -103,18 +106,11 @@ def integration(wl, f_array, qe_array, a, b, t):
     return result
 
 
-# def integration(wl, tr_array, qe_array, a, b, t):
-#     transparency = interp1d(tr_array[0], tr_array[1], kind='linear', fill_value='extrapolate')
-#     qe = interp1d(qe_array[0], qe_array[1], kind='linear', fill_value='extrapolate')
-#     result = emissivity_model(wl, a, b) * black_body_radiation(t, wl) * transparency(wl * (10**9)) * qe(wl * (10**9)) * 200
-#     return result
-
-
 def emissivity_model(wl, a, b):
     wl0 = 0.5 * 10 ** (-6)
     wl1 = 1 * 10 ** (-6)
     # lin emi = a + b * lambda
-    # emissivity = a - b * (wl-wl0)/(wl1-wl0)   # a[0, 1], b[0, 1]
+    emissivity = a - b * (wl-wl0)/(wl1-wl0)   # a[0, 1], b[0, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(a + b * wl)
@@ -123,7 +119,11 @@ def emissivity_model(wl, a, b):
     # emissivity = a + b * (((wl-wl0)/(wl1-wl0)) ** 2)    # a[-2, 2], b[0, 1]
 
     # exp emi = exp(-a - b * wl)
+<<<<<<< HEAD
     emissivity = math.exp(-a - b * ((wl-wl0)/(wl1-wl0)))
+=======
+    # emissivity = math.exp(-a - b * wl)
+>>>>>>> parent of 9023769 (V022)
 
     # maxwell
     # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
@@ -142,7 +142,11 @@ def process_itg(intensity_array, qe_array, tr_array):
         return np.array(result_f)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
+<<<<<<< HEAD
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-2, 0, 500), (2, 1, 1958.2)), maxfev= 100000)
+=======
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds = ((0, 0, 500), (1, 1, 1958.2)), maxfev= 100000)
+>>>>>>> parent of 9023769 (V022)
     return popt[2], popt[0], popt[1]
 
 
