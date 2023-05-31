@@ -10,7 +10,7 @@ def compare():
     original_data_address = os.path.join('data', original_data)
 
     cal_data = original_data
-    cal_data_address = os.path.join('result_v022_exp', cal_data)
+    cal_data_address = os.path.join('results', 'result_v022_exp', cal_data)
 
     # read data from excel file
     for file in os.listdir(original_data_address):

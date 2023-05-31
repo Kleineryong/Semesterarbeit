@@ -17,7 +17,7 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v022_exp'
+    result_dir = 'result_v023_exp'
     data_temperature = '1896'
     emissivity_set = '2'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -148,13 +148,13 @@ def process_itg(intensity_array, qe_array, tr_array):
 
 def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir):
     dir_name = 'T' + str(temperature_center) + '_' + str(emissivity_set) + '_digital'
-    if not os.path.exists(result_dir):
-        os.mkdir(result_dir)
-    if not os.path.exists(os.path.join(result_dir, dir_name)):
-        os.mkdir(os.path.join(result_dir, dir_name))
+    if not os.path.exists(os.path.join('results', result_dir)):
+        os.mkdir(os.path.join('results', result_dir))
+    if not os.path.exists(os.path.join('results', result_dir, dir_name)):
+        os.mkdir(os.path.join('results', result_dir, dir_name))
 
     # t_field
-    file_t = os.path.join(result_dir, dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
+    file_t = os.path.join('results', result_dir, dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
     workbook_t = openpyxl.Workbook()
     worksheet_t = workbook_t.active
     plt.imshow(t_field, cmap='viridis')
@@ -162,7 +162,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Temperature_map')
-    plt.savefig(os.path.join(result_dir, dir_name, 't_cal' + '.jpg'))
+    plt.savefig(os.path.join('results', result_dir, dir_name, 't_cal' + '.jpg'))
     plt.clf()
 
     for row in t_field:
@@ -170,7 +170,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
     workbook_t.save(file_t)
 
     # emi_field
-    file_emi = os.path.join(result_dir, dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
+    file_emi = os.path.join('results', result_dir, dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
     workbook_emi = openpyxl.Workbook()
     worksheet_emi = workbook_emi.active
     plt.imshow(emi_field, cmap='viridis')
@@ -178,7 +178,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
     plt.title('Emissivity_map')
-    plt.savefig(os.path.join(result_dir, dir_name, 'emi_cal' + '.jpg'))
+    plt.savefig(os.path.join('results', result_dir, dir_name, 'emi_cal' + '.jpg'))
     plt.clf()
 
     for row in emi_field:
