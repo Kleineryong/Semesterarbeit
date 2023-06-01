@@ -65,12 +65,12 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     save_file(t_map, data_temperature, emissivity_set, emi_map, result_dir)
 
 
-def compare(original_data):
+def compare(original_data, result_dir):
     # original_data = 'T1896_2_digital'
     original_data_address = os.path.join('data', original_data)
 
     cal_data = original_data
-    cal_data_address = os.path.join('results', 'result_v030_exp', cal_data)
+    cal_data_address = os.path.join('results', result_dir, cal_data)
 
 
     # read data from excel file
@@ -257,7 +257,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 if 1:
     start_time = time.perf_counter()
     # result_dir = 'result_v030_exp'
-    # data_temperature = '1896'
+    # data_temperature = '1897'
     # emissivity_set = '0'
     # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     # t_estimate_integration(result_dir, data_temperature, emissivity_set)
@@ -266,7 +266,7 @@ if 1:
     # print(data_name, 'finished')
 
     # result_dir = 'result_v030_exp'
-    # data_temperature = '1896'
+    # data_temperature = '1897'
     # emissivity_set = '1'
     # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     # t_estimate_integration(result_dir, data_temperature, emissivity_set)
@@ -274,20 +274,21 @@ if 1:
     #
     # print(data_name, 'finished')
 
-    result_dir = 'result_v030_exp'
-    data_temperature = '1896'
-    emissivity_set = '2'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name)
+    # result_dir = 'result_v030_lin_square'
+    # data_temperature = '1897'
+    # emissivity_set = '2'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name)
+    #
+    # print(data_name, 'finished')
 
-    print(data_name, 'finished')
-    result_dir = 'result_v030_exp'
-    data_temperature = '1896'
+    result_dir = 'result_v030_lin_square'
+    data_temperature = '1897'
     emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name)
+    compare(data_name, result_dir)
     end_time = time.perf_counter()
     print(data_name, 'finished')
     print("calculation time: ", end_time - start_time, " second")
