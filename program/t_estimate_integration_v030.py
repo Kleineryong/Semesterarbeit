@@ -17,10 +17,10 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v030_exp'
+    result_dir = 'result_v030_lin_square'
     result_dir = os.path.join('results', result_dir)
-    data_temperature = '1896'
-    emissivity_set = '2'
+    data_temperature = '1300'
+    emissivity_set = '3'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')
 

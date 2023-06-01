@@ -6,7 +6,7 @@ import pandas as pd
 import openpyxl
 
 def compare():
-    original_data = 'T1897_2_digital'
+    original_data = 'T1300_3_digital'
     original_data_address = os.path.join('data', original_data)
 
     cal_data = original_data
