@@ -5,6 +5,7 @@ import math
 import warnings
 import openpyxl
 import time
+from scipy.constants import c, h, k
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit, least_squares, minimize
 
@@ -19,201 +20,128 @@ from joblib import Parallel, delayed
 # dimension: wavelength[nm]
 ##############################################################
 def t_estimate_integration():
-    # set save parameters
-    temperature_center = '1896'
-    emissivity_set = '3'
-    result_dir = 'result_v022_exp'
+    currentdir = os.getcwd()
+    homefolder = os.path.dirname(currentdir)
+    result_dir = 'result_v010_lin'
+    result_dir = os.path.join('results', result_dir)
+    data_temperature = '1896'
+    emissivity_set = '2'
 
-    temperature_center = 1300
-    emissivity_set = 3
+    # camera parameter reading
+    camera_folder = os.path.join(homefolder, 'program', 'camera_parameter')
+    transparency, qe_total = read_cam(camera_folder)
 
-    # set intensity data address
-    intensity_digital_address = os.path.join('data', 'T1300_3_digital', 'digital_value_1300.xlsx')
-    intensity_raw_data = intensity_reshape(read_digital_value(intensity_digital_address))
-    intensity_digital_dict = intensity_raw_data['intensity_dict']
-    intensity_digital_array = intensity_raw_data['intensity_array']
-    # calculate dimension of raw data
-    intensity_digital_shape = intensity_raw_data['shape']
+    # intensity data reading
+    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    intensity_dir = os.path.join(homefolder, 'program', 'data', data_name)
+    intensity_raw = read_intensity(intensity_dir, data_temperature) # used to control the calculate range
+    intensity_target = intensity_raw[:, 23:27, 23:27]
 
-    # print(intensity_digital['channel_0'])
-    print(intensity_digital_array[1])
-
-
-
-    # set camera file address
-    qe_address = os.path.join('camera_parameter', 'CMS22010236.xlsx')
-    tr_address = os.path.join('camera_parameter', 'FIFO-Lens_tr.xls')
-
-    # calculate camera efficiency
-    cam_param = read_cam(qe_address, tr_address)
-    cam_efficiency = cam_param['camera_function']
-
-    shutter_time = 200
-    # print(radiation_cal(600*(10**(-9)), cam_efficiency['channel_1'], 1, 0.01, 1500))
-    # print(camera_model(cam_efficiency, 1, 0.01, 1500))
-
-    # print(difference_cal([1, 1, 1500], cam_efficiency, [-127662.40620317, -66300.46491211, -38079.56121666, -12873.14080551, -17544.34037741, -12896.67251452, -17054.00386317, -19213.3940165, -218278.61885477]))
-    # start minimization
-    boundary = [(0, 1), (-0.1, 0.1), (500, 2000)]
-    temperature_cal = np.empty(len(intensity_digital_array))
-    emissivity_cal = np.empty(len(intensity_digital_array))
-    for i in range(len(intensity_digital_array)):
-        opt_result = minimize(difference_cal, [0.5, 0, 600], args=(cam_efficiency, intensity_digital_array[i]), bounds=boundary)
-        temperature_cal[i] = opt_result.x[2]
-        emissivity_cal[i] = emissivity_average_cal(opt_result.x[0], opt_result.x[1])
-        print('a:', opt_result.x[0])
-        print('b:', opt_result.x[1])
-    temperature_cal = temperature_cal.reshape(intensity_digital_shape)
-    emissivity_cal = emissivity_cal.reshape(intensity_digital_shape)
-    save_file(temperature_cal, temperature_center, emissivity_set, emissivity_cal, result_dir)
+    # transform raw data to enable parallel calculation
+    intensity_reshape = transfer_pos(intensity_target)
+    print("Number of processors: ", mp.cpu_count())
+    # cal_result = np.array(Parallel(n_jobs=mp.cpu_count())(
+    #     delayed(process_itg)(intensity_reshape[i], qe_total, transparency) for i in range(len(intensity_target[0]))))
+    temp = process_itg(intensity_reshape[0], qe_total, transparency)
+    # test2 = transfer_neg(test1[:, 0], intensity_target)
     return 0
 
 
 ##############################################################
 # functional unit
 ##############################################################
-def emissivity_average_cal(a, b):
-    wl0 = 500
-    wl1 = 901
-    wavelength = np.arange(wl0, wl1)
-    emissivity = np.average([(a + b * ((wl - wl1) / (wl0 - wl1))) for wl in wavelength])
+def radiation(wavelength, transparency, qe_array, emissivity_param, t):
+    qe = interp1d(qe_array[0], qe_array[1])
+    result = transparency(wavelength) * emissivity_model(wavelength, emissivity_param) \
+             * black_body_radiation(t, wavelength) * qe(wavelength) * 200
+    return result
+
+
+def emissivity_model(wavelength, *param):
+    wl0 = 0.5 * 10 ** (-6)
+    wl1 = 1 * 10 ** (-6)
+    wl_rel = (wavelength-wl0)/(wl1-wl0)
+    # lin emi = a + b * lambda
+    emissivity = param[0] - param[1] * wl_rel   # a[0, 1], b[0, 1]
+
+    # lin exp emi = exp(a + b * lambda)
+    # emissivity = math.exp(param[0] + param[1] * wl_rel)
+
+    # lin square_2 emi = a + b * wl**2
+    # emissivity = param[0] + param[1] * (wl_rel**2)
+
+    # lin square_2 emi = a + b * wl + c * wl**2
+    # emissivity = param[0] + param[1] * wl_rel + param[2] * (wl_rel ** 2)
+
+    # exp emi = exp(-a - b * wl)
+    # emissivity = math.exp(-param[0] - param[1] * wl_rel)
+
+    # emissivity = param
+
     return emissivity
 
-def save_file(t_field, temperature_center, emissivity_set, emi_field):
-    dir_name = 'T' + str(temperature_center) + '_' + str(emissivity_set) + '_digital'
-    if not os.path.exists(os.path.join('results', dir_name)):
-        os.mkdir(os.path.join('results', dir_name))
 
-    # t_field
-    file_t = os.path.join('results', dir_name, 't_cal_' + str(temperature_center) + '.xlsx')
-    workbook_t = openpyxl.Workbook()
-    worksheet_t = workbook_t.active
-    # image_t = Image.fromarray(t_field).convert("L")
-    # image_t.save(os.path.join('data', dir_name, 't_field' + '.png'))
-    plt.imshow(t_field, cmap='viridis')
-    plt.colorbar()
-    plt.xlabel('X_position')
-    plt.ylabel('Y_position')
-    plt.title('Temperature_map')
-    plt.savefig(os.path.join('results', dir_name, 't_cal' + '.jpg'))
-    plt.clf()
+def process_itg(intensity, quantum_efficiency, transparency):
+    wl0 = 500e-9
+    wl1 = 1000e-9
+    def camera_model(qe, *emissivity_param, t):
+        result_f = []
+        for i in range(8):
+            funct = quad(radiation, wl0, wl1, args=(transparency, qe[i], emissivity_param, t), epsabs=1e-2, limit=5)[0]
+            result_f.append[funct]
+        return np.array(result_f)
+    bounds_t = (500, 2000)
+    bounds_param = ([0, 0], [1, 1])
+    bounds = [bounds_param, bounds_t]
 
-    for row in t_field:
-        worksheet_t.append(list(row))
-    workbook_t.save(file_t)
+    param_p0 = [0.5, 0.5]
+    t_p0 = 1000
+    initial_guess = [*param_p0, t_p0]
+    with warnings.catch_warnings():
+        warnings.simplefilter('ignore')
+        popt, cov = curve_fit(camera_model, quantum_efficiency, intensity, bounds=bounds, p0 = initial_guess, maxfev=100000)
+    return popt
 
-    # emi_field
-    file_emi = os.path.join('results', dir_name, 'emi_cal_' + str(temperature_center) + '.xlsx')
-    workbook_emi = openpyxl.Workbook()
-    worksheet_emi = workbook_emi.active
-    # image_emi = Image.fromarray(emi_field).convert("L")
-    # image_emi.save(os.path.join('data', dir_name, 'emi_field' + '.png'))
-    plt.imshow(emi_field, cmap='viridis')
-    plt.colorbar()
-    plt.xlabel('X_position')
-    plt.ylabel('Y_position')
-    plt.title('Emissivity_map')
-    plt.savefig(os.path.join('results', dir_name, 'emi_cal' + '.jpg'))
-    plt.clf()
-
-    for row in emi_field:
-        worksheet_emi.append(list(row))
-    workbook_emi.save(file_emi)
+def transfer_pos(raw_data):
+    return raw_data.reshape(raw_data.shape[0], -1).T
 
 
-def difference_cal(param, camera_efficiency, intensity_digital):
-    a, b, temperature = param
-    # call camera_model function with a, b, temperature as inputs
-    intensity_cal = camera_model(camera_efficiency, a, b, temperature)
-    # calculate the difference between the output and the intensity_digital array
-    difference = intensity_cal - intensity_digital
-    # calculate the sum of squares of the difference array
-    sum_of_squares = (difference**2).sum()
-    return sum_of_squares
+def transfer_neg(raw_data, target_value):
+    shape_data = [target_value.shape[1], target_value.shape[2]]
+    return raw_data.reshape(shape_data)
 
 
-def camera_model(camera_efficiency, a, b, temperature):
-    wl_0 = 500 * 10**(-9)
-    wl_1 = 1000 * 10**(-9)
-    digital_value = []
-    for channel in sorted(camera_efficiency.keys()):
-        digital_value.append(quad(radiation_cal, wl_0, wl_1, args=(camera_efficiency[channel], a, b, temperature), epsabs = 1e-2, limit=10)[0])
-    return np.array(digital_value)
+def read_intensity(intensity_dir, data_temperature):
+    intensity = [
+        pd.read_excel(os.path.join(intensity_dir, f"digital_value_{data_temperature}.xlsx"), 'channel_' + str(i),
+                      header=None)
+        for i in range(8)]
+    intensity = np.array(intensity)
+    return intensity
 
 
-######################
-# calculate the radiation at a wavelength and temperature
-# a, b is used to calculate emissivity. here we assum a linear relationship
-# 200 is the shutter time
-######################
-def radiation_cal(wavelength, camera_function, a, b, temperature):
-    # linear character of emissivity
-    wl_0 = 500 * 10**(-9)
-    wl_1 = 900 * 10**(-9)
-    emissivity = a + b * (wavelength - wl_1) / (wl_0 - wl_1)
-    radiation = camera_function(wavelength) * black_body_radiation(temperature, wavelength) * emissivity * 200
-    return radiation
-
-
-def intensity_reshape(intensity_raw):
-    shape_raw_intensity = intensity_raw[list(intensity_raw.keys())[0]].shape
-    intensity_1d = {}
-    for channel in intensity_raw.keys():
-        intensity_1d[channel] = intensity_raw[channel].reshape(shape_raw_intensity[0]*shape_raw_intensity[1])
+def read_cam(camera_dir):
     result = {}
-    result['shape'] = shape_raw_intensity
-    result['intensity_dict'] = intensity_1d
-    # create empty array for reforming the intensity data to array
-    intensity_array = np.empty((shape_raw_intensity[0] * shape_raw_intensity[1], len(intensity_1d.keys())))
-    for i, key in enumerate(intensity_1d.keys()):
-        intensity_array[:, i] = intensity_1d[key]
-    result['intensity_array'] = intensity_array
-    return result
+    df_qe = pd.read_excel(os.path.join(camera_dir, "CMS22010236.xlsx"), 'QE')
+    df_tr = np.array(pd.read_excel(os.path.join(camera_dir, "FIFO-Lens_tr.xls"))).transpose()
 
+    # transparency
+    transparency = interp1d((df_tr[0] * 1e-6), df_tr[1], kind='linear', fill_value='extrapolate')
 
-def read_digital_value(intensity_address):
-    data = pd.read_excel(intensity_address, sheet_name=None, header=None)
-    digital_value = {}
-    for sheet_name in data.keys():
-        digital_value[sheet_name] = np.array(data[sheet_name])
-    return digital_value
-
-
-def read_cam(qe_address, tr_address):
-    qe_raw = pd.read_excel(qe_address, 'QE')
-    t_raw = pd.read_excel(tr_address)
-    result = {}
-    camera_total_efficiency = {}
-    result['quantum_efficiency'] = qe_raw.to_numpy()[:, 1::]
-    wavelength_set = qe_raw.to_numpy()[:, 0]
-    t_interp = interp1d(t_raw.to_numpy()[:, 0]*1000, t_raw.to_numpy()[:, 1], kind='linear', fill_value='extrapolate')
-    result['transparency'] = t_interp(wavelength_set)
-    result['wavelength_set'] = wavelength_set
-    wl, channel = np.shape(qe_raw.to_numpy()[:, 1::])
-    # set camera efficiency into dict type
-    for i in range(channel):
-        camera_total_efficiency['channel_' + str(i)] = {}
-        for j in range(wl):
-            camera_total_efficiency['channel_' + str(i)][str(int(wavelength_set[j]))] = result['quantum_efficiency'][j, i] * result['transparency'][j]
-    result['camera_total_efficiency'] = camera_total_efficiency
-    # set camera efficiency into interp1d type
-    camera_function = {}
-    for channel in camera_total_efficiency.keys():
-        camera_total_efficiency_array = [[int(k), v] for k, v in camera_total_efficiency[channel].items()]
-        camera_efficiency_function = interp1d([i[0] for i in camera_total_efficiency_array],
-                                           [i[1] for i in camera_total_efficiency_array], kind='linear',
-                                           fill_value='extrapolate')
-        camera_function[channel] = camera_efficiency_function
-    result['camera_function'] = camera_function
-    return result
+    # quantum efficiency
+    qe_array = np.array(df_qe.iloc[:, 0:9]).T
+    qe_array[0] *= 1e-9
+    qe = np.zeros([qe_array.shape[0]-1, 2, qe_array.shape[1]])
+    qe[:, 0, :] = qe_array[0]
+    for i in range(8):
+        qe[i, 1, :] = qe_array[i+1]
+    return transparency, qe
 
 
 def black_body_radiation(temperature, wavelength):
-    h = 6.62607015e-34      # Plank's constant
-    c = 299792458           # Speed of light
-    k_b = 1.380649e-23      # Boltzmann's constant
-    radiance = 2 * h * np.float_power(c, 2) * np.float_power(wavelength, -5) / (math.exp(h*c/(k_b * wavelength * temperature))-1)
-    return radiance
+    param1 = h * 2 * c ** 2
+    param2 = h * c / k
+    return param1 / (wavelength**5) / (np.exp(param2 / (wavelength * temperature)) - 1)
 
 
 if 1:
