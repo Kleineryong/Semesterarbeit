@@ -224,7 +224,7 @@ def process_itg(intensity_array, qe_array, tr_array):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((0, -1, 500), (1, 1, 1958.2)), maxfev= 100000)
-    return popt[3], popt[0], popt[1], popt[2]
+    return popt[2], popt[0], popt[1]
 
 
 def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir):
@@ -299,6 +299,22 @@ if 1:
     result_dir = 'result_v024_lin'
     data_temperature = '1900'
     emissivity_set = '24'
+    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    compare(data_name, result_dir)
+    print(data_name, 'finished')
+
+    result_dir = 'result_v024_lin'
+    data_temperature = '1900'
+    emissivity_set = '25'
+    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    compare(data_name, result_dir)
+    print(data_name, 'finished')
+
+    result_dir = 'result_v024_lin'
+    data_temperature = '1900'
+    emissivity_set = '26'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
