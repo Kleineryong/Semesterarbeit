@@ -22,12 +22,12 @@ def digital_value_rebuild():
     image_resolution = [50, 50]                                               # [pixel] [100 * 100]
     diameter_ratio = 0.9                                                        # adjust the visualisation of data_field
     shutter_time = 200                                                          # adjust explosure time
-    temperature_center = 1896                                                   # temperature of the center_area
+    temperature_center = 1900                                                   # temperature of the center_area
     temperature_background = 1000                                                 # set background temperature to 50K as black body
     melt_temperature = 1600                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
-    emissivity_set = 3                                                          # which data set is used, [0] stands for black body radiation
+    emissivity_set = 22                                                          # which data set is used, [0] stands for black body radiation
 
     # explosure_time = 200                                                        # explosure time of camera
     plot_channel = 'channel_3'                                                      # set plot configuration

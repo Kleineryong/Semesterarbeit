@@ -17,7 +17,7 @@ from joblib import Parallel, delayed
 def t_estimate_integration():
     currentdir = os.getcwd()
     homefolder = os.path.dirname(currentdir)
-    result_dir = 'result_v022_exp'
+    result_dir = 'result_v022_exp_test'
     result_dir = os.path.join('results', result_dir)
     data_temperature = '1896'
     emissivity_set = '2'
@@ -40,8 +40,8 @@ def t_estimate_integration():
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity
-    t_target = t_ref
+    target = intensity[:, 24:27, 24:27]
+    t_target = t_ref[24:27, 24:27]
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))

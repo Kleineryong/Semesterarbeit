@@ -6,11 +6,11 @@ import pandas as pd
 import openpyxl
 
 def compare():
-    original_data = 'T1300_3_digital'
+    original_data = 'T1896_2_digital'
     original_data_address = os.path.join('data', original_data)
 
     cal_data = original_data
-    cal_data_address = os.path.join('results', 'result_v030_lin_square', cal_data)
+    cal_data_address = os.path.join('results', 'result_v022_exp', cal_data)
 
 
     # read data from excel file
@@ -34,8 +34,8 @@ def compare():
             df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
             emi_cal = df.to_numpy()
 
-    t_bias = t_target - t_cal
-    emi_bias = emi_target - emi_cal
+    t_bias = (t_target - t_cal) / t_target
+    emi_bias = (emi_target - emi_cal) / emi_target
 
     ######### save fig
     # t_cal
@@ -69,7 +69,7 @@ def compare():
     plt.colorbar()
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
-    plt.title('Temperature_bias')
+    plt.title('Temperature_bias_rel')
     plt.savefig(os.path.join(cal_data_address, 'T_bias.jpg'))
     plt.clf()
 
@@ -85,7 +85,7 @@ def compare():
     plt.colorbar()
     plt.xlabel('X_position')
     plt.ylabel('Y_position')
-    plt.title('emissivity_bias')
+    plt.title('emissivity_bias_rel')
     plt.savefig(os.path.join(cal_data_address, 'emi_bias.jpg'))
     plt.clf()
 
