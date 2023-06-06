@@ -27,7 +27,7 @@ def digital_value_rebuild():
     melt_temperature = 1600                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
-    emissivity_set = 22                                                          # which data set is used, [0] stands for black body radiation
+    emissivity_set = 34                                                          # which data set is used, [0] stands for black body radiation
 
     # explosure_time = 200                                                        # explosure time of camera
     plot_channel = 'channel_3'                                                      # set plot configuration

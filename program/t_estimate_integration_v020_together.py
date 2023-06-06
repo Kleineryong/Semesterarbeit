@@ -193,7 +193,7 @@ def emissivity_model(wl, a, b):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl-wl0)/(wl1-wl0)
     # lin emi = a + b * lambda
-    emissivity = a + b * wl_rel   # a[0, 1], b[0, 1]
+    emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(a + b * wl)
