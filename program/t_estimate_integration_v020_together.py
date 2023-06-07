@@ -193,16 +193,16 @@ def emissivity_model(wl, a, b):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl-wl0)/(wl1-wl0)
     # lin emi = a + b * lambda
-    emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
+    # emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(a + b * wl)
 
     # lin square emi = a + b * wl**2
-    # emissivity = a + b * (wl**2)
+    emissivity = a + b * (wl_rel**2)
 
     # exp emi = exp(-a - b * wl)
-    # emissivity = math.exp(-a - b * wl)
+    # emissivity = math.exp(-a - b * wl_rel)
 
     # maxwell
     # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
@@ -269,56 +269,56 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v024_lin_square'
     data_temperature = '1900'
-    emissivity_set = '21'
+    emissivity_set = '31'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v024_lin_square'
     data_temperature = '1900'
-    emissivity_set = '22'
+    emissivity_set = '32'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v024_lin_square'
     data_temperature = '1900'
-    emissivity_set = '23'
+    emissivity_set = '33'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v024_lin_square'
     data_temperature = '1900'
-    emissivity_set = '24'
+    emissivity_set = '34'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v024_lin'
-    data_temperature = '1900'
-    emissivity_set = '25'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
-
-    result_dir = 'result_v024_lin'
-    data_temperature = '1900'
-    emissivity_set = '26'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
+    # result_dir = 'result_v024_lin'
+    # data_temperature = '1900'
+    # emissivity_set = '25'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
+    #
+    # result_dir = 'result_v024_lin'
+    # data_temperature = '1900'
+    # emissivity_set = '26'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
 
     end_time = time.perf_counter()
     print("calculation time: ", end_time - start_time, " second")

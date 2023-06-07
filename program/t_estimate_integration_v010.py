@@ -35,15 +35,16 @@ def t_estimate_integration():
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     intensity_dir = os.path.join(homefolder, 'program', 'data', data_name)
     intensity_raw = read_intensity(intensity_dir, data_temperature) # used to control the calculate range
-    intensity_target = intensity_raw[:, 23:27, 23:27]
+    intensity_target = intensity_raw[:, 20:27, 20:27]
 
     # transform raw data to enable parallel calculation
     intensity_reshape = transfer_pos(intensity_target)
     print("Number of processors: ", mp.cpu_count())
-    # cal_result = np.array(Parallel(n_jobs=mp.cpu_count())(
-    #     delayed(process_itg)(intensity_reshape[i], qe_total, transparency) for i in range(len(intensity_target[0]))))
-    temp = process_itg(intensity_reshape[0], qe_total, transparency)
+    cal_result = np.array(Parallel(n_jobs=mp.cpu_count())(
+        delayed(process_itg)(intensity_reshape[i], qe_total, transparency) for i in range(len(intensity_target[0]))))
+    # temp = process_itg(intensity_reshape[0], qe_total, transparency)
     # test2 = transfer_neg(test1[:, 0], intensity_target)
+    print(cal_result)
     return 0
 
 
@@ -57,12 +58,12 @@ def radiation(wavelength, transparency, qe_array, emissivity_param, t):
     return result
 
 
-def emissivity_model(wavelength, *param):
+def emissivity_model(wavelength, param):
     wl0 = 0.5 * 10 ** (-6)
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wavelength-wl0)/(wl1-wl0)
     # lin emi = a + b * lambda
-    emissivity = param[0] - param[1] * wl_rel   # a[0, 1], b[0, 1]
+    # emissivity = param[0] - param[1] * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(param[0] + param[1] * wl_rel)
@@ -71,7 +72,7 @@ def emissivity_model(wavelength, *param):
     # emissivity = param[0] + param[1] * (wl_rel**2)
 
     # lin square_2 emi = a + b * wl + c * wl**2
-    # emissivity = param[0] + param[1] * wl_rel + param[2] * (wl_rel ** 2)
+    emissivity = param[0] + param[1] * wl_rel + param[2] * (wl_rel ** 2)
 
     # exp emi = exp(-a - b * wl)
     # emissivity = math.exp(-param[0] - param[1] * wl_rel)
@@ -84,23 +85,23 @@ def emissivity_model(wavelength, *param):
 def process_itg(intensity, quantum_efficiency, transparency):
     wl0 = 500e-9
     wl1 = 1000e-9
-    def camera_model(qe, *emissivity_param, t):
+
+    def camera_model(qe, *parameter):
         result_f = []
         for i in range(8):
-            funct = quad(radiation, wl0, wl1, args=(transparency, qe[i], emissivity_param, t), epsabs=1e-2, limit=5)[0]
-            result_f.append[funct]
+            funct = quad(radiation, wl0, wl1, args=(transparency, qe[i], parameter[1::], parameter[0]), epsabs=1e-2, limit=5)[0]
+            result_f.append(funct)
         return np.array(result_f)
-    bounds_t = (500, 2000)
-    bounds_param = ([0, 0], [1, 1])
-    bounds = [bounds_param, bounds_t]
+    bounds_param = ([500, 0, -1, -1], [2000, 1, 1, 1])
+    bounds = bounds_param
 
-    param_p0 = [0.5, 0.5]
-    t_p0 = 1000
-    initial_guess = [*param_p0, t_p0]
+    param_p0 = [1000, 0.5, 0.5, 0.5]
+    initial_guess = param_p0
     with warnings.catch_warnings():
         warnings.simplefilter('ignore')
-        popt, cov = curve_fit(camera_model, quantum_efficiency, intensity, bounds=bounds, p0 = initial_guess, maxfev=100000)
+        popt, cov = curve_fit(camera_model, quantum_efficiency, intensity, bounds=bounds, p0=initial_guess, maxfev=100000)
     return popt
+
 
 def transfer_pos(raw_data):
     return raw_data.reshape(raw_data.shape[0], -1).T
