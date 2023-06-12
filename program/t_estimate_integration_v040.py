@@ -38,8 +38,8 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity[:, 0:26, 0:26]
-    t_target = t_ref[0:26, 0:26]
+    target = intensity
+    t_target = t_ref
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))
@@ -51,13 +51,14 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     target_reshape = transfer_pos(target)
     print("Number of processors: ", mp.cpu_count())
     cal_result = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg_v030)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0]))))
-    target_recalculate = target_reshape[:, cal_result[:, 0]>t_melt]
+    recalculate_index = np.where(cal_result[:, 0] > t_melt)
+    target_recalculate = target_reshape[:, recalculate_index][:, 0]
     cal_result_new = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg_v020)(target_recalculate[:, i], qe_array, tr_array) for i in range(len(target_recalculate[0]))))
     # start replacing the recalculated results
-    cal_result[cal_result[:, 0] > t_melt, 0] = cal_result_new[:, 0]
-    cal_result[cal_result[:, 0] > t_melt, 1] = cal_result_new[:, 1]
-    cal_result[cal_result[:, 0] > t_melt, 2] = cal_result_new[:, 2]
-    cal_result[cal_result[:, 0] > t_melt, 3] = np.NaN
+    cal_result[recalculate_index, 0] = cal_result_new[:, 0]
+    cal_result[recalculate_index, 1] = cal_result_new[:, 1]
+    cal_result[recalculate_index, 2] = cal_result_new[:, 2]
+    cal_result[recalculate_index, 3] = np.NaN
 
     t_map = transfer_neg(cal_result[:, 0], target)
     Ea_map = transfer_neg(cal_result[:, 1], target)
@@ -100,8 +101,8 @@ def compare(original_data, result_dir):
             df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
             emi_cal = df.to_numpy()
 
-    t_bias = (t_target[0:26, 0:26] - t_cal) / t_target[0:26, 0:26]
-    emi_bias = (emi_target[0:26, 0:26] - emi_cal) / emi_target[0:26, 0:26]
+    t_bias = (t_target - t_cal) / t_target
+    emi_bias = (emi_target - emi_cal) / emi_target
 
     ######### save fig
     # t_cal
