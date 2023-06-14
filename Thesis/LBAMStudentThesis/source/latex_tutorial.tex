@@ -1,0 +1,92 @@
+% !TeX spellcheck = de_DE
+\chapter{LaTeX-Tutorial}%
+Dieses \gls{tutorial} liefert eine Kurzeinführung in die Verwendung von \gls{latex}.%
+%
+\section{Titelseite}%
+Die Titelseite wird in {./main.tex} definiert. Der Studienarbeitstyp wird durch Ein- und Auskommentieren der Befehle%
+\begin{itemize}%
+	\item \verb|\IWBstudentthesisTitlePageCustomMastersThesis|,%
+	\item \verb|\IWBstudentthesisTitlePageCustomBachelorsThesis| und%
+	\item \verb|\IWBstudentthesisTitlePageCustomSemesterThesis|%
+\end{itemize}%
+ausgewählt und die Seite entsprechend der Argumente gesetzt. Die Professoren und Lehrstuhle können mittels der Makros%
+\begin{itemize}%
+	\item \verb|\IWBnamesProfReinhart \newline \IWBlangChairMWIWBLBM| oder%
+	\item \verb|\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLWF|%
+\end{itemize}%
+ausgewählt werden.%
+%
+\section{Zitation}%
+%
+Zum Zitieren stehen die Standartbefehle \verb|\textcite| und \verb|\parencite| zur Verfügung. Soll der Autorename im Satz verwendet werden, eignet sich ersteres, z.B. \textcite[2-3]{Bayerlein2018} bezieht sich auf \textcite{Bayerlein2016469}. Soll das Zitat in Klammern nach die Aussage gestellt werden empfiehlt sich zweiteres \parencite{Zaeh2018385}. Sammelzitationen am Satzende schreiben sich wie folgt \parencite{Kleinwort2018658,Kleinwort20189,Kleinwort2018631}. Die Zitation von Online-Quellen kann schwierig sein, da nicht immer der Autor und das Erscheinungsjahr verfügbar sind. Vergleicht man \textcite{Heuss2018} und \textcite{iwb-Startseite}, stellt man fest, dass bei zweiteren der Seitentitel statt des bekannten Schemas eingesetzt wird.\par%
+%
+Normen werden als \textcite{ISO.10218-2} dargestellt. Im Bibtex-Export des verwendeten Literaturverwaltungsprogramm sind bestimmte Einstellungen vorzunehmen. Dokumententyp ist \enquote{@book} mit folgenden Einträgen:
+\begin{itemize}
+	\item Normtyp und Nummer als \enquote{title}
+	\item Langtitel als \enquote{subtitle}
+	\item Verlag als \enquote{publisher}
+	\item Jahr als \enquote{date}
+	\item \enquote{author} darf nicht belegt werden!
+\end{itemize}
+%
+\section{Abkürzungen}
+In {./source/abbreviations.tex} können Abkürzungen definiert werden. Es gibt Besonderheiten zu Ausdrücken, deren Pluralendung nicht auf s endet. Hier müssen ggf. Kurz- und Langformen des Ausdrucks auch für den Plural definiert werden.\par%
+\begin{itemize}
+	\item \verb|\gls{ros}|: schreibt beim ersten Auftreten im Dokument ausführlich \gls{ros}, ab dem zweiten Auftreten wird abgekürzt \gls{ros}% 
+	\item \verb|\glspl{ap}| verwendet den Plural in Langform \glspl{ap} und danach in Kurzform \glspl{ap}%
+\end{itemize}%
+%
+\section{Glossar}
+In {./source/glossary.tex} können Begriffe erklärt, abgegrenzt oder definiert werden. Begriffe erhalten einen Namen und eine Beschreibung als Glossareintrag sowie ein Lable zum Referenzieren im Text. Ein Glossar ist Optional.\par%
+\begin{itemize}%
+	\item \verb|\gls{latex}|: Schreibt den Namen aus dem Glossarverzeichnis mit Verweis auf den Glossareintrag \gls{latex}%
+\end{itemize}%
+%
+\section{Abbildungen}
+Graphiken und Bilder können in beliebigen Dateiformaten eingebunden werden, vergleiche \cref{fig:MyImage}. Vektorgraphiken sind im Allgemeinen Pixelgraphiken in Schärfe und Speicherbedarf überlegen.\par%
+%
+\begin{figure}[htb]%
+    \centering%
+    %
+    % Including .png
+    \includegraphics[width=40mm]{figures/ImagePNG.png}%
+    %
+    \hspace*{5mm}%
+    %
+    % Including .pdf
+    \includegraphics[width=40mm]{figures/ImagePDF.pdf}\par%
+    %
+    % Including .tikz
+    \begingroup%
+        %\AMtikzExternalizeSkipNext%
+        \resizebox{40mm}{!}{\input{figures/ImageTIKZ.tikz}}%
+    \endgroup%
+    %
+    \hspace*{5mm}%
+    %
+    % Including .pdf_tex
+    \begingroup%
+        \def\svgwidth{40mm}%
+        \fontsize{25}{25}\selectfont%
+        \input{figures/ImagePDFTEX.pdf_tex}%
+    \endgroup%
+    %
+    \caption{Beschreibung des Bilds. Außerdem machen wir nun die Bildunterschrift unnötig lang um die Formatierung zu testen. \label{fig:MyImage}}%
+\end{figure}%
+%
+\begin{figure}[htb]%
+    \centering%
+    \input{figures/plot_two_dim.tikz}%
+    \caption{Beschreibung des Plots. Außerdem machen wir nun die Bildunterschrift unnötig lang um die Formatierung zu testen. \label{fig:PlotTwoDim}}%
+\end{figure}%
+%
+Für Nutzer mit perfektionistischen Anspruch empfiehlt sich die Nutzung von \gls{tikz}. Vorteil ist, dass die Erzeugung von Daten und die Darstellung komplett getrennt werden. Die Darstellung erfolgt einheitlich gemäß eines generischen Mark-Ups, vergleiche \cref{fig:PlotTwoDim,fig:PlotThreeDim}.\par%
+%
+\vspace{12pt}%
+\begin{figure}[htb]%
+    \centering%
+    \input{figures/plot_three_dim.tikz}%
+    \caption{Beschreibung des Plots. Außerdem machen wir nun die Bildunterschrift unnötig lang um die Formatierung zu testen. \label{fig:PlotThreeDim}}%
+\end{figure}%
+%
+%

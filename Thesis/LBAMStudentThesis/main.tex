@@ -1,0 +1,84 @@
+% !TeX spellcheck = de_DE
+\documentclass[IWBstudentthesis%     style
+              ,optCharter%           font
+              %,optCMYK%             color model
+              ,optBiber% 	         bibliography tool
+              ,optBibstyleNumeric%lbam (ieee) citation style
+              ,optEnglish% 		 language
+              %,optTikzExternalize%  compiles faster for large tikz images
+              ]{IWBlatex}%
+%
+% Set paths
+\graphicspath{{figures/}}%
+\addbibresource{source/literature.bib}%
+\include{source/abbreviations}%
+\include{source/glossary}%
+% Custom macros
+\input{source/mymacros.tex}%
+%
+% Extra packages for LBAM formatting-------------------------------------------
+% continous figure and table counter (arabic numbers Fig 1., Fig 2. etc. not Fig. 1.1, Fig 1.1)
+\usepackage{chngcntr}%
+\counterwithout{figure}{chapter}%
+\counterwithout{table}{chapter}%
+%--------------------------------------
+\begin{document}%
+% Titlepage
+% ---------
+\frontmatter%
+% Info: replace Prof Reinhart by Prof. Zäh:\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLWF
+% Info: separate multiple supervisors by \newline
+\IWBstudentthesisTitlePageCustomMastersThesis{Dies ist der deutsche Titel}{This is the English Title}{Wolfgang Hermann \newline Exzellenstraße 7 \newline 85748 Garching bei München}{\IWBnamesProfWudy \newline M.Sc. Mein Betreuer \newline \IWBlangChairMWLBAM}{\IWButilsDate{31}{12}{2021}}%
+%
+%\IWBstudentthesisTitlePageCustomBachelorsThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfReinhart \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{1}{1}{2018}}%
+%
+%\IWBstudentthesisTitlePageCustomSemesterThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfReinhart \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{1}{1}{2018}}%
+%
+%\IWBstudentthesisTitlePageCDIDP{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfReinhart \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{1}{1}{2018}}%
+%
+% Task formulation
+% ----------------
+\include{source/task}%
+%
+% Abstract
+% --------
+\include{source/abstract}%
+%
+% Content
+% -------
+\IWBstudentthesisPrintTableOfContents%
+%
+% List of Abbreviations --> for LBAM moved to end document
+% ---------------------
+%\printnoidxglossary[type=acronym,sort=standard,title={\IWBlangAcronyms}]
+%
+% Mainmatter
+% ----------
+\mainmatter%
+\include{source/latex_tutorial}%
+\include{source/chapter01}%
+\include{source/chapter02}%
+\include{source/chapter03}%
+%
+% Appendix
+% --------
+\appendix%
+\include{source/appendixA}%
+%
+% Glossary
+% ---------------------
+\printnoidxglossary[sort=standard,title={\IWBlangGlossary}]
+%
+% References
+% ----------
+\printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
+%
+%
+% List of Abbreviations
+% ---------------------
+\printnoidxglossary[type=acronym,sort=standard,title={\IWBlangAcronyms}]
+%
+%
+\end{document}%
+%
+%

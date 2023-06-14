@@ -1,0 +1,62 @@
+% !TeX spellcheck = en_US
+\glsresetall%
+\chapter{Introduction}%
+%\gls{am} is the umbrella term for a variety of technologies, describing the automated process of manufacturing physical parts directly from virtual \gls{cad} models. %
+%\gls{pbflbp}, also known as \gls{sls}, as part of the \gls{am} process group
+\blindtext%
+%
+%
+\section{Section Introduction}%
+\blindtext%
+%
+%
+\subsection{Subsection Introduction}%
+\blindtext%
+%
+%
+\section{Another Section Introduction}%
+\blindtext%
+%
+%
+\section{Many Section Introductions}%
+\blindtext%
+%
+%
+\section{Many More Section Introductions}%
+\blindtext%
+Another lorem ipsum to test formatting. \\%
+\blindtext%
+And one more for good measure.\\%
+\blindtext%
+Rinse and repeat. \\%
+\blindtext[3]%
+\section{Testing the Continuous Figure Numbering}%
+Here we have a graph which should have a continuous caption numbering \ie it should say Figure 4 or Figure 5, instead of Figure 2.1 or Figure 2.2.
+\begin{figure}[htb]%
+	\centering%
+	\input{figures/plot_three_dim.tikz}%
+	\caption{Beschreibung des Plots. Außerdem machen wir nun die Bildunterschrift unnötig lang um die Formatierung zu testen. \label{fig:PlotThreeDimTEst}}%
+\end{figure}%
+%
+%
+\section{Now Let's test tables}%
+The \cref{table:TestTableCaption} should have captions above the table instead of captions below, like Figures. \\%
+%
+\begin{table}[h!]%
+	\centering%
+	\caption{This table caption should be above the table. Otherwise DIN is going to judge you...}%
+	\begin{tabular}{||c c c c||}%
+		\hline%
+		Col1 & Col2 & Col2 & Col3 \\ [0.5ex]% 
+		\hline\hline%
+		1 & 6 & 87837 & 787 \\% 
+		2 & 7 & 78 & 5415 \\%
+		3 & 545 & 778 & 7507 \\%
+		4 & 545 & 18744 & 7560 \\%
+		5 & 88 & 788 & 6344 \\ [1ex]% 
+		\hline%
+	\end{tabular}%
+	\label{table:TestTableCaption}%
+\end{table}%
+%
+%

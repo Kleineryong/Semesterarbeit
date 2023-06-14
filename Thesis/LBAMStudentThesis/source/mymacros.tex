@@ -1,0 +1,173 @@
+% Einheitliche Schreibweise
+% ---------------------------------------
+\newcommand{\zb}{z.\,B.\xspace}%
+\renewcommand{\dh}{d.\,h.\xspace}%
+\newcommand{\uu}{u.\,U.\xspace}%
+\newcommand{\ua}{u.\,a.\xspace}%
+\newcommand{\idr}{i.\,d.\,R.\xspace}%
+\newcommand{\vgl}{vgl.\xspace}%
+\newcommand{\sa}{s.\,a.\xspace}%
+\newcommand{\bzw}{bzw.\xspace}%
+\newcommand{\evtl}{evtl.\xspace}%
+\newcommand*{\eg}{e.\,g.\xspace}%
+\newcommand*{\ie}{i.\,e.\xspace}%
+% Leichtere Zitate
+% ---------------------------------------
+% \cite{} gut für Shorthand (Normen) im Text --> alternative zu \textcite
+\newcommand{\autor}[2]{\textcite[#1]{#2}}%
+\newcommand{\zitat}[2]{\parencite[#1]{#2}}%
+\newcommand{\zitatpre}[3]{\parencite[#1][#2]{#3}}%
+\newcommand{\zitate}[4]{\parencites[#1]{#2}[#3]{#4}}%
+\newcommand{\zitatee}[6]{\parencites[#1]{#2}[#3]{#4}[#5]{#6}}%
+\newcommand{\zitateee}[8]{\parencites[#1]{#2}[#3]{#4}[#5]{#6}[#7]{#8}}%
+% ---------------------------------------
+\newcommand{\insertref}{\todo[color=green!40]{Missing ref}}%
+% Leichtere Bilder
+% ---------------------------------------
+\newcommand{\bild}[4]{%
+	\begin{figure}[#1]
+		\centering
+		\includegraphics
+		[
+		width=#2\textwidth,
+		]
+		{figures/#3}
+		
+		\caption{#4}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+%
+\newcommand{\bildsvg}[4]{
+	\begin{figure}[#1]
+		\centering%
+		\def\svgwidth{#2\columnwidth}%
+		\input{figures/#3}%
+		%
+		\caption{#4}%
+		\label{fig:#3}%
+	\end{figure}	
+}
+%
+\newcommand{\bildtikz}[4]{
+	\begin{figure}[#1]
+		\centering
+		\scalebox{#2}{\input{figures/#3}}
+		\caption{#4}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+\newcommand{\bildtikzvar}[5]{
+	\begin{figure}[#1]
+		\centering
+		\scalebox{#2}{\input{figures/#3}}
+		\caption{\parbox[t]{#4\textwidth}{#5}}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+\newcommand{\bildtrim}[5]{% Mit definiertem Beschnitt
+	\begin{figure}[#1]
+		\centering
+		\includegraphics
+		[
+		width=#2\textwidth,
+		%keepaspectratio=true,
+		trim=#3,		% l u r o
+		clip,
+		]
+		{figures/#4}
+		
+		\caption[]{#5}
+		\label{fig:#4}
+	\end{figure}
+}
+%
+\newcommand{\bildvar}[5]{% Mit definierter Breite / Zeilenumbruch der Caption
+	\begin{figure}[#1]
+		\centering
+		\includegraphics
+		[
+		width=#2\textwidth,
+		]
+		{figures/#3}
+		
+		\caption[]{\parbox[t]{#4\textwidth}{#5}}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+\newcommand{\bildbox}[4]{% Bild mit Rahmen
+	\begin{figure}[#1]
+		\centering
+		\fbox{%
+			\includegraphics
+			[
+			width=#2\textwidth,
+			]
+			{figures/#3}
+		}
+		\caption[]{#4}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+\newcommand{\bildboxtrim}[5]{%
+	\begin{figure}[#1]
+		\centering
+		\fbox{%
+			\includegraphics
+			[
+			width=#2\textwidth,
+			%keepaspectratio=true,
+			trim=#3,		% l u r o
+			clip,
+			]
+			{figures/#4}
+		}
+		\caption[]{#5}
+		\label{fig:#4}
+	\end{figure}
+}
+%
+\newcommand{\bildboxvar}[5]{%
+	\begin{figure}[#1]
+		\centering
+		\fbox{%
+			\includegraphics
+			[
+			width=#2\textwidth,
+			]
+			{figures/#3}
+		}
+		\caption[]{\parbox[t]{#4\textwidth}{#5}}
+		\label{fig:#3}
+	\end{figure}
+}
+%
+\newcommand{\bildsvgvar}[5]{
+	\begin{figure}[#1]
+		\centering
+		\def\svgwidth{#2\columnwidth} 
+		\subimport*{figures/}{#3}
+		\caption{\parbox[t]{#4\textwidth}{#5}}
+		\label{fig:#3}
+	\end{figure}	
+}
+%
+\newcommand{\bildpdf}[3]{%
+	\begin{figure}[H]
+		\centering
+		\includegraphics
+		[
+		width=#1\textwidth,
+		page={#2},
+		]
+		{#3}
+		%\caption[]{#4}
+		\label{fig:#3}
+	\end{figure}
+}
+% ---------------------------------------
