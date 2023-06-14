@@ -2,13 +2,13 @@
               ,optCharter%           font
               %,optCMYK%             color model
               ,optBiber% 	         bibliography tool
-              ,optBibstyleNumeric%lbam (ieee) citation style
+              ,optBibstyleNumeric   %lbam (ieee) citation style
               ,optEnglish% 		 language
               %,optTikzExternalize%  compiles faster for large tikz images
               ]{IWBlatex}%
 %
 % Set paths
-\usepackage{biblatex}
+
 \usepackage{chngcntr}
 \graphicspath{{figures/}}%
 \addbibresource{literature/literature.bib}%
@@ -81,7 +81,7 @@ Powder Bed fusion of Metals}
 %
 % References
 % ----------
-\printbibliography[heading=bibintoc, title={\IWBlangBibliography}]%
+\printbibliography%[heading=bibintoc, title={\IWBlangBibliography}]%
 %
 %
 % List of Abbreviations
