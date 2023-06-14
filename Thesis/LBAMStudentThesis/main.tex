@@ -1,4 +1,3 @@
-% !TeX spellcheck = de_DE
 \documentclass[IWBstudentthesis%     style
               ,optCharter%           font
               %,optCMYK%             color model
@@ -9,8 +8,10 @@
               ]{IWBlatex}%
 %
 % Set paths
+\usepackage{biblatex}
+\usepackage{chngcntr}
 \graphicspath{{figures/}}%
-\addbibresource{source/literature.bib}%
+\addbibresource{literature/literature.bib}%
 \include{source/abbreviations}%
 \include{source/glossary}%
 % Custom macros
@@ -18,7 +19,7 @@
 %
 % Extra packages for LBAM formatting-------------------------------------------
 % continous figure and table counter (arabic numbers Fig 1., Fig 2. etc. not Fig. 1.1, Fig 1.1)
-\usepackage{chngcntr}%
+
 \counterwithout{figure}{chapter}%
 \counterwithout{table}{chapter}%
 %--------------------------------------
@@ -28,7 +29,16 @@
 \frontmatter%
 % Info: replace Prof Reinhart by Prof. Zäh:\IWBnamesProfZaeh \newline \IWBlangChairMWIWBLWF
 % Info: separate multiple supervisors by \newline
-\IWBstudentthesisTitlePageCustomMastersThesis{Dies ist der deutsche Titel}{This is the English Title}{Wolfgang Hermann \newline Exzellenstraße 7 \newline 85748 Garching bei München}{\IWBnamesProfWudy \newline M.Sc. Mein Betreuer \newline \IWBlangChairMWLBAM}{\IWButilsDate{31}{12}{2021}}%
+\IWBstudentthesisTitlePageCustomMastersThesis{Untersuchung des multispektralen
+Bildgebungsverfahrens zur Temperaturbestimmung auf einer numerischen
+Experimentierplattform beim Laser-basierten Pulverbett-Schmelzverfahren
+von Metallen.}
+{Investigation of multispectral imaging algorithm for temperature
+determination on a numerical experiment platform in Laser-based 
+Powder Bed fusion of Metals}
+{Zhaoyong Wang \newline Connollystr.3 \newline 80809 München}
+{\IWBnamesProfWudy \newline M.Sc. Ruihang Dai \newline \IWBlangChairMWLBAM}
+{\IWButilsDate{31}{07}{2023}}%
 %
 %\IWBstudentthesisTitlePageCustomBachelorsThesis{German Title}{English Title}{Martin Mustermann \newline Musterweg 20 \newline 80999 München}{\IWBnamesProfReinhart \newline \IWBlangChairMWIWBLBM}{\IWButilsDate{1}{1}{2018}}%
 %
