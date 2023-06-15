@@ -1,10 +1,10 @@
 {
     "latex-workshop.latex.recipes": [
         {
-            "name": "pdflatex - biber - pdflatex*2",
+            "name": "pdflatex - bibtex - pdflatex*2",
             "tools": [
                 "pdflatex",
-                "biber",
+                "bibtex",
                 "pdflatex",
                 "pdflatex"
             ]

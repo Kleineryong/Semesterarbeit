@@ -1,17 +1,72 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'main.blg'
-[78] biber-MSWIN32:322> INFO - === 
-[99] Biber.pm:415> INFO - Reading 'main.bcf'
-[209] Biber.pm:943> INFO - Found 10 citekeys in bib section 0
-[226] Biber.pm:4256> INFO - Processing section 0
-[227] Utils.pm:75> INFO - Globbing data source 'literature/literature.bib'
-[238] Utils.pm:91> INFO - Globbed data source 'literature/literature.bib' to literature/literature.bib
-[252] Biber.pm:4455> INFO - Looking for bibtex format file 'literature/literature.bib' for section 0
-[257] bibtex.pm:1653> INFO - LaTeX decoding ...
-[283] bibtex.pm:1471> INFO - Found BibTeX data source 'literature/literature.bib'
-[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[369] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[369] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[384] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[392] bbl.pm:755> INFO - Output to main.bbl
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: source/task.aux
+A level-1 auxiliary file: source/abstract.aux
+A level-1 auxiliary file: source/latex_tutorial.aux
+A level-1 auxiliary file: source/chapter01.aux
+A level-1 auxiliary file: source/chapter02.aux
+A level-1 auxiliary file: source/chapter03.aux
+A level-1 auxiliary file: source/appendixA.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: literature/literature.bib
+Biblatex version: 3.13
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 11 entries,
+            6365 wiz_defined-function locations,
+            1271 strings with 11268 characters,
+and the built_in function-call counts, 67379 in all, are:
+= -- 4167
+> -- 2351
+< -- 312
++ -- 2816
+- -- 1547
+* -- 4514
+:= -- 8218
+add.period$ -- 0
+call.type$ -- 11
+change.case$ -- 86
+chr.to.int$ -- 118
+cite$ -- 20
+duplicate$ -- 7252
+empty$ -- 5432
+format.name$ -- 791
+if$ -- 12748
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 0
+newline$ -- 376
+num.names$ -- 333
+pop$ -- 3669
+preamble$ -- 1
+purify$ -- 179
+quote$ -- 0
+skip$ -- 1890
+stack$ -- 0
+substring$ -- 6759
+swap$ -- 1585
+text.length$ -- 328
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 360
+warning$ -- 0
+while$ -- 1129
+width$ -- 0
+write$ -- 366

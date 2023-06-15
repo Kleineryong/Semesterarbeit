@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.19)  15 JUN 2023 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.19)  15 JUN 2023 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,6 +1028,16 @@ Package biblatex Info: ... file 'blx-compat.def' found.
  (f:/LaTeX/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+ (f:/LaTeX/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (f:/LaTeX/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
@@ -1645,7 +1655,10 @@ File: german.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `main.bcf'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
@@ -2071,7 +2084,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
  [21]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
  (./main.aux
-Package cleveref Info: loaded `english' language definitions on input line 29.
+Package cleveref Info: loaded `english' language definitions on input line 32.
  (./source/task.aux) (./source/abstract.aux
 Package cleveref Info: loaded `english' language definitions on input line 3.
 ) (./source/latex_tutorial.aux) (./source/chapter01.aux) (./source/chapter02.aux) (./source/chapter03.aux) (./source/appendixA.aux) * soulpos - computing points - it may take a few seconds *
@@ -2087,15 +2100,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62628 strings out of 480608
- 1372763 string characters out of 5907044
- 2437826 words of memory out of 5000000
- 77265 multiletter control sequences out of 15000+600000
+ 62689 strings out of 480608
+ 1374030 string characters out of 5907044
+ 2412853 words of memory out of 5000000
+ 77322 multiletter control sequences out of 15000+600000
  633899 words of font info for 147 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  87i,19n,140p,1080b,4230s stack positions out of 5000i,500n,10000p,200000b,80000s
 {f:/LaTeX/texlive/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{f:/LaTeX/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{f:/LaTeX/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<f:/LaTeX/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><f:/LaTeX/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (29 pages, 326957 bytes).
+Output written on main.pdf (29 pages, 326959 bytes).
 PDF statistics:
  441 PDF objects out of 1000 (max. 8388607)
  89 named destinations out of 1000 (max. 500000)
