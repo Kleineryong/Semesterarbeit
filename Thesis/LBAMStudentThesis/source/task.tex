@@ -18,27 +18,50 @@ Powder Bed fusion of Metals}\\
 	\textbf{Issuance:} 	\> 15.03.2023 	\> \textbf{Submission:} 	\> 31.12.2021
 \end{tabbing}
 
-\vspace{5mm}
+%\vspace{5mm}
 \textbf{Setting:}\\
-\blindtext%
+Laser-based powder bed fusion of metals (PBF-LB/M) is an additive manufacturing
+process which produces components with a laser by successively melting metal
+powders applied in layers. This additive manufacturing process offers the advantage
+of a complex lightweight design. However, complicated thermal histories
+during laser-metal interaction can lead to process defects such as keyholing. Since
+the process is thermally driven, acquiring the absolute temperature distribution in
+the laser-material interaction zone is vital to gain a deeper understanding of the
+process. However, no measurement system in PBF-LB/M is currently available to
+determine the absolute temperature due to unknown emissivity. Multispectral Imaging
+(MSI) has the potential to determine the absolute temperature and emissivity
+simultaneously by capturing multiple wavelengths of radiance from the melt pool.
 
-\vspace{5mm}
+
+%\vspace{5mm}
 \textbf{Objective:}\\
-\blindtext
+This work aims to optimize the MSI algorithm to determine the absolute temperature
+accurately. Since the mapping between the digital value and radiance still
+needs to be investigated, direct optimization of the MSI algorithm based on the experimental
+data is challenging. Therefore, the first step is to develop a virtual experiment
+to obtain "ideal" radiance determined by the given temperature distribution
+and emissivity. This way, the MSI algorithm can be optimized based on the input
+and calculated temperature and emissivity. The virtual experiment platform will also
+allow for the investigation of various temperature distributions and emissivity models
+in a time- and cost-efficient manner.%
 
-\vspace{5mm}
+%\vspace{5mm}
 \textbf{Methodology:} \\
 The content of the present thesis can be subdivided into the following tasks
 \begin{itemize}
-	\item Method 1
-	\item Method 2
-	\item Method 3
-	\item etc.
+	\item Literature review regarding MSI, material emissivity model and curve fitting 
+	algorithms
+	\item Development of a virtual experiment platform
+	\item Generate virtual experiments with various emissivity models and temperature fields
+	\item Optimization of the MSI algorithm based on virtual experiments
+	\item Scientific documentation of the results
 \end{itemize}
-\vspace{1.0cm}
+% \vspace{1.0cm}
 
 \chapter*{Declaration}
-I hereby confirm that this master's/ bachelor's/ semester thesis was written independently by myself without the use of any sources beyond those cited, and all passages and ideas taken from other sources are cited accordingly.%
+I hereby confirm that this semester thesis was written independently 
+by myself without the use of any sources beyond those cited, and all
+passages and ideas taken from other sources are cited accordingly.%
 %
 \vspace{5cm}\\
 \begin{tabular}{p{0.5\linewidth}p{0.5\linewidth} }
@@ -48,7 +71,7 @@ I hereby confirm that this master's/ bachelor's/ semester thesis was written ind
 %
 \vspace{2cm}\\
 %
-With the supervision of Mr. Max Mustermann by Mr. Mein Betreuer intellectual property of the \gls{lbam}  flows into this work. A publication of the work or a passing on to third parties requires the permission of the head of the professorship. I agree to the archiving of the printed thesis in the  \gls{lbam} library (which is only accessible to \gls{lbam} staff) and in \gls{lbam}'s digital thesis database as a PDF document.%
+With the supervision of Mr. Zhaoyong Wang by Mr. Ruihang Dai intellectual property of the \gls{lbam}  flows into this work. A publication of the work or a passing on to third parties requires the permission of the head of the professorship. I agree to the archiving of the printed thesis in the  \gls{lbam} library (which is only accessible to \gls{lbam} staff) and in \gls{lbam}'s digital thesis database as a PDF document.%
 %
 \vfill
 %
