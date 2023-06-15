@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import time
+from scipy.ndimage.filters import gaussian_filter
 import math
 import warnings
 import openpyxl
@@ -48,6 +49,11 @@ def t_estimate(data_path, temperature_center):
     return 0
 
 
+# def denoise(fig):
+#     out_fig = gaussian_filter(fig, sigma = 1)
+#     return out_fig
+
+
 def compare(t_cal, temperature_center):
     t_should = np.ones(t_cal.shape) * (temperature_center + 273.15)
     t_diff = t_cal - t_should
@@ -78,6 +84,15 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, t_diff, t_
     for row in t_field:
         worksheet_t.append(list(row))
     workbook_t.save(file_t)
+
+    # t_field_denoise = denoise(t_field)
+    # plt.imshow(t_field_denoise, cmap='viridis')
+    # plt.colorbar()
+    # plt.xlabel('X_position')
+    # plt.ylabel('Y_position')
+    # plt.title('Temperature_map')
+    # plt.savefig(os.path.join(result_dir, dir_name, 't_cal_denoise' + '.jpg'))
+    # plt.clf()
 
     # t_diff
     file_t = os.path.join(result_dir, dir_name, 't_diff_abs' + str(temperature_center) + '.xlsx')
