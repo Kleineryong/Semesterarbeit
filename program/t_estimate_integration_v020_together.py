@@ -40,8 +40,8 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity[:, 0:26, 0:26]
-    t_target = t_ref[0:26, 0:26]
+    target = intensity
+    t_target = t_ref
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))
@@ -92,8 +92,8 @@ def compare(original_data, result_dir):
             df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
             emi_cal = df.to_numpy()
 
-    t_bias = (t_target[0:26, 0:26] - t_cal) / t_target[0:26, 0:26]
-    emi_bias = (emi_target[0:26, 0:26] - emi_cal) / emi_target[0:26, 0:26]
+    t_bias = (t_target - t_cal) / t_target
+    emi_bias = (emi_target - emi_cal) / emi_target
 
     ######### save fig
     # t_cal
@@ -202,7 +202,7 @@ def emissivity_model(wl, a, b):
     # emissivity = a + b * (wl_rel**2)
 
     # exp emi = exp(-a - b * wl)
-    emissivity = 1- math.exp(-a - b * wl_rel)
+    emissivity = math.exp(a + b * wl_rel)
 
     # maxwell
     # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
@@ -223,7 +223,7 @@ def process_itg(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 500), (50, 50, 1958.2)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 500), (50, 50, 4000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
@@ -269,8 +269,8 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '31'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
@@ -278,8 +278,8 @@ if 1:
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '32'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
@@ -287,8 +287,8 @@ if 1:
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '33'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
@@ -296,56 +296,56 @@ if 1:
 
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '34'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '21'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '22'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '23'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '24'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '25'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v026_exp_invert'
-    data_temperature = '1900'
+    result_dir = 'result_v026_exp'
+    data_temperature = '3500'
     emissivity_set = '26'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
