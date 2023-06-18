@@ -1,6 +1,7 @@
 % Deckblatt
 \chapter*{Scope of Work}
 
+
 %\markright{Aufgabenstellung} 	% Kolumnentitel manuell auf "Aufgabenstellung"
 
 \textbf{Title of the Semester Thesis:}\\
@@ -20,24 +21,24 @@ Powder Bed fusion of Metals}\\
 
 %\vspace{5mm}
 \textbf{Setting:}\\
-Laser-based powder bed fusion of metals (PBF-LB/M) is an additive manufacturing
+\gls{pbflbm} is an additive manufacturing
 process which produces components with a laser by successively melting metal
 powders applied in layers. This additive manufacturing process offers the advantage
 of a complex lightweight design. However, complicated thermal histories
 during laser-metal interaction can lead to process defects such as keyholing. Since
 the process is thermally driven, acquiring the absolute temperature distribution in
 the laser-material interaction zone is vital to gain a deeper understanding of the
-process. However, no measurement system in PBF-LB/M is currently available to
-determine the absolute temperature due to unknown emissivity. Multispectral Imaging
-(MSI) has the potential to determine the absolute temperature and emissivity
+process. However, no measurement system in \gls{pbflbm} is currently available to
+determine the absolute temperature due to unknown emissivity. \gls{msi} has the 
+potential to determine the absolute temperature and emissivity
 simultaneously by capturing multiple wavelengths of radiance from the melt pool.
 
 
 %\vspace{5mm}
 \textbf{Objective:}\\
-This work aims to optimize the MSI algorithm to determine the absolute temperature
+This work aims to optimize the \gls{msi} algorithm to determine the absolute temperature
 accurately. Since the mapping between the digital value and radiance still
-needs to be investigated, direct optimization of the MSI algorithm based on the experimental
+needs to be investigated, direct optimization of the \gls{msi} algorithm based on the experimental
 data is challenging. Therefore, the first step is to develop a virtual experiment
 to obtain "ideal" radiance determined by the given temperature distribution
 and emissivity. This way, the MSI algorithm can be optimized based on the input
@@ -49,11 +50,11 @@ in a time- and cost-efficient manner.%
 \textbf{Methodology:} \\
 The content of the present thesis can be subdivided into the following tasks
 \begin{itemize}
-	\item Literature review regarding MSI, material emissivity model and curve fitting 
+	\item Literature review regarding \gls{msi}, material emissivity model and curve fitting 
 	algorithms
 	\item Development of a virtual experiment platform
 	\item Generate virtual experiments with various emissivity models and temperature fields
-	\item Optimization of the MSI algorithm based on virtual experiments
+	\item Optimization of the \gls{msi} algorithm based on virtual experiments
 	\item Scientific documentation of the results
 \end{itemize}
 % \vspace{1.0cm}

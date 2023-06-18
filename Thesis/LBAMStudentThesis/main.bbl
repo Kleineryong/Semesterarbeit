@@ -54,31 +54,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Zaeh2018621}{article}{}
-    \name{author}{1}{}{%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ZM1}
-    \strng{fullhash}{ZM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.20965/ijat.2018.p0621
-    \endverb
-    \field{number}{5}
-    \field{pages}{621}
-    \field{title}{Special issue on active and passive vibration damping in
-  machine tools}
-    \field{volume}{12}
-    \field{journaltitle}{International Journal of Automation Technology}
-    \field{year}{2018}
-  \endentry
-
   \entry{Bayerlein2018}{article}{}
     \name{author}{5}{}{%
       {{hash=BF}{%
