@@ -152,7 +152,7 @@ def process_itg(intensity_dv, exposure_time):
                      -3511055.365513118, -2647879.5561356354, -496042.6119804597, 6119684.353094454]
     popt, conv = curve_fit(transfer_pv2dv, wl,
                            (intensity_dv * sens_factor / exposure_time + sens_factor_b),
-                           bounds=((-np.inf, -np.inf, 500), (np.inf, np.inf, 3000)), maxfev=100000000)
+                           bounds=((0, 500), (1, 3000)), maxfev=100000000)
     return popt
 
 
@@ -215,13 +215,13 @@ def black_body_radiation(temperature, wavelength):
 
 
 def emissivity_model(wavelength, *parameter):
-    emissivity = 0.2
+    emissivity = 1
     return emissivity
 
 
-def transfer_pv2dv(wavelength, a, b, temperature):
+def transfer_pv2dv(wavelength, a, temperature):
     # transfer physical value into digital value
-    dv = a * radiation_pv(temperature, wavelength) + b
+    dv = a * radiation_pv(temperature, wavelength)
 
     return dv
 
