@@ -17,346 +17,60 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{Kleinwort2018658}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KR}{%
-         family={Kleinwort},
-         familyi={K\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=WP}{%
-         family={Weishaupt},
-         familyi={W\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRWPZM1}
-    \strng{fullhash}{KRWPZM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.20965/ijat.2018.p0658
-    \endverb
-    \field{number}{5}
-    \field{pages}{658\bibrangedash 668}
-    \field{title}{Simulation-based dimensioning of the required actuator force
-  for active vibration control}
-    \field{volume}{12}
-    \field{journaltitle}{International Journal of Automation Technology}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Bayerlein2018}{article}{}
+  \entry{Bammer.2010}{article}{}
     \name{author}{5}{}{%
       {{hash=BF}{%
-         family={Bayerlein},
+         family={Bammer},
          familyi={B\bibinitperiod},
          given={F.},
          giveni={F\bibinitperiod},
       }}%
-      {{hash=BF}{%
-         family={Bodensteiner},
-         familyi={B\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ZC}{%
-         family={Zeller},
-         familyi={Z\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=HM}{%
-         family={Hofmann},
+      {{hash=HB}{%
+         family={Holzinger},
          familyi={H\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
       }}%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \keyw{Laser beam melting, Residual stresses, Neutron diffraction, Inconel
-  718}
-    \strng{namehash}{BFBFZCHMZM1}
-    \strng{fullhash}{BFBFZCHMZM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.addma.2018.10.024
-    \endverb
-    \field{issn}{2214-8604}
-    \field{pages}{587 \bibrangedash  594}
-    \field{title}{Transient development of residual stresses in laser beam
-  melting – A neutron diffraction study}
-    \field{volume}{24}
-    \field{journaltitle}{Additive Manufacturing}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Bayerlein2016469}{inproceedings}{}
-    \name{author}{11}{}{%
-      {{hash=BF}{%
-         family={Bayerlein},
-         familyi={B\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ZC}{%
-         family={Zeller},
-         familyi={Z\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Wunderer},
-         familyi={W\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WJ}{%
-         family={Weirather},
-         familyi={W\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Schmid},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={Seidel},
-         familyi={S\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=HR}{%
-         family={Hessert},
+      {{hash=HG}{%
+         family={Humenberger},
          familyi={H\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SG}{%
-         family={Schlick},
-         familyi={S\bibinitperiod},
          given={G.},
          giveni={G\bibinitperiod},
       }}%
-      {{hash=UT}{%
-         family={Uihlein},
-         familyi={U\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=HM}{%
-         family={Hofmann},
-         familyi={H\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BFZCWMWJSMSCZMHRSGUTHM1}
-    \strng{fullhash}{BFZCWMWJSMSCZMHRSGUTHM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.7712/100016.1829.10184
-    \endverb
-    \field{pages}{469\bibrangedash 479}
-    \field{title}{Validation of modeling assumptions for the buildup simulation
-  of laser beam melting on the basis of the residual stress distribution}
-    \field{volume}{1}
-    \field{journaltitle}{ECCOMAS Congress 2016 - Proceedings of the 7th
-  European Congress on Computational Methods in Applied Sciences and
-  Engineering}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Zaeh2018385}{article}{}
-    \name{author}{2}{}{%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Pieczona},
-         familyi={P\bibinitperiod},
-         given={S.J.},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ZMPS1}
-    \strng{fullhash}{ZMPS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1016/j.cirp.2018.04.063
-    \endverb
-    \field{number}{1}
-    \field{pages}{385\bibrangedash 388}
-    \field{title}{Adaptive inverse control of a galvanometer scanner
-  considering the structural dynamic behavior}
-    \field{volume}{67}
-    \field{journaltitle}{CIRP Annals}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Kleinwort20189}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=KR}{%
-         family={Kleinwort},
-         familyi={K\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
+      {{hash=SD}{%
+         family={Schu{\"o}cker},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
       }}%
       {{hash=ST}{%
-         family={Semm},
+         family={Schumi},
          familyi={S\bibinitperiod},
          given={T.},
          giveni={T\bibinitperiod},
       }}%
-      {{hash=FP}{%
-         family={Falger},
-         familyi={F\bibinitperiod},
-         given={P.M.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{KRSTFPZM1}
-    \strng{fullhash}{KRSTFPZM1}
+    \keyw{Bending;Diode lasers;Warm-forming}
+    \strng{namehash}{BFHBHGSDST1}
+    \strng{fullhash}{BFHBHGSDST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Physics Procedia, 5 (2010) 205-209. doi:%
+    }
     \verb{doi}
-    \verb 10.1016/j.promfg.2018.03.153
+    \verb 10.1016/j.phpro.2010.08.045
     \endverb
-    \field{pages}{9\bibrangedash 14}
-    \field{title}{Integration of an Android Application into the Learning
-  Factory for Optimized Machining}
-    \field{volume}{23}
-    \field{journaltitle}{Procedia Manufacturing}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Kleinwort2018631}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KR}{%
-         family={Kleinwort},
-         familyi={K\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=PJ}{%
-         family={Platz},
-         familyi={P\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=ZM}{%
-         family={Zaeh},
-         familyi={Z\bibinitperiod},
-         given={M.F.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRPJZM1}
-    \strng{fullhash}{KRPJZM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.20965/ijat.2018.p0631
+    \field{issn}{18753892}
+    \field{pages}{205\bibrangedash 209}
+    \field{title}{Integration of high power lasers in bending tools}
+    \field{volume}{5}
+    \verb{file}
+    \verb j.phpro.2010.08.045:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
+    \verb terarbeit\\Citavi Attachments\\j.phpro.2010.08.045.pdf:pdf
     \endverb
-    \field{number}{5}
-    \field{pages}{631\bibrangedash 641}
-    \field{title}{Adaptive active vibration control for machine tools with
-  highly position-dependent dynamics}
-    \field{volume}{12}
-    \field{journaltitle}{International Journal of Automation Technology}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Heuss2018}{online}{}
-    \name{author}{2}{}{%
-      {{hash=HL}{%
-         family={Heuss},
-         familyi={H\bibinitperiod},
-         given={L\bibnamedelima .},
-         giveni={L\bibinitperiod\bibinitdelim \bibinitperiod},
-      }}%
-      {{hash=RS}{%
-         family={Roder},
-         familyi={R\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HLRS1}
-    \strng{fullhash}{HLRS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Trends der Robotik}
-    \verb{url}
-    \verb https://www.handling.de/robotertechnik/forobotics---trends-der-roboti
-    \verb k.htm
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{10}
-    \field{urlmonth}{02}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{iwb-Startseite}{online}{}
-    \field{labeltitlesource}{title}
-    \field{title}{iwb-Startseite}
-    \verb{url}
-    \verb http://www.mw.tum.de/startseite/
-    \endverb
-    \field{urlday}{10}
-    \field{urlmonth}{02}
-    \field{urlyear}{2019}
-  \endentry
-
-  \entry{ISO.10218-2}{book}{}
-    \list{publisher}{1}{%
-      {{Beuth Verlag GmbH}}%
-    }
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.31030/1626163
-    \endverb
-    \field{subtitle}{Industrieroboter - Sicherheitsanforderungen - Teil 2:
-  Robotersysteme und Integration (ISO 10218-2:2011)}
-    \field{title}{DIN ISO EN 10218-2}
-    \list{location}{1}{%
-      {Berlin}%
-    }
-    \field{year}{2012}
+    \field{journaltitle}{Physics Procedia}
+    \field{year}{2010}
   \endentry
 \enddatalist
 \endinput

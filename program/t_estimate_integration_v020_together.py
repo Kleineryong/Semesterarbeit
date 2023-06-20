@@ -223,7 +223,7 @@ def process_itg(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((0, -1, 500), (1, 1, 4000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-1, -1, 500), (1, 1, 4000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 

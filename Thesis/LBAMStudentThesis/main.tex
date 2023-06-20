@@ -17,6 +17,14 @@
 \include{source/glossary}%
 % Custom macros
 \input{source/mymacros.tex}%
+
+% set up list of figures
+\usepackage[titles]{tocloft}
+\newlength{\mylen}
+\renewcommand{\cftfigpresnum}{\figurename\enspace}
+\settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+
+\addtolength{\cftfignumwidth}{\mylen}
 %
 \sloppy
 % Extra packages for LBAM formatting-------------------------------------------
@@ -82,6 +90,8 @@ Powder Bed fusion of Metals}
 \include{source/chapter01}%
 \include{source/chapter02}%
 \include{source/chapter03}%
+\include{source/chapter04}%
+\include{source/chapter05}%
 %
 % Appendix
 % --------
@@ -101,6 +111,7 @@ Powder Bed fusion of Metals}
 % ---------------------
 \printnoidxglossary[type=acronym,sort=standard,title={\IWBlangAcronyms}]
 %
+% \listoffigures
 %
 \end{document}%
 %
