@@ -1,7 +1,6 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
-\babel@toc {ngerman}{}
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}LaTeX-Tutorial}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Titelseite}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Zitation}{1}{section.1.2}%
