@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -17,6 +17,92 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{Frazier.2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FWE}{%
+         family={Frazier},
+         familyi={F\bibinitperiod},
+         given={William\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{Characterization and Evaluation of Materials;Corrosion and Coatings;Engineering Design;Quality control;Reliability;Safety and Risk;Tribology}
+    \strng{namehash}{FWE1}
+    \strng{fullhash}{FWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper reviews the state-of-the-art of an important, rapidly emerging, manufacturing technology that is alternatively called additive manufacturing (AM), direct digital manufacturing, free form fabrication, or 3D printing, etc. A broad contextual overview of metallic AM is provided. AM has the potential to revolutionize the global parts manufacturing and logistics landscape. It enables distributed manufacturing and the productions of parts-on-demand while offering the potential to reduce cost, energy consumption, and carbon footprint. This paper explores the material science, processes, and business consideration associated with achieving these performance gains. It is concluded that a paradigm shift is required in order to fully exploit AM potential.%
+    }
+    \verb{doi}
+    \verb 10.1007/s11665-014-0958-z
+    \endverb
+    \field{issn}{1544-1024}
+    \field{number}{6}
+    \field{pages}{1917\bibrangedash 1928}
+    \field{title}{Metal Additive Manufacturing: A Review}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s11665-014-0958-z
+    \endverb
+    \field{volume}{23}
+    \verb{file}
+    \verb Frazier 2014 - Metal Additive Manufacturing:G\:\\Uni_Files\\Semestera
+    \verb rbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Frazier 2014 -
+    \verb  Metal Additive Manufacturing.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Materials Engineering and Performance}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Swift.2013b}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=SKG}{%
+         family={Swift},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima G.},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BJD}{%
+         family={Booker},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=SKG}{%
+         family={Swift},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima G.},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BJD}{%
+         family={Booker},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SKGBJD1}
+    \strng{fullhash}{SKGBJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Manufacturing process selection handbook}
+    \verb{doi}
+    \verb 10.1016/B978-0-08-099360-7.00008-2
+    \endverb
+    \field{isbn}{9780080993607}
+    \field{pages}{227\bibrangedash 241}
+    \field{title}{Rapid Prototyping Processes}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2013}
+  \endentry
+
   \entry{Bammer.2010}{article}{}
     \name{author}{5}{}{%
       {{hash=BF}{%

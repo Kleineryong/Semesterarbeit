@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
@@ -36,48 +36,48 @@ Warning--I didn't find a database entry for "Kleinwort20189"
 Warning--I didn't find a database entry for "Kleinwort2018631"
 Warning--I didn't find a database entry for "Heuss2018"
 Warning--I didn't find a database entry for "iwb-Startseite"
-Biblatex version: 3.13
+Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 2 entries,
-            6365 wiz_defined-function locations,
-            1230 strings with 9710 characters,
-and the built_in function-call counts, 10401 in all, are:
-= -- 694
-> -- 275
-< -- 34
-+ -- 357
-- -- 143
-* -- 735
-:= -- 1464
+You've used 4 entries,
+            6399 wiz_defined-function locations,
+            1266 strings with 11314 characters,
+and the built_in function-call counts, 32671 in all, are:
+= -- 2727
+> -- 467
+< -- 89
++ -- 967
+- -- 216
+* -- 2423
+:= -- 4050
 add.period$ -- 0
-call.type$ -- 2
-change.case$ -- 7
+call.type$ -- 4
+change.case$ -- 40
 chr.to.int$ -- 46
-cite$ -- 2
-duplicate$ -- 993
-empty$ -- 800
-format.name$ -- 120
-if$ -- 2039
+cite$ -- 6
+duplicate$ -- 3045
+empty$ -- 2793
+format.name$ -- 244
+if$ -- 6512
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 76
-num.names$ -- 38
-pop$ -- 429
+newline$ -- 162
+num.names$ -- 139
+pop$ -- 1151
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 66
 quote$ -- 0
-skip$ -- 293
+skip$ -- 663
 stack$ -- 0
-substring$ -- 1209
-swap$ -- 206
-text.length$ -- 58
+substring$ -- 5440
+swap$ -- 543
+text.length$ -- 101
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 56
+type$ -- 124
 warning$ -- 0
-while$ -- 224
+while$ -- 483
 width$ -- 0
-write$ -- 75
+write$ -- 159
 (There were 8 warnings)
