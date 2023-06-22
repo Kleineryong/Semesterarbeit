@@ -20,7 +20,7 @@
                 ,view={60}{30}%
                 ,\IWBlangGerEng{/pgf/number format/use comma}{}%
                 ]%
-        \addplot3 [surf,z buffer=sort] table[x={X}, y={Y}, z={Z}] {figures/datatable3d.dat};%
+        \addplot3 [surf,z buffer=sort] table[x={X}, y={Y}, z={Z}] {figures/latex_tutorial/datatable3d.dat};%
     \end{axis}%
 \end{tikzpicture}%
 %

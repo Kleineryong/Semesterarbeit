@@ -8,28 +8,28 @@
 \contentsline {section}{\numberline {1.4}Glossar}{2}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Abbildungen}{2}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Introduction}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Laser-based Powder Bed Fusion of Metals}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Processing parameters}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Multispectral imaging}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Curve fit algorithms}{5}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Motivation of this thesis}{5}{section.2.5}%
+\contentsline {section}{\numberline {2.1}Processing parameters}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Multispectral imaging}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Curve fit algorithms}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Motivation of this thesis}{5}{section.2.4}%
 \contentsline {chapter}{\numberline {3}State of the art}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Process monitoring}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Multispectral imaging}{7}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Emissivity model}{7}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Temperature field in Laser-based Powder Bed Fusion}{7}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Virtual experiment platform}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Temperature field}{9}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Emissivity model}{9}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Physical value of radiation}{9}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Integration method}{9}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Digital value of radiation}{9}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Used model in validation}{9}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Temperature estimation algorithm}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Integration method}{11}{section.5.1}%
+\contentsline {chapter}{\numberline {4}Methodology and theory}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Physical value of radiation}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Integration method}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Digital value of radiation}{9}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Temperature estimation algorithm}{9}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Used model in validation}{9}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Validation}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Temperature field}{11}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Emissivity model}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Curve fit algorithm}{11}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Parameters in calculation}{11}{section.5.4}%
+\contentsline {section}{\numberline {5.3}Integration method}{11}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Emissivity model}{11}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Curve fit algorithm}{11}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Parameters in calculation}{11}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Calcualtion results and analysis}{13}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Calculation results}{13}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Temperature field}{13}{subsection.6.1.1}%

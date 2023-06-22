@@ -1,5 +1,5 @@
 \small%
-\pgfplotstableread{figures/datatable2d.dat}{\datatableTwoDim}%
+\pgfplotstableread{figures/latex_tutorial/datatable2d.dat}{\datatableTwoDim}%
 \begin{tikzpicture}[scale=1]%
     \begin{axis}[width = 9cm, height = 6cm, scale only axis=true%
                  ,xmin = 0%

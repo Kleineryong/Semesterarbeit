@@ -100,7 +100,81 @@
     \list{location}{1}{%
       {Amsterdam}%
     }
+    \verb{file}
+    \verb B978-0-08-099360-7 00008-2 (2):G\:\\Uni_Files\\Semesterarbeit\\Litera
+    \verb ture\\Semesterarbeit\\Citavi Attachments\\B978-0-08-099360-7 00008-2
+    \verb (2).pdf:pdf
+    \endverb
     \field{year}{2013}
+  \endentry
+
+  \entry{Kruth.1991}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJP}{%
+         family={Kruth},
+         familyi={K\bibinitperiod},
+         given={Jean\bibnamedelima Pierre},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJP1}
+    \strng{fullhash}{KJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0007-8506(07)61136-6
+    \endverb
+    \field{issn}{0007-8506}
+    \field{number}{2}
+    \field{pages}{603\bibrangedash 614}
+    \field{title}{Material Incress Manufacturing by Rapid Prototyping Techniques}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s0007850607611366
+    \endverb
+    \field{volume}{40}
+    \verb{file}
+    \verb Material Incress Manufacturing by Rapid 1991:G\:\\Uni_Files\\Semester
+    \verb arbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Material Incr
+    \verb ess Manufacturing by Rapid 1991.pdf:pdf
+    \endverb
+    \field{journaltitle}{CIRP Annals}
+    \field{year}{1991}
+  \endentry
+
+  \entry{RevillaLeon.2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RLM}{%
+         family={Revilla-Le{\'o}n},
+         familyi={R\bibinithyphendelim L\bibinitperiod},
+         given={Marta},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMJ}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Matthew\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={{\"O}zcan},
+         familyi={{\"O}\bibinitperiod},
+         given={Mutlu},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RLMMMJOM1}
+    \strng{fullhash}{RLMMMJOM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{55\bibrangedash 67}
+    \field{title}{Metal additive manufacturing technologies: literature review of current status and prosthodontic applications}
+    \verb{file}
+    \verb Metal_additive_manufacturing_technologie:G\:\\Uni_Files\\Semesterarbe
+    \verb it\\Literature\\Semesterarbeit\\Citavi Attachments\\Metal_additive_ma
+    \verb nufacturing_technologie.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Journal of Computerized Dentistry}
+    \field{year}{2019}
   \endentry
 
   \entry{Bammer.2010}{article}{}
