@@ -177,6 +177,178 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Oliveira.2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=OJ}{%
+         family={Oliver{\'i}ra},
+         familyi={O\bibinitperiod},
+         given={J.P.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={LaLonde},
+         familyi={L\bibinitperiod},
+         given={A.D.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJLAMJ1}
+    \strng{fullhash}{OJLAMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.matdes.2020.108762
+    \endverb
+    \field{issn}{0264-1275}
+    \field{pages}{108762}
+    \field{title}{Processing parameters in laser powder bed fusion metal additive manufacturing}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s0264127520302963
+    \endverb
+    \field{volume}{193}
+    \verb{file}
+    \verb Processing parameters in laser powder 2020:G\:\\Uni_Files\\Semesterar
+    \verb beit\\Literature\\Semesterarbeit\\Citavi Attachments\\Processing para
+    \verb meters in laser powder 2020.pdf:pdf
+    \endverb
+    \field{journaltitle}{Materials {\&} Design}
+    \field{year}{2020}
+  \endentry
+
+  \entry{DebRoy.2018}{article}{}
+    \name{author}{10}{}{%
+      {{hash=DT}{%
+         family={DebRoy},
+         familyi={D\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WHL}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={H.\bibnamedelima L.},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZJS}{%
+         family={Zuback},
+         familyi={Z\bibinitperiod},
+         given={J.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mukherjee},
+         familyi={M\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=EJW}{%
+         family={Elmer},
+         familyi={E\bibinitperiod},
+         given={J.\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=MJO}{%
+         family={Milewski},
+         familyi={M\bibinitperiod},
+         given={J.\bibnamedelima O.},
+         giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=BAM}{%
+         family={Beese},
+         familyi={B\bibinitperiod},
+         given={A.\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WHA}{%
+         family={Wilson-Heid},
+         familyi={W\bibinithyphendelim H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={De},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DTWHLZJSMTEJWMJOBAMWHADAZW1}
+    \strng{fullhash}{DTWHLZJSMTEJWMJOBAMWHADAZW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.pmatsci.2017.10.001
+    \endverb
+    \field{issn}{00796425}
+    \field{number}{5}
+    \field{pages}{112\bibrangedash 224}
+    \field{title}{Additive manufacturing of metallic components -- Process, structure and properties}
+    \field{volume}{92}
+    \verb{file}
+    \verb debroy2018:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
+    \verb \\Citavi Attachments\\debroy2018.pdf:pdf
+    \endverb
+    \field{journaltitle}{Progress in Materials Science}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Li.2019}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=LD}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Dian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ruikai},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Xiayun},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{in-situ;metallic additive manufacturing;Temperature measurement}
+    \strng{namehash}{LDLRZX1}
+    \strng{fullhash}{LDLRZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Additive manufacturing (AM) is important in industrial and economical domains but still lacking process accuracy. In-situ measurement and process control can offer an effective solution. In AM based on metals, the temperature field of melting pool has critical impacts on phase transformation and mechanical properties. Researchers have developed various approaches to track real-time temperature during ultrahigh temperature in AM. Nevertheless, large temperature gradient around the energy source demands a capable measurement system and method due to the limitations of the conventional infrared cameras and pyrometers. This study will explore the deficiency and improvement of the existing approaches with a focus on the cutting-edge methods of AM process temperature measurement, along with a critical thinking about the follow-up usage of the collected data. Specifically, it will report the status and trends in employing various machine learning and advanced control techniques with the in-situ sensor data for process qualification purposes.%
+    }
+    \verb{doi}
+    \verb 10.26153/TSW/17384
+    \endverb
+    \field{title}{Overview of In-Situ Temperature Measurement for Metallic Additive Manufacturing: How and then What}
+    \verb{file}
+    \verb Li, Liu et al. 2019 - Overview of In-Situ Temperature Measurement:G\:
+    \verb \\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attac
+    \verb hments\\Li, Liu et al. 2019 - Overview of In-Situ Temperature Measure
+    \verb ment.pdf:pdf
+    \endverb
+    \field{year}{2019}
+  \endentry
+
   \entry{Bammer.2010}{article}{}
     \name{author}{5}{}{%
       {{hash=BF}{%

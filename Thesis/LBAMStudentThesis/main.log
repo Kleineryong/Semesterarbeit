@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  22 JUN 2023 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  25 JUN 2023 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2126,18 +2126,18 @@ LaTeX Warning: Citation 'iwb-Startseite' on page 1 undefined on input line 21.
 
 
 {e:/Latex/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<figures/latex_tutorial/ImagePNG.png, id=278, 289.08pt x 289.08pt>
+<figures/latex_tutorial/ImagePNG.png, id=273, 289.08pt x 289.08pt>
 File: figures/latex_tutorial/ImagePNG.png Graphic file (type png)
 <use figures/latex_tutorial/ImagePNG.png>
 Package pdftex.def Info: figures/latex_tutorial/ImagePNG.png  used on input line 52.
 (pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
-<figures/latex_tutorial/ImagePDF.pdf, id=280, 284.52756pt x 284.52756pt>
+<figures/latex_tutorial/ImagePDF.pdf, id=275, 284.52756pt x 284.52756pt>
 File: figures/latex_tutorial/ImagePDF.pdf Graphic file (type pdf)
 <use figures/latex_tutorial/ImagePDF.pdf>
 Package pdftex.def Info: figures/latex_tutorial/ImagePDF.pdf  used on input line 57.
 (pdftex.def)             Requested size: 113.81102pt x 113.80899pt.
  (./figures/latex_tutorial/ImageTIKZ.tikz) (./figures/latex_tutorial/ImagePDFTEX.pdf_tex
-<figures//latex_tutorial/ImagePDFTEX.pdf, id=281, page=1, 284.52756pt x 284.52756pt>
+<figures//latex_tutorial/ImagePDFTEX.pdf, id=276, page=1, 284.52756pt x 284.52756pt>
 File: figures//latex_tutorial/ImagePDFTEX.pdf Graphic file (type pdf)
 <use figures//latex_tutorial/ImagePDFTEX.pdf, page 1>
 Package pdftex.def Info: figures//latex_tutorial/ImagePDFTEX.pdf , page1 used on input line 52.
@@ -2297,7 +2297,7 @@ Package cleveref Info: loaded `english' language definitions on input line 4.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8335FB0ADE5F33206018F39D2840F681;2748.
+(rerunfilecheck)             Checksum: 2FCEE1862E17C71BDDA425713690F379;2677.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -2308,17 +2308,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69385 strings out of 477853
- 1565653 string characters out of 5833684
- 2634915 words of memory out of 5000000
- 87982 multiletter control sequences out of 15000+600000
- 623514 words of font info for 329 fonts, out of 8000000 for 9000
+ 69447 strings out of 477853
+ 1566739 string characters out of 5833684
+ 2637942 words of memory out of 5000000
+ 87997 multiletter control sequences out of 15000+600000
+ 629515 words of font info for 360 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,19n,131p,2259b,4238s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (31 pages, 323614 bytes).
+Output written on main.pdf (31 pages, 328970 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 110946 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 121178 words of extra memory for PDF output out of 128383 (max. 10000000)
 
