@@ -8,16 +8,15 @@
 \contentsline {section}{\numberline {1.4}Glossar}{2}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Abbildungen}{2}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Introduction}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Processing parameters}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Multispectral imaging}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Curve fit algorithms}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Motivation of this thesis}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.1}Multispectral imaging}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Curve fit algorithms}{5}{section.2.2}%
 \contentsline {chapter}{\numberline {3}State of the art}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Process monitoring}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Multispectral imaging}{7}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Emissivity model}{7}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Temperature field in Laser-based Powder Bed Fusion}{7}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Methodology and theory}{9}{chapter.4}%
+\contentsline {section}{\numberline {3.5}Motivation of this thesis}{7}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Theory and methodology}{9}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Physical value of radiation}{9}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Integration method}{9}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Digital value of radiation}{9}{section.4.3}%
