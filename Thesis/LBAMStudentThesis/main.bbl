@@ -349,6 +349,116 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Hagqvist.2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HP}{%
+         family={Hagqvist},
+         familyi={H\bibinitperiod},
+         given={Petter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sikstr{\"o}m},
+         familyi={S\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CAK}{%
+         family={Christiansson},
+         familyi={C\bibinitperiod},
+         given={Anna-Karin},
+         giveni={A\bibinithyphendelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HPSFCAK1}
+    \strng{fullhash}{HPSFCAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.measurement.2012.10.019
+    \endverb
+    \field{issn}{02632241}
+    \field{number}{2}
+    \field{pages}{871\bibrangedash 880}
+    \field{title}{Emissivity estimation for high temperature radiation pyrometry on Ti--6Al--4V}
+    \field{volume}{46}
+    \verb{file}
+    \verb j.measurement.2012.10.019:G\:\\Uni_Files\\Semesterarbeit\\Literature\
+    \verb \Semesterarbeit\\Citavi Attachments\\j.measurement.2012.10.019.pdf:pd
+    \verb f
+    \endverb
+    \field{journaltitle}{Measurement}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Pixner.2021}{article}{}
+    \name{author}{6}{}{%
+      {{hash=PF}{%
+         family={Pixner},
+         familyi={P\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Buzolin},
+         familyi={B\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sch{\"o}nfelder},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Theuermann},
+         familyi={T\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Warchomicka},
+         familyi={W\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EN}{%
+         family={Enzinger},
+         familyi={E\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{Metallic Materials;Solid Mechanics;Theoretical and Applied Mechanics}
+    \strng{namehash}{PFBRSSTDWFEN1}
+    \strng{fullhash}{PFBRSSTDWFEN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The complex thermal cycles and temperature distributions observed in additive manufacturing (AM) are of particular interest as these define the microstructure and the associated properties of the part being built. Due to the intrinsic, layer-by-layer material stacking performed, contact methods to measure temperature are not suitable, and contactless methods need to be considered. Contactless infrared irradiation techniques were applied by carrying out thermal imaging and point measurement methods using pyrometers to determine the spatial and temporal temperature distribution in wire-based electron beam AM. Due to the vacuum, additional challenges such as element evaporation must be overcome and additional shielding measures were taken to avoid interference with the contactless techniques. The emissivities were calibrated by thermocouple readings and geometric boundary conditions. Thermal cycles and temperature profiles were recorded during deposition; the temperature gradients are described and the associated temperature transients are derived. In the temperature range of the \textgreek{a}+\textgreek{b} field, the cooling rates fall within the range of 180 to 350 °C/s, and the microstructural characterisation indicates an associated expected transformation of \textgreek{b}$\rightarrow$\textgreek{a}'+\textgreek{a} with corresponding cooling rates. Fine acicular \textgreek{a} and \textgreek{a}' formed and local misorientation was observed within \textgreek{a} as a result of the temperature gradient and the formation of the \textgreek{a}'.%
+    }
+    \verb{doi}
+    \verb 10.1007/s40194-021-01097-0
+    \endverb
+    \field{issn}{1878-6669}
+    \field{number}{7}
+    \field{pages}{1307\bibrangedash 1322}
+    \field{title}{Contactless temperature measurement in wire-based electron beam additive manufacturing Ti-6Al-4V}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s40194-021-01097-0
+    \endverb
+    \field{volume}{65}
+    \verb{file}
+    \verb Pixner, Buzolin et al. 2021 - Contactless temperature measurement in
+    \verb wire-based:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
+    \verb \\Citavi Attachments\\Pixner, Buzolin et al. 2021 - Contactless tempe
+    \verb rature measurement in wire-based.pdf:pdf
+    \endverb
+    \field{journaltitle}{Welding in the World}
+    \field{year}{2021}
+  \endentry
+
   \entry{Bammer.2010}{article}{}
     \name{author}{5}{}{%
       {{hash=BF}{%

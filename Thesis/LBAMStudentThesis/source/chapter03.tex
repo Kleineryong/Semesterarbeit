@@ -1,22 +1,28 @@
 % !TeX spellcheck = en_US
 \chapter{Theory and methodology}%
 As mentioned in previous sections, forming a virtual experiment platform 
-is necessary for investigation of the temperature estimation algorithm. 
+is necessary for investigating the temperature estimation algorithm. So, a virtual 
+experiment platform is developed based on Planks'law, then, a virtual multi-spectral 
+pyrometer is applied to obtain the digital value (also called image). 
 
 
-So, we are going to build a numerical experiment platform
-
-we have a temperature, and how is the platform built, which input and 
-output do we have.
-%
-%
-
-%
-%
 \section{Physical value of radiation}%
+Radiation is emitted from any object with a temperature above $0 \text{K}$. In equation \ref{eq: radiation_pv}
+can be found, that the radiation depends on the black body radiation $B(\lambda, T)$ 
+and emissivity $\varepsilon(\lambda, T)$. Both value are temperature $T$ and wavelength $\lambda$ 
+dependent.
+
+\begin{equation}
+    \label{eq: radiation_pv}
+    L(\lambda, T) = B(\lambda, T) \cdot \varepsilon (\lambda, T)
+\end{equation}
 
 %
-%
+\begin{equation}
+    \label{eq: planks_law}
+    B(\lambda, T) = \frac{{2hc^2}}{{\lambda^5}} \cdot {\left[{\exp\left(\frac{{hc}}{{\lambda k_B T}}\right) - 1}\right]}^{-1}
+\end{equation}
+
 \section{Integration method}%
 why we use integration model, we also used linear model for validation
 %
