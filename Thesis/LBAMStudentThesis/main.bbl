@@ -514,5 +514,68 @@
     \field{journaltitle}{Physics Procedia}
     \field{year}{2010}
   \endentry
+
+  \entry{Kuhn.1987}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KTS}{%
+         family={Kuhn},
+         familyi={K\bibinitperiod},
+         given={Thomas\bibnamedelima S.},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Chicago Press}}%
+    }
+    \strng{namehash}{KTS1}
+    \strng{fullhash}{KTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {\textquotedbl}A masterly assessment of the way the idea of quanta of radiation became part of 20th-century physics. . . . The book not only deals with a topic of importance and interest to all scientists, but is also a polished literary work, described (accurately) by one of its original reviewers as a scientific detective story.{\textquotedbl}---John Gribbin, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater} {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
+    }
+    \field{isbn}{9780226458007}
+    \field{title}{Black-Body Theory and the Quantum Discontinuity, 1894-1912}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Rohsenow.1998}{book}{}
+    \name{author}{3}{}{%
+      {{hash=RWM}{%
+         family={Rohsenow},
+         familyi={R\bibinitperiod},
+         given={Warren\bibnamedelima M.},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=HJP}{%
+         family={Hartnett},
+         familyi={H\bibinitperiod},
+         given={James\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=CYI}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={Young\bibnamedelima I.},
+         giveni={Y\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Mcgraw-hill New York}}%
+    }
+    \strng{namehash}{RWMHJPCYI1}
+    \strng{fullhash}{RWMHJPCYI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{0-07-053555-8}
+    \field{title}{Handbook of heat transfer}
+    \field{volume}{3}
+    \verb{file}
+    \verb Manual_de_Transferencia_de_Calor:G\:\\Uni_Files\\Semesterarbeit\\Lite
+    \verb rature\\Semesterarbeit\\Citavi Attachments\\Manual_de_Transferencia_d
+    \verb e_Calor.pdf:pdf
+    \endverb
+    \field{year}{1998}
+  \endentry
 \enddatalist
 \endinput

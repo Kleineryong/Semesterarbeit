@@ -32,26 +32,120 @@ black body radiation.
 
 On the contrary, emissivity varies from material to material. It is the 
 ratio of the actual spectral intensity emitted by the object to the spectral 
-intensity of the black body radiation.
+intensity of the black body radiation. In the study of radiation, two idealized 
+material models are generally used to describe the idealized 
+properties of radiation, namely black body and grey body. 
+
+
+Black-body material emits electromagnetic black body radiation, which is irrelevant to 
+the wavelength of the radiation and the shape of the material\cite{Kuhn.1987}. Which 
+also means the emissivity of a black body is constantly 1. It could be used to validate
+the temperature estimation algorithm in following sections.
+
+
+Unlike black-body materials, grey-body materials have an emissivity between 0 and 1.
+Not all of the thermal radiation could be emitted to the outside of the material. 
+Different from normal materials, the emissivity of a grey-body material is irrelevant
+to the wavelength of radiation.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width = 0.8\textwidth]{figures/real_radiation.jpg}
-    \caption{Black body radiation, emissivity and real radiation of an example
+    \caption{Black body radiation, emissivity and real radiation of an example normal
     material at $1000K$}
     \label{fig: black_body_radiation}
 \end{figure}
 
 
 In Fig.\ref{fig: black_body_radiation} can be found, that the real spectral 
-intensity of a material is lower than the black body spectral intensity. Since 
-the value of emissivity of a normal material is normally in the range of 0 to 1. 
+intensity of a normal material is lower than the black body spectral intensity.
+And the emissivity of the material varies with the increase of the radiation 
+wavelength.
 
-\section{Integration method}%
-why we use integration model, we also used linear model for validation
-%
-%
-\section{Digital value of radiation}%
+
+It can be seen that the construction of a reliable emissivity model is crucial to 
+the accuracy of the virtual experimental platform. It is the key component used to 
+generate the experimental data.
+
+
+
+
+\section{Virtual experiment platform}%
+After obtaining the physical spectral intensity of the material, a virtual experiment platform
+is used to transform the physical value into digital value, which simulate the 
+behavior of a real spectral pyrometer. As described in Fig.\ref{fig: virtual_platform}, a 
+camera with a lens system focused on the surface of the powder bed is resonsible 
+for obtaining spectral radiation of the heated metal powder. It can be seen from 
+Fig.\ref{fig: sensor_pixel}, each pixel of the sensor 
+contains 8 filters and thus be able to obtain 8 intensity digital values in different 
+channels. Thus, a virtual experiment platform with the same structure as the real 
+experiment platform is built.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.6\textwidth}
+        \centering
+        \includegraphics[height=4.8cm]{figures/virtual_platform.jpg}
+        \caption{Virtual experiment platform}
+        \label{fig: virtual_platform}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.37\textwidth}
+        \centering
+        \includegraphics[height=5cm]{figures/sensor_pixel.jpg}
+        \caption{Layout of a sensor pixel}
+        \label{fig: sensor_pixel}
+    \end{subfigure}
+    \caption{Structure of the virtual experiment platform and Layout of a sensor pixel}
+    \label{fig: virtual_pixel}
+\end{figure}
+
+
+\section{Camera model}
+It can be found in Fig.\ref{fig: virtual_pixel}, The thermal radiation is emitted from the surface of powder bed, and passes through 
+the lens system of the camera, finally, it reaches the sensor and be converted into 
+digital values. The simplified process can be seen in Fig.\ref{fig: view_factor}. $dA_m$ is the 
+area of the focused surface and $dA_{pixel}$ the area of the pixel in camera system, $n_m$ is the 
+normal vector of the surface.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/view_factor.jpg}
+    \caption{Radiative exchange between camera system and powder bed}
+    \label{fig: view_factor}
+\end{figure}
+
+
+Thus, the radiation intensity received by the camera system can be expressed in Eq.\ref{eq: physical_value_received}.
+Where $dL_{sensor}$ means the spectral intensity reached on each channel, $dL_{material}$
+is the spectral intensity emitted from the surface area, $\phi_{dA_m - dA_{pixel}}$ is the 
+view factor between the focused surface area and camera system.
+
+\begin{equation}
+    \label{eq: physical_value_received}
+    dL_{sensor} =  dL_{material} \cdot \phi_{dA_m - dA_{pixel}}
+\end{equation}
+
+
+The view factor describes the ratio between the emitted intensity of the surface area 
+and the received intenisty by the pixel in camera. It only relates to the shape of 
+the two surfaces and the geometric position between them\cite{Rohsenow.1998}. Since 
+in real experiments, the sensor is fixed in a certain position on the machine while the 
+surface of the powder bed does not move relatively to the machine, it can be concluded
+that the geometry of the camera system and the focused area does not change. This means that 
+the view factor does not change as the process proceeds.
+
+
+So, in order to simplify the physical model of the virtual experiment platform and 
+thus avoid unnecessary complexity, one assumption was made that the view factor between 
+surface area of the powder bed and the camera system is constantly set to 1.
+
+
+\subsection{Frequency response}
+In order to simulate real camera system, the frequency response of sensor and lens 
+should be considered.
+\subsection{Integration method}
+
 
 %
 %
