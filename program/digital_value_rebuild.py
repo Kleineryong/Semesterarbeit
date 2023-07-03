@@ -24,7 +24,7 @@ def digital_value_rebuild(emissivity_set):
     shutter_time = 200                                                          # adjust explosure time
     temperature_center = 3500                                                   # temperature of the center_area
     temperature_background = 1500                                                 # set background temperature to 50K as black body
-    melt_temperature = 1600                                                     # set melt temperature
+    melt_temperature = 3600                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
     # emissivity_set = 34                                                          # which data set is used, [0] stands for black body radiation
@@ -263,7 +263,7 @@ if 1:
     # emissivity_set = 31
     # digital_value_rebuild(emissivity_set)
 
-    emissivity_set = 32
+    emissivity_set = 0
     digital_value_rebuild(emissivity_set)
 
     # emissivity_set = 33
