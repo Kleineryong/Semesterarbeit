@@ -110,7 +110,7 @@ normal vector of the surface.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/view_factor.jpg}
+    \includegraphics[width=0.6\textwidth]{figures/view_factor.jpg}
     \caption{Radiative exchange between camera system and powder bed}
     \label{fig: view_factor}
 \end{figure}
@@ -143,7 +143,25 @@ surface area of the powder bed and the camera system is constantly set to 1.
 
 \subsection{Frequency response}
 In order to simulate real camera system, the frequency response of sensor and lens 
-should be considered.
+should be considered. In real camera systems, all spectral radiation will 
+pass through the lens system of camera. Since the lens system is not an 
+idealized system, the effect of the lens system is not negligible. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/tr_frequency_response.jpg}
+    \caption{Frequency response of the lens system}
+    \label{fig: frequency_response_lens}
+\end{figure}
+
+
+It can be found in Fig.\ref{fig: frequency_response_lens} that system gain 
+of lens system is not constant. In the wavelength range of 500 to 700 nanometers, 
+the lens is more sensitive to the radiation with long wavelength. With the 
+increasing wavelength, the system gain of the lens system keep constant at 0.853.
+
+
+
 \subsection{Integration method}
 
 

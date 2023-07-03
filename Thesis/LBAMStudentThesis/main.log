@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  29 JUN 2023 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  3 JUL 2023 21:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2263,19 +2263,25 @@ Package cleveref Info: loaded `english' language definitions on input line 110.
 File: figures/view_factor.jpg Graphic file (type jpg)
 <use figures/view_factor.jpg>
 Package pdftex.def Info: figures/view_factor.jpg  used on input line 113.
-(pdftex.def)             Requested size: 213.39568pt x 120.03157pt.
-)
+(pdftex.def)             Requested size: 256.07741pt x 144.0412pt.
+<figures/tr_frequency_response.jpg, id=391, 462.528pt x 346.896pt>
+File: figures/tr_frequency_response.jpg Graphic file (type jpg)
+<use figures/tr_frequency_response.jpg>
+Package pdftex.def Info: figures/tr_frequency_response.jpg  used on input line 152.
+(pdftex.def)             Requested size: 256.07741pt x 192.06905pt.
+Package cleveref Info: loaded `english' language definitions on input line 171.
+ [11 <./figures/view_factor.jpg>])
 Package cleveref Info: loaded `english' language definitions on input line 97.
- [11 <./figures/view_factor.jpg>]
+ [12 <./figures/tr_frequency_response.jpg>]
 \openout2 = `source/chapter04.aux'.
 
- (./source/chapter04.tex [12
+ (./source/chapter04.tex
+Chapter 5.
+) [13
 
 
 
 ]
-Chapter 5.
-) [13]
 \openout2 = `source/chapter05.aux'.
 
  (./source/chapter05.tex [14
@@ -2333,7 +2339,7 @@ Package cleveref Info: loaded `english' language definitions on input line 4.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 31C8D84A9ECDE884F206B9BAC206E6F8;2707.
+(rerunfilecheck)             Checksum: 339E849FA797B5727CA4DBAE817212B4;2707.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -2344,17 +2350,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69694 strings out of 477853
- 1571809 string characters out of 5833684
- 2646089 words of memory out of 5000000
- 88176 multiletter control sequences out of 15000+600000
- 637943 words of font info for 396 fonts, out of 8000000 for 9000
+ 69707 strings out of 477853
+ 1572169 string characters out of 5833684
+ 2646190 words of memory out of 5000000
+ 88184 multiletter control sequences out of 15000+600000
+ 638203 words of font info for 398 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,19n,131p,2259b,4240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (33 pages, 526672 bytes).
+Output written on main.pdf (33 pages, 548736 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 125294 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 125299 words of extra memory for PDF output out of 128383 (max. 10000000)
 
