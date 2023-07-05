@@ -39,45 +39,45 @@ Warning--I didn't find a database entry for "iwb-Startseite"
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 13 entries,
+You've used 14 entries,
             6399 wiz_defined-function locations,
-            1360 strings with 18384 characters,
-and the built_in function-call counts, 134393 in all, are:
-= -- 11213
-> -- 2345
-< -- 422
-+ -- 4479
-- -- 1341
-* -- 10021
-:= -- 16392
+            1368 strings with 18768 characters,
+and the built_in function-call counts, 142598 in all, are:
+= -- 11892
+> -- 2444
+< -- 442
++ -- 4662
+- -- 1387
+* -- 10681
+:= -- 17302
 add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 182
+call.type$ -- 14
+change.case$ -- 189
 chr.to.int$ -- 70
-cite$ -- 24
-duplicate$ -- 12875
-empty$ -- 11141
-format.name$ -- 1099
-if$ -- 26421
+cite$ -- 26
+duplicate$ -- 13578
+empty$ -- 11920
+format.name$ -- 1162
+if$ -- 28108
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 32
 missing$ -- 0
-newline$ -- 581
-num.names$ -- 566
-pop$ -- 4631
+newline$ -- 616
+num.names$ -- 604
+pop$ -- 4975
 preamble$ -- 1
-purify$ -- 307
+purify$ -- 320
 quote$ -- 0
-skip$ -- 2579
+skip$ -- 2743
 stack$ -- 0
-substring$ -- 22215
-swap$ -- 2204
-text.length$ -- 392
+substring$ -- 23662
+swap$ -- 2347
+text.length$ -- 414
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 430
+type$ -- 464
 warning$ -- 0
-while$ -- 1849
+while$ -- 1939
 width$ -- 0
-write$ -- 569
+write$ -- 603
 (There were 8 warnings)

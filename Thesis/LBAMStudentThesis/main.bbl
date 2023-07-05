@@ -577,5 +577,40 @@
     \endverb
     \field{year}{1998}
   \endentry
+
+  \entry{Fossum.2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FER}{%
+         family={Fossum},
+         familyi={F\bibinitperiod},
+         given={Eric\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HDB}{%
+         family={Hondongwa},
+         familyi={H\bibinitperiod},
+         given={Donald\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FERHDB1}
+    \strng{fullhash}{FERHDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/JEDS.2014.2306412
+    \endverb
+    \field{number}{3}
+    \field{pages}{33\bibrangedash 43}
+    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image Sensors}
+    \field{volume}{2}
+    \verb{file}
+    \verb Fossum, Hondongwa 2014 - A Review of the Pinned:G\:\\Uni_Files\\Semes
+    \verb terarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Fossum, Ho
+    \verb ndongwa 2014 - A Review of the Pinned.pdf:pdf
+    \endverb
+    \field{journaltitle}{IEEE Journal of the Electron Devices Society}
+    \field{year}{2014}
+  \endentry
 \enddatalist
 \endinput
