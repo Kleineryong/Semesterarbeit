@@ -161,10 +161,83 @@ the lens is more sensitive to the radiation with long wavelength. With the
 increasing wavelength, the system gain of the lens system keep constant at 0.853.
 
 
+In addition to the fact that the lens system respond differently to radiation
+with different wavelengths, the sensor of the camera also have wavelength-dependent quantum 
+efficiency. As mentioned in previous section, the acquisition of the spectral 
+intensity by the sensor for different channels is based on the filter 
+before the pixels. 
+
+
+Fig.\ref{fig: quantum_efficiency} shows the quantum efficiency 
+of the camera sensor in different channels. Unlike an ideal sensor that 
+receives only single wavelength radiation, the intensity information received 
+by a real sensor is a combination of a spectral radiation and 8 filters with 
+different frequency responses. Thus, the camera system is able to obtain the 
+spectral radiation intensity in 8 channels simutaneously. 
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{figures/quantum_efficiency.jpg}
+    \caption{Quantum efficiency of camera system in each channel}
+    \label{fig: quantum_efficiency}
+\end{figure}
+
+
+To make the virtual experiment platform more comparable to real experiments, 
+it can be concluded that it is necessary to build a camera model that 
+incorporates the effects of sensor quantum efficiency and lens transparency.
+Then, the physical value of the spectral radiation intensity could be 
+calculated accurately by the digital value of spectral radiation intensity obtained from the virtual experiment 
+platform.
+
 
 \subsection{Integration method}
+As a result, the process of converting the physical values of radiation intensity 
+into digital values needs to be accurately reproduced. Since the total efficiency 
+of the camera (${\eta}_{camera}$) was delivered by quantum efficiency (${\eta}_{quantum}$)
+of the sensor and transparency of the lens system{$\tau_{lens}$}, the mathematical
+relationship could be described in Eq.\ref{eq: cam_efficiency}.
 
 
+\begin{equation}
+    \label{eq: cam_efficiency}
+    {\eta}_{camera} = {\eta}_{quantum} \cdot \tau_{lens}
+\end{equation}
+
+
+Fig.\ref{fig: received} shows the relationship between the incoming spectral 
+radiation intensity and actual captured spectral radiation intensity 
+by the camera system. It can be found that the wavelength of the spectral 
+radiation intensity actually received by the sensor deviates from the wavelength of the 
+spectral radiation intensity it supposed to receive.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{figures/received_radiation.jpg}
+    \caption{Actual received spectral radiation intensity by channel 1 at 1000K}
+    \label{fig: received}
+\end{figure}
+
+
+Obtaining the physical value of spectral radiation intensity, the sensor is responsible 
+for transforming the physical value into digital value for upcoming proceedings.
+The camera system used in real experiment platform uses \gls{ccd} or \gls{cmos}
+as their sensors. Both sensors transform the photon flux $\phi (\lambda)$ 
+incident on the semiconfuctor into photocurrent $I_{ph}$\cite{Fossum.2014}. 
+
+\begin{equation}
+    \label{eq: principle_cmos}
+    I_{ph} = q \int_{\lambda}^{} \phi(\lambda) \cdot \eta(\lambda) d\lambda
+\end{equation}
+
+
+Eq.\ref{eq: principle_cmos} is the mathetical description of the 
+transformation. Where $\phi(\lambda)$ denotes photon flux on the sensor, 
+which is also the spectral radiation intensity on the sensor, and $\eta(\lambda)$
+denotes the quantum efficiency of the sensor. $q$ is the sensitivity parameter 
+of the sensor.
 %
 %
 

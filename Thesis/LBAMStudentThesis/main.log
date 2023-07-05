@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  3 JUL 2023 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  5 JUL 2023 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2269,39 +2269,54 @@ File: figures/tr_frequency_response.jpg Graphic file (type jpg)
 <use figures/tr_frequency_response.jpg>
 Package pdftex.def Info: figures/tr_frequency_response.jpg  used on input line 152.
 (pdftex.def)             Requested size: 256.07741pt x 192.06905pt.
-Package cleveref Info: loaded `english' language definitions on input line 171.
- [11 <./figures/view_factor.jpg>])
+Package cleveref Info: loaded `english' language definitions on input line 169.
+ [11 <./figures/view_factor.jpg>]
+<figures/quantum_efficiency.jpg, id=403, 650.43pt x 433.62pt>
+File: figures/quantum_efficiency.jpg Graphic file (type jpg)
+<use figures/quantum_efficiency.jpg>
+Package pdftex.def Info: figures/quantum_efficiency.jpg  used on input line 181.
+(pdftex.def)             Requested size: 341.43437pt x 227.62744pt.
+Package cleveref Info: loaded `english' language definitions on input line 195.
+ [12 <./figures/tr_frequency_response.jpg> <./figures/quantum_efficiency.jpg>]
+<figures/received_radiation.jpg, id=411, 650.43pt x 433.62pt>
+File: figures/received_radiation.jpg Graphic file (type jpg)
+<use figures/received_radiation.jpg>
+Package pdftex.def Info: figures/received_radiation.jpg  used on input line 218.
+(pdftex.def)             Requested size: 341.43437pt x 227.62744pt.
+)
 Package cleveref Info: loaded `english' language definitions on input line 97.
- [12 <./figures/tr_frequency_response.jpg>]
+ [13 <./figures/received_radiation.jpg>]
+Package cleveref Info: loaded `english' language definitions on input line 97.
+ [14]
 \openout2 = `source/chapter04.aux'.
 
  (./source/chapter04.tex
 Chapter 5.
-) [13
+) [15
 
 
 
 ]
 \openout2 = `source/chapter05.aux'.
 
- (./source/chapter05.tex [14
+ (./source/chapter05.tex [16
 
 
 
 ]
 Chapter 6.
-) [15]
+) [17]
 \openout2 = `source/appendixA.aux'.
 
- (./source/appendixA.tex [16
+ (./source/appendixA.tex [18
 
 
 
 ]
 Appendix A.
-) [17]
+) [19]
 Using TeX to sort glossary entries---this may take a while
-[18
+[20
 
 
 ]
@@ -2309,25 +2324,25 @@ Overfull \hbox (21.1676pt too wide) in paragraph at lines 108--112
 [] 
  []
 
-[19
+[21
 
-] [20
+] [22
 
-]
+] [23]
 Using TeX to sort glossary entries---this may take a while
-[21] [22
-
-]
+Package cleveref Info: loaded `english' language definitions on input line 117.
+[24]
 Overfull \hbox (32.30376pt too wide) in paragraph at lines 117--121
 [] 
  []
 
-[23
-
-] [24
+[25
 
 
-] [25] (./main.aux
+] [26
+
+
+] [27] (./main.aux
 Package cleveref Info: loaded `english' language definitions on input line 27.
  (./source/task.aux) (./source/abstract.aux
 Package cleveref Info: loaded `english' language definitions on input line 4.
@@ -2339,7 +2354,7 @@ Package cleveref Info: loaded `english' language definitions on input line 4.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 339E849FA797B5727CA4DBAE817212B4;2707.
+(rerunfilecheck)             Checksum: 7C5336CFC90B08489A16AA78CF99E9EB;2707.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -2350,17 +2365,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69707 strings out of 477853
- 1572169 string characters out of 5833684
- 2646190 words of memory out of 5000000
- 88184 multiletter control sequences out of 15000+600000
- 638203 words of font info for 398 fonts, out of 8000000 for 9000
+ 69786 strings out of 477853
+ 1573728 string characters out of 5833684
+ 2648749 words of memory out of 5000000
+ 88240 multiletter control sequences out of 15000+600000
+ 639112 words of font info for 407 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,19n,131p,2259b,4240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (33 pages, 548736 bytes).
+Output written on main.pdf (35 pages, 668507 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 125299 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 125309 words of extra memory for PDF output out of 128383 (max. 10000000)
 
