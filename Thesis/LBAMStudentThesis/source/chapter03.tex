@@ -243,7 +243,7 @@ Eq.\ref{eq: principle_cmos} is the mathetical description of the
 transformation. Where $\phi(\lambda)$ denotes photon flux on the sensor, 
 which is equal to the spectral radiation intensity on the sensor $L(\lambda, T)$ as 
 described in Eq.\ref{eq: quantum_flux_intensity}, and $\eta_{camera}(\lambda)$
-denotes the total efficiency of the camera. $q$ is the sensitivity parameter 
+denotes the total efficiency of the camera in Eq.\ref{eq: cam_efficiency}. $q$ is the sensitivity parameter 
 of the sensor.
 
 
@@ -251,12 +251,12 @@ of the sensor.
 Similar to the method used to obtain the digital value of spectral radiation intensity 
 in the real experiment, the virtual experiment platform calculates the 
 intensity digital value in 8 channels using the virtual camera by entering 
-the material parameters of the point being measured.
+the material properties of the point being measured.
 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{figures/camera_model.jpg}
+    \includegraphics[width=0.95\textwidth]{figures/camera_model.pdf}
     \caption{Procedure of using virtual experiment platform to generate digital values}
     \label{fig: process_virtual_platform}
 \end{figure}
@@ -273,9 +273,65 @@ computation time.
 
 
 \section{Temperature estimation algorithm}
+After obtaining the experimental data calculated by the virtual experiment platform, 
+a temperature estimation algorithm should be developed to calculate the temperature 
+of the measured point based on the experimental data.
 
 
-\section{Used model in validation}%
+Similar to the set up in real experiments, the parameters of the camera model can be 
+considered as known in the virtual experimental platform mentioned in this article. 
+This will on the one hand improve the accuracy of the temperature estimation algorithm
+and on the other hand avoid some unnecessary complexity.
+
+
+Thus, in this temperature estimation algorithm, the known variable is the digital value of 
+spectral intensity captured by camera model in virtual experiment platform, the characteristic 
+of the camera system. The variables to be estimated are the temperature of the measured point and 
+its emissivity.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/temperature_esti_algorithm.pdf}
+    \caption{Procedure of temperature estimation algorithm}
+    \label{fig: temperature_estimation_algorithm}
+\end{figure}
+
+
+Fig.\ref{fig: temperature_estimation_algorithm} shows the proceeding procedure of the 
+temperature estimation algorithm. The digital value of the spectral radiation intensity 
+in the $i_{th}$ channel should be reconstructed in Eq.\ref{eq: reconstruct_integration}:
+
+\begin{equation}
+    \label{eq: reconstruct_integration}
+    I_{DV}(i) = q \int B(\lambda, T) \cdot \varepsilon(\lambda, k, T) \cdot \eta_{camera}(i) d\lambda
+\end{equation}
+
+With $I_{DV}(i)$ the reconstructed digital value in $i_{th}$ channel, $B(\lambda, T)$ the black body radiation, 
+$\varepsilon(\lambda, k, T)$ the emissivity model in temperature estimation algorithm, 
+$\eta_{camera}(i)$ the total camera efficiency of $i_{th}$ channel. It can be found that 
+the emissivity model have an additional parameter $k$, this parameter is used for fitting 
+the emissivity behavior of the measured material. More details can be found in the following 
+section.
+
+Given an initial guess of the status parameters, namely 
+temperature($T_0$) and parameters in emissivity model($k_0$). Then, an optimization 
+algorithm is applied to minimize the difference between the reconstructed digital value $(I_{rec})$ 
+and the actual digital value $(I_{act})$ in Eq.\ref{eq: reconstruct_optimization}.
+
+\begin{equation}
+    \label{eq: reconstruct_optimization}
+    \min_{k, T}\sum_{i=1}^{8}  F(I_{rec}(i), I_{act}(i))
+\end{equation} 
+
+$F(I_{rec}(i), I_{act}(i))$ is the cost function of the curve fit algorithm. In this 
+application, Non-linear least squares method is used to obtain the optimum parameters.
+
+
+
+\section{Emissivity model in temperature estimation algorithm}%
+
+
 
 %
 %
