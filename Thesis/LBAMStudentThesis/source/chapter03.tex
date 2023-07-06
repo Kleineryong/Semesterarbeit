@@ -298,6 +298,7 @@ its emissivity.
 \end{figure}
 
 
+\subsection{Temperature estimation with integration method}
 Fig.\ref{fig: temperature_estimation_algorithm} shows the proceeding procedure of the 
 temperature estimation algorithm. The digital value of the spectral radiation intensity 
 in the $i_{th}$ channel should be reconstructed in Eq.\ref{eq: reconstruct_integration}:
@@ -314,8 +315,9 @@ the emissivity model have an additional parameter $k$, this parameter is used fo
 the emissivity behavior of the measured material. More details can be found in the following 
 section.
 
+
 Given an initial guess of the status parameters, namely 
-temperature($T_0$) and parameters in emissivity model($k_0$). Then, an optimization 
+temperature($T_0$) and parameters in emissivity model($k_0$). Then, an curve fit 
 algorithm is applied to minimize the difference between the reconstructed digital value $(I_{rec})$ 
 and the actual digital value $(I_{act})$ in Eq.\ref{eq: reconstruct_optimization}.
 
@@ -325,12 +327,36 @@ and the actual digital value $(I_{act})$ in Eq.\ref{eq: reconstruct_optimization
 \end{equation} 
 
 $F(I_{rec}(i), I_{act}(i))$ is the cost function of the curve fit algorithm. In this 
-application, Non-linear least squares method is used to obtain the optimum parameters.
+application, Non-linear least squares method is used to obtain the optimum parameters 
+as Eq.\ref{eq: least_square}.
 
+\begin{equation}
+    \label{eq: least_square}
+    F(I_{rec}(i), I_{act}(i)) = (I_{rec}(i) - I_{act}(i))^2
+\end{equation}
+
+
+After obtaining the estimated temperature ($T_{estimate}$) and the parameter ($k$) 
+in the emissivity model, the data will be saved in a .xlsx file for 
+potential operations.
+
+\subsection{Temperature estimation with linear method}
+To be done
 
 
 \section{Emissivity model in temperature estimation algorithm}%
+As an unknown quantity in the temperature estimation algorithm, the nature of emissivity 
+as a function of wavelength also introduces an additional degree of freedom 
+into the overall calculation process. In order to provide a more general description of 
+the trend of emissivity with wavelength, an additional parameter ($k$) in the 
+emissivity model used for temperature estimation has been introduced.
 
+
+Due to the inherent complexity of this trend, it is often impossible to describe 
+the emissivity using a single parameter. Therefore, the parameter ($k$) is normally 
+represented as a vector composed of multiple variables. This approach allows for both a 
+concise mathematical representation and the incorporation of more 
+intricate emissivity models into the temperature estimation algorithm.
 
 
 %
