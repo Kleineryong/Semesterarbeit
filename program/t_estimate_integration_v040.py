@@ -23,7 +23,7 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     DF_QE = pd.read_excel(os.path.join(camera_folder, "CMS22010236.xlsx"), 'QE')
     DF_T = pd.read_excel(os.path.join(camera_folder, "FIFO-Lens_tr.xls"))
 
-    t_melt = 1600
+    t_melt = 2500
 
     tr_array = np.array(DF_T).transpose()
     qe_array = []
@@ -38,8 +38,8 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity
-    t_target = t_ref
+    target = intensity[:, 0:25, 0:25]
+    t_target = t_ref[0:25, 0:25]
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))
@@ -51,9 +51,12 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     target_reshape = transfer_pos(target)
     print("Number of processors: ", mp.cpu_count())
     cal_result = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg_v030)(target_reshape[:, i], qe_array, tr_array) for i in range(len(target_reshape[0]))))
-    recalculate_index = np.where(cal_result[:, 0] > t_melt)
-    target_recalculate = target_reshape[:, recalculate_index][:, 0]
+    recalculate_index = np.where(cal_result[:, 0] > t_melt)[0]
+    target_recalculate = target_reshape[:, recalculate_index]
     cal_result_new = np.array(Parallel(n_jobs=mp.cpu_count()-1)(delayed(process_itg_v020)(target_recalculate[:, i], qe_array, tr_array) for i in range(len(target_recalculate[0]))))
+    # 报错原因：当只有一个点温度超过2600时，cal_result_new变成一维数组，由此出现索引错误。解决方法：判断cal_result_new维度
+    print(len(cal_result_new[:, 0]))
+    print(len(cal_result[recalculate_index, 0]))
     # start replacing the recalculated results
     cal_result[recalculate_index, 0] = cal_result_new[:, 0]
     cal_result[recalculate_index, 1] = cal_result_new[:, 1]
@@ -101,8 +104,8 @@ def compare(original_data, result_dir):
             df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
             emi_cal = df.to_numpy()
 
-    t_bias = (t_target - t_cal) / t_target
-    emi_bias = (emi_target - emi_cal) / emi_target
+    t_bias = (t_target[0:25, 0:25] - t_cal) / t_target[0:25, 0:25]
+    emi_bias = (emi_target[0:25, 0:25] - emi_cal) / emi_target[0:25, 0:25]
 
     ######### save fig
     # t_cal
@@ -214,13 +217,19 @@ def integration_v030(wl, f_array, qe_array, a, b, b_1, t):
 
 def emissivity_model_v030(wl, a, b, b_1):
     # lin square emi = a + b * wl**2
-    emissivity = a * wl**2 + b * wl + b_1
+    wl0 = 0.5 * 10 ** (-6)
+    wl1 = 1 * 10 ** (-6)
+    wl_rel = (wl - wl0) / (wl1 - wl0)
+    emissivity = a * wl_rel**2 + b * wl_rel + b_1
     return emissivity
 
 
 def emissivity_model_v020(wl, a, b):
     # exp emi = exp(-a - b * wl)
-    emissivity = math.exp(-a - b * wl)
+    wl0 = 0.5 * 10 ** (-6)
+    wl1 = 1 * 10 ** (-6)
+    wl_rel = (wl - wl0) / (wl1 - wl0)
+    emissivity = math.exp(-a - b * wl_rel)
     return emissivity
 
 
@@ -237,7 +246,7 @@ def process_itg_v030(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 1958.2)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 4000)), maxfev= 100000)
     return popt[3], popt[0], popt[1], popt[2]
 
 
