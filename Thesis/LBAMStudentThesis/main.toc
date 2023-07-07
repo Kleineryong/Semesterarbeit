@@ -19,8 +19,8 @@
 \contentsline {section}{\numberline {4.2}Virtual experiment platform}{10}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Camera model}{11}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Frequency response}{11}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Integration method}{13}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Implementation}{14}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.2}Integration method}{12}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Implementation}{13}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Temperature estimation algorithm}{14}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Temperature estimation with integration method}{14}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Temperature estimation with linear method}{15}{subsection.4.4.2}%

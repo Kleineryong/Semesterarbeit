@@ -116,6 +116,7 @@ normal vector of the surface.
 \end{figure}
 
 
+\begin{comment}
 Thus, the radiation intensity received by the camera system can be expressed in Eq.\ref{eq: physical_value_received}.
 Where $dL_{sensor}$ means the spectral intensity reached on each channel, $dL_{material}$
 is the spectral intensity emitted from the surface area, $\phi_{dA_m - dA_{pixel}}$ is the 
@@ -139,9 +140,15 @@ the view factor does not change as the process proceeds.
 So, in order to simplify the physical model of the virtual experiment platform and 
 thus avoid unnecessary complexity, one assumption was made that the view factor between 
 surface area of the powder bed and the camera system is constantly set to 1.
+\end{comment}
 
 
 \subsection{Frequency response}
+After obtaining the virtual experiment platform and knowing the external setup of the 
+sensor, the internal effects of the camera system should also be taken into account 
+in the complete virtual experiment platform.
+
+
 In order to simulate real camera system, the frequency response of sensor and lens 
 should be considered. In real camera systems, all spectral radiation will 
 pass through the lens system of camera. Since the lens system is not an 
@@ -300,12 +307,13 @@ its emissivity.
 
 \subsection{Temperature estimation with integration method}
 Fig.\ref{fig: temperature_estimation_algorithm} shows the proceeding procedure of the 
-temperature estimation algorithm. The digital value of the spectral radiation intensity 
+temperature estimation algorithm. The digital value of the spectral radiation intensity
+$(I_{rec}(i))$ 
 in the $i_{th}$ channel should be reconstructed in Eq.\ref{eq: reconstruct_integration}:
 
 \begin{equation}
     \label{eq: reconstruct_integration}
-    I_{DV}(i) = q \int B(\lambda, T) \cdot \varepsilon(\lambda, k, T) \cdot \eta_{camera}(i) d\lambda
+    I_{rec}(i) = q \int B(\lambda, T) \cdot \varepsilon(\lambda, k, T) \cdot \eta_{camera}(i) d\lambda
 \end{equation}
 
 With $I_{DV}(i)$ the reconstructed digital value in $i_{th}$ channel, $B(\lambda, T)$ the black body radiation, 

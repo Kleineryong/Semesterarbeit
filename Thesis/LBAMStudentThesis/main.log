@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  6 JUL 2023 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  7 JUL 2023 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1647,6 +1647,11 @@ Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count603
 Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count604
+) (e:/Latex/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks74
+\verbatim@line=\toks75
+\verbatim@in@stream=\read6
 )
 \@input{source/abbreviations.aux}
 \openout2 = `source/abbreviations.aux'.
@@ -1703,36 +1708,36 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./main.aux (./source/task.aux) (./source/abstract.aux) (./source/latex_tutorial.aux) (./source/chapter01.aux) (./source/chapter02.aux) (./source/chapter03.aux) (./source/chapter04.aux) (./source/chapter05.aux) (./source/appendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 40.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 40.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 40.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (e:/Latex/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count607
@@ -1740,12 +1745,12 @@ LaTeX Font Info:    ... okay on input line 39.
 \scratchbox=\box97
 \nofMPsegments=\count608
 \nofMParguments=\count609
-\everyMPshowfont=\toks74
+\everyMPshowfont=\toks76
 \MPscratchCnt=\count610
 \MPscratchDim=\dimen340
 \MPnumerator=\count611
 \makeMPintoPDFobject=\count612
-\everyMPtoPDFconversion=\toks75
+\everyMPtoPDFconversion=\toks77
 ) (e:/Latex/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1760,11 +1765,11 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 (e:/Latex/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 39.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 40.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 39.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1830,9 +1835,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 39.
-Package biblatex Info: Reference segment=0 on input line 39.
-Package soulpos Info: Loading soulutf8 on input line 39.
+Package biblatex Info: Reference section=0 on input line 40.
+Package biblatex Info: Reference segment=0 on input line 40.
+Package soulpos Info: Loading soulutf8 on input line 40.
  (e:/Latex/texlive/2023/texmf-dist/tex/generic/soul/soulutf8.sty
 Package: soulutf8 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
 
@@ -1845,12 +1850,12 @@ Package soulutf8 Warning: This package is obsolete,
 Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
  (e:/Latex/texlive/2023/texmf-dist/tex/generic/soul/soul-ori.sty
 Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
-\SOUL@word=\toks76
-\SOUL@lasttoken=\toks77
-\SOUL@syllable=\toks78
-\SOUL@cmds=\toks79
-\SOUL@buffer=\toks80
-\SOUL@token=\toks81
+\SOUL@word=\toks78
+\SOUL@lasttoken=\toks79
+\SOUL@syllable=\toks80
+\SOUL@cmds=\toks81
+\SOUL@buffer=\toks82
+\SOUL@token=\toks83
 \SOUL@syllgoal=\dimen341
 \SOUL@syllwidth=\dimen342
 \SOUL@charkern=\dimen343
@@ -1866,7 +1871,7 @@ Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen348
 \SOUL@ulht=\dimen349
 ))
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
  (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1878,19 +1883,19 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 39.
-Package microtype Info: Applying patch `item' on input line 39.
-Package microtype Info: Applying patch `toc' on input line 39.
-Package microtype Info: Applying patch `eqnum' on input line 39.
-Package microtype Info: Applying patch `footnote' on input line 39.
-Package microtype Info: Applying patch `verbatim' on input line 39.
+LaTeX Info: Redefining \microtypecontext on input line 40.
+Package microtype Info: Applying patch `item' on input line 40.
+Package microtype Info: Applying patch `toc' on input line 40.
+Package microtype Info: Applying patch `eqnum' on input line 40.
+Package microtype Info: Applying patch `footnote' on input line 40.
+Package microtype Info: Applying patch `verbatim' on input line 40.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 39.
+LaTeX Info: Redefining \showhyphens on input line 40.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1898,112 +1903,112 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.50546pt on input line 70.
+(Font)              scaled to size 7.50546pt on input line 71.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.6688pt on input line 70.
+(Font)              scaled to size 9.6688pt on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.6688pt on input line 70.
+(Font)              scaled to size 9.6688pt on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 21.1919pt on input line 70.
+(Font)              scaled to size 21.1919pt on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 17.65991pt on input line 70.
+(Font)              scaled to size 17.65991pt on input line 71.
 
-Underfull \hbox (badness 4132) in paragraph at lines 70--70
+Underfull \hbox (badness 4132) in paragraph at lines 71--71
 \T1/phv/b/n/20 (+20) fahrens zur Tem-per-aturbes-tim-mung auf einer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 \T1/phv/b/n/20 (+20) basierten Pulverbett-Schmelzverfahren von
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.59595pt on input line 70.
+(Font)              scaled to size 10.59595pt on input line 71.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 14.12793pt on input line 70.
-LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 70.
+(Font)              scaled to size 14.12793pt on input line 71.
+LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line 71.
 (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
-LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
+LaTeX Font Info:    Trying to load font information for OML+mdbch on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 70.
-LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
+LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
-LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
+LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 11.31592pt on input line 70.
+(Font)              scaled to size 11.31592pt on input line 71.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 7.54395pt on input line 70.
+(Font)              scaled to size 7.54395pt on input line 71.
 LaTeX Font Info:    Font shape `OMS/xmdcmsy/m/n' will be
-(Font)              scaled to size 5.65796pt on input line 70.
+(Font)              scaled to size 5.65796pt on input line 71.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
-LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
+LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
-LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
+LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 70.
+(Font)              scaled to size 11.52008pt on input line 71.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 71.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 70.
+(Font)              scaled to size 5.76004pt on input line 71.
  (e:/Latex/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.59595pt on input line 70.
+(Font)              scaled to size 10.59595pt on input line 71.
 
-Overfull \hbox (5.19676pt too wide) in paragraph at lines 70--70
+Overfull \hbox (5.19676pt too wide) in paragraph at lines 71--71
 [] 
  []
 
@@ -2060,7 +2065,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 63--77
  []
 
 )
-Overfull \hbox (24.0pt too wide) in paragraph at lines 79--76
+Overfull \hbox (24.0pt too wide) in paragraph at lines 79--77
 [][] 
  []
 
@@ -2086,10 +2091,10 @@ Package cleveref Info: loaded `english' language definitions on input line 3.
 \openout7 = `main.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 84.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 85.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.6688pt on input line 84.
-Package cleveref Info: loaded `english' language definitions on input line 84.
+(Font)              scaled to size 9.6688pt on input line 85.
+Package cleveref Info: loaded `english' language definitions on input line 85.
  [8]
 \openout2 = `source/latex_tutorial.aux'.
 
@@ -2207,7 +2212,7 @@ Package pgfplots info on input line 24: Overriding colorspace to rgb due to xcol
 )
 Package cleveref Info: loaded `english' language definitions on input line 90.
  [2 <./figures/latex_tutorial/ImagePNG.png> <./figures/latex_tutorial/ImagePDF.pdf> <./figures//latex_tutorial/ImagePDFTEX.pdf>])
-Package cleveref Info: loaded `english' language definitions on input line 94.
+Package cleveref Info: loaded `english' language definitions on input line 95.
  [3{e:/Latex/texlive/2023/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}]
 \openout2 = `source/chapter01.aux'.
 
@@ -2263,46 +2268,45 @@ File: figures/view_factor.jpg Graphic file (type jpg)
 <use figures/view_factor.jpg>
 Package pdftex.def Info: figures/view_factor.jpg  used on input line 113.
 (pdftex.def)             Requested size: 256.07741pt x 144.0412pt.
-<figures/tr_frequency_response.jpg, id=406, 462.528pt x 346.896pt>
+<figures/tr_frequency_response.jpg, id=404, 462.528pt x 346.896pt>
 File: figures/tr_frequency_response.jpg Graphic file (type jpg)
 <use figures/tr_frequency_response.jpg>
-Package pdftex.def Info: figures/tr_frequency_response.jpg  used on input line 152.
+Package pdftex.def Info: figures/tr_frequency_response.jpg  used on input line 159.
 (pdftex.def)             Requested size: 256.07741pt x 192.06905pt.
 Package cleveref Info: loaded `english' language definitions on input line 169.
- [11 <./figures/view_factor.jpg>]
-<figures/quantum_efficiency.jpg, id=418, 650.43pt x 433.62pt>
+ [11 <./figures/view_factor.jpg> <./figures/tr_frequency_response.jpg>]
+<figures/quantum_efficiency.jpg, id=414, 650.43pt x 433.62pt>
 File: figures/quantum_efficiency.jpg Graphic file (type jpg)
 <use figures/quantum_efficiency.jpg>
-Package pdftex.def Info: figures/quantum_efficiency.jpg  used on input line 181.
+Package pdftex.def Info: figures/quantum_efficiency.jpg  used on input line 188.
 (pdftex.def)             Requested size: 341.43437pt x 227.62744pt.
-Package cleveref Info: loaded `english' language definitions on input line 195.
- [12 <./figures/tr_frequency_response.jpg> <./figures/quantum_efficiency.jpg>]
-<figures/received_radiation.jpg, id=426, 650.43pt x 433.62pt>
+<figures/received_radiation.jpg, id=417, 650.43pt x 433.62pt>
 File: figures/received_radiation.jpg Graphic file (type jpg)
 <use figures/received_radiation.jpg>
-Package pdftex.def Info: figures/received_radiation.jpg  used on input line 218.
+Package pdftex.def Info: figures/received_radiation.jpg  used on input line 225.
 (pdftex.def)             Requested size: 341.43437pt x 227.62744pt.
-Package cleveref Info: loaded `english' language definitions on input line 250.
- [13 <./figures/received_radiation.jpg>]
+Package cleveref Info: loaded `english' language definitions on input line 236.
+ [12 <./figures/quantum_efficiency.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./figures/camera_model.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<figures/camera_model.pdf, id=444, 963.6pt x 203.1319pt>
+<figures/camera_model.pdf, id=431, 963.6pt x 203.1319pt>
 File: figures/camera_model.pdf Graphic file (type pdf)
 <use figures/camera_model.pdf>
-Package pdftex.def Info: figures/camera_model.pdf  used on input line 259.
+Package pdftex.def Info: figures/camera_model.pdf  used on input line 266.
 (pdftex.def)             Requested size: 405.45047pt x 85.46979pt.
-
+Package cleveref Info: loaded `english' language definitions on input line 286.
+[13 <./figures/received_radiation.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./figures/temperature_esti_algorithm.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.4> allowed
-<figures/temperature_esti_algorithm.pdf, id=446, 963.11166pt x 306.16382pt>
+<figures/temperature_esti_algorithm.pdf, id=443, 963.11166pt x 306.16382pt>
 File: figures/temperature_esti_algorithm.pdf Graphic file (type pdf)
 <use figures/temperature_esti_algorithm.pdf>
-Package pdftex.def Info: figures/temperature_esti_algorithm.pdf  used on input line 295.
+Package pdftex.def Info: figures/temperature_esti_algorithm.pdf  used on input line 302.
 (pdftex.def)             Requested size: 405.45047pt x 128.8869pt.
-Package cleveref Info: loaded `english' language definitions on input line 317.
-[14 <./figures/camera_model.pdf>])
-Package cleveref Info: loaded `english' language definitions on input line 97.
- [15 <./figures/temperature_esti_algorithm.pdf>]
+Package cleveref Info: loaded `english' language definitions on input line 331.
+[14 <./figures/camera_model.pdf> <./figures/temperature_esti_algorithm.pdf>])
+Package cleveref Info: loaded `english' language definitions on input line 98.
+ [15]
 \openout2 = `source/chapter04.aux'.
 
  (./source/chapter04.tex [16
@@ -2335,7 +2339,7 @@ Using TeX to sort glossary entries---this may take a while
 
 
 ]
-Overfull \hbox (21.1676pt too wide) in paragraph at lines 108--112
+Overfull \hbox (21.1676pt too wide) in paragraph at lines 109--113
 [] 
  []
 
@@ -2343,16 +2347,16 @@ Overfull \hbox (21.1676pt too wide) in paragraph at lines 108--112
 
 ] [24
 
-] [25]
+]
 Using TeX to sort glossary entries---this may take a while
-Package cleveref Info: loaded `english' language definitions on input line 117.
-[26]
-Overfull \hbox (32.30376pt too wide) in paragraph at lines 117--121
+[25] [26
+
+]
+Overfull \hbox (32.30376pt too wide) in paragraph at lines 118--122
 [] 
  []
 
 [27
-
 
 ] [28
 
@@ -2380,17 +2384,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69830 strings out of 477853
- 1574882 string characters out of 5833684
- 2648432 words of memory out of 5000000
- 88267 multiletter control sequences out of 15000+600000
- 639339 words of font info for 410 fonts, out of 8000000 for 9000
+ 69859 strings out of 477853
+ 1575516 string characters out of 5833684
+ 2648311 words of memory out of 5000000
+ 88298 multiletter control sequences out of 15000+600000
+ 638164 words of font info for 408 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,19n,131p,2259b,4240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (37 pages, 738853 bytes).
+Output written on main.pdf (37 pages, 736577 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  125343 words of extra memory for PDF output out of 128383 (max. 10000000)
 
