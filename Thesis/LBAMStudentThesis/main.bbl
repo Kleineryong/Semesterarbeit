@@ -539,45 +539,6 @@
     \field{year}{1987}
   \endentry
 
-  \entry{Rohsenow.1998}{book}{}
-    \name{author}{3}{}{%
-      {{hash=RWM}{%
-         family={Rohsenow},
-         familyi={R\bibinitperiod},
-         given={Warren\bibnamedelima M.},
-         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=HJP}{%
-         family={Hartnett},
-         familyi={H\bibinitperiod},
-         given={James\bibnamedelima P.},
-         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=CYI}{%
-         family={Cho},
-         familyi={C\bibinitperiod},
-         given={Young\bibnamedelima I.},
-         giveni={Y\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{Mcgraw-hill New York}}%
-    }
-    \strng{namehash}{RWMHJPCYI1}
-    \strng{fullhash}{RWMHJPCYI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{0-07-053555-8}
-    \field{title}{Handbook of heat transfer}
-    \field{volume}{3}
-    \verb{file}
-    \verb Manual_de_Transferencia_de_Calor:G\:\\Uni_Files\\Semesterarbeit\\Lite
-    \verb rature\\Semesterarbeit\\Citavi Attachments\\Manual_de_Transferencia_d
-    \verb e_Calor.pdf:pdf
-    \endverb
-    \field{year}{1998}
-  \endentry
-
   \entry{Fossum.2014}{article}{}
     \name{author}{2}{}{%
       {{hash=FER}{%

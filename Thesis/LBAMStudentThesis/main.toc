@@ -19,26 +19,28 @@
 \contentsline {section}{\numberline {4.2}Virtual experiment platform}{10}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Camera model}{11}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Frequency response}{11}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Integration method}{13}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Implementation}{14}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.2}Integration method}{12}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Implementation}{13}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Temperature estimation algorithm}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Used model in validation}{14}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Validation}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Temperature field}{15}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Emissivity model}{15}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Integration method}{15}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Emissivity model used for calculation}{15}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Curve fit algorithm}{15}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Parameters in calculation}{15}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Calcualtion results and analysis}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Calculation results}{17}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Temperature field}{17}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Emissivity field}{17}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Data analysis}{17}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Sensitivity analysis of emissivity models}{17}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Performance between different materials}{17}{subsection.6.2.2}%
-\contentsline {chapter}{\numberline {A}Appendices}{19}{appendix.A}%
-\contentsline {chapter}{Glossary}{21}{section*.14}%
-\contentsline {chapter}{Bibliography}{23}{appendix*.16}%
-\contentsline {chapter}{List of Abbreviations}{25}{section*.17}%
+\contentsline {subsection}{\numberline {4.4.1}Temperature estimation with integration method}{14}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Temperature estimation with linear method}{15}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Emissivity model in temperature estimation algorithm}{15}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Validation}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Temperature field}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Emissivity model}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Integration method}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Emissivity model used for calculation}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Curve fit algorithm}{17}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Parameters in calculation}{17}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Calcualtion results and analysis}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Calculation results}{19}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Temperature field}{19}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Emissivity field}{19}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Data analysis}{19}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Sensitivity analysis of emissivity models}{19}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Performance between different materials}{19}{subsection.6.2.2}%
+\contentsline {chapter}{\numberline {A}Appendices}{21}{appendix.A}%
+\contentsline {chapter}{Glossary}{23}{section*.15}%
+\contentsline {chapter}{Bibliography}{25}{appendix*.17}%
+\contentsline {chapter}{List of Abbreviations}{27}{section*.18}%
 \contentsfinish 
