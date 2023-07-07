@@ -23,7 +23,7 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     DF_QE = pd.read_excel(os.path.join(camera_folder, "CMS22010236.xlsx"), 'QE')
     DF_T = pd.read_excel(os.path.join(camera_folder, "FIFO-Lens_tr.xls"))
 
-    t_melt = 2500
+    t_melt = 2400
 
     tr_array = np.array(DF_T).transpose()
     qe_array = []
@@ -317,45 +317,45 @@ if 1:
     # compare(data_name, result_dir)
     # print(data_name, 'finished')
 
-    result_dir = 'result_v040_lin_square_exp'
-    data_temperature = '3500'
-    emissivity_set = '21'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
-
-    result_dir = 'result_v040_lin_square_exp'
-    data_temperature = '3500'
-    emissivity_set = '22'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
-
-    result_dir = 'result_v040_lin_square_exp'
-    data_temperature = '3500'
-    emissivity_set = '23'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
-
-    result_dir = 'result_v040_lin_square_exp'
-    data_temperature = '3500'
-    emissivity_set = '24'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
-
-    result_dir = 'result_v040_lin_square_exp'
-    data_temperature = '3500'
-    emissivity_set = '25'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-    print(data_name, 'finished')
+    # result_dir = 'result_v040_lin_square_exp'
+    # data_temperature = '3500'
+    # emissivity_set = '21'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
+    #
+    # result_dir = 'result_v040_lin_square_exp'
+    # data_temperature = '3500'
+    # emissivity_set = '22'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
+    #
+    # result_dir = 'result_v040_lin_square_exp'
+    # data_temperature = '3500'
+    # emissivity_set = '23'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
+    #
+    # result_dir = 'result_v040_lin_square_exp'
+    # data_temperature = '3500'
+    # emissivity_set = '24'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
+    #
+    # result_dir = 'result_v040_lin_square_exp'
+    # data_temperature = '3500'
+    # emissivity_set = '25'
+    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
+    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
+    # compare(data_name, result_dir)
+    # print(data_name, 'finished')
 
     result_dir = 'result_v040_lin_square_exp'
     data_temperature = '3500'
