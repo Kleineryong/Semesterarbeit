@@ -92,7 +92,7 @@ experiment platform is built.
     \hfill
     \begin{subfigure}{0.37\textwidth}
         \centering
-        \includegraphics[height=5cm]{figures/sensor_pixel.jpg}
+        \includegraphics[height=5cm]{figures/sensor_pixel.pdf}
         \caption{Layout of a sensor pixel}
         \label{fig: sensor_pixel}
     \end{subfigure}
@@ -104,7 +104,7 @@ experiment platform is built.
 \section{Camera model}
 It can be found in Fig.\ref{fig: virtual_pixel}, The thermal radiation is emitted from the surface of powder bed, and passes through 
 the lens system of the camera, finally, it reaches the sensor and be converted into 
-digital values. The simplified process can be seen in Fig.\ref{fig: view_factor}. $dA_m$ is the 
+digital values. The simplified process can be seen in Fig.\ref{fig: view_factor}. As $dA_m$ is the 
 area of the focused surface and $dA_{pixel}$ the area of the pixel in camera system, $n_m$ is the 
 normal vector of the surface.
 
@@ -203,7 +203,7 @@ platform.
 As a result, the process of converting the physical values of radiation intensity 
 into digital values needs to be accurately reproduced. Since the total efficiency 
 of the camera (${\eta}_{camera}$) was delivered by quantum efficiency (${\eta}_{quantum}$)
-of the sensor and transparency of the lens system{$\tau_{lens}$}, the mathematical
+of the sensor and transparency of the lens system ($\tau_{lens}$), the mathematical
 relationship could be described in Eq.\ref{eq: cam_efficiency}.
 
 
@@ -305,7 +305,6 @@ its emissivity.
 \end{figure}
 
 
-\subsection{Temperature estimation with integration method}
 Fig.\ref{fig: temperature_estimation_algorithm} shows the proceeding procedure of the 
 temperature estimation algorithm. The digital value of the spectral radiation intensity
 $(I_{rec}(i))$ 
@@ -347,9 +346,6 @@ as Eq.\ref{eq: least_square}.
 After obtaining the estimated temperature ($T_{estimate}$) and the parameter ($k$) 
 in the emissivity model, the data will be saved in a .xlsx file for 
 potential operations.
-
-\subsection{Temperature estimation with linear method}
-To be done
 
 
 \section{Emissivity model in temperature estimation algorithm}%
