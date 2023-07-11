@@ -23,7 +23,7 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     DF_QE = pd.read_excel(os.path.join(camera_folder, "CMS22010236.xlsx"), 'QE')
     DF_T = pd.read_excel(os.path.join(camera_folder, "FIFO-Lens_tr.xls"))
 
-    t_melt = 2500
+    t_melt = 1700
 
     tr_array = np.array(DF_T).transpose()
     qe_array = []
@@ -38,8 +38,8 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
         intensity.append(pd.read_excel(os.path.join(experiment_folder, ('digital_value_' + data_temperature + '.xlsx')), 'channel_' + str(i), header=None))
     t_ref = np.array(pd.read_excel(os.path.join(experiment_folder, 't_field_' + data_temperature + '.xlsx'), header=None))
     intensity = np.array(intensity)
-    target = intensity[:, 0:25, 0:25]
-    t_target = t_ref[0:25, 0:25]
+    target = intensity
+    t_target = t_ref
     t_map = np.zeros((len(target[0]), len(target[0, 0])))
     Ea_map = np.zeros((len(target[0]), len(target[0, 0])))
     Eb_map = np.zeros((len(target[0]), len(target[0, 0])))
@@ -104,8 +104,8 @@ def compare(original_data, result_dir):
             df = pd.read_excel(os.path.join(cal_data_address, file), header=None)
             emi_cal = df.to_numpy()
 
-    t_bias = (t_target[0:25, 0:25] - t_cal) / t_target[0:25, 0:25]
-    emi_bias = (emi_target[0:25, 0:25] - emi_cal) / emi_target[0:25, 0:25]
+    t_bias = (t_target - t_cal) / t_target
+    emi_bias = (emi_target - emi_cal) / emi_target
 
     ######### save fig
     # t_cal
