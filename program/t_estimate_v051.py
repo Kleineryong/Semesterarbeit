@@ -200,9 +200,6 @@ def emissivity_model(wl, a, b):
     # exp emi = exp(-a - b * wl)
     # emissivity = math.exp(a - b * wl_rel)
 
-    # maxwell
-    # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
-
     return max(0, min(1, emissivity))
 
 

@@ -50,7 +50,7 @@ def main():
 
 
     ax1.set_xlabel('Wavelength[nm]')
-    ax1.set_ylabel('Intensity[' + r'$Wm^{-3}sr^{-1}m^{-1}$' + ']')
+    ax1.set_ylabel('Intensity[' + r'$Wm^{-2}sr^{-1}m^{-1}$' + ']')
     ax2.set_ylabel('emissivity')
     ax2.set_ylim(0, 1)
 

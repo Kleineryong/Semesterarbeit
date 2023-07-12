@@ -59,14 +59,14 @@ def camera_frequency_response():
     color1 = 'tab:red'
     ax1.set_xlabel('Wavelength[nm]')
     ax1.set_ylabel('Camera efficiency', color=color1)
-    ax1.plot(x, y1, color=color1)
+    ax1.plot(x[:-1], y1[:-1], color=color1)
     ax1.tick_params(axis='y', labelcolor=color1)
 
     # 创建第二个坐标轴并绘制第二个数据集
     ax2 = ax1.twinx()
     color2 = 'tab:blue'
     ax2.set_ylabel('Incoming radiation', color=color2)
-    ax2.plot(x, y2, color=color2)
+    ax2.plot(x[:-1], y2[:-1], color=color2)
     ax2.tick_params(axis='y', labelcolor=color2)
 
     # 创建第三个坐标轴并绘制第三个数据集
@@ -74,7 +74,7 @@ def camera_frequency_response():
     color3 = 'tab:green'
     ax3.spines['right'].set_position(('outward', 60))  # 将第三个坐标轴移动到右侧
     ax3.set_ylabel('Received radiation', color=color3)
-    ax3.plot(x, y3, color=color3)
+    ax3.plot(x[:-1], y3[:-1], color=color3)
     ax3.tick_params(axis='y', labelcolor=color3)
 
     # 调整图的布局
