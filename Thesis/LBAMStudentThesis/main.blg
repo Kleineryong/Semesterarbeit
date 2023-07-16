@@ -28,6 +28,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: literature/literature.bib
+Warning--I'm ignoring Taunay.2020b's extra "file" field
+--line 1077 of file literature/literature.bib
 Warning--I didn't find a database entry for "Bayerlein2018"
 Warning--I didn't find a database entry for "Bayerlein2016469"
 Warning--I didn't find a database entry for "Zaeh2018385"
@@ -39,45 +41,45 @@ Warning--I didn't find a database entry for "iwb-Startseite"
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 13 entries,
+You've used 15 entries,
             6399 wiz_defined-function locations,
-            1360 strings with 18465 characters,
-and the built_in function-call counts, 130876 in all, are:
-= -- 10848
-> -- 2296
-< -- 399
-+ -- 4367
-- -- 1326
-* -- 9771
-:= -- 15981
+            1381 strings with 20742 characters,
+and the built_in function-call counts, 148390 in all, are:
+= -- 12292
+> -- 2522
+< -- 443
++ -- 4820
+- -- 1429
+* -- 11165
+:= -- 17986
 add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 161
+call.type$ -- 15
+change.case$ -- 175
 chr.to.int$ -- 70
-cite$ -- 24
-duplicate$ -- 12606
-empty$ -- 10882
-format.name$ -- 1079
-if$ -- 25685
+cite$ -- 28
+duplicate$ -- 14230
+empty$ -- 12471
+format.name$ -- 1224
+if$ -- 29229
 int.to.chr$ -- 0
-int.to.str$ -- 29
+int.to.str$ -- 33
 missing$ -- 0
-newline$ -- 577
-num.names$ -- 543
-pop$ -- 4588
+newline$ -- 657
+num.names$ -- 619
+pop$ -- 5292
 preamble$ -- 1
-purify$ -- 283
+purify$ -- 312
 quote$ -- 0
-skip$ -- 2521
+skip$ -- 2865
 stack$ -- 0
-substring$ -- 21450
-swap$ -- 2178
-text.length$ -- 387
+substring$ -- 24412
+swap$ -- 2493
+text.length$ -- 436
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 430
+type$ -- 498
 warning$ -- 0
-while$ -- 1815
+while$ -- 2029
 width$ -- 0
-write$ -- 565
-(There were 8 warnings)
+write$ -- 643
+(There were 9 warnings)
