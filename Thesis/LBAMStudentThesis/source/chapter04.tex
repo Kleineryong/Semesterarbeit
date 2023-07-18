@@ -291,7 +291,7 @@ emitted from the hypothetical material.
       \label{fig: emi_34}
     \end{subfigure}
     
-    \caption{Emissivity models in virtual experiment platform. (\subref{fig: emi_0}), 
+    \caption{Raw emissivity data used in virtual experiment platform. (\subref{fig: emi_0}), 
     (\subref{fig: emi_1}) are black body and gray body; (\subref{fig: emi_21}) - (\subref{fig: emi_26})
     are hypothetical materials\cite{Wang.2021b}; (\subref{fig: emi_31}) - 
     (\subref{fig: emi_34}) are real materials\cite{Taunay.2020b}.}
@@ -300,11 +300,91 @@ emitted from the hypothetical material.
 
 
 Since the emissivity of metal powder is wavelength ($\lambda$) and temperature 
-($T$) relevant, the emissivity model used in this virtual experiment platform 
-is based on real emissivity data obtained from literature\parencite{Wang.2021b,Taunay.2020b}. 
+($T$) relevant, the emissivity model in this virtual experiment platform is 
+formed based on the Eq.\ref{eq: emissivity}. 
 
 
-\subsection{Integration method}
+\begin{equation}
+  \label{eq: emissivity}
+  \varepsilon(\lambda, T) = \varepsilon _{raw}(\lambda) \cdot K_T(T)
+\end{equation}
+
+
+The raw emissivity data $\varepsilon_{raw}(\lambda)$ in Fig.\ref{fig: emi_model}
+are obtained by Wang et al.\cite{Wang.2021b} and Taunay et 
+al.\cite{Taunay.2020b}. These data sets could be used to simulate the 
+radiation behavior of various hypothetical materials.
+
+
+After obtaining the raw data on the relationship between emissivity 
+and wavelength, the dependence of emissivity on temperature is characterised
+as a temperature factor $K_T(T)$ in Eq.\ref{eq: k_t}.
+
+\begin{equation}
+  \label{eq: k_t}
+  K_T(T)=\begin{cases}
+    1 - T_{ref} \cdot 0.2 &   T<T_{melt}\\
+    \left(1 - T_{ref} \cdot 0.2 \right) \cdot 0.1 &  T\geq T_{melt}
+  \end{cases}
+\end{equation}
+
+
+With 
+
+\begin{equation}
+  \label{eq: t_ref}
+  T_{ref}=\frac{T - T_{lb}}{T_{ub} - T_{lb}}
+\end{equation}
+
+
+This temperature factor describes the tendency 
+of emissivity to decrease with increasing temperature between $T_{lb}$ and $T_{ub}$, 
+on the other hand, it also describes the change of emissivity due to the 
+phase change of the hypothetical material that occurs at melting 
+temperature $T_{melt}$.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/emissivity_model.jpg}
+  \caption{Emissivity value along wavelength and temperature calculated from model 9}
+  \label{fig: emissivity_model}
+\end{figure}
+
+
+Fig.\ref{fig: emissivity_model} shows the emissivity model based 
+on model 9 in different temperature 
+and wavelength. It can be found that the emissivity at a temperature 
+below melting temperature ($1700K$) varies significantly with wavelength.
+This is caused due to the raw emissivity data. Then, at liquid phase of 
+the hypothetical material, emissivity decreases to a value lower than $0.1$.
+
+
+Thus, the phase change phenomenon of hypothetical material is also characterized, 
+which gives the virtual experiment platform more potential to simulate 
+real experiments.
+
+
+\subsection{Camera model}
+After obtaining the temperature field and emissivity model of hypothetical material, 
+the physical value of spectral radiation intensity should be calculated, then, 
+the physical value of spectral radiation intensity is converted to 
+digital value using camera model, which is the output of the complete virtual 
+experiment platform. 
+
+
+As mentioned in Fig.\ref{fig: received}, the camera model is based on an integration 
+method, which integrate the spectral intensity received by the sensor along the 
+specific range of wavelength. However, due to the varying quantum 
+efficiency of each channel in sensor, it means that for a virtual camera 
+with 8 channels, each pixel requires 8 independent integration operations. 
+This operation requires a large computational effort. So, in order to 
+accelerate the generation speed and thus reduce the time cost of virtual 
+experiment platform, a parallel computing strategy is introduced.
+
+
+
+
+
 \section{Rebuild Physical value}
 \subsection{Emissivity model used for calculation}
 
