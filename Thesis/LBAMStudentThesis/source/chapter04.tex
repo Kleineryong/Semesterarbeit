@@ -372,6 +372,14 @@ digital value using camera model, which is the output of the complete virtual
 experiment platform. 
 
 
+To ensure consistency and scalability within the program for future feature 
+additions, all calculations in the program are conducted using metric units. 
+For instance, temperature is measured in Kelvin, and wavelength is measured in 
+meters. Therefore, it is crucial to note that the unit of wavelength in the camera 
+model's calculations is meters, not nanometers. This ensures dimensional 
+correctness throughout the integration process.
+
+
 As mentioned in Fig.\ref{fig: received}, the camera model is based on an integration 
 method, which integrate the spectral intensity received by the sensor along the 
 specific range of wavelength. However, due to the varying quantum 
@@ -382,10 +390,53 @@ accelerate the generation speed and thus reduce the time cost of virtual
 experiment platform, a parallel computing strategy is introduced.
 
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/reshape.pdf}
+  \label{fig: reshape}
+  \caption{Shape of array used in camera model}
+\end{figure}
 
 
+The essence of parallel computing lies in decomposing a complex task into 
+multiple tasks and utilizing multithreading techniques to execute these 
+computational tasks simultaneously on different cores of the CPU. In 
+this context, the camera model treats the integral computation on each pixel as an 
+individual task, thereby significantly improving CPU utilization and substantially 
+reducing computational time\cite{Asanovic.2009}. To facilitate task partitioning, the 
+dimension of the temperature field 
+mentioned earlier in this section needs to be reduced, from 
+a $50\times 50$ matrix to a one-dimensional array of size $2500\times1$. This allows for 
+obtaining 2500 parallel tasks. Once the calculations are completed, the 
+resulting matrix of size $2500\times8$ is then transformed back into a three-dimensional 
+matrix of size $50\times50\times8$. In this manner, a digital value similar to the data 
+obtained in real experiments is computed.
 
-\section{Rebuild Physical value}
+
+\section{Temperature estimation algorithm}
+After obtaining the digital value of spectral radiation intensity, 
+the tasks of this virtual experiment platform are considered complete, 
+and the next step involves data processing and calculations. The core 
+of the temperature estimation algorithm lies in reconstructing the digital 
+value of spectral radiation intensity based on the known digital values and 
+the choosen parameters. 
+Subsequently, through the implementation of a curve fitting algorithm, the 
+estimated emissivity and temperature can be calculated.
+
+
+\subsection{Rebuild digital value of spectral radiation intensity}
+Hence, it is evident that the process of reconstructing the digital value holds 
+significant importance in the temperature estimation algorithm. This reconstruction 
+process represents the conversion of spectal radiation intensity from its physical value to a 
+digital value. By analyzing the reconstructed results, the 
+relationship between the digital value and the parameters $(T, k)$ to be fitted can be established, 
+where $T$ and $k$ are derived from Eq.\ref{eq: reconstruct_integration}. Subsequently, 
+by performing curve 
+fit algorithm between the reconstructed digital value and the experimental data, we 
+can obtain the parameters $(T, k)$ that best fit the real data. Therefore, it 
+becomes apparent that the reconstruction of the digital value can affect 
+the accuracy of the temperature prediction algorithm discussed in this thesis.
+
 \subsection{Emissivity model used for calculation}
 
 \subsection{Curve fit algorithm}

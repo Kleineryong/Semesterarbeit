@@ -648,10 +648,106 @@
     \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
     \field{volume}{91}
     \verb{file}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/33261433
+    \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
+    \verb Citavi Attachments\\50019847.pdf:pdf
     \endverb
     \field{journaltitle}{The Review of scientific instruments}
     \field{year}{2020}
+  \endentry
+
+  \entry{Asanovic.2009}{article}{}
+    \name{author}{12}{}{%
+      {{hash=AK}{%
+         family={Asanovic},
+         familyi={A\bibinitperiod},
+         given={Krste},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bodik},
+         familyi={B\bibinitperiod},
+         given={Rastislav},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Demmel},
+         familyi={D\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Keaveny},
+         familyi={K\bibinitperiod},
+         given={Tony},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Keutzer},
+         familyi={K\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kubiatowicz},
+         familyi={K\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Nelson},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Patterson},
+         familyi={P\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Koushik},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wawrzynek},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wessel},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yelick},
+         familyi={Y\bibinitperiod},
+         given={Katherine},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AKBRDJKTKKKJMNPDSKWJWDYK1}
+    \strng{fullhash}{AKBRDJKTKKKJMNPDSKWJWDYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/1562764.1562783
+    \endverb
+    \field{issn}{0001-0782}
+    \field{number}{10}
+    \field{pages}{56\bibrangedash 67}
+    \field{title}{A view of the parallel computing landscape}
+    \field{volume}{52}
+    \verb{file}
+    \verb 1562764.1562783:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semestera
+    \verb rbeit\\Citavi Attachments\\1562764.1562783.pdf:pdf
+    \endverb
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{2009}
   \endentry
 \enddatalist
 \endinput
