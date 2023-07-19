@@ -573,5 +573,181 @@
     \field{journaltitle}{IEEE Journal of the Electron Devices Society}
     \field{year}{2014}
   \endentry
+
+  \entry{Wang.2021b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WN}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Nian},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Hua},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Rihong},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral thermometry;Temperature}
+    \strng{namehash}{WNSHZR1}
+    \strng{fullhash}{WNSHZR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Measurement, 170 (2021) 108725. doi:10.1016/j.measurement.2020.108725%
+    }
+    \verb{doi}
+    \verb 10.1016/j.measurement.2020.108725
+    \endverb
+    \field{issn}{02632241}
+    \field{pages}{108725}
+    \field{title}{Constraint optimization algorithm for spectral emissivity calculation in multispectral thermometry}
+    \field{volume}{170}
+    \verb{file}
+    \verb jmeasurement2020108725:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
+    \verb mesterarbeit\\Citavi Attachments\\jmeasurement2020108725.pdf:pdf
+    \endverb
+    \field{journaltitle}{Measurement}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Taunay.2020b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TPYCR}{%
+         family={Taunay},
+         familyi={T\bibinitperiod},
+         given={Pierre-Yves C.\bibnamedelima R.},
+         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CEY}{%
+         family={Choueiri},
+         familyi={C\bibinitperiod},
+         given={Edgar\bibnamedelima Y.},
+         giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TPYCRCEY1}
+    \strng{fullhash}{TPYCRCEY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A systematic and automated procedure to calculate the temperature of a surface with unknown emissivity from radiance measurements performed at a large number of wavelengths is presented, and statistical methods are applied to quantify its accuracy and precision. Unlike existing multi-wavelength pyrometric approaches, the proposed cross-validated procedure tests multiple emissivity candidates on multiple, randomly chosen subsets of the radiance measurements. The procedure uses solely an emissivity model to provide an accurate temperature value and retrieves the true emissivity from the ratio of the measured radiance to that of a blackbody calculated from the determined temperature. For a given emissivity model, the temperature is computed using the average of all possible combinations of two-wavelength ratios. The emissivity model that minimizes the coefficient of dispersion is selected. Accuracy and precision are quantified for the case of known emissivity. It is shown that, at least in the case where wavelengths are linearly distributed, the method is accurate, the precision increases with the total number of wavelengths, and it is maximized if the ratio of the minimum to maximum wavelength is equal to 2.46. The procedure is applied to both numerical and experimental data from the literature. Excellent agreement of the calculated temperature and emissivity is obtained for both datasets.%
+    }
+    \verb{doi}
+    \verb 10.1063/5.0019847
+    \endverb
+    \field{number}{11}
+    \field{pages}{114902}
+    \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
+    \field{volume}{91}
+    \verb{file}
+    \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
+    \verb Citavi Attachments\\50019847.pdf:pdf
+    \endverb
+    \field{journaltitle}{The Review of scientific instruments}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Asanovic.2009}{article}{}
+    \name{author}{12}{}{%
+      {{hash=AK}{%
+         family={Asanovic},
+         familyi={A\bibinitperiod},
+         given={Krste},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bodik},
+         familyi={B\bibinitperiod},
+         given={Rastislav},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Demmel},
+         familyi={D\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Keaveny},
+         familyi={K\bibinitperiod},
+         given={Tony},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Keutzer},
+         familyi={K\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kubiatowicz},
+         familyi={K\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Nelson},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Patterson},
+         familyi={P\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Koushik},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wawrzynek},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wessel},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yelick},
+         familyi={Y\bibinitperiod},
+         given={Katherine},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AKBRDJKTKKKJMNPDSKWJWDYK1}
+    \strng{fullhash}{AKBRDJKTKKKJMNPDSKWJWDYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/1562764.1562783
+    \endverb
+    \field{issn}{0001-0782}
+    \field{number}{10}
+    \field{pages}{56\bibrangedash 67}
+    \field{title}{A view of the parallel computing landscape}
+    \field{volume}{52}
+    \verb{file}
+    \verb 1562764.1562783:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semestera
+    \verb rbeit\\Citavi Attachments\\1562764.1562783.pdf:pdf
+    \endverb
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{2009}
+  \endentry
 \enddatalist
 \endinput

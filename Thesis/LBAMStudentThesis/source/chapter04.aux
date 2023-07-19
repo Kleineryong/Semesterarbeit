@@ -18,16 +18,103 @@
 \newlabel{fig: camera}{{13}{18}{Comparison between real experiment data at $1300K$ (a) and virtual experiment data at $1098K$ (b) \relax }{figure.caption.16}{}}
 \newlabel{fig: camera@cref}{{[figure][13][]13}{[1][18][]18}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Temperature field}{18}{subsection.5.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Emissivity model}{18}{subsection.5.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Integration method}{18}{subsection.5.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Rebuild Physical value}{18}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Emissivity model used for calculation}{18}{subsection.5.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Curve fit algorithm}{18}{subsection.5.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Parameters in calculation}{18}{subsection.5.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Validation}{18}{section.5.3}\protected@file@percent }
+\newlabel{eq: linear_distribution}{{5.1}{18}{Temperature field}{equation.5.1.1}{}}
+\newlabel{eq: linear_distribution@cref}{{[equation][1][5]5.1}{[1][18][]18}}
+\newlabel{fig: linear_distribution}{{14a}{19}{Linear\relax }{figure.caption.17}{}}
+\newlabel{fig: linear_distribution@cref}{{[subfigure][1][14]14a}{[1][18][]19}}
+\newlabel{sub@fig: linear_distribution}{{a}{19}{Linear\relax }{figure.caption.17}{}}
+\newlabel{sub@fig: linear_distribution@cref}{{[subfigure][1][14]14a}{[1][18][]19}}
+\newlabel{fig: gaussian_distribution}{{14b}{19}{Gaussian\relax }{figure.caption.17}{}}
+\newlabel{fig: gaussian_distribution@cref}{{[subfigure][2][14]14b}{[1][18][]19}}
+\newlabel{sub@fig: gaussian_distribution}{{b}{19}{Gaussian\relax }{figure.caption.17}{}}
+\newlabel{sub@fig: gaussian_distribution@cref}{{[subfigure][2][14]14b}{[1][18][]19}}
+\newlabel{fig: sigmoid_distribution}{{14c}{19}{Sigmoid\relax }{figure.caption.17}{}}
+\newlabel{fig: sigmoid_distribution@cref}{{[subfigure][3][14]14c}{[1][18][]19}}
+\newlabel{sub@fig: sigmoid_distribution}{{c}{19}{Sigmoid\relax }{figure.caption.17}{}}
+\newlabel{sub@fig: sigmoid_distribution@cref}{{[subfigure][3][14]14c}{[1][18][]19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Temperature field of 3 different temperature distribution and the temperature profile in the middle line of the observation area. (\subref  {fig: linear_distribution}): Linear distribution. (\subref  {fig: gaussian_distribution}): Gaussian distribution. (\subref  {fig: sigmoid_distribution}): sigmoid distribution\relax }}{19}{figure.caption.17}\protected@file@percent }
+\newlabel{fig: temperature_profile}{{14}{19}{Temperature field of 3 different temperature distribution and the temperature profile in the middle line of the observation area. (\subref {fig: linear_distribution}): Linear distribution. (\subref {fig: gaussian_distribution}): Gaussian distribution. (\subref {fig: sigmoid_distribution}): sigmoid distribution\relax }{figure.caption.17}{}}
+\newlabel{fig: temperature_profile@cref}{{[figure][14][]14}{[1][18][]19}}
+\newlabel{eq: gaussian_distribution}{{5.2}{19}{Temperature field}{equation.5.1.2}{}}
+\newlabel{eq: gaussian_distribution@cref}{{[equation][2][5]5.2}{[1][19][]19}}
+\newlabel{eq: sigmoid_distribution}{{5.3}{19}{Temperature field}{equation.5.1.3}{}}
+\newlabel{eq: sigmoid_distribution@cref}{{[equation][3][5]5.3}{[1][19][]19}}
+\newlabel{eq: sigmoid_function}{{5.4}{19}{Temperature field}{equation.5.1.4}{}}
+\newlabel{eq: sigmoid_function@cref}{{[equation][4][5]5.4}{[1][19][]19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Emissivity model}{19}{subsection.5.1.2}\protected@file@percent }
+\newlabel{fig: emi_0}{{15a}{20}{Black body model\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_0@cref}{{[subfigure][1][15]15a}{[1][19][]20}}
+\newlabel{sub@fig: emi_0}{{a}{20}{Black body model\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_0@cref}{{[subfigure][1][15]15a}{[1][19][]20}}
+\newlabel{fig: emi_1}{{15b}{20}{Gray body model\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_1@cref}{{[subfigure][2][15]15b}{[1][19][]20}}
+\newlabel{sub@fig: emi_1}{{b}{20}{Gray body model\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_1@cref}{{[subfigure][2][15]15b}{[1][19][]20}}
+\newlabel{fig: emi_21}{{15c}{20}{Model 1\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_21@cref}{{[subfigure][3][15]15c}{[1][19][]20}}
+\newlabel{sub@fig: emi_21}{{c}{20}{Model 1\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_21@cref}{{[subfigure][3][15]15c}{[1][19][]20}}
+\newlabel{fig: emi_22}{{15d}{20}{Model 2\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_22@cref}{{[subfigure][4][15]15d}{[1][19][]20}}
+\newlabel{sub@fig: emi_22}{{d}{20}{Model 2\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_22@cref}{{[subfigure][4][15]15d}{[1][19][]20}}
+\newlabel{fig: emi_23}{{15e}{20}{Model 3\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_23@cref}{{[subfigure][5][15]15e}{[1][19][]20}}
+\newlabel{sub@fig: emi_23}{{e}{20}{Model 3\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_23@cref}{{[subfigure][5][15]15e}{[1][19][]20}}
+\newlabel{fig: emi_24}{{15f}{20}{Model 4\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_24@cref}{{[subfigure][6][15]15f}{[1][19][]20}}
+\newlabel{sub@fig: emi_24}{{f}{20}{Model 4\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_24@cref}{{[subfigure][6][15]15f}{[1][19][]20}}
+\newlabel{fig: emi_25}{{15g}{20}{Model 5\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_25@cref}{{[subfigure][7][15]15g}{[1][19][]20}}
+\newlabel{sub@fig: emi_25}{{g}{20}{Model 5\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_25@cref}{{[subfigure][7][15]15g}{[1][19][]20}}
+\newlabel{fig: emi_26}{{15h}{20}{Model 6\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_26@cref}{{[subfigure][8][15]15h}{[1][19][]20}}
+\newlabel{sub@fig: emi_26}{{h}{20}{Model 6\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_26@cref}{{[subfigure][8][15]15h}{[1][19][]20}}
+\newlabel{fig: emi_31}{{15i}{20}{Model 7\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_31@cref}{{[subfigure][9][15]15i}{[1][19][]20}}
+\newlabel{sub@fig: emi_31}{{i}{20}{Model 7\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_31@cref}{{[subfigure][9][15]15i}{[1][19][]20}}
+\newlabel{fig: emi_32}{{15j}{20}{Model 8\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_32@cref}{{[subfigure][10][15]15j}{[1][19][]20}}
+\newlabel{sub@fig: emi_32}{{j}{20}{Model 8\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_32@cref}{{[subfigure][10][15]15j}{[1][19][]20}}
+\newlabel{fig: emi_33}{{15k}{20}{Model 9\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_33@cref}{{[subfigure][11][15]15k}{[1][19][]20}}
+\newlabel{sub@fig: emi_33}{{k}{20}{Model 9\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_33@cref}{{[subfigure][11][15]15k}{[1][19][]20}}
+\newlabel{fig: emi_34}{{15l}{20}{Model 10\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_34@cref}{{[subfigure][12][15]15l}{[1][19][]20}}
+\newlabel{sub@fig: emi_34}{{l}{20}{Model 10\relax }{figure.caption.18}{}}
+\newlabel{sub@fig: emi_34@cref}{{[subfigure][12][15]15l}{[1][19][]20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Raw emissivity data used in virtual experiment platform. (\subref  {fig: emi_0}), (\subref  {fig: emi_1}) are black body and gray body; (\subref  {fig: emi_21}) - (\subref  {fig: emi_26}) are hypothetical materials\blx@tocontentsinit {0}\cite {Wang.2021b}; (\subref  {fig: emi_31}) - (\subref  {fig: emi_34}) are real materials\blx@tocontentsinit {0}\cite {Taunay.2020b}.\relax }}{20}{figure.caption.18}\protected@file@percent }
+\newlabel{fig: emi_model}{{15}{20}{Raw emissivity data used in virtual experiment platform. (\subref {fig: emi_0}), (\subref {fig: emi_1}) are black body and gray body; (\subref {fig: emi_21}) - (\subref {fig: emi_26}) are hypothetical materials\cite {Wang.2021b}; (\subref {fig: emi_31}) - (\subref {fig: emi_34}) are real materials\cite {Taunay.2020b}.\relax }{figure.caption.18}{}}
+\newlabel{fig: emi_model@cref}{{[figure][15][]15}{[1][19][]20}}
+\newlabel{eq: emissivity}{{5.5}{21}{Emissivity model}{equation.5.1.5}{}}
+\newlabel{eq: emissivity@cref}{{[equation][5][5]5.5}{[1][21][]21}}
+\newlabel{eq: k_t}{{5.6}{21}{Emissivity model}{equation.5.1.6}{}}
+\newlabel{eq: k_t@cref}{{[equation][6][5]5.6}{[1][21][]21}}
+\newlabel{eq: t_ref}{{5.7}{21}{Emissivity model}{equation.5.1.7}{}}
+\newlabel{eq: t_ref@cref}{{[equation][7][5]5.7}{[1][21][]21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Emissivity value along wavelength and temperature calculated from model 9\relax }}{21}{figure.caption.19}\protected@file@percent }
+\newlabel{fig: emissivity_model}{{16}{21}{Emissivity value along wavelength and temperature calculated from model 9\relax }{figure.caption.19}{}}
+\newlabel{fig: emissivity_model@cref}{{[figure][16][]16}{[1][21][]21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Camera model}{22}{subsection.5.1.3}\protected@file@percent }
+\newlabel{fig: reshape}{{\caption@xref {fig: reshape}{ on input line 396}}{22}{Camera model}{figure.caption.20}{}}
+\newlabel{fig: reshape@cref}{{[subsection][3][5,1]5.1.3}{[1][22][]22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Shape of array used in camera model\relax }}{22}{figure.caption.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Temperature estimation algorithm}{22}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Rebuild digital value of spectral radiation intensity}{23}{subsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Emissivity model used for calculation}{23}{subsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Curve fit algorithm}{23}{subsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Parameters in calculation}{23}{subsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Validation}{23}{section.5.3}\protected@file@percent }
 \@setckpt{source/chapter04}{
-\setcounter{page}{19}
-\setcounter{equation}{0}
+\setcounter{page}{24}
+\setcounter{equation}{7}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -43,7 +130,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{13}
+\setcounter{figure}{17}
 \setcounter{table}{0}
 \setcounter{AM@survey}{0}
 \setcounter{mdf@globalstyle@cnt}{1}
@@ -61,7 +148,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{14}
+\setcounter{instcount}{21}
 \setcounter{maxnames}{99}
 \setcounter{minnames}{3}
 \setcounter{maxitems}{3}
@@ -167,7 +254,7 @@
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
 \setcounter{cbx@tempcnta}{0}
-\setcounter{cbx@tempcntb}{12}
+\setcounter{cbx@tempcntb}{15}
 \setcounter{cbx@tempcntc}{0}
 \setcounter{cbx@tempcntd}{-1}
 \setcounter{blindtext}{1}
@@ -187,17 +274,17 @@
 \setcounter{pc@count@iii}{0}
 \setcounter{pc@count@iv}{0}
 \setcounter{zref@unique}{0}
-\setcounter{mn@abspage}{27}
+\setcounter{mn@abspage}{32}
 \setcounter{section@level}{0}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{32}
-\setcounter{caption@flags}{6}
+\setcounter{bookmark@seq@number}{33}
+\setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
 \setcounter{su@anzahl}{0}
 \setcounter{LT@tables}{0}
 \setcounter{LT@chunks}{0}
-\setcounter{subfigure}{2}
+\setcounter{subfigure}{0}
 \setcounter{subtable}{0}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}

@@ -22,9 +22,9 @@ def digital_value_rebuild(emissivity_set):
     image_resolution = [50, 50]                                               # [pixel] [100 * 100]
     diameter_ratio = 0.9                                                        # adjust the visualisation of data_field
     shutter_time = 200                                                          # adjust explosure time
-    temperature_center = 3501                                                   # temperature of the center_area
-    temperature_background = 1500                                                 # set background temperature to 50K as black body
-    melt_temperature = 3600                                                     # set melt temperature
+    temperature_center = 2000                                                 # temperature of the center_area
+    temperature_background = 1000                                                 # set background temperature to 50K as black body
+    melt_temperature = 1500                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
     # emissivity_set = 34                                                          # which data set is used, [0] stands for black body radiation
@@ -108,7 +108,7 @@ def factor_temperature(temperature, melt_temperature, emissivity_set):
             factor = (1 - (temperature - 1500) / (2000 - 1500) * 0.2) * 0.1
     else:
         if temperature <= melt_temperature:
-            factor = 1 *0.1
+            factor = 1
         else:
             factor = 0.1
     return factor
@@ -261,33 +261,6 @@ def distribution(x, sigma):
 
 if 1:
     start_time = time.perf_counter()
-
-    # emissivity_set = 31
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 32
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 33
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 34
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 21
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 22
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 23
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 24
-    # digital_value_rebuild(emissivity_set)
-    #
-    # emissivity_set = 25
-    # digital_value_rebuild(emissivity_set)
 
     emissivity_set = 0
     digital_value_rebuild(emissivity_set)
