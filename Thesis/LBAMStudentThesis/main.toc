@@ -16,33 +16,36 @@
 \contentsline {section}{\numberline {3.5}Motivation of this thesis}{7}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Theory and methodology}{9}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Physical value of radiation}{9}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Virtual experiment platform}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Virtual experiment platform}{11}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Camera model}{11}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Frequency response}{11}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Integration method}{12}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Implementation}{13}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Temperature estimation algorithm}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Emissivity model in temperature estimation algorithm}{15}{section.4.5}%
+\contentsline {subsection}{\numberline {4.3.2}Integration method}{13}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Implementation}{14}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Temperature estimation algorithm}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Emissivity model in temperature estimation algorithm}{16}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Application and validation}{17}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Experiment data generation}{17}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Temperature field}{18}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Emissivity model}{19}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Camera model}{22}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Temperature estimation algorithm}{22}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Rebuild digital value of spectral radiation intensity}{23}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Rebuild physical value of spectral radiation intensity}{23}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Emissivity model used for calculation}{23}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Curve fit algorithm}{23}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Parameters in calculation}{23}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Validation}{23}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Calcualtion results and analysis}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Calculation results}{25}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Temperature field}{25}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Emissivity field}{25}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Data analysis}{25}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Sensitivity analysis of emissivity models}{25}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Performance between different materials}{25}{subsection.6.2.2}%
-\contentsline {chapter}{\numberline {A}Appendices}{27}{appendix.A}%
-\contentsline {chapter}{Glossary}{29}{section*.21}%
-\contentsline {chapter}{Bibliography}{31}{appendix*.23}%
-\contentsline {chapter}{List of Abbreviations}{33}{section*.24}%
+\contentsline {subsubsection}{Linear model}{24}{subsubsection*.22}%
+\contentsline {subsubsection}{Linear square model}{24}{subsubsection*.23}%
+\contentsline {subsubsection}{Quadratic model}{24}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {5.2.3}Curve fit algorithm}{25}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Parameters in calculation}{25}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Validation}{25}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Calcualtion results and analysis}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Calculation results}{27}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Temperature field}{27}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Emissivity field}{27}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Data analysis}{27}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Sensitivity analysis of emissivity models}{27}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Performance between different materials}{27}{subsection.6.2.2}%
+\contentsline {chapter}{\numberline {A}Appendices}{29}{appendix.A}%
+\contentsline {chapter}{Glossary}{31}{section*.25}%
+\contentsline {chapter}{Bibliography}{33}{appendix*.27}%
+\contentsline {chapter}{List of Abbreviations}{35}{section*.28}%
 \contentsfinish 

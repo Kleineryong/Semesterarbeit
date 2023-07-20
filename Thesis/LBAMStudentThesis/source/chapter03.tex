@@ -18,16 +18,48 @@ dependent.
 \end{equation}
 
 
-By Plank's Law, black body radiation can be described in equation \ref{eq: planks_law}, 
-with absolute temperature $T$, wavelength $\lambda$, speed of light $c$, Plank 
-constant $h$ and Boltzmann constant $k_B$. Black body radiation is irrelevant 
-to the material itself, all materials at the same temperature have the same spectral 
-black body radiation.
-
+By Plank's Law, black body radiation can be described in Eq.\ref{eq: planks_law}, 
 \begin{equation}
     \label{eq: planks_law}
     B(\lambda, T) = \frac{{2hc^2}}{{\lambda^5}} \cdot {\left[{\exp\left(\frac{{hc}}{{\lambda k_B T}}\right) - 1}\right]}^{-1}
 \end{equation}
+
+With absolute temperature $T$, wavelength $\lambda$, speed of light $c$, Plank 
+constant $h$ and Boltzmann constant $k_B$. Black body radiation is irrelevant 
+to the material itself, all materials at the same temperature have the same spectral 
+black body radiation.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/wiens_law.jpg}
+    \caption{Black body radiation of materials with different temperature}
+    \label{fig: wiens_law}
+\end{figure}
+
+Fig.\ref{fig: wiens_law} illustrates the spectral radiation intensity 
+of a blackbody at different temperatures. It can be observed that the 
+spectral radiation intensity exhibits a peak at a specific wavelength. 
+According to Wien's displacement law, the relationship between the wavelength
+of the peak $\lambda_{peak}$ and temperature $T$ can be described in Eq.\ref{eq: wiens_law}:
+
+\begin{equation}
+    \label{eq: wiens_law}
+    \lambda_{peak} = \frac{b}{T}
+\end{equation}
+
+
+With Wien's displacement constant $b = 2898 \mu m \cdot K$, it can be found 
+that the wavelength of this peak decreases as the temperature rises.
+
+
+From this, it can be concluded that the shape of the blackbody's 
+spectral radiation intensity varies with temperature. This is evident 
+in two aspects: firstly, the position at which the peak appears, and 
+secondly, the distribution of spectral radiation intensity along the 
+wavelength. Indeed, this characteristic provides the possibility to 
+determine the temperature of a blackbody material in reverse, 
+i.e., by calculating the temperature based on the known spectral 
+radiation intensity.
 
 
 On the contrary, emissivity varies from material to material. It is the 
@@ -36,6 +68,14 @@ intensity of the black body radiation. In the study of radiation, two idealized
 material models are generally used to describe the idealized 
 properties of radiation, namely black body and grey body. 
 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 0.95\textwidth]{figures/real_radiation.jpg}
+    \caption{Black body radiation, emissivity and real radiation of an example normal
+    material at $1000K$}
+    \label{fig: black_body_radiation}
+\end{figure}
 
 Black-body material emits electromagnetic black body radiation, which is irrelevant to 
 the wavelength of the radiation and the shape of the material\cite{Kuhn.1987}. Which 
@@ -48,14 +88,6 @@ Not all of the thermal radiation could be emitted to the outside of the material
 Different from normal materials, the emissivity of a grey-body material is irrelevant
 to the wavelength of radiation.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width = 0.8\textwidth]{figures/real_radiation.jpg}
-    \caption{Black body radiation, emissivity and real radiation of an example normal
-    material at $1000K$}
-    \label{fig: black_body_radiation}
-\end{figure}
-
 
 In Fig.\ref{fig: black_body_radiation} can be found, that the real spectral 
 intensity of a normal material is lower than the black body spectral intensity.
@@ -66,8 +98,6 @@ wavelength.
 It can be seen that the construction of a reliable emissivity model is crucial to 
 the accuracy of the virtual experimental platform. It is the key component used to 
 generate the experimental data.
-
-
 
 
 \section{Virtual experiment platform}%
@@ -306,7 +336,7 @@ its emissivity.
 
 
 Fig.\ref{fig: temperature_estimation_algorithm} shows the proceeding procedure of the 
-temperature estimation algorithm. The digital value of the spectral radiation intensity
+temperature estimation algorithm. The physical value of the spectral radiation intensity
 $(I_{rec}(i))$ 
 in the $i_{th}$ channel should be reconstructed in Eq.\ref{eq: reconstruct_integration}:
 
@@ -315,12 +345,20 @@ in the $i_{th}$ channel should be reconstructed in Eq.\ref{eq: reconstruct_integ
     I_{rec}(i) = q \int B(\lambda, T) \cdot \varepsilon(\lambda, k, T) \cdot \eta_{camera}(i) d\lambda
 \end{equation}
 
-With $I_{DV}(i)$ the reconstructed digital value in $i_{th}$ channel, $B(\lambda, T)$ the black body radiation, 
+With $I_{rec}(i)$ the reconstructed physical value in $i_{th}$ channel, $B(\lambda, T)$ the black body radiation, 
 $\varepsilon(\lambda, k, T)$ the emissivity model in temperature estimation algorithm, 
 $\eta_{camera}(i)$ the total camera efficiency of $i_{th}$ channel. It can be found that 
 the emissivity model have an additional parameter $k$, this parameter is used for fitting 
 the emissivity behavior of the measured material. More details can be found in the following 
 section.
+
+
+Once the reconstruction of the physical value is completed, it is 
+necessary to convert this physical value into a digital value. This 
+conversion process is dependent on the parameter settings of the sensor 
+system, such as exposure time, aperture size of the lens, etc. For the 
+purposes of this paper, it is assumed that the conversion relationship 
+is linear.
 
 
 Given an initial guess of the status parameters, namely 

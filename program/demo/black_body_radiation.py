@@ -40,20 +40,16 @@ def main():
 
     ax2 = ax1.twinx()
 
-
     lin_bb = ax1.plot(wl, intensity, 'r-', label='Black body intensity')
 
     lin_inten = ax1.plot(wl, intensity * emi(wl*1e-9), 'g-', label='Actual intensity' )
 
     lin_emi = ax2.plot(wl, emi(wl * 1e-9), 'b-', label='Emissivity')
 
-
-
     ax1.set_xlabel('Wavelength[nm]')
     ax1.set_ylabel('Intensity[' + r'$Wm^{-2}sr^{-1}m^{-1}$' + ']')
     ax2.set_ylabel('emissivity')
     ax2.set_ylim(0, 1)
-
 
     ax1.legend(loc='upper left')
     ax2.legend(loc='upper right')
@@ -74,9 +70,10 @@ def black_body_radiation(temperature, wavelength):
     param2 = h * c / k
     return param1/(wavelength**5)/(np.exp(param2/(wavelength*temperature))-1)
 
+
 def emi(wl):
     wl_rel = (wl - 500e-9) / (1000e-9 - 500e-9)
-    return (0.5 - wl_rel * 0.1)
+    return 0.5 - wl_rel * 0.1
 
 
 if 1:
