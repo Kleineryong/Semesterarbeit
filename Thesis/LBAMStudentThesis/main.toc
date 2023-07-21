@@ -33,7 +33,9 @@
 \contentsline {subsection}{\numberline {5.2.2}Emissivity model used for calculation}{23}{subsection.5.2.2}%
 \contentsline {subsubsection}{Linear model}{24}{subsubsection*.22}%
 \contentsline {subsubsection}{Linear square model}{24}{subsubsection*.23}%
-\contentsline {subsubsection}{Quadratic model}{24}{subsubsection*.24}%
+\contentsline {subsubsection}{Quadratic model}{25}{subsubsection*.24}%
+\contentsline {subsubsection}{Exponential model}{25}{subsubsection*.25}%
+\contentsline {subsubsection}{Mixed model}{25}{subsubsection*.26}%
 \contentsline {subsection}{\numberline {5.2.3}Curve fit algorithm}{25}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Parameters in calculation}{25}{subsection.5.2.4}%
 \contentsline {section}{\numberline {5.3}Validation}{25}{section.5.3}%
@@ -44,8 +46,9 @@
 \contentsline {section}{\numberline {6.2}Data analysis}{27}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Sensitivity analysis of emissivity models}{27}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Performance between different materials}{27}{subsection.6.2.2}%
-\contentsline {chapter}{\numberline {A}Appendices}{29}{appendix.A}%
-\contentsline {chapter}{Glossary}{31}{section*.25}%
-\contentsline {chapter}{Bibliography}{33}{appendix*.27}%
-\contentsline {chapter}{List of Abbreviations}{35}{section*.28}%
+\contentsline {chapter}{\numberline {7}Conclusion and prospects}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendices}{31}{appendix.A}%
+\contentsline {chapter}{Glossary}{33}{section*.27}%
+\contentsline {chapter}{Bibliography}{35}{appendix*.29}%
+\contentsline {chapter}{List of Abbreviations}{37}{section*.30}%
 \contentsfinish 

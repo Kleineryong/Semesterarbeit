@@ -504,6 +504,24 @@ mathematical expression can be described as followed:
   \lambda_{norm} = \frac{\lambda - \lambda_{lb}}{\lambda_{ub} - \lambda_{lb}}
 \end{equation}
 
+
+To enhance the readability of the formula, the parameter $k$ in 
+Eq.\ref{eq: reconstruct_digital_value_function} is written in vector 
+form in Eq.\ref{eq: k_vec} based on the number of parameters in emissivity model.
+
+\begin{equation}
+  \label{eq: k_vec}
+  k = \begin{pmatrix}
+    a \\
+    b \\
+    c \\
+    \end{pmatrix} 
+    or 
+    \begin{pmatrix}
+      a \\
+      b \\
+      \end{pmatrix}
+\end{equation}
 With the lower boundary of wavelength $\lambda_{lb} = 500 {nm}$ and the 
 upper boundary of wavelength $\lambda_{ub} = 1000 {nm}$. Thus, the input 
 of the emissivity model used in temperature estimation algorithm is thus 
@@ -554,8 +572,48 @@ can be expressed as Eq.\ref{eq: emi_quad}
   \varepsilon(\lambda) = a \cdot \lambda_{norm}^2 + b
 \end{equation}
 
+\subsubsection{Exponential model}
+In the exponential model, emissivity is exponentially related to wavelength. Due to 
+the monotonic nature of the exponential function, this model enhances the accuracy of 
+parameter estimation along the gradient descent of the cost function during curve fitting, 
+thereby improving the computational efficiency. The mathematical expression can be 
+expressed in Eq.\ref{eq: emi_exp}:
+
+\begin{equation}
+  \label{eq: emi_exp}
+  \varepsilon(\lambda) = \exp(-a \cdot \lambda_{norm} - b)
+\end{equation}
+
+For materrials commonly used in \gls{pbflbm}, emissivity tends to decrease with 
+increasing wavelength. Therefore, to reduce the range of parameters during curve 
+fitting, the exponent term $a \cdot \lambda_{norm} + b$ was set as non-negative value.
+
+\subsubsection{Mixed model}
+This model is a combination of two models. In Fig.\ref{fig: emissivity_model}, it 
+can be observed that the emissivity of the virtual material undergoes 
+significant changes when the temperature exceeds the material's melting point, 
+and the emissivity variations become smaller in the liquid phase. Therefore, when 
+emissivity changes are relatively small, i.e., when the material is in the 
+liquid phase, the exponential model is more suitable. On the other hand, when 
+emissivity changes are more pronounced, i.e., when the material is in the solid 
+phase, the linear square model is more appropriate. This approach not only 
+improves the computational accuracy of the model in the solid region but also 
+ensures the computational efficiency of the model in the liquid region.
+
+
+In this model, the computation starts with the linear square model. The computed 
+results are then filtered to identify points where the temperature exceeds 
+the material's melting point. Subsequently, the exponential model is 
+utilized to recompute the emissivity and temperature for those specific points. 
+Finally, the results from both calculations are combined to obtain a higher 
+precision outcome. However, this process demands higher computational resources. 
+Consequently, it is observed that this model significantly increases the 
+computational time required for temperature estimation algorithms.
+
 
 \subsection{Curve fit algorithm}
+
+
 
 \subsection{Parameters in calculation}
 quantum efficiency, lens factor
