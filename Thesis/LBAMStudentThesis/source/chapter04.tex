@@ -417,29 +417,203 @@ obtained in real experiments is computed.
 After obtaining the digital value of spectral radiation intensity, 
 the tasks of this virtual experiment platform are considered complete, 
 and the next step involves data processing and calculations. The core 
-of the temperature estimation algorithm lies in reconstructing the digital 
+of the temperature estimation algorithm lies in reconstructing the physical 
 value of spectral radiation intensity based on the known digital values and 
 the choosen parameters. 
 Subsequently, through the implementation of a curve fitting algorithm, the 
 estimated emissivity and temperature can be calculated.
 
 
-\subsection{Rebuild digital value of spectral radiation intensity}
-Hence, it is evident that the process of reconstructing the digital value holds 
+\subsection{Rebuild physical value of spectral radiation intensity}
+Hence, it is evident that the process of reconstructing the physical value holds 
 significant importance in the temperature estimation algorithm. This reconstruction 
 process represents the conversion of spectal radiation intensity from its physical value to a 
 digital value. By analyzing the reconstructed results, the 
-relationship between the digital value and the parameters $(T, k)$ to be fitted can be established, 
+relationship between the physical value $(I_{rec})$ and the parameters $(T, k)$ to be fitted can be established, 
 where $T$ and $k$ are derived from Eq.\ref{eq: reconstruct_integration}. Subsequently, 
 by performing curve 
-fit algorithm between the reconstructed digital value and the experimental data, we 
+fit algorithm between the reconstructed physical value and the experimental data, we 
 can obtain the parameters $(T, k)$ that best fit the real data. Therefore, it 
-becomes apparent that the reconstruction of the digital value can affect 
+becomes apparent that the reconstruction of the physical value can affect 
 the accuracy of the temperature prediction algorithm discussed in this thesis.
 
+
+As mentioned in Eq.\ref{eq: reconstruct_integration}, the reconstructed physical value 
+of spectral radiation intensity is generated based on the integration method. It can 
+be observed that the digital value can be considered as a function of temperature of 
+hypothetical material $T$ and parameters of emissivity model $k$.
+
+
+\begin{equation}
+  \label{eq: reconstruct_digital_value_function}
+  I_{rec}^i (k, T) = q \int B(\lambda, T) \cdot \varepsilon(\lambda, k, T) 
+  \cdot \eta_{camera}^i d\lambda
+\end{equation}
+
+
+Eq.\ref{eq: reconstruct_digital_value_function} shows the mathematical expression 
+of reconstructed physical value of spectral radiation intensity of $i_{th}$ channel.
+So, the current objective is to minimize the cost in Eq.\ref{eq: reconstruct_optimization} 
+by optimizing the values of $k$ and $T$. In other words, the goal is to make the 
+reconstructed spectral radiation intensity $I_{rec}(k, T)$ as close as possible 
+to the values obtained in virtual experiments. By minimizing the cost function, 
+the temperature estimation algorithm aims to achieve a high level of accuracy 
+and fidelity in calculating the temperature based on the reconstructed 
+digital values.
+
+
 \subsection{Emissivity model used for calculation}
+In the previous section, it is evident that the temperature estimation 
+algorithm is essentially performing a curve fit algorithm on the parameters of the 
+emissivity model and temperature of the hypothetical material. 
+Therefore, the choice of the emissivity model significantly impacts 
+the accuracy of the temperature estimation algorithm. In order to 
+enhance the generality of this temperature prediction algorithm and 
+prevent overfitting, a hypothesis is proposed: the temperature 
+prediction algorithm is unaware of the material's emissivity 
+characteristics. Hence, it is necessary to use a different 
+emissivity model from the one used in the virtual experiment 
+platform to reconstruct the digital value of spectral radiation 
+intensity.
+
+
+Based on mentioned above, the temperature estimation algorithm 
+introduced in this paper tested several different emissivity 
+models, namely:
+
+
+\begin{enumerate}
+  \item Linear model
+  \item Linear square model
+  \item Quadratic model
+  \item Exponential model
+  \item A combined model composed of the linear square and exponential models
+\end{enumerate}
+
+
+These models are distinguished based on the relationship between 
+emissivity and wavelength. Each model represents a different 
+mathematical expression that describes how emissivity varies with 
+wavelength. In order to simplify the calculation process and thus set 
+boundary conditions of parameters $k$ in emissivity model, all wavelength 
+used in this emissivity model is normalized wavelength $\lambda_{norm}$. The 
+mathematical expression can be described as followed:
+
+\begin{equation}
+  \label{eq: wavelength_norm}
+  \lambda_{norm} = \frac{\lambda - \lambda_{lb}}{\lambda_{ub} - \lambda_{lb}}
+\end{equation}
+
+
+To enhance the readability of the formula, the parameter $k$ in 
+Eq.\ref{eq: reconstruct_digital_value_function} is written in vector 
+form in Eq.\ref{eq: k_vec} based on the number of parameters in emissivity model.
+
+\begin{equation}
+  \label{eq: k_vec}
+  k = \begin{pmatrix}
+    a \\
+    b \\
+    c \\
+    \end{pmatrix} 
+    or 
+    \begin{pmatrix}
+      a \\
+      b \\
+      \end{pmatrix}
+\end{equation}
+With the lower boundary of wavelength $\lambda_{lb} = 500 {nm}$ and the 
+upper boundary of wavelength $\lambda_{ub} = 1000 {nm}$. Thus, the input 
+of the emissivity model used in temperature estimation algorithm is thus 
+dimensionless number.
+
+\subsubsection{Linear model}
+Linear model refers to a linear relationship between emissivity and wavelength,
+which could be written as Eq.\ref{eq: emi_lin}:
+
+\begin{equation}
+  \label{eq: emi_lin}
+  \varepsilon(\lambda) = a\cdot \lambda_{norm} + b
+\end{equation}
+
+The linear model represents the simplest and most straightforward emissivity model. 
+It provides an easy way to visualize the calculated emissivity model 
+and reduces complexity in defining various boundary conditions within the 
+emissivity model.
+
+\subsubsection{Linear square model}
+The linear square model is distinct from the linear model, 
+as it incorporates three parameters representing the coefficients 
+of the quadratic term, the linear term, and the constant term. Its 
+mathematical expression can be described as Eq.\ref{eq: emi_lin_square}:
+
+\begin{equation}
+  \label{eq: emi_lin_square}
+  \varepsilon(\lambda) = a \cdot \lambda_{norm}^2 + b \cdot \lambda_{norm} + c
+\end{equation}
+
+The linear square model can be used to describe more intricate emissivity 
+models for materials. With an additional parameter compared to the 
+previous linear model, it offers increased degrees of freedom for 
+curve fitting, enabling a better fit to complex shapes. Nevertheless, 
+the augmented complexity may also lead to a higher risk of overfitting as 
+well as increase of computational demand required.
+
+\subsubsection{Quadratic model}
+Consequently, in order to simplify the computation of the linear 
+square model, the quadratic model was introduced. In this model, 
+the coefficient of the linear term in the original linear square 
+model is set to 0. This simplification leads to a reduction in 
+the number of parameters within the emissivity model. The emissivity model 
+can be expressed as Eq.\ref{eq: emi_quad}
+
+\begin{equation}
+  \label{eq: emi_quad}
+  \varepsilon(\lambda) = a \cdot \lambda_{norm}^2 + b
+\end{equation}
+
+\subsubsection{Exponential model}
+In the exponential model, emissivity is exponentially related to wavelength. Due to 
+the monotonic nature of the exponential function, this model enhances the accuracy of 
+parameter estimation along the gradient descent of the cost function during curve fitting, 
+thereby improving the computational efficiency. The mathematical expression can be 
+expressed in Eq.\ref{eq: emi_exp}:
+
+\begin{equation}
+  \label{eq: emi_exp}
+  \varepsilon(\lambda) = \exp(-a \cdot \lambda_{norm} - b)
+\end{equation}
+
+For materrials commonly used in \gls{pbflbm}, emissivity tends to decrease with 
+increasing wavelength. Therefore, to reduce the range of parameters during curve 
+fitting, the exponent term $a \cdot \lambda_{norm} + b$ was set as non-negative value.
+
+\subsubsection{Mixed model}
+This model is a combination of two models. In Fig.\ref{fig: emissivity_model}, it 
+can be observed that the emissivity of the virtual material undergoes 
+significant changes when the temperature exceeds the material's melting point, 
+and the emissivity variations become smaller in the liquid phase. Therefore, when 
+emissivity changes are relatively small, i.e., when the material is in the 
+liquid phase, the exponential model is more suitable. On the other hand, when 
+emissivity changes are more pronounced, i.e., when the material is in the solid 
+phase, the linear square model is more appropriate. This approach not only 
+improves the computational accuracy of the model in the solid region but also 
+ensures the computational efficiency of the model in the liquid region.
+
+
+In this model, the computation starts with the linear square model. The computed 
+results are then filtered to identify points where the temperature exceeds 
+the material's melting point. Subsequently, the exponential model is 
+utilized to recompute the emissivity and temperature for those specific points. 
+Finally, the results from both calculations are combined to obtain a higher 
+precision outcome. However, this process demands higher computational resources. 
+Consequently, it is observed that this model significantly increases the 
+computational time required for temperature estimation algorithms.
+
 
 \subsection{Curve fit algorithm}
+
+
 
 \subsection{Parameters in calculation}
 quantum efficiency, lens factor
