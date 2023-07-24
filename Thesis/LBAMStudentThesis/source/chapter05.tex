@@ -6,10 +6,39 @@ platform and temperature estimation algorithm can be systematically
 analyzed.
 
 \section{Calculation results}
-how the emissivity was visualized
+In virtual experiment platform and temperature estimation algorithms, emissivity is considered as a 
+function of radiation wavelength and temperature. Consequently, it varies with changes in 
+temperature and radiation wavelength. This variability is advantageous for enhancing algorithm 
+precision but introduces difficulties in visualizing computation results. Furthermore, 
+temperature estimation algorithm doesn't directly calculate the emissivity of materials; 
+instead, the algorithm optimize the parameters $k$ of the emissivity model. 
+Thus, the emissivity data of each point is a function of wavelength $\lambda$ and thus
+cannot be directly visualized. To address this, a simplified 
+approach for visualizing emissivity is introduced, which allows for a more intuitive 
+representation of emissivity without compromising the accuracy of the computational process.
+
+\begin{equation}
+    \label{eq: emi_average}
+    \varepsilon_{sim} = \overline{\varepsilon(\lambda)} 
+\end{equation}
+
+Eq.\ref{eq: emi_average} presents the mathematical expression for this simplification. 
+$\varepsilon_{sim}$ represents the simplified emissivity value, and $\varepsilon(\lambda)$ denotes 
+the emissivity model's value at wavelength $\lambda$. In other words, in this work, the 
+visualization of emissivity is derived from the average value of emissivity model data 
+within the wavelength range of 500 to 1000 nanometers.
 
 
-how does the compare program works
+By employing the same simplification method in the generation of experimental data and 
+subsequent temperature estimation algorithm, the validity of the program's verification is 
+ensured. This consistency guarantees that the comparison between the data used for 
+validation remains effective and reliable throughout the process.
+
+
+After obtaining a standardized emissivity visualization method, it is necessary to validate the 
+calculation results. For the convenience of validation, certain data that cannot be 
+obtained in real experiments, such as temperature and emissivity of hypothetical material 
+have been saved in several files in the virtual experiment platform.
 
 \subsection{Temperature field}
 calculated temperature field

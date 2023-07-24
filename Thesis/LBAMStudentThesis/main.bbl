@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -26,13 +26,25 @@
          giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \keyw{Characterization and Evaluation of Materials;Corrosion and Coatings;Engineering Design;Quality control;Reliability;Safety and Risk;Tribology}
+    \keyw{Characterization and Evaluation of Materials;Corrosion and
+  Coatings;Engineering Design;Quality control;Reliability;Safety and
+  Risk;Tribology}
     \strng{namehash}{FWE1}
     \strng{fullhash}{FWE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    This paper reviews the state-of-the-art of an important, rapidly emerging, manufacturing technology that is alternatively called additive manufacturing (AM), direct digital manufacturing, free form fabrication, or 3D printing, etc. A broad contextual overview of metallic AM is provided. AM has the potential to revolutionize the global parts manufacturing and logistics landscape. It enables distributed manufacturing and the productions of parts-on-demand while offering the potential to reduce cost, energy consumption, and carbon footprint. This paper explores the material science, processes, and business consideration associated with achieving these performance gains. It is concluded that a paradigm shift is required in order to fully exploit AM potential.%
+    This paper reviews the state-of-the-art of an important, rapidly emerging,
+  manufacturing technology that is alternatively called additive manufacturing
+  (AM), direct digital manufacturing, free form fabrication, or 3D printing,
+  etc. A broad contextual overview of metallic AM is provided. AM has the
+  potential to revolutionize the global parts manufacturing and logistics
+  landscape. It enables distributed manufacturing and the productions of
+  parts-on-demand while offering the potential to reduce cost, energy
+  consumption, and carbon footprint. This paper explores the material science,
+  processes, and business consideration associated with achieving these
+  performance gains. It is concluded that a paradigm shift is required in order
+  to fully exploit AM potential.%
     }
     \verb{doi}
     \verb 10.1007/s11665-014-0958-z
@@ -127,7 +139,8 @@
     \field{issn}{0007-8506}
     \field{number}{2}
     \field{pages}{603\bibrangedash 614}
-    \field{title}{Material Incress Manufacturing by Rapid Prototyping Techniques}
+    \field{title}{Material Incress Manufacturing by Rapid Prototyping
+  Techniques}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0007850607611366
     \endverb
@@ -167,7 +180,8 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{55\bibrangedash 67}
-    \field{title}{Metal additive manufacturing technologies: literature review of current status and prosthodontic applications}
+    \field{title}{Metal additive manufacturing technologies: literature review
+  of current status and prosthodontic applications}
     \verb{file}
     \verb Metal_additive_manufacturing_technologie:G\:\\Uni_Files\\Semesterarbe
     \verb it\\Literature\\Semesterarbeit\\Citavi Attachments\\Metal_additive_ma
@@ -207,7 +221,8 @@
     \endverb
     \field{issn}{0264-1275}
     \field{pages}{108762}
-    \field{title}{Processing parameters in laser powder bed fusion metal additive manufacturing}
+    \field{title}{Processing parameters in laser powder bed fusion metal
+  additive manufacturing}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0264127520302963
     \endverb
@@ -294,7 +309,8 @@
     \field{issn}{00796425}
     \field{number}{5}
     \field{pages}{112\bibrangedash 224}
-    \field{title}{Additive manufacturing of metallic components -- Process, structure and properties}
+    \field{title}{Additive manufacturing of metallic components -- Process,
+  structure and properties}
     \field{volume}{92}
     \verb{file}
     \verb debroy2018:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
@@ -334,12 +350,27 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Additive manufacturing (AM) is important in industrial and economical domains but still lacking process accuracy. In-situ measurement and process control can offer an effective solution. In AM based on metals, the temperature field of melting pool has critical impacts on phase transformation and mechanical properties. Researchers have developed various approaches to track real-time temperature during ultrahigh temperature in AM. Nevertheless, large temperature gradient around the energy source demands a capable measurement system and method due to the limitations of the conventional infrared cameras and pyrometers. This study will explore the deficiency and improvement of the existing approaches with a focus on the cutting-edge methods of AM process temperature measurement, along with a critical thinking about the follow-up usage of the collected data. Specifically, it will report the status and trends in employing various machine learning and advanced control techniques with the in-situ sensor data for process qualification purposes.%
+    Additive manufacturing (AM) is important in industrial and economical
+  domains but still lacking process accuracy. In-situ measurement and process
+  control can offer an effective solution. In AM based on metals, the
+  temperature field of melting pool has critical impacts on phase
+  transformation and mechanical properties. Researchers have developed various
+  approaches to track real-time temperature during ultrahigh temperature in AM.
+  Nevertheless, large temperature gradient around the energy source demands a
+  capable measurement system and method due to the limitations of the
+  conventional infrared cameras and pyrometers. This study will explore the
+  deficiency and improvement of the existing approaches with a focus on the
+  cutting-edge methods of AM process temperature measurement, along with a
+  critical thinking about the follow-up usage of the collected data.
+  Specifically, it will report the status and trends in employing various
+  machine learning and advanced control techniques with the in-situ sensor data
+  for process qualification purposes.%
     }
     \verb{doi}
     \verb 10.26153/TSW/17384
     \endverb
-    \field{title}{Overview of In-Situ Temperature Measurement for Metallic Additive Manufacturing: How and then What}
+    \field{title}{Overview of In-Situ Temperature Measurement for Metallic
+  Additive Manufacturing: How and then What}
     \verb{file}
     \verb Li, Liu et al. 2019 - Overview of In-Situ Temperature Measurement:G\:
     \verb \\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attac
@@ -380,7 +411,8 @@
     \field{issn}{02632241}
     \field{number}{2}
     \field{pages}{871\bibrangedash 880}
-    \field{title}{Emissivity estimation for high temperature radiation pyrometry on Ti--6Al--4V}
+    \field{title}{Emissivity estimation for high temperature radiation
+  pyrometry on Ti--6Al--4V}
     \field{volume}{46}
     \verb{file}
     \verb j.measurement.2012.10.019:G\:\\Uni_Files\\Semesterarbeit\\Literature\
@@ -436,7 +468,27 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The complex thermal cycles and temperature distributions observed in additive manufacturing (AM) are of particular interest as these define the microstructure and the associated properties of the part being built. Due to the intrinsic, layer-by-layer material stacking performed, contact methods to measure temperature are not suitable, and contactless methods need to be considered. Contactless infrared irradiation techniques were applied by carrying out thermal imaging and point measurement methods using pyrometers to determine the spatial and temporal temperature distribution in wire-based electron beam AM. Due to the vacuum, additional challenges such as element evaporation must be overcome and additional shielding measures were taken to avoid interference with the contactless techniques. The emissivities were calibrated by thermocouple readings and geometric boundary conditions. Thermal cycles and temperature profiles were recorded during deposition; the temperature gradients are described and the associated temperature transients are derived. In the temperature range of the \textgreek{a}+\textgreek{b} field, the cooling rates fall within the range of 180 to 350 °C/s, and the microstructural characterisation indicates an associated expected transformation of \textgreek{b}$\rightarrow$\textgreek{a}'+\textgreek{a} with corresponding cooling rates. Fine acicular \textgreek{a} and \textgreek{a}' formed and local misorientation was observed within \textgreek{a} as a result of the temperature gradient and the formation of the \textgreek{a}'.%
+    The complex thermal cycles and temperature distributions observed in
+  additive manufacturing (AM) are of particular interest as these define the
+  microstructure and the associated properties of the part being built. Due to
+  the intrinsic, layer-by-layer material stacking performed, contact methods to
+  measure temperature are not suitable, and contactless methods need to be
+  considered. Contactless infrared irradiation techniques were applied by
+  carrying out thermal imaging and point measurement methods using pyrometers
+  to determine the spatial and temporal temperature distribution in wire-based
+  electron beam AM. Due to the vacuum, additional challenges such as element
+  evaporation must be overcome and additional shielding measures were taken to
+  avoid interference with the contactless techniques. The emissivities were
+  calibrated by thermocouple readings and geometric boundary conditions.
+  Thermal cycles and temperature profiles were recorded during deposition; the
+  temperature gradients are described and the associated temperature transients
+  are derived. In the temperature range of the \textgreek{a}+\textgreek{b}
+  field, the cooling rates fall within the range of 180 to 350 °C/s, and the
+  microstructural characterisation indicates an associated expected
+  transformation of \textgreek{b}$\rightarrow$\textgreek{a}'+\textgreek{a} with
+  corresponding cooling rates. Fine acicular \textgreek{a} and \textgreek{a}'
+  formed and local misorientation was observed within \textgreek{a} as a result
+  of the temperature gradient and the formation of the \textgreek{a}'.%
     }
     \verb{doi}
     \verb 10.1007/s40194-021-01097-0
@@ -444,7 +496,8 @@
     \field{issn}{1878-6669}
     \field{number}{7}
     \field{pages}{1307\bibrangedash 1322}
-    \field{title}{Contactless temperature measurement in wire-based electron beam additive manufacturing Ti-6Al-4V}
+    \field{title}{Contactless temperature measurement in wire-based electron
+  beam additive manufacturing Ti-6Al-4V}
     \verb{url}
     \verb https://link.springer.com/article/10.1007/s40194-021-01097-0
     \endverb
@@ -532,7 +585,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    {\textquotedbl}A masterly assessment of the way the idea of quanta of radiation became part of 20th-century physics. . . . The book not only deals with a topic of importance and interest to all scientists, but is also a polished literary work, described (accurately) by one of its original reviewers as a scientific detective story.{\textquotedbl}---John Gribbin, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater} {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
+    {\textquotedbl}A masterly assessment of the way the idea of quanta of
+  radiation became part of 20th-century physics. . . . The book not only deals
+  with a topic of importance and interest to all scientists, but is also a
+  polished literary work, described (accurately) by one of its original
+  reviewers as a scientific detective story.{\textquotedbl}---John Gribbin,
+  {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}
+  {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul
+  Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
     }
     \field{isbn}{9780226458007}
     \field{title}{Black-Body Theory and the Quantum Discontinuity, 1894-1912}
@@ -563,7 +623,8 @@
     \endverb
     \field{number}{3}
     \field{pages}{33\bibrangedash 43}
-    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image Sensors}
+    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image
+  Sensors}
     \field{volume}{2}
     \verb{file}
     \verb Fossum, Hondongwa 2014 - A Review of the Pinned:G\:\\Uni_Files\\Semes
@@ -595,7 +656,8 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral thermometry;Temperature}
+    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral
+  thermometry;Temperature}
     \strng{namehash}{WNSHZR1}
     \strng{fullhash}{WNSHZR1}
     \field{labelnamesource}{author}
@@ -608,7 +670,8 @@
     \endverb
     \field{issn}{02632241}
     \field{pages}{108725}
-    \field{title}{Constraint optimization algorithm for spectral emissivity calculation in multispectral thermometry}
+    \field{title}{Constraint optimization algorithm for spectral emissivity
+  calculation in multispectral thermometry}
     \field{volume}{170}
     \verb{file}
     \verb jmeasurement2020108725:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
@@ -624,7 +687,8 @@
          family={Taunay},
          familyi={T\bibinitperiod},
          given={Pierre-Yves C.\bibnamedelima R.},
-         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod},
+         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim
+  C\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
       {{hash=CEY}{%
          family={Choueiri},
@@ -638,14 +702,33 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A systematic and automated procedure to calculate the temperature of a surface with unknown emissivity from radiance measurements performed at a large number of wavelengths is presented, and statistical methods are applied to quantify its accuracy and precision. Unlike existing multi-wavelength pyrometric approaches, the proposed cross-validated procedure tests multiple emissivity candidates on multiple, randomly chosen subsets of the radiance measurements. The procedure uses solely an emissivity model to provide an accurate temperature value and retrieves the true emissivity from the ratio of the measured radiance to that of a blackbody calculated from the determined temperature. For a given emissivity model, the temperature is computed using the average of all possible combinations of two-wavelength ratios. The emissivity model that minimizes the coefficient of dispersion is selected. Accuracy and precision are quantified for the case of known emissivity. It is shown that, at least in the case where wavelengths are linearly distributed, the method is accurate, the precision increases with the total number of wavelengths, and it is maximized if the ratio of the minimum to maximum wavelength is equal to 2.46. The procedure is applied to both numerical and experimental data from the literature. Excellent agreement of the calculated temperature and emissivity is obtained for both datasets.%
+    A systematic and automated procedure to calculate the temperature of a
+  surface with unknown emissivity from radiance measurements performed at a
+  large number of wavelengths is presented, and statistical methods are applied
+  to quantify its accuracy and precision. Unlike existing multi-wavelength
+  pyrometric approaches, the proposed cross-validated procedure tests multiple
+  emissivity candidates on multiple, randomly chosen subsets of the radiance
+  measurements. The procedure uses solely an emissivity model to provide an
+  accurate temperature value and retrieves the true emissivity from the ratio
+  of the measured radiance to that of a blackbody calculated from the
+  determined temperature. For a given emissivity model, the temperature is
+  computed using the average of all possible combinations of two-wavelength
+  ratios. The emissivity model that minimizes the coefficient of dispersion is
+  selected. Accuracy and precision are quantified for the case of known
+  emissivity. It is shown that, at least in the case where wavelengths are
+  linearly distributed, the method is accurate, the precision increases with
+  the total number of wavelengths, and it is maximized if the ratio of the
+  minimum to maximum wavelength is equal to 2.46. The procedure is applied to
+  both numerical and experimental data from the literature. Excellent agreement
+  of the calculated temperature and emissivity is obtained for both datasets.%
     }
     \verb{doi}
     \verb 10.1063/5.0019847
     \endverb
     \field{number}{11}
     \field{pages}{114902}
-    \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
+    \field{title}{Multi-wavelength pyrometry based on robust statistics and
+  cross-validation of emissivity model}
     \field{volume}{91}
     \verb{file}
     \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
