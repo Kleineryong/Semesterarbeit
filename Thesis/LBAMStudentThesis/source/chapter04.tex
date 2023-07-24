@@ -1,4 +1,4 @@
-\chapter{Application and validation}
+\chapter{Application}
 
 After the theoretical basis of the virtual experiment platform is known and 
 the program of the virtual experiment platform is built, the application should be 
@@ -7,7 +7,7 @@ verified with experiment data generated based on the real experiment.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.90\textwidth]{figures/application_procedure.pdf}
+    \includegraphics[width=0.6\textwidth]{figures/application_procedure_1.pdf}
     \caption{Complete procedure from data generation to model validation}
     \label{fig: application_procedure}
 \end{figure}
@@ -612,10 +612,78 @@ computational time required for temperature estimation algorithms.
 
 
 \subsection{Curve fit algorithm}
+After obtaining the reconstructed physical values of intensity, 
+a curve fit algorithm is required to determine  
+temperature and the parameters of the emissivity model that best 
+align with the actual received intensity. However, in this work, both 
+the data obtained from the virtual experimental platform and the data 
+from real experiments are not continuous spectral intensities. 
+Conversely, the input for this temperature estimation algorithm is a 
+two-dimensional array with dimensions of 8x2, which can be regarded as 8 
+samples of a continuous physical value.
 
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/curve_fit.pdf}
+  \caption{Comparison between actual received intensity $I_{act}$ 
+  and reconstructed intensity $I_{rec}$ of one point}
+  \label{fig: curve_fit_demo}
+\end{figure}
 
-\subsection{Parameters in calculation}
-quantum efficiency, lens factor
 
-\section{Validation}
+Fig.\ref{fig: curve_fit_demo} illustrates the reconstructed physical 
+value for each channel and the corresponding physical values from the 
+original experimental data. It is evident that this approach simplifies 
+the visualization of independent channel data and facilitates the 
+utilization of this profile for curve fitting purposes.
+
+
+\subsection{Parameters in temperature estimation algorithm}
+The temperature estimation algorithm uses numerous parameters, 
+which significantly impact the precision and consistency of the 
+computed results. Therefore, it is essential to set boundary conditions 
+for these parameters.
+
+
+\subsubsection{Wavelength range}
+In Fig.\ref{fig: quantum_efficiency}, it can be observed that the 
+total quantum efficiency of the sensor $\eta_{camera}$ decreases to 
+0 when the radiation wavelength exceeds 900 nanometers. This effect is 
+attributed to the presence of a filter on the sensor. Consequently, 
+when reconstructing the physical values of the spectral radiation 
+intensity, the integration limits are set to be within the 
+range of 500 nanometers to 1000 nanometers. This approach ensures 
+that the essential information is captured while reducing the 
+computational resources required for integration and thus improving the 
+computational speed.
+
+
+\subsubsection{Boundary condition of estimated temperature}
+In the temperature estimation algorithm, the process starts with an 
+initial guess, which is used to perform the first reconstruction of 
+the physical values of the spectral radiation intensity. This 
+reconstruction yields a cost function and a gradient that 
+minimizes the cost function. The algorithm then adjusts the parameters 
+to be optimized along this gradient before proceeding to the next 
+iteration. It is evident that the choice of the initial guess 
+significantly influences the computational efficiency of the 
+program and can help avoid potential physically meaningless 
+local minima.
+
+To address this, it is mandated that the predicted temperature in the 
+temperature estimation algorithm lie within the range of 500 to 2000K. 
+This constraint ensures that the algorithm operates within a 
+physically meaningful and relevant temperature range, preventing 
+unrealistic results and potentially leading to a more effective and 
+efficient optimization process.
+
+\subsubsection{Boundary condition of estimated emissivity}
+Unlike the boundary conditions applied to the estimated temperature, 
+the boundaries for emissivity are much narrower. This is due to the 
+physical definition of emissivity mentioned earlier in the text. 
+Therefore, it is necessary to apply a boundary condition 
+of $0 < \varepsilon < 1$ for emissivity during the calculations. 
+However, in the curve fit algorithm mentioned in this work, emissivity 
+is not a variable to be determined. Hence, it becomes necessary to 
+incorporate this boundary condition directly into the emissivity model.
