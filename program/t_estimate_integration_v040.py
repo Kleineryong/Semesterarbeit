@@ -23,7 +23,7 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     DF_QE = pd.read_excel(os.path.join(camera_folder, "CMS22010236.xlsx"), 'QE')
     DF_T = pd.read_excel(os.path.join(camera_folder, "FIFO-Lens_tr.xls"))
 
-    t_melt = 1700
+    t_melt = 1600
 
     tr_array = np.array(DF_T).transpose()
     qe_array = []
@@ -221,7 +221,7 @@ def emissivity_model_v030(wl, a, b, b_1):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl - wl0) / (wl1 - wl0)
     emissivity = a * wl_rel**2 + b * wl_rel + b_1
-    return emissivity
+    return max(0, min(emissivity, 1))
 
 
 def emissivity_model_v020(wl, a, b):
@@ -230,7 +230,7 @@ def emissivity_model_v020(wl, a, b):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl - wl0) / (wl1 - wl0)
     emissivity = math.exp(-a - b * wl_rel)
-    return emissivity
+    return max(0, min(emissivity, 1))
 
 
 def process_itg_v030(intensity_array, qe_array, tr_array):
@@ -246,7 +246,7 @@ def process_itg_v030(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 4000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 500), (50, 50, 1, 2000)), maxfev= 100000)
     return popt[3], popt[0], popt[1], popt[2]
 
 
@@ -263,7 +263,7 @@ def process_itg_v020(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 500), (50, 50, 4000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 500), (50, 50, 2000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
@@ -312,7 +312,7 @@ if 1:
 
     result_dir = 'result_v040_lin_square_exp'
     data_temperature = '1900'
-    emissivity_set = '33'
+    emissivity_set = '1'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
