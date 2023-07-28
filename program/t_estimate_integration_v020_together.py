@@ -193,13 +193,13 @@ def emissivity_model(wl, a, b):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl-wl0)/(wl1-wl0)
     # lin emi = a + b * lambda
-    emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
+    # emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(a + b * wl)
 
     # lin square emi = a + b * wl**2
-    # emissivity = a + b * (wl_rel**2)
+    emissivity = a + b * (wl_rel**2)
 
     # exp emi = exp(-a - b * wl)
     # emissivity = math.exp(a + b * wl_rel)
@@ -223,7 +223,7 @@ def process_itg(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-1, -1, 500), (1, 1, 4000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-1, -1, 500), (1, 1, 2000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
@@ -269,7 +269,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v024_lin_square'
     data_temperature = '1900'
     emissivity_set = '0'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
