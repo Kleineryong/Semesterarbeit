@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  29 JUL 2023 00:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  29 JUL 2023 00:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2491,62 +2491,62 @@ Package pdftex.def Info: figures/raw_data/21/channel_8.pdf  used on input line 2
 (pdftex.def)             Requested size: 85.39888pt x 85.47493pt.
 Package cleveref Info: loaded `english' language definitions on input line 247.
 [28 <./figures/raw_data/21/color_bar.pdf> <./figures/raw_data/21/channel_1.pdf> <./figures/raw_data/21/channel_2.pdf> <./figures/raw_data/21/channel_3.pdf> <./figures/raw_data/21/channel_4.pdf> <./figures/raw_data/21/channel_5.pdf> <./figures/raw_data/21/channel_6.pdf> <./figures/raw_data/21/channel_7.pdf> <./figures/raw_data/21/channel_8.pdf>]
-<figures/raw_data/0/linear/T_bias.jpg, id=760, 462.528pt x 346.896pt>
+<figures/raw_data/0/linear/T_bias.jpg, id=768, 462.528pt x 346.896pt>
 File: figures/raw_data/0/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/linear/T_bias.jpg  used on input line 265.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/0/linear/emi_cal.jpg, id=761, 462.528pt x 346.896pt>
+<figures/raw_data/0/linear/emi_cal.jpg, id=769, 462.528pt x 346.896pt>
 File: figures/raw_data/0/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/linear/emi_cal.jpg  used on input line 269.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/mix/T_bias.jpg, id=762, 462.528pt x 346.896pt>
+<figures/raw_data/31/mix/T_bias.jpg, id=770, 462.528pt x 346.896pt>
 File: figures/raw_data/31/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/mix/T_bias.jpg  used on input line 277.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/mix/emi_cal.jpg, id=763, 462.528pt x 346.896pt>
+<figures/raw_data/31/mix/emi_cal.jpg, id=771, 462.528pt x 346.896pt>
 File: figures/raw_data/31/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/mix/emi_cal.jpg  used on input line 281.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/0/lin_square/T_bias.jpg, id=764, 462.528pt x 346.896pt>
+<figures/raw_data/0/lin_square/T_bias.jpg, id=772, 462.528pt x 346.896pt>
 File: figures/raw_data/0/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/lin_square/T_bias.jpg  used on input line 297.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/0/lin_square/emi_cal.jpg, id=765, 462.528pt x 346.896pt>
+<figures/raw_data/0/lin_square/emi_cal.jpg, id=773, 462.528pt x 346.896pt>
 File: figures/raw_data/0/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/lin_square/emi_cal.jpg  used on input line 301.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/lin_square/T_bias.jpg, id=766, 462.528pt x 346.896pt>
+<figures/raw_data/31/lin_square/T_bias.jpg, id=774, 462.528pt x 346.896pt>
 File: figures/raw_data/31/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/lin_square/T_bias.jpg  used on input line 309.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/lin_square/emi_cal.jpg, id=767, 462.528pt x 346.896pt>
+<figures/raw_data/31/lin_square/emi_cal.jpg, id=775, 462.528pt x 346.896pt>
 File: figures/raw_data/31/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/lin_square/emi_cal.jpg  used on input line 313.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/0/mix/T_bias.jpg, id=768, 462.528pt x 346.896pt>
+<figures/raw_data/0/mix/T_bias.jpg, id=776, 462.528pt x 346.896pt>
 File: figures/raw_data/0/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/mix/T_bias.jpg  used on input line 329.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/0/mix/emi_cal.jpg, id=769, 462.528pt x 346.896pt>
+<figures/raw_data/0/mix/emi_cal.jpg, id=777, 462.528pt x 346.896pt>
 File: figures/raw_data/0/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/mix/emi_cal.jpg  used on input line 333.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/quad/T_bias.jpg, id=770, 462.528pt x 346.896pt>
+<figures/raw_data/31/quad/T_bias.jpg, id=778, 462.528pt x 346.896pt>
 File: figures/raw_data/31/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/quad/T_bias.jpg  used on input line 341.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/quad/emi_cal.jpg, id=771, 462.528pt x 346.896pt>
+<figures/raw_data/31/quad/emi_cal.jpg, id=779, 462.528pt x 346.896pt>
 File: figures/raw_data/31/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/quad/emi_cal.jpg  used on input line 345.
@@ -2559,12 +2559,12 @@ File: figures/raw_data/0/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/mix/emi_cal.jpg  used on input line 365.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/exp/T_bias.jpg, id=772, 462.528pt x 346.896pt>
+<figures/raw_data/31/exp/T_bias.jpg, id=780, 462.528pt x 346.896pt>
 File: figures/raw_data/31/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/exp/T_bias.jpg  used on input line 373.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<figures/raw_data/31/exp/emi_cal.jpg, id=773, 462.528pt x 346.896pt>
+<figures/raw_data/31/exp/emi_cal.jpg, id=781, 462.528pt x 346.896pt>
 File: figures/raw_data/31/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/exp/emi_cal.jpg  used on input line 377.
@@ -2658,15 +2658,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  68937 strings out of 477853
  1557433 string characters out of 5833684
- 2515496 words of memory out of 5000000
+ 2515497 words of memory out of 5000000
  87331 multiletter control sequences out of 15000+600000
  615494 words of font info for 363 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,13n,131p,2259b,2473s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (51 pages, 2513201 bytes).
+Output written on main.pdf (51 pages, 2635401 bytes).
 PDF statistics:
- 961 PDF objects out of 1000 (max. 8388607)
+ 969 PDF objects out of 1000 (max. 8388607)
  184 named destinations out of 1000 (max. 500000)
  98933 words of extra memory for PDF output out of 106986 (max. 10000000)
 
