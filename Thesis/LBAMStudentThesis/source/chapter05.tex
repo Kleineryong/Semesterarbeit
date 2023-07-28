@@ -255,6 +255,14 @@ represent the accuracy of the computations. To save space, the results
 of calculations for blackbody materials and materials based on Model 7 are selected for presentation.
 
 \subsubsection{Linear model}
+In the computation results of the linear model, it can be observed 
+that the temperature estimation algorithm based on this model 
+introduces significant errors, particularly when calculating 
+temperatures for blackbody materials, with relative errors exceeding 10\%. 
+Additionally, in the temperature estimation for other hypothetical 
+materials, the linear model performs poorly in the liquid state 
+region. This limitation may arise from the inability of the linear 
+model to accurately reproduce the complexities of real emissivity models.
 
 \begin{figure}[htbp]
     \centering
@@ -286,8 +294,14 @@ of calculations for blackbody materials and materials based on Model 7 are selec
     \label{fig: linear_model}
 \end{figure}
 
-\subsubsection{Linear square model}
 
+\subsubsection{Linear square model}
+In this linear square model, the introduction of an additional 
+parameter results in an emissivity model with one more degree of 
+freedom compared to the linear model. Consequently, this model is better 
+suited for accurately characterizing the emissivity properties of real 
+materials. Simultaneously, it can also provide accurate estimations for 
+materials with relatively simpler emissivity models.
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{\textwidth}
@@ -351,18 +365,18 @@ not finished
 \end{figure}
 
 \subsubsection{Exponential model}
-not finished
+
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/0/mix/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/0/exp/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/0/mix/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/0/exp/emi_cal.jpg}
         \end{subfigure}
         \subcaption{Black body material}
     \end{minipage}\\

@@ -21,19 +21,19 @@
 \contentsline {section}{\numberline {4.1}Experiment data generation}{13}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Temperature field}{14}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Emissivity model}{15}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Camera model}{18}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Temperature estimation algorithm}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.3}Camera model}{17}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Temperature estimation algorithm}{19}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Rebuild physical value of spectral radiation intensity}{19}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Emissivity model used for calculation}{19}{subsection.4.2.2}%
 \contentsline {subsubsection}{Linear model}{20}{subsubsection*.19}%
-\contentsline {subsubsection}{Linear square model}{20}{subsubsection*.20}%
+\contentsline {subsubsection}{Linear square model}{21}{subsubsection*.20}%
 \contentsline {subsubsection}{Quadratic model}{21}{subsubsection*.21}%
 \contentsline {subsubsection}{Exponential model}{21}{subsubsection*.22}%
 \contentsline {subsubsection}{Mixed model}{21}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {4.2.3}Curve fit algorithm}{21}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Curve fit algorithm}{22}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Parameters in temperature estimation algorithm}{22}{subsection.4.2.4}%
 \contentsline {subsubsection}{Wavelength range}{22}{subsubsection*.25}%
-\contentsline {subsubsection}{Boundary condition of estimated temperature}{22}{subsubsection*.26}%
+\contentsline {subsubsection}{Boundary condition of estimated temperature}{23}{subsubsection*.26}%
 \contentsline {subsubsection}{Boundary condition of estimated emissivity}{23}{subsubsection*.27}%
 \contentsline {chapter}{\numberline {5}Calcualtion results and analysis}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Calculation results}{25}{section.5.1}%
@@ -41,12 +41,12 @@
 \contentsline {subsection}{\numberline {5.1.2}Estimated temperature field and emissivity field}{28}{subsection.5.1.2}%
 \contentsline {subsubsection}{Linear model}{29}{subsubsection*.31}%
 \contentsline {subsubsection}{Linear square model}{29}{subsubsection*.33}%
-\contentsline {subsubsection}{Quatratic model}{29}{subsubsection*.35}%
-\contentsline {subsubsection}{Exponential model}{29}{subsubsection*.37}%
-\contentsline {subsubsection}{Mixed model}{33}{subsubsection*.39}%
-\contentsline {section}{\numberline {5.2}Data analysis}{33}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Sensitivity analysis of emissivity models}{33}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Performance between different materials}{33}{subsection.5.2.2}%
+\contentsline {subsubsection}{Quatratic model}{30}{subsubsection*.35}%
+\contentsline {subsubsection}{Exponential model}{30}{subsubsection*.37}%
+\contentsline {subsubsection}{Mixed model}{30}{subsubsection*.39}%
+\contentsline {section}{\numberline {5.2}Data analysis}{30}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Sensitivity analysis of emissivity models}{30}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Performance between different materials}{34}{subsection.5.2.2}%
 \contentsline {chapter}{\numberline {6}Conclusion and prospects}{35}{chapter.6}%
 \contentsline {chapter}{\numberline {A}Appendices}{37}{appendix.A}%
 \contentsline {chapter}{Bibliography}{39}{appendix*.41}%
