@@ -655,6 +655,101 @@
     \field{year}{2020}
   \endentry
 
+  \entry{Kobatake.2012}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KH}{%
+         family={Kobatake},
+         familyi={K\bibinitperiod},
+         given={Hidekazu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Khosroabadi},
+         familyi={K\bibinitperiod},
+         given={Hossein},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fukuyama},
+         familyi={F\bibinitperiod},
+         given={Hiroyuki},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KHKHFH1}
+    \strng{fullhash}{KHKHFH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s11661-012-1101-0
+    \endverb
+    \field{issn}{1073-5623}
+    \field{number}{7}
+    \field{pages}{2466\bibrangedash 2472}
+    \field{title}{Normal Spectral Emissivity Measurement of Liquid Iron and Nickel Using Electromagnetic Levitation in Direct Current Magnetic Field}
+    \field{volume}{43}
+    \verb{file}
+    \verb s11661-012-1101-0:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semeste
+    \verb rarbeit\\Citavi Attachments\\s11661-012-1101-0.pdf:pdf
+    \endverb
+    \field{journaltitle}{Metallurgical and Materials Transactions A}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Watanabe.2003}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WH}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Hiromichi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Susa},
+         familyi={S\bibinitperiod},
+         given={Masahiro},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fukuyama},
+         familyi={F\bibinitperiod},
+         given={Hiroyuki},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nagata},
+         familyi={N\bibinitperiod},
+         given={Kazuhiro},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Classical Mechanics;Condensed Matter Physics;Industrial Chemistry/Chemical Engineering;Physical Chemistry}
+    \strng{namehash}{WHSMFHNK1}
+    \strng{fullhash}{WHSMFHNK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Normal spectral emissivities of liquid and solid Fe, Co, and Ni have been determined at their melting points at wavelengths from 650 to 800 nm and from 1000 to 1900 nm using an apparatus that consists of a cold crucible and diffraction grating spectroscopes. For all three metals, the emissivities of the liquid phases are slightly larger than those of the solid phases both in the visible and near-infrared regions. For iron, the near-infrared emissivities decreased progressively with each additional measurement series and settled down after three series. A possible explanation to this behavior is offered. The present results for iron were assessed by comparisons with previously reported results and with predictions based upon the Hagen--Rubens relation for the ratio of the emissivity of the liquid to that of the solid (\textgreek{e} Liquid/\textgreek{e} Solid). The measured emissivities for all three metals are in good agreement with previous results at and near the melting point. The results for \textgreek{e} Liquid/\textgreek{e} Solid in the near-infrared region demonstrate that the phase (liquid/solid) dependence of the infrared emissivity is consistent with that of the dc resistivity for all the metals at their melting points.%
+    }
+    \verb{doi}
+    \verb 10.1023/A:1022924105951
+    \endverb
+    \field{issn}{1572-9567}
+    \field{number}{2}
+    \field{pages}{473\bibrangedash 488}
+    \field{title}{Phase (Liquid/Solid) Dependence of the Normal Spectral Emissivity for Iron, Cobalt, and Nickel at Melting Points}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1023/a:1022924105951
+    \endverb
+    \field{volume}{24}
+    \verb{file}
+    \verb a%3A1022924105951:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semeste
+    \verb rarbeit\\Citavi Attachments\\a%3A1022924105951.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Journal of Thermophysics}
+    \field{year}{2003}
+  \endentry
+
   \entry{Asanovic.2009}{article}{}
     \name{author}{12}{}{%
       {{hash=AK}{%
