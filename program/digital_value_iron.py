@@ -113,7 +113,7 @@ def black_body_radiation(temperature, wavelength):
 
 def emi_plot(emissivity_solid, emissivity_liquid, melt_temperature, data_temp):
     t_field = np.linspace(1500, 2000, 30)
-    wl_set = np.linspace(400, 800, 30)
+    wl_set = np.linspace(400, 800, 30) * 1e-9
     T, WL = np.meshgrid(t_field, wl_set)
     emi = np.zeros(T.shape)
     for i in range(len(t_field)):
@@ -122,7 +122,7 @@ def emi_plot(emissivity_solid, emissivity_liquid, melt_temperature, data_temp):
     fig = plt.figure(figsize=(8, 6), dpi=800)
     ax = fig.add_subplot(111, projection='3d')
     # 绘制散点图
-    ax.scatter(T, WL, emi, c='g')
+    ax.scatter(T, WL * 1e9, emi, c='g')
 
     # 设置坐标轴标签
     ax.set_xlabel('Temperature[K]')
@@ -130,7 +130,7 @@ def emi_plot(emissivity_solid, emissivity_liquid, melt_temperature, data_temp):
     ax.set_zlabel('Emissivity')
 
     plt.savefig('emissivity_model.jpg')
-    plt.show()
+    # plt.show()
     return 0
 
 

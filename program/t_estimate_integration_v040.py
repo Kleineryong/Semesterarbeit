@@ -312,7 +312,7 @@ if 1:
 
     result_dir = 'result_v040_lin_square_exp'
     data_temperature = '1900'
-    emissivity_set = '1'
+    emissivity_set = '5'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
