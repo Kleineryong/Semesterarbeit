@@ -1,0 +1,5 @@
+result_v040_lin_square_exp
+result_v030_lin_square
+result_v024_lin
+result_v024_lin_square
+result_v024_exp

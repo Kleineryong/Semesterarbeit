@@ -54,7 +54,7 @@ def save_result(result_dir, t_diff_abs, t_diff_rel, t_diff_std, t_diff_max, t_di
 
 
 def read_result(result_dir, t_index):
-    dir_list = ['T1900_0_digital', 'T1900_1_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',
+    dir_list = ['T1900_0_digital', 'T1900_5_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',
                 'T1900_24_digital', 'T1900_25_digital', 'T1900_26_digital', 'T1900_31_digital',
                 'T1900_32_digital', 'T1900_33_digital', 'T1900_34_digital']
     result_raw = {}
@@ -65,7 +65,7 @@ def read_result(result_dir, t_index):
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v040_lin_square_exp'
+    result_dir = 'result_v024_exp'
     result_analyze(result_dir)
 
     end_time = time.perf_counter()
