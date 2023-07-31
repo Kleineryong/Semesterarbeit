@@ -258,38 +258,12 @@ if 1:
     start_time = time.perf_counter()
     result_dir = 'result_v030_lin_square'
     data_temperature = '1900'
-    emissivity_set = '0'
+    emissivity_set = '5'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)
 
     print(data_name, 'finished')
-
-    result_dir = 'result_v030_lin_square'
-    data_temperature = '1900'
-    emissivity_set = '1'
-    data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    compare(data_name, result_dir)
-
-    print(data_name, 'finished')
-
-    # result_dir = 'result_v030_lin_square'
-    # data_temperature = '1900'
-    # emissivity_set = '33'
-    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    # compare(data_name, result_dir)
-    #
-    # print(data_name, 'finished')
-    #
-    # result_dir = 'result_v030_lin_square'
-    # data_temperature = '1900'
-    # emissivity_set = '34'
-    # data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
-    # t_estimate_integration(result_dir, data_temperature, emissivity_set)
-    # compare(data_name, result_dir)
-    # print(data_name, 'finished')
 
     end_time = time.perf_counter()
     print("calculation time: ", end_time - start_time, " second")
