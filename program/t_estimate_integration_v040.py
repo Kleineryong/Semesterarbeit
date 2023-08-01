@@ -23,7 +23,7 @@ def t_estimate_integration(result_dir, data_temperature, emissivity_set):
     DF_QE = pd.read_excel(os.path.join(camera_folder, "CMS22010236.xlsx"), 'QE')
     DF_T = pd.read_excel(os.path.join(camera_folder, "FIFO-Lens_tr.xls"))
 
-    t_melt = 1600
+    t_melt = 1700
 
     tr_array = np.array(DF_T).transpose()
     qe_array = []
@@ -246,7 +246,7 @@ def process_itg_v030(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 0, 1200), (50, 50, 1, 2000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-3, -3, -1, 1200), (3, 3, 1, 2000)), maxfev= 100000)
     return popt[3], popt[0], popt[1], popt[2]
 
 
@@ -263,7 +263,7 @@ def process_itg_v020(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-50, -50, 1200), (50, 50, 2000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-1, -1, 1200), (1, 1, 2000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
