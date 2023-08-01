@@ -258,27 +258,15 @@ of calculations for blackbody materials and materials based on Model 7 are selec
 
 \begin{figure}[htbp]
     \centering
-    %\begin{minipage}{\textwidth}
-    %    \centering
-    %    \begin{subfigure}{0.49\textwidth}
-    %        \centering
-    %        \includegraphics[width=\textwidth]{figures/raw_data/0/linear/T_bias.jpg}
-    %    \end{subfigure}
-    %    \begin{subfigure}{0.49\textwidth}
-    %        \centering
-    %        \includegraphics[width=\textwidth]{figures/raw_data/0/linear/emi_cal.jpg}
-    %    \end{subfigure}
-    %    \subcaption{Black body material}
-    %\end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/linear/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/linear/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/linear/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/linear/emi_cal.jpg}
         \end{subfigure}
         \subcaption{Material based on model 1}
     \end{minipage}\\
@@ -300,13 +288,22 @@ of calculations for blackbody materials and materials based on Model 7 are selec
 
 
 Fig.\ref{fig: linear_model} demonstrate the calculation result on material based on 
-model 7 and real data from iron. It can be found that the calculation result is more
+model 1 and real data from iron. It can be found that the calculation result is more
 stable in real data due to the material character. 
 
-More calculation result can be found in table \ref{tab: statistic_results}. 
+
+In Fig.\ref{fig: linear_model}, it can be observed that relative bias are present 
+in the estimations based on two different materials. Moreover, this relative bias \
+experiences a sudden change with increasing temperature, represented by a red 
+circle in the figure. The reason behind this phenomenon can be considered as follows, 
+at the boundary of the circle, the material undergoes a phase change from solid to liquid, 
+leading to a rapid change in emissivity. The linear model is only able to  
+simulate linear emissivity models, which fails to adequately fit the variations 
+occurring at this point, resulting in significant deviations in the 
+temperature estimations.
 
 
-It can be observed that in the computation of linear models, 
+It can be observed in table \ref{tab: statistic_results} that in the computation of linear models, 
 calculation results based on real data exists relatively low average relative error and the lowest 
 standard deviation. This indicates that the linear model maintains a higher 
 level of consistency when performing calculations on real materials. It also 
@@ -319,6 +316,7 @@ fact that the emissivity of materials based on model 8 undergoes a sudden change
 as the wavelength increases, which is a potential reason for the decline in 
 calculation consistency.
 
+
 \subsubsection{Linear square model}
 
 \begin{figure}[htbp]
@@ -327,13 +325,13 @@ calculation consistency.
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/lin_square/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/lin_square/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/lin_square/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/lin_square/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Material based on model 7}
+        \subcaption{Material based on model 1}
     \end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
@@ -458,7 +456,7 @@ tabel \ref{tab: statistic_results}.
     \centering
     \caption{Calculation results from different models}
     \label{tab: statistic_results}
-    \begin{tabular}{llllllllllll}
+    \begin{tabular}{lccccccccccc}
         \hline
         & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Real data} & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 & Model 6 & Model 7 & Model 8 & Model 9 \\ \hline
         \multicolumn{12}{c}{Linear}                                                                                                                                                         \\ \hline
