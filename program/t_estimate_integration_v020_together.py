@@ -196,7 +196,7 @@ def emissivity_model(wl, a, b):
     # emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
-    emissivity = math.exp(a + b * wl)
+    emissivity = math.exp(a + b * wl_rel)
 
     # lin square emi = a + b * wl**2
     # emissivity = a + b * (wl_rel**2)
@@ -271,7 +271,7 @@ if 1:
     start_time = time.perf_counter()
     result_dir = 'result_v024_exp'
     data_temperature = '1900'
-    emissivity_set = '5'
+    emissivity_set = '0'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
     t_estimate_integration(result_dir, data_temperature, emissivity_set)
     compare(data_name, result_dir)

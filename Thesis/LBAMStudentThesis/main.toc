@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {5.1.2}Estimated temperature field and emissivity field}{28}{subsection.5.1.2}%
 \contentsline {subsubsection}{Linear model}{29}{subsubsection*.32}%
 \contentsline {subsubsection}{Linear square model}{30}{subsubsection*.34}%
-\contentsline {subsubsection}{Quatratic model}{30}{subsubsection*.36}%
+\contentsline {subsubsection}{Quadratic model}{30}{subsubsection*.36}%
 \contentsline {subsubsection}{Exponential model}{30}{subsubsection*.38}%
 \contentsline {subsubsection}{Mixed model}{30}{subsubsection*.40}%
 \contentsline {subsection}{\numberline {5.1.3}Statistical results}{30}{subsection.5.1.3}%

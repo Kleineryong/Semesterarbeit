@@ -10,7 +10,7 @@ def result_analyze(result_dir):
     homefolder = os.path.dirname(currentdir)
 
     # read real temperature field and choose the focused area.
-    t_field_raw = np.array(pd.read_excel(os.path.join(homefolder, 'data', 'T1900_5_digital', 't_field_1900.xlsx'),
+    t_field_raw = np.array(pd.read_excel(os.path.join(homefolder, 'data', 'T1900_0_digital', 't_field_1900.xlsx'),
                                          header=None))
     t_index = t_field_raw > 1500
     t_true = t_field_raw[t_index]
@@ -54,7 +54,8 @@ def save_result(result_dir, t_diff_abs, t_diff_rel, t_diff_std, t_diff_max, t_di
 
 
 def read_result(result_dir, t_index):
-    dir_list = ['T1900_0_digital', 'T1900_5_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',
+    dir_list = ['T1900_0_digital',
+                'T1900_5_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',
                 'T1900_24_digital', 'T1900_25_digital', 'T1900_26_digital', 'T1900_31_digital',
                 'T1900_32_digital', 'T1900_33_digital', 'T1900_34_digital']
     result_raw = {}
