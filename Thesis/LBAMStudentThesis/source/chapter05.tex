@@ -258,33 +258,66 @@ of calculations for blackbody materials and materials based on Model 7 are selec
 
 \begin{figure}[htbp]
     \centering
+    %\begin{minipage}{\textwidth}
+    %    \centering
+    %    \begin{subfigure}{0.49\textwidth}
+    %        \centering
+    %        \includegraphics[width=\textwidth]{figures/raw_data/0/linear/T_bias.jpg}
+    %    \end{subfigure}
+    %    \begin{subfigure}{0.49\textwidth}
+    %        \centering
+    %        \includegraphics[width=\textwidth]{figures/raw_data/0/linear/emi_cal.jpg}
+    %    \end{subfigure}
+    %    \subcaption{Black body material}
+    %\end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/0/linear/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/31/linear/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/0/linear/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/31/linear/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Black body material}
+        \subcaption{Material based on model 1}
     \end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/5/linear/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/5/linear/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Material based on model 7}
+        \subcaption{Material based on real iron data}
     \end{minipage}
     \caption{Calculation results of linear model}
     \label{fig: linear_model}
 \end{figure}
+
+
+Fig.\ref{fig: linear_model} demonstrate the calculation result on material based on 
+model 7 and real data from iron. It can be found that the calculation result is more
+stable in real data due to the material character. 
+
+More calculation result can be found in table \ref{tab: linear_model}. 
+
+
+It can be observed that in the computation of linear models, 
+calculation results based on real data exists relatively low average relative error and the lowest 
+standard deviation. This indicates that the linear model maintains a higher 
+level of consistency when performing calculations on real materials. It also 
+achieves a maximum relative error of no more than 9.6\%. However, when 
+performing calculations on other hypothetical materials, the linear model may 
+produce relatively large errors, particularly for model 8, which has a high standard 
+deviation, meaning the low consistency in the calculations. As mentioned 
+in previous sections, this decrease in computational consistency could be attributed to the 
+fact that the emissivity of materials based on model 8 undergoes a sudden change 
+as the wavelength increases, which is a potential reason for the decline in 
+calculation consistency.
 
 \subsubsection{Linear square model}
 
@@ -416,6 +449,50 @@ due to the utilization of two different emissivity models.
     \label{fig: result_mixed_model}
 \end{figure}
 
+\subsection{Statistical results}
+
+After obtaining all calculation results, some statistical results can be found in 
+tabel \ref{tab: statistic_results}. 
+
+\begin{sidewaystable}[htbp]
+    \centering
+    \caption{Calculation results from different models}
+    \label{tab: statistic_results}
+    \begin{tabular}{llllllllllll}
+        \hline
+        & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Real data} & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 & Model 6 & Model 7 & Model 8 & Model 9 \\ \hline
+        \multicolumn{12}{c}{Linear}                                                                                                                                                        \\ \hline
+        Abs. difference {[}K{]} & -30.3                          & -142.3                        & -247.6  & -303.1  & -285.7  & -255.8  & -325.4  & -344.8  & -460.1  & -16.087 & -301.8  \\
+        Rel. difference         & 0.13                           & 0.08                          & 0.18    & 0.19    & 0.18    & 0.18    & 0.20    & 0.21    & 0.28    & 0.16    & 0.19    \\
+        SD {[}K{]}              & 289.13                         & 13.20                         & 212.46  & 143.79  & 150.88  & 199.79  & 104.78  & 75.32   & 104.75  & 290.48  & 112.95  \\
+        Max. difference {[}K{]} & 0.717                          & 0.096                         & 0.322   & 0.323   & 0.312   & 0.322   & 0.312   & 0.316   & 0.378   & 0.342   & 0.311   \\
+        Min. difference {[}K{]} & 0.001                          & 0.076                         & 0.001   & 0.0001  & 0.001   & 0.002   & 0.019   & 0.104   & 0.004   & 0.003   & 0.009   \\ \hline
+        \multicolumn{12}{c}{Quadratic}                                                                                                                                                     \\ \hline
+        Abs. difference {[}K{]} & -30.3                          & -142.3                        & -247.6  & -303.1  & -285.7  & -255.8  & -325.4  & -344.8  & -460.1  & -16.087 & -301.8  \\
+        Rel. difference         & 0.13                           & 0.08                          & 0.18    & 0.19    & 0.18    & 0.18    & 0.20    & 0.21    & 0.28    & 0.16    & 0.19    \\
+        SD {[}K{]}              & 289.13                         & 13.20                         & 212.46  & 143.79  & 150.88  & 199.79  & 104.78  & 75.32   & 104.75  & 290.48  & 112.95  \\
+        Max. difference {[}K{]} & 0.717                          & 0.096                         & 0.322   & 0.323   & 0.312   & 0.322   & 0.312   & 0.316   & 0.378   & 0.342   & 0.311   \\
+        Min. difference {[}K{]} & 0.001                          & 0.076                         & 0.001   & 0.0001  & 0.001   & 0.002   & 0.019   & 0.104   & 0.004   & 0.003   & 0.009   \\ \hline
+        \multicolumn{12}{c}{Linear square}                                                                                                                                                 \\ \hline
+        Abs. difference {[}K{]} & -30.3                          & -142.3                        & -247.6  & -303.1  & -285.7  & -255.8  & -325.4  & -344.8  & -460.1  & -16.087 & -301.8  \\
+        Rel. difference         & 0.13                           & 0.08                          & 0.18    & 0.19    & 0.18    & 0.18    & 0.20    & 0.21    & 0.28    & 0.16    & 0.19    \\
+        SD {[}K{]}              & 289.13                         & 13.20                         & 212.46  & 143.79  & 150.88  & 199.79  & 104.78  & 75.32   & 104.75  & 290.48  & 112.95  \\
+        Max. difference {[}K{]} & 0.717                          & 0.096                         & 0.322   & 0.323   & 0.312   & 0.322   & 0.312   & 0.316   & 0.378   & 0.342   & 0.311   \\
+        Min. difference {[}K{]} & 0.001                          & 0.076                         & 0.001   & 0.0001  & 0.001   & 0.002   & 0.019   & 0.104   & 0.004   & 0.003   & 0.009   \\ \hline
+        \multicolumn{12}{c}{Exponential}                                                                                                                                                   \\ \hline
+        Abs. difference {[}K{]} & -30.3                          & -142.3                        & -247.6  & -303.1  & -285.7  & -255.8  & -325.4  & -344.8  & -460.1  & -16.087 & -301.8  \\
+        Rel. difference         & 0.13                           & 0.08                          & 0.18    & 0.19    & 0.18    & 0.18    & 0.20    & 0.21    & 0.28    & 0.16    & 0.19    \\
+        SD {[}K{]}              & 289.13                         & 13.20                         & 212.46  & 143.79  & 150.88  & 199.79  & 104.78  & 75.32   & 104.75  & 290.48  & 112.95  \\
+        Max. difference {[}K{]} & 0.717                          & 0.096                         & 0.322   & 0.323   & 0.312   & 0.322   & 0.312   & 0.316   & 0.378   & 0.342   & 0.311   \\
+        Min. difference {[}K{]} & 0.001                          & 0.076                         & 0.001   & 0.0001  & 0.001   & 0.002   & 0.019   & 0.104   & 0.004   & 0.003   & 0.009   \\ \hline
+        \multicolumn{12}{c}{Mixed model}                                                                                                                                                   \\ \hline
+        Abs. difference {[}K{]} & -30.3                          & -142.3                        & -247.6  & -303.1  & -285.7  & -255.8  & -325.4  & -344.8  & -460.1  & -16.087 & -301.8  \\
+        Rel. difference         & 0.13                           & 0.08                          & 0.18    & 0.19    & 0.18    & 0.18    & 0.20    & 0.21    & 0.28    & 0.16    & 0.19    \\
+        SD {[}K{]}              & 289.13                         & 13.20                         & 212.46  & 143.79  & 150.88  & 199.79  & 104.78  & 75.32   & 104.75  & 290.48  & 112.95  \\
+        Max. difference {[}K{]} & 0.717                          & 0.096                         & 0.322   & 0.323   & 0.312   & 0.322   & 0.312   & 0.316   & 0.378   & 0.342   & 0.311   \\
+        Min. difference {[}K{]} & 0.001                          & 0.076                         & 0.001   & 0.0001  & 0.001   & 0.002   & 0.019   & 0.104   & 0.004   & 0.003   & 0.009  
+    \end{tabular}
+\end{sidewaystable}
 
 
 \section{Data analysis}
