@@ -283,16 +283,16 @@ of calculations for blackbody materials and materials based on Model 7 are selec
         \subcaption{Material based on real iron data}
     \end{minipage}
     \caption{Calculation results of linear model}
-    \label{fig: linear_model}
+    \label{fig: result_linear_model}
 \end{figure}
 
 
-Fig.\ref{fig: linear_model} demonstrate the calculation result on material based on 
+Fig.\ref{fig: result_linear_model} demonstrate the calculation result on material based on 
 model 1 and real data from iron. It can be found that the calculation result is more
 stable in real data due to the material character. 
 
 
-In Fig.\ref{fig: linear_model}, it can be observed that relative bias are present 
+In Fig.\ref{fig: result_linear_model}, it can be observed that relative bias are present 
 in the estimations based on two different materials. Moreover, this relative bias \
 experiences a sudden change with increasing temperature, represented by a red 
 circle in the figure. The reason behind this phenomenon can be considered as follows, 
@@ -348,6 +348,20 @@ calculation consistency.
     \caption{Calculation results of linear square model}
     \label{fig: result_linear_square_model}
 \end{figure}
+
+
+Fig.\ref{fig: result_linear_square_model} presents the computational results of the 
+linear square model for the virtual experimental data based on both model 1 and 
+real iron. It can be observed that the results obtained by the linear square 
+model do not exhibit the ring-like pattern that emerges with increasing temperature 
+for the hypothetical material. This is because the linear square model possesses 
+better capabilities to fit complex emissivity behaviors. In the emissivity plot 
+on the right side, it is evident that the linear square model accurately 
+reproduces the abrupt change in emissivity in the liquid region without 
+causing a significant increase in temperature estimation errors. Thus, it can be 
+concluded that the linear square model outperforms the linear model in terms 
+of temperature estimation accuracy.
+
 
 \subsubsection{Quadratic model}
 not finished

@@ -283,13 +283,6 @@ emitted from the hypothetical material.
       \caption{Model 9}
       \label{fig: emi_33}
     \end{subfigure}
-    %\hfill
-    %\begin{subfigure}{0.3\linewidth}
-    %  \centering
-    %  \includegraphics[width=\linewidth]{figures/emissivity_34.jpg}
-    %  \caption{Model 10}
-    %  \label{fig: emi_34}
-    %\end{subfigure}
     
     \caption{Raw emissivity data used in virtual experiment platform. (\subref{fig: emi_0}), 
     (\subref{fig: emi_1}) are black body and gray body; (\subref{fig: emi_21}) - (\subref{fig: emi_26})
@@ -322,13 +315,18 @@ wavelength variations. Consequently, this represents the simplest
 emissivity model.
 
 
-Models 1 to 6 describe the emissivity of different hypothetical 
-materials. Model 1 represents the case of monotonically decreasing 
+\mbox{Models 1} to 6 describe the emissivity of different hypothetical 
+materials based on the emissivity model made by Wang et al.\cite{Wang.2021b}.
+Model 1 represents the case of monotonically decreasing 
 emissivity, which is also consistent with the emissivity model of 
-iron. Model 2 describes a scenario where emissivity increases with 
-wavelength. Models 3 and 4 represent emissivity as a convex and 
+iron in solid phase. This model could be used as a simplification of emissivity model of real iron.
+\mbox{Model 2} describes a situation where emissivity increases with 
+wavelength. Unlike the material based on \mbox{model 1}, in this case, the emissivity 
+increases with increasing wavelength, and this increase is non-linear. Thus, the 
+non-linear nature of emissivity is represented.
+\mbox{Models 3} and 4 represent emissivity as a convex and 
 concave curve. Model 5 depicts a situation where emissivity exhibits 
-two inflection points as wavelength increases. Lastly, Model 6 
+two inflection points as wavelength increases. Lastly, \mbox{Model 6} 
 illustrates a scenario where emissivity shows a single inflection 
 point as wavelength increases. One of the advantages of using a 
 virtual experiment platform is the ability to test a greater 
@@ -336,7 +334,14 @@ diversity of hypothetical materials than what may be feasible in real
 experiments.
 
 
-After obtaining the raw data on the relationship between emissivity 
+Therefore, it is essential to incorporate certain hypothetical materials 
+that do not exist in reality within the virtual experimental platform. 
+By doing so, it becomes possible to assess the consistency of temperature 
+estimation algorithms under various extreme scenarios, thereby determining 
+the operational limits at which the system can function reliably.
+
+
+After obtaining the raw data of hypothetical material on the relationship between emissivity 
 and wavelength, the dependence of emissivity on temperature is characterised
 as a temperature factor $K_T(T)$ in Eq.\ref{eq: k_t}.
 
@@ -391,12 +396,15 @@ which gives the virtual experiment platform more potential to simulate
 real experiments.
 
 
+After obtaining the emissivity model for the hypothetical materials, it is necessary to validate the authenticity of the virtual experimental platform using real material data. Therefore, for this study, emissivity data for pure iron obtained by Kobatake et al. and Wantanabe et al. in their experiments were selected for validation \cite{Kobatake.2012, Watanabe.2003}. However, these emissivity data do not fully cover the temperature range of 1000 to 2000K and the wavelength range of 400 to 1000nm. To address this limitation and extend the data range in this work, the following approach was adopted:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 In contrast to hypothetical materials, the emissivity of real iron is 
 influenced by various factors, such as impurity content, surface 
 roughness, and the content of iron oxide. However, these factors 
-are not within the scope of discussion in this work. Therefore, for 
-the verification part, data from literature sources on pure iron were 
-chosen \cite{Kobatake.2012, Watanabe.2003}. 
+are not within the scope of discussion in this work. 
+
+
 Fig.\ref{fig: emissivity_iron} illustrates the variation of 
 emissivity for pure iron with respect to wavelength and temperature. 
 It can be observed that the emissivity of real materials shows a 
