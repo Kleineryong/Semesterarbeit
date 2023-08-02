@@ -58,6 +58,7 @@ def save_result(t_raw, emi_raw, emi_model_name, save_dir):
         plt.clf()
         plt.close()
 
+
 def read_result(result_dir):
     dir_list = ['T1900_0_digital',
                 'T1900_5_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',

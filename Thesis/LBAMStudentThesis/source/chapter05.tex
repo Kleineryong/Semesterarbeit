@@ -252,7 +252,17 @@ emissivity model used in the temperature estimation algorithm. As the
 experimental data for these temperature estimation algorithm use the 
 same temperature distribution, relative error of temperature is employed here to 
 represent the accuracy of the computations. To save space, the results 
-of calculations for blackbody materials and materials based on Model 7 are selected for presentation.
+of calculations for blackbody materials and materials based on Model 1 are selected for presentation.
+
+
+In real experimental data, due to the limitations of the sensors, it is not 
+possible to simultaneously observe the radiation intensity of the non-laser-heated 
+region and the radiation intensity of the laser-heated region. In the 
+virtual experimental platform, the temperature of the background region is 
+assumed to be uniform, which is comparable to the real situations. 
+Consequently, in order to avoid introducing statistical errors, the calculation 
+results of the temperature estimation algorithm in background region can be 
+considered as negligible.
 
 \subsubsection{Linear model}
 
@@ -292,8 +302,8 @@ model 1 and real data from iron. It can be found that the calculation result is 
 stable in real data due to the material character. 
 
 
-In Fig.\ref{fig: result_linear_model}, it can be observed that relative bias are present 
-in the estimations based on two different materials. Moreover, this relative bias \
+It can be observed that relative bias are present 
+in the estimations based on two different materials. Moreover, this relative bias 
 experiences a sudden change with increasing temperature, represented by a red 
 circle in the figure. The reason behind this phenomenon can be considered as follows, 
 at the boundary of the circle, the material undergoes a phase change from solid to liquid, 
@@ -303,7 +313,7 @@ occurring at this point, resulting in significant deviations in the
 temperature estimations.
 
 
-It can be observed in table \ref{tab: statistic_results} that in the computation of linear models, 
+It can be found in table \ref{tab: statistic_results} that in the computation of linear models, 
 calculation results based on real data exists relatively low average relative error and the lowest 
 standard deviation. This indicates that the linear model maintains a higher 
 level of consistency when performing calculations on real materials. It also 
@@ -364,20 +374,20 @@ of temperature estimation accuracy.
 
 
 \subsubsection{Quadratic model}
-not finished
+
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/quad/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/quad/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Material based on model 7}
+        \subcaption{Material based on model 1}
     \end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
@@ -395,21 +405,43 @@ not finished
     \label{fig: result_quadratic_model}
 \end{figure}
 
+
+Unlike the previously mentioned linear square model, the quadratic model has one 
+fewer parameter, resulting in fewer degrees of freedom for the emissivity model. 
+In fact, based on Eq.\ref{eq: emi_quad} from the paper, this mathematical 
+model ss y-axis symmetry. Considering the physical meaning of emissivity, 
+it can only be used to fit emissivity models that are either monotonically 
+increasing or monotonically decreasing.
+
+As a result, as shown in Fig.\ref{fig: result_quadratic_model}, it can be observed 
+that in the computations based on model 1 for the material, the performance 
+of the temperature estimation algorithm is better at the central point 
+(the location with the highest temperature) compared to other regions due to less 
+variations in emissivity.
+The results of the emissivity field demonstrate that the algorithm accurately 
+identifies the boundary regions between liquid and solid materials.
+
+However, for computations involving real materials, the algorithm struggles to 
+accurately estimate the emissivity of hypothetical materials, leading to errors in 
+temperature calculations. Nevertheless, it is still evident that the 
+temperature estimation algorithm based on the quadratic model performs better 
+on real materials compared to hypothetical materials.
+
 \subsubsection{Exponential model}
-not finished
+
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{\textwidth}
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/exp/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/21/exp/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Material based on model 7}
+        \subcaption{Material based on model 1}
     \end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
@@ -427,9 +459,93 @@ not finished
     \label{fig: result_exponential_model}
 \end{figure}
 
+
+In the exponential model, the emissivity model follows the form of an 
+exponential function. The two parameters in the emissivity model allow for 
+translation and deformation of the exponential function. This enables the 
+temperature estimation algorithm to be applicable to a wider range of materials 
+with different emissivity characteristics. Fig.\ref{fig: result_exponential_model} 
+presents the results of this temperature estimation algorithm for materials 
+based on \mbox{model 1} and real iron.
+
+
+Due to the physical meaning of emissivity, the value of emissivity is defined 
+within the range of 0 to 1. Thus, constraints must be imposed on the 
+emissivity model. Thus, calculated from Eq.\ref{eq: emi_exp}, the following 
+constraints can be introduced:
+
+
+\begin{equation}
+    -a \cdot \lambda_{norm} - b \leq 0
+\end{equation}
+
+
+Therefore, the derivative of emissivity with respect to wavelength is obtained as:
+
+
+\begin{equation}
+    \frac{d\varepsilon(\lambda)}{d\lambda_{norm}} = -a \cdot e^{-a \cdot \lambda_{norm} - b}
+\end{equation}
+
+For each data point, the emissivity computed based on the exponential model 
+is either monotonically increasing or decreasing, depending on the sign of 
+parameter $a$. This characteristic of the model leads to an increase in 
+computational speed and a decrease in 
+computational accuracy when strong non-monotonic behavior is observed in 
+the emissivity characteristics of the material.
+
+In Fig.\ref{fig: result_exponential_model}, it is evident that material based on 
+\mbox{model 1} exhibits an almost linear relationship between emissivity and 
+wavelength in the liquid state. This enables the temperature estimation 
+algorithm to accurately calculate the boundary region between the liquid and 
+solid states and achieve high computational precision within the liquid 
+state region.
+
+However, when applying the temperature estimation algorithm to real iron data, 
+it fails to accurately calculate the emissivity values. This discrepancy is due 
+to the fluctuation observed in the emissivity of real iron as a function of 
+wavelength. The emissivity of iron in the liquid state is closer to the 
+numerically derived values of the algorithm than in the solid state, leading 
+to erroneous conclusions of higher computational accuracy at the central points.
+
+
 \subsubsection{Mixed model}
-In this mixed model, the computational time has significantly increased 
-due to the utilization of two different emissivity models.
+Eq.\ref{eq: emi_mix_gen} indicates that the mixed model is composed of two 
+components: a low-temperature emissivity model and a high-temperature emissivity 
+model. This approach offers a significant advantage as the temperature 
+estimation algorithm can fit to the different emissivity 
+characteristics observed in the liquid and solid regions. But the computational 
+time has significantly increased due to the utilization of two different 
+emissivity models.
+
+
+\begin{equation}
+    \label{eq: emi_mix}
+    \varepsilon(\lambda) = \begin{cases} 
+      a \cdot \lambda_{norm}^2 + b \cdot \lambda_{norm} + c &   T \leq T_{melt} \\
+      \exp(-a \cdot \lambda_{norm} - b) & T > T_{melt}
+    \end{cases}
+  \end{equation}
+
+
+In this work, the low-temperature emissivity model is represented by linear 
+square model, while the high-temperature emissivity model is described using 
+exponential model. This choice is driven by the fact that the emissivity of the 
+hypothetical material exhibits significant fluctuations in the solid-state 
+region, making it more suitable to be computed using linear 
+square model to better capture its behavior. Conversely, in the liquid state 
+region, the emissivity of the hypothetical material exhibits relatively smaller 
+fluctuations, making it possible to use a faster computational 
+exponential model without decreasing the accuracy.
+
+
+From Fig.\ref{fig: result_mixed_model}, it is evident that the mixed model 
+accurately identifies the boundaries between the liquid and solid regions 
+for both model 1 based material and real iron-based material. 
+Additionally, it accurately recognizes the regions that require 
+recalculations in the case of blackbody materials. This indicates that 
+the model is applicable to materials with different emissivity characteristics.
+
 
 \begin{figure}[htbp]
     \centering
@@ -437,13 +553,25 @@ due to the utilization of two different emissivity models.
         \centering
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/T_bias.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/0/mix/T_bias.jpg}
         \end{subfigure}
         \begin{subfigure}{0.49\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{figures/raw_data/31/mix/emi_cal.jpg}
+            \includegraphics[width=\textwidth]{figures/raw_data/0/mix/emi_cal.jpg}
         \end{subfigure}
-        \subcaption{Material based on model 7}
+        \subcaption{Black body material}
+    \end{minipage}\\
+    \begin{minipage}{\textwidth}
+        \centering
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/raw_data/21/mix/T_bias.jpg}
+        \end{subfigure}
+        \begin{subfigure}{0.49\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{figures/raw_data/21/mix/emi_cal.jpg}
+        \end{subfigure}
+        \subcaption{Material based on model 1}
     \end{minipage}\\
     \begin{minipage}{\textwidth}
         \centering
@@ -460,6 +588,19 @@ due to the utilization of two different emissivity models.
     \caption{Calculation results of mixed model}
     \label{fig: result_mixed_model}
 \end{figure}
+
+
+Regarding the temperature estimation results, the model demonstrates high 
+precision in calculating temperatures for blackbody materials and materials 
+based on model 1. In these cases, the error in the center region is less than 7\%. 
+However, the model shows a region of relatively lower accuracy when 
+applied to real iron-based material. In this region, the emissivity values 
+are erroneously computed as 1, leading to an increase in temperature 
+calculation bias. This discrepancy can be attributed to the use of the 
+exponential model in the temperature estimation algorithm, as mentioned 
+earlier, which introduces errors when calculating the emissivity 
+of real iron in its liquid state.
+
 
 \subsection{Statistical results}
 
