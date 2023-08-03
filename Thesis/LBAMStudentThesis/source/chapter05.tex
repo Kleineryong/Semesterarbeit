@@ -602,10 +602,92 @@ earlier, which introduces errors when calculating the emissivity
 of real iron in its liquid state.
 
 
-\subsection{Statistical results}
+\section{Statistical results and analysis}
 
 After obtaining all calculation results, some statistical results can be found in 
-tabel \ref{tab: statistic_results}. 
+tabel \ref{tab: statistic_results}. To mitigate any negative impact of background 
+regions on the statistical results of the temperature estimation algorithm, 
+only the computation results from the central area of the observation 
+area are considered here. As linear temperature distribution 
+is employed for the hypothetical materials, temperature is used to determine 
+whether the point is within 
+the central area. These conditions can be formulated as follows:
+
+
+\begin{equation}
+    P = \begin{cases}
+        P_{center}  & T \geq T_{edge} \\
+        P_{background}  & T < T_{edge}
+    \end{cases}
+    \label{eq: T_edge}
+\end{equation}
+
+
+With $T_{edge} = 1200K$ for materials based on model and $T_{edge} = 1600K$ for materials based 
+on real iron data. This is due to the fact that in the virtual experimental 
+platform, the temperature of the background area in the experiments based on 
+real iron data is set to $1500K$.
+
+
+Table \ref{tab: statistic_results} presents the statistical results of five 
+different temperature estimation algorithms: linear model, linear square model, 
+quadratic model, exponential model and mixed model. These algorithms were 
+applied to blackbody materials, real materials, and materials based on \mbox{Model 1-9}. 
+The statistical metrics calculated for each algorithm include:
+
+
+\begin{enumerate}
+    \item Mean Difference(Difference)
+    \item Mean Relative Error(Rel. difference)
+    \item Standard Deviation(SD)
+    \item Maximum Relative Error
+    \item Minimum Relative Error
+\end{enumerate}
+
+\subsubsection{Mean Difference}
+The mean difference describes the difference between the calculated 
+temperature $T_{cal}$ and the actual temperature $T_{act}$. It intuitively 
+demonstrates the accuracy of the temperature estimation algorithm. It is 
+defined by the following equation:
+
+\begin{equation}
+    {E} = \overline{T_{cal} - T_{act}} 
+\end{equation}
+
+\subsubsection{Mean Relative Error}
+The mean relative error describes the relative difference between the calculated 
+temperature $T_{cal}$ and the actual temperature $T_{act}$. To avoid mutual 
+cancellation between positive and negative deviations, the absolute value of 
+the relative deviation is used here. The mathematical equation can be found as follows:
+
+\begin{equation}
+    {E}_{rel} = \overline{\left\lvert \frac{T_{cal} - T_{act}}{T_{act}}\right\rvert }
+\end{equation}
+
+\subsubsection{Standard Deviation}
+The standard deviation is used to describe the distribution of differences 
+between the calculated temperature $T_{cal}$ and the actual 
+temperature $T_{act}$. Since a linear temperature distribution is used, the 
+temperature range of materials within the observed area is relatively large. 
+Hence, this standard deviation can be used to characterize the consistency of the 
+temperature estimation algorithm's results under different temperature conditions.
+The definition can be found by the following equation:
+
+\begin{equation}
+    \sigma = \sqrt{\frac{\sum {\left\lvert T_{cal} - T_{act}\right\rvert }^2}{N}} 
+\end{equation}
+
+With $N$ represents the number of points involved in the statistical analysis.
+
+\subsubsection{Min. and Max. Relative Error}
+These two parameters describe the maximum and minimum values of the relative 
+difference between the calculated temperature $T_{cal}$ and the actual temperature 
+$T_{act}$ over the entire statistical region. These parameters can be used to 
+observe the maximum and minimum errors caused by the temperature estimation 
+algorithm. This allows for a visual assessment of the effectiveness boundaries 
+of the temperature estimation algorithm's results.
+
+
 
 \begin{sidewaystable}[htbp]
     \centering
@@ -615,31 +697,31 @@ tabel \ref{tab: statistic_results}.
         \hline
         & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Real data} & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 & Model 6 & Model 7 & Model 8 & Model 9 \\ \hline
         \multicolumn{12}{c}{Linear}                                                                                                                                                         \\ \hline
-        Abs. difference {[}K{]} & 20.7                           & -151.7                        & 129.5   & 38.8    & 58.6    & 116.5   & -4.8    & -39.6   & -161.6  & 445.5   & 27.2     \\
+        Difference {[}K{]}      & 20.7                           & -151.7                        & 129.5   & 38.8    & 58.6    & 116.5   & -4.8    & -39.6   & -161.6  & 445.5   & 27.2     \\
         Rel. difference         & 0.02                           & 0.08                          & 0.08    & 0.03    & 0.04    & 0.08    & 0.02    & 0.04    & 0.11    & 0.32    & 0.02     \\
         SD {[}K{]}              & 7.06                           & 9.56                          & 115.31  & 44.97   & 73.78   & 98.33   & 57.27   & 104.74  & 112.38  & 157.94  & 20.80    \\
         Max. difference {[}K{]} & 0.029                          & 0.096                         & 0.160   & 0.073   & 0.145   & 0.140   & 0.167   & 0.170   & 0.263   & 0.489   & 0.057    \\
         Min. difference {[}K{]} & 0.006                          & 0.076                         & 0.0001  & 0.0004  & 0.0001  & 0.0001  & 0.00    & 0.0001  & 0.001   & 0.031   & 0.0003   \\ \hline
         \multicolumn{12}{c}{Linear square}                                                                                                                                                   \\ \hline
-        Abs. difference {[}K{]} & 38.7                           & 30.8                          & 102.9   & -13.1   & 24.4    & 72.9    & -31.1   & 96.5    & -122.5  & 423.9   & -10.6   \\
+        Difference {[}K{]}      & 38.7                           & 30.8                          & 102.9   & -13.1   & 24.4    & 72.9    & -31.1   & 96.5    & -122.5  & 423.9   & -10.6   \\
         Rel. difference         & 0.03                           & 0.02                          & 0.07    & 0.03    & 0.03    & 0.05    & 0.02    & 0.07    & 0.08    & 0.30    & 0.03    \\
         SD {[}K{]}              & 23.95                          & 6.88                          & 8.21    & 42.45   & 36.18   & 11.12   & 57.39   & 27.09   & 45.99   & 93.41   & 58.86   \\
         Max. difference {[}K{]} & 0.074                          & 0.079                         & 0.105   & 0.059   & 0.071   & 0.088   & 0.101   & 0.115   & 0.118   & 0.379   & 0.093   \\
         Min. difference {[}K{]} & 0.006                          & 0.013                         & 0.03    & 0.000   & 0.0001  & 0.031   & 0.0001  & 0.011   & 0.018   & 0.03    & 0.0001  \\ \hline
         \multicolumn{12}{c}{Quadratic}                                                                                                                                                 \\ \hline
-        Abs. difference {[}K{]} & 19.3                           & -151.7                        & 104.7   & 41.5    & 8.6     & 88.1    & 76.7    & -47.8   & -212.7  & 509.9   & 113.1   \\
+        Difference {[}K{]}      & 19.3                           & -151.7                        & 104.7   & 41.5    & 8.6     & 88.1    & 76.7    & -47.8   & -212.7  & 509.9   & 113.1   \\
         Rel. difference         & 0.01                           & 0.09                          & 0.09    & 0.09    & 0.04    & 0.10    & 0.11    & 0.03    & 0.14    & 0.37    & 0.12    \\
         SD {[}K{]}              & 4.07                           & 9.56                          & 194.96  & 214.93  & 144.50  & 216.52  & 239.63  & 96.18   & 117.62  & 167.72  & 234.07  \\
         Max. difference {[}K{]} & 0.022                          & 0.096                         & 0.336   & 0.329   & 0.280   & 0.352   & 0.321   & 0.166   & 0.280   & 0.630   & 0.341   \\
         Min. difference {[}K{]} & 0.006                          & 0.076                         & 0.005   & 0.003   & 0.000   & 0.005   & 0.0003  & 0.0001  & 0.092   & 0.031   & 0.003   \\ \hline
         \multicolumn{12}{c}{Exponential}                                                                                                                                                   \\ \hline
-        Abs. difference {[}K{]} & 20.5                           & -147.3                        & 102.9   & -12.9   & 24.4    & 72.9    & -60.5   & 96.6    & -406.4  & 318.2   & -91.6   \\
+        Difference {[}K{]}      & 20.5                           & -147.3                        & 102.9   & -12.9   & 24.4    & 72.9    & -60.5   & 96.6    & -406.4  & 318.2   & -91.6   \\
         Rel. difference         & 0.01                           & 0.08                          & 0.07    & 0.03    & 0.03    & 0.05    & 0.04    & 0.07    & 0.45    & 0.325   & 0.235    \\
         SD {[}K{]}              & 16.70                          & 24.63                         & 8.23    & 42.15   & 36.19   & 11.14   & 56.69   & 27.04   & 523.51  & 385.45  & 343.71  \\
         Max. difference {[}K{]} & 0.075                          & 0.096                         & 0.105   & 0.056   & 0.071   & 0.088   & 0.101   & 0.115   & 0.644   & 0.630   & 0.452   \\
         Min. difference {[}K{]} & 0.006                          & 0.013                         & 0.031   & 0.00    & 0.0001  & 0.03    & 0.0005  & 0.012   & 0.031   & 0.002   & 0.003   \\ \hline
         \multicolumn{12}{c}{Mixed model}                                                                                                                                                   \\ \hline
-        Abs. difference {[}K{]} & 14.6                           & -34.6                         & 102.9   & -12.9   & 24.4    & 72.9    & -31.1   & 96.6    & -122.5  & 424.16  & -10.6    \\
+        Difference {[}K{]}      & 14.6                           & -34.6                         & 102.9   & -12.9   & 24.4    & 72.9    & -31.1   & 96.6    & -122.5  & 424.16  & -10.6    \\
         Rel. difference         & 0.01                           & 0.02                          & 0.07    & 0.03    & 0.03    & 0.05    & 0.02    & 0.07    & 0.08    & 0.30    & 0.025    \\
         SD {[}K{]}              & 6.17                           & 53.49                         & 8.22    & 42.14   & 36.19   & 11.13   & 57.39   & 27.04   & 45.98   & 93.88   & 85.86  \\
         Max. difference {[}K{]} & 0.017                          & 0.096                         & 0.105   & 0.056   & 0.071   & 0.088   & 0.101   & 0.115   & 0.118   & 0.382   & 0.093   \\
@@ -648,9 +730,86 @@ tabel \ref{tab: statistic_results}.
 \end{sidewaystable}
 
 
-\section{Data analysis}
-use statistical method to analyse the calculated result
-\subsection{Sensitivity analysis of emissivity models}
-how different emissivity model affect the performance 
-\subsection{Performance between different materials}
+\subsection{Performance of different temperature estimation algorithms}
+After obtaining the statistical results of the temperature estimation algorithm, 
+it is necessary to analyze these results. Since the statistical outcomes 
+encompass the calculations of various temperature estimation algorithms 
+for different materials, the analysis consists of two main parts: one involves 
+the performance analysis of different temperature estimation algorithms, 
+while the other concerns the performance analysis of the temperature estimation 
+algorithm for different materials.
+
+
+In Table \ref{tab: statistic_results}, it can be observed that each temperature 
+estimation algorithm produces different results for the same material. 
+
+
+When applied to blackbody materials, all algorithms achieve accuracy
+within 5\% error. However, it is evident that the linear square model 
+exhibits lower precision compared to other models, and simultaneously, 
+the standard deviation of its calculations is significantly higher than 
+that of other temperature estimation algorithms. This discrepancy could be 
+attributed to the linear square model having an additional parameter, which 
+makes the curve-fitting process more prone to encountering local minima and 
+prematurely terminating the computation.
+
+
+Indeed, in addition to linear square model's performance on blackbody materials, the temperature 
+estimation algorithm based on the linear square model consistently achieves 
+lower relative errors and standard deviations compared to other temperature 
+estimation algorithms when applied to different materials. This indicates that 
+the linear square model not only attains higher accuracy but also exhibits a 
+higher level of computation consistency.
+
+
+In contrast to the linear square model, the temperature estimation algorithm 
+based on the quadratic model exhibits lower consistency in computing results 
+for hypothetical materials in this work. The standard deviation for this 
+metric is close to or exceeds 100K. This indicates that the temperature 
+estimation algorithm based on the quadratic model cannot demonstrate 
+high consistency in the calculations of the virtual materials used in this 
+work. This is attributed to the emissivity characteristics of the hypothetical materials 
+used in this study, which do not conform well to the profile of the quadratic 
+function. Consequently, the curve fit algorithm fails to find stable global 
+optimal points, resulting in lower consistency in the computed results.
+
+
+The temperature estimation algorithm based on the exponential model demonstrates 
+comparable accuracy and consistency to the temperature estimation algorithm 
+based on the linear square model when applied to blackbody material
+and materials based on model 1, 2, 3, 4, and 6. Furthermore, it offers 
+significant time savings in computational efforts. In situations where the 
+emissivity variation is limited, this model exhibits a higher propensity to 
+yield stable local optima, making it particularly suitable for application 
+in the liquid phase region of hypothetical materials based on models.
+
+
+It is evident from the results that different temperature estimation algorithms 
+exhibit varying performance when applied to experimental data from different 
+materials. To address this, the author proposes utilizing a temperature estimation 
+algorithm based on the mixed model to effectively combine the advantages of 
+different estimation approaches, especially for materials with complex emissivity 
+characteristics. Table \ref{tab: statistic_results} illustrates that the mixed 
+model outperforms the linear square model and exponential model in the 
+computation of blackbody materials, showing better accuracy and consistency. 
+Moreover, across all other models, the temperature estimation algorithm based 
+on the mixed model consistently yields the better result in the two 
+original temperature estimation algorithms.
+
+\subsection{Performance of temperature estimation algorithm between different materials}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \includegraphics[width=\textwidth]{figures/diff_rel.jpg}
+        \subcaption{Mean relative error}
+    \end{subfigure}\\
+    \begin{subfigure}{\textwidth}
+        \includegraphics[width=\textwidth]{figures/diff_std.jpg}
+        \subcaption{Standard deviation}
+    \end{subfigure}
+    \caption{Mean relative error and standard deviation of calculation results}
+    \label{fig: result_final_analysis}
+\end{figure}
+
 how is the performance between different materials.
