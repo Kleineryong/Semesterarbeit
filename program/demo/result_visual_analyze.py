@@ -39,7 +39,7 @@ def result_visual_analyze():
                ['Black body', 'Iron', 'model 1', 'model 2', 'model 3', 'model 4', 'model 5', 'model 6', 'model 7',
                 'model 8', 'model 9'])
     plt.xlabel('Material')
-    plt.ylabel('SD')
+    plt.ylabel('Standard deviation [K]')
     plt.legend()
     plt.tight_layout()
     plt.savefig('diff_std.jpg')
