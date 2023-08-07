@@ -10,7 +10,6 @@ A level-1 auxiliary file: source/chapter03.aux
 A level-1 auxiliary file: source/chapter04.aux
 A level-1 auxiliary file: source/chapter05.aux
 A level-1 auxiliary file: source/chapter06.aux
-A level-1 auxiliary file: source/appendixA.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -28,47 +27,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: literature/literature.bib
+Warning--I'm ignoring Taunay.2020b's extra "file" field
+--line 1205 of file literature/literature.bib
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 17 entries,
+You've used 19 entries,
             6399 wiz_defined-function locations,
-            1388 strings with 22816 characters,
-and the built_in function-call counts, 180666 in all, are:
-= -- 15094
-> -- 3000
-< -- 523
-+ -- 6068
-- -- 1691
-* -- 13655
-:= -- 22251
+            1402 strings with 23895 characters,
+and the built_in function-call counts, 192847 in all, are:
+= -- 15941
+> -- 3254
+< -- 571
++ -- 6414
+- -- 1817
+* -- 14530
+:= -- 23585
 add.period$ -- 0
-call.type$ -- 17
-change.case$ -- 189
+call.type$ -- 19
+change.case$ -- 203
 chr.to.int$ -- 70
-cite$ -- 32
-duplicate$ -- 17758
-empty$ -- 14856
-format.name$ -- 1540
-if$ -- 35364
+cite$ -- 36
+duplicate$ -- 19079
+empty$ -- 15927
+format.name$ -- 1699
+if$ -- 37842
 int.to.chr$ -- 0
-int.to.str$ -- 37
+int.to.str$ -- 41
 missing$ -- 0
-newline$ -- 792
-num.names$ -- 695
-pop$ -- 6172
+newline$ -- 859
+num.names$ -- 771
+pop$ -- 6874
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 400
 quote$ -- 0
-skip$ -- 3363
+skip$ -- 3720
 stack$ -- 0
-substring$ -- 29706
-swap$ -- 2981
-text.length$ -- 530
+substring$ -- 31175
+swap$ -- 3231
+text.length$ -- 584
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 566
+type$ -- 634
 warning$ -- 0
-while$ -- 2570
+while$ -- 2728
 width$ -- 0
-write$ -- 776
+write$ -- 841
+(There was 1 warning)
