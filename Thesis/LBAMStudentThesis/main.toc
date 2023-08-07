@@ -45,13 +45,13 @@
 \contentsline {subsubsection}{Linear model}{31}{subsubsection*.36}%
 \contentsline {subsubsection}{Linear square model}{32}{subsubsection*.38}%
 \contentsline {subsubsection}{Quadratic model}{33}{subsubsection*.40}%
-\contentsline {subsubsection}{Exponential model}{34}{subsubsection*.42}%
+\contentsline {subsubsection}{Exponential model}{33}{subsubsection*.42}%
 \contentsline {subsubsection}{Mixed model}{35}{subsubsection*.44}%
-\contentsline {section}{\numberline {5.2}Statistical results and analysis}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Statistical results and analysis}{35}{section.5.2}%
 \contentsline {subsubsection}{Mean Difference}{37}{subsubsection*.46}%
 \contentsline {subsubsection}{Mean Relative Error}{37}{subsubsection*.47}%
-\contentsline {subsubsection}{Standard Deviation}{38}{subsubsection*.48}%
-\contentsline {subsubsection}{Min. and Max. Relative Error}{38}{subsubsection*.49}%
+\contentsline {subsubsection}{Standard Deviation}{37}{subsubsection*.48}%
+\contentsline {subsubsection}{Min. and Max. Relative Error}{37}{subsubsection*.49}%
 \contentsline {subsection}{\numberline {5.2.1}Performance of different temperature estimation algorithms}{38}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Performance of temperature estimation algorithm between different materials}{40}{subsection.5.2.2}%
 \contentsline {chapter}{\numberline {6}Conclusion and prospects}{43}{chapter.6}%

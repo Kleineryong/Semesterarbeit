@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  3 AUG 2023 21:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.15)  7 AUG 2023 13:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2441,11 +2441,11 @@ Package cleveref Info: loaded `english' language definitions on input line 105.
 
 ]
 Chapter 5.
-<figures/t_field.jpg, id=742, 462.528pt x 346.896pt>
+<figures/t_field.jpg, id=742, 578.16pt x 433.62pt>
 File: figures/t_field.jpg Graphic file (type jpg)
 <use figures/t_field.jpg>
 Package pdftex.def Info: figures/t_field.jpg  used on input line 60.
-(pdftex.def)             Requested size: 341.43437pt x 256.09029pt.
+(pdftex.def)             Requested size: 341.43437pt x 256.07178pt.
 [27]
 <figures/raw_data/0/emi_field.jpg, id=749, 462.528pt x 346.896pt>
 File: figures/raw_data/0/emi_field.jpg Graphic file (type jpg)
@@ -2564,149 +2564,208 @@ Package pdftex.def Info: figures/raw_data/21/channel_8.pdf  used on input line 2
 (pdftex.def)             Requested size: 85.39888pt x 85.47493pt.
 Package cleveref Info: loaded `english' language definitions on input line 247.
 [30 <./figures/raw_data/21/color_bar.pdf> <./figures/raw_data/21/channel_1.pdf> <./figures/raw_data/21/channel_2.pdf> <./figures/raw_data/21/channel_3.pdf> <./figures/raw_data/21/channel_4.pdf> <./figures/raw_data/21/channel_5.pdf> <./figures/raw_data/21/channel_6.pdf> <./figures/raw_data/21/channel_7.pdf> <./figures/raw_data/21/channel_8.pdf>]
-<figures/raw_data/21/linear/T_bias.jpg, id=835, 578.16pt x 433.62pt>
+<figures/raw_data/21/linear/T_cal.jpg, id=835, 505.89pt x 433.62pt>
+File: figures/raw_data/21/linear/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/21/linear/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/21/linear/T_cal.jpg  used on input line 275.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/linear/T_bias.jpg, id=836, 505.89pt x 433.62pt>
 File: figures/raw_data/21/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/linear/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/21/linear/T_bias.jpg  used on input line 275.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/linear/emi_cal.jpg, id=836, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/linear/T_bias.jpg  used on input line 279.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/linear/emi_cal.jpg, id=837, 505.89pt x 433.62pt>
 File: figures/raw_data/21/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/linear/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/21/linear/emi_cal.jpg  used on input line 279.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/linear/T_bias.jpg, id=837, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/linear/emi_cal.jpg  used on input line 283.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/linear/T_cal.jpg, id=838, 505.89pt x 433.62pt>
+File: figures/raw_data/5/linear/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/5/linear/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/5/linear/T_cal.jpg  used on input line 291.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/linear/T_bias.jpg, id=839, 505.89pt x 433.62pt>
 File: figures/raw_data/5/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/linear/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/5/linear/T_bias.jpg  used on input line 287.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/linear/emi_cal.jpg, id=838, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/linear/T_bias.jpg  used on input line 295.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/linear/emi_cal.jpg, id=840, 505.89pt x 433.62pt>
 File: figures/raw_data/5/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/linear/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/5/linear/emi_cal.jpg  used on input line 291.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-Package cleveref Info: loaded `english' language definitions on input line 314.
- [31 <./figures/raw_data/21/linear/T_bias.jpg> <./figures/raw_data/21/linear/emi_cal.jpg> <./figures/raw_data/5/linear/T_bias.jpg> <./figures/raw_data/5/linear/emi_cal.jpg>]
-<figures/raw_data/21/lin_square/T_bias.jpg, id=847, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/linear/emi_cal.jpg  used on input line 299.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+Package cleveref Info: loaded `english' language definitions on input line 324.
+ [31 <./figures/raw_data/21/linear/T_cal.jpg> <./figures/raw_data/21/linear/T_bias.jpg> <./figures/raw_data/21/linear/emi_cal.jpg> <./figures/raw_data/5/linear/T_cal.jpg> <./figures/raw_data/5/linear/T_bias.jpg> <./figures/raw_data/5/linear/emi_cal.jpg>]
+<figures/raw_data/21/lin_square/T_cal.jpg, id=849, 505.89pt x 433.62pt>
+File: figures/raw_data/21/lin_square/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/21/lin_square/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/21/lin_square/T_cal.jpg  used on input line 346.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/lin_square/T_bias.jpg, id=850, 505.89pt x 433.62pt>
 File: figures/raw_data/21/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/lin_square/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/21/lin_square/T_bias.jpg  used on input line 338.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/lin_square/emi_cal.jpg, id=848, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/lin_square/T_bias.jpg  used on input line 350.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/lin_square/emi_cal.jpg, id=851, 505.89pt x 433.62pt>
 File: figures/raw_data/21/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/lin_square/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/21/lin_square/emi_cal.jpg  used on input line 342.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/lin_square/T_bias.jpg, id=849, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/lin_square/emi_cal.jpg  used on input line 354.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/lin_square/T_cal.jpg, id=852, 505.89pt x 433.62pt>
+File: figures/raw_data/5/lin_square/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/5/lin_square/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/5/lin_square/T_cal.jpg  used on input line 362.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/lin_square/T_bias.jpg, id=853, 505.89pt x 433.62pt>
 File: figures/raw_data/5/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/lin_square/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/5/lin_square/T_bias.jpg  used on input line 350.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/lin_square/emi_cal.jpg, id=850, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/lin_square/T_bias.jpg  used on input line 366.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/lin_square/emi_cal.jpg, id=854, 505.89pt x 433.62pt>
 File: figures/raw_data/5/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/lin_square/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/5/lin_square/emi_cal.jpg  used on input line 354.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-Package cleveref Info: loaded `english' language definitions on input line 374.
- [32 <./figures/raw_data/21/lin_square/T_bias.jpg> <./figures/raw_data/21/lin_square/emi_cal.jpg> <./figures/raw_data/5/lin_square/T_bias.jpg> <./figures/raw_data/5/lin_square/emi_cal.jpg>]
-<figures/raw_data/21/quad/T_bias.jpg, id=859, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/lin_square/emi_cal.jpg  used on input line 370.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/quad/T_cal.jpg, id=856, 505.89pt x 433.62pt>
+File: figures/raw_data/21/quad/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/21/quad/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/21/quad/T_cal.jpg  used on input line 400.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/quad/T_bias.jpg, id=857, 505.89pt x 433.62pt>
 File: figures/raw_data/21/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/quad/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/21/quad/T_bias.jpg  used on input line 384.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/quad/emi_cal.jpg, id=860, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/quad/T_bias.jpg  used on input line 404.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/quad/emi_cal.jpg, id=858, 505.89pt x 433.62pt>
 File: figures/raw_data/21/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/quad/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/21/quad/emi_cal.jpg  used on input line 388.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/quad/T_bias.jpg, id=861, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/quad/emi_cal.jpg  used on input line 408.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/quad/T_cal.jpg, id=859, 505.89pt x 433.62pt>
+File: figures/raw_data/5/quad/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/5/quad/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/5/quad/T_cal.jpg  used on input line 416.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/quad/T_bias.jpg, id=860, 505.89pt x 433.62pt>
 File: figures/raw_data/5/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/quad/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/5/quad/T_bias.jpg  used on input line 396.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/quad/emi_cal.jpg, id=862, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/quad/T_bias.jpg  used on input line 420.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/quad/emi_cal.jpg, id=861, 505.89pt x 433.62pt>
 File: figures/raw_data/5/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/quad/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/5/quad/emi_cal.jpg  used on input line 400.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-Package cleveref Info: loaded `english' language definitions on input line 429.
- [33 <./figures/raw_data/21/quad/T_bias.jpg> <./figures/raw_data/21/quad/emi_cal.jpg> <./figures/raw_data/5/quad/T_bias.jpg> <./figures/raw_data/5/quad/emi_cal.jpg>]
-<figures/raw_data/21/exp/T_bias.jpg, id=871, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/quad/emi_cal.jpg  used on input line 424.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+
+Underfull \vbox (badness 6592) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 439.
+ [32 <./figures/raw_data/21/lin_square/T_cal.jpg> <./figures/raw_data/21/lin_square/T_bias.jpg> <./figures/raw_data/21/lin_square/emi_cal.jpg> <./figures/raw_data/5/lin_square/T_cal.jpg> <./figures/raw_data/5/lin_square/T_bias.jpg> <./figures/raw_data/5/lin_square/emi_cal.jpg>]
+<figures/raw_data/21/exp/T_cal.jpg, id=872, 505.89pt x 433.62pt>
+File: figures/raw_data/21/exp/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/21/exp/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/21/exp/T_cal.jpg  used on input line 462.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/exp/T_bias.jpg, id=873, 505.89pt x 433.62pt>
 File: figures/raw_data/21/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/exp/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/21/exp/T_bias.jpg  used on input line 438.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/exp/emi_cal.jpg, id=872, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/exp/T_bias.jpg  used on input line 466.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/exp/emi_cal.jpg, id=874, 505.89pt x 433.62pt>
 File: figures/raw_data/21/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/exp/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/21/exp/emi_cal.jpg  used on input line 442.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/exp/T_bias.jpg, id=873, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/exp/emi_cal.jpg  used on input line 470.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/exp/T_cal.jpg, id=875, 505.89pt x 433.62pt>
+File: figures/raw_data/5/exp/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/5/exp/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/5/exp/T_cal.jpg  used on input line 478.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/exp/T_bias.jpg, id=876, 505.89pt x 433.62pt>
 File: figures/raw_data/5/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/exp/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/5/exp/T_bias.jpg  used on input line 450.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/exp/emi_cal.jpg, id=874, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/exp/T_bias.jpg  used on input line 482.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/exp/emi_cal.jpg, id=877, 505.89pt x 433.62pt>
 File: figures/raw_data/5/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/exp/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/5/exp/emi_cal.jpg  used on input line 454.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-Package cleveref Info: loaded `english' language definitions on input line 488.
- [34 <./figures/raw_data/21/exp/T_bias.jpg> <./figures/raw_data/21/exp/emi_cal.jpg> <./figures/raw_data/5/exp/T_bias.jpg> <./figures/raw_data/5/exp/emi_cal.jpg>]
-<figures/raw_data/0/mix/T_bias.jpg, id=887, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/exp/emi_cal.jpg  used on input line 486.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+Package cleveref Info: loaded `english' language definitions on input line 508.
+ [33 <./figures/raw_data/21/quad/T_cal.jpg> <./figures/raw_data/21/quad/T_bias.jpg> <./figures/raw_data/21/quad/emi_cal.jpg> <./figures/raw_data/5/quad/T_cal.jpg> <./figures/raw_data/5/quad/T_bias.jpg> <./figures/raw_data/5/quad/emi_cal.jpg>]
+Package cleveref Info: loaded `english' language definitions on input line 552.
+ [34 <./figures/raw_data/21/exp/T_cal.jpg> <./figures/raw_data/21/exp/T_bias.jpg> <./figures/raw_data/21/exp/emi_cal.jpg> <./figures/raw_data/5/exp/T_cal.jpg> <./figures/raw_data/5/exp/T_bias.jpg> <./figures/raw_data/5/exp/emi_cal.jpg>]
+<figures/raw_data/0/mix/T_cal.jpg, id=896, 505.89pt x 433.62pt>
+File: figures/raw_data/0/mix/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/0/mix/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/0/mix/T_cal.jpg  used on input line 580.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/0/mix/T_bias.jpg, id=897, 505.89pt x 433.62pt>
 File: figures/raw_data/0/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/0/mix/T_bias.jpg  used on input line 556.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/0/mix/emi_cal.jpg, id=888, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/0/mix/T_bias.jpg  used on input line 584.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/0/mix/emi_cal.jpg, id=898, 505.89pt x 433.62pt>
 File: figures/raw_data/0/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/0/mix/emi_cal.jpg  used on input line 560.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/mix/T_bias.jpg, id=889, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/0/mix/emi_cal.jpg  used on input line 588.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/mix/T_cal.jpg, id=899, 505.89pt x 433.62pt>
+File: figures/raw_data/21/mix/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/21/mix/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/21/mix/T_cal.jpg  used on input line 596.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/mix/T_bias.jpg, id=900, 505.89pt x 433.62pt>
 File: figures/raw_data/21/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/mix/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/21/mix/T_bias.jpg  used on input line 568.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/21/mix/emi_cal.jpg, id=890, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/mix/T_bias.jpg  used on input line 600.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/21/mix/emi_cal.jpg, id=901, 505.89pt x 433.62pt>
 File: figures/raw_data/21/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/mix/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/21/mix/emi_cal.jpg  used on input line 572.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/mix/T_bias.jpg, id=891, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/21/mix/emi_cal.jpg  used on input line 604.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/mix/T_cal.jpg, id=902, 505.89pt x 433.62pt>
+File: figures/raw_data/5/mix/T_cal.jpg Graphic file (type jpg)
+<use figures/raw_data/5/mix/T_cal.jpg>
+Package pdftex.def Info: figures/raw_data/5/mix/T_cal.jpg  used on input line 612.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/mix/T_bias.jpg, id=903, 505.89pt x 433.62pt>
 File: figures/raw_data/5/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/mix/T_bias.jpg>
-Package pdftex.def Info: figures/raw_data/5/mix/T_bias.jpg  used on input line 580.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<figures/raw_data/5/mix/emi_cal.jpg, id=892, 578.16pt x 433.62pt>
+Package pdftex.def Info: figures/raw_data/5/mix/T_bias.jpg  used on input line 616.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/5/mix/emi_cal.jpg, id=904, 505.89pt x 433.62pt>
 File: figures/raw_data/5/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/mix/emi_cal.jpg>
-Package pdftex.def Info: figures/raw_data/5/mix/emi_cal.jpg  used on input line 584.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-Package cleveref Info: loaded `english' language definitions on input line 603.
+Package pdftex.def Info: figures/raw_data/5/mix/emi_cal.jpg  used on input line 620.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+Package cleveref Info: loaded `english' language definitions on input line 681.
  [35]
-Package cleveref Info: loaded `english' language definitions on input line 603.
- [36 <./figures/raw_data/0/mix/T_bias.jpg> <./figures/raw_data/0/mix/emi_cal.jpg> <./figures/raw_data/21/mix/T_bias.jpg> <./figures/raw_data/21/mix/emi_cal.jpg> <./figures/raw_data/5/mix/T_bias.jpg> <./figures/raw_data/5/mix/emi_cal.jpg>]
-Package cleveref Info: loaded `english' language definitions on input line 665.
+Package cleveref Info: loaded `english' language definitions on input line 681.
+ [36 <./figures/raw_data/0/mix/T_cal.jpg> <./figures/raw_data/0/mix/T_bias.jpg> <./figures/raw_data/0/mix/emi_cal.jpg> <./figures/raw_data/21/mix/T_cal.jpg> <./figures/raw_data/21/mix/T_bias.jpg> <./figures/raw_data/21/mix/emi_cal.jpg> <./figures/raw_data/5/mix/T_cal.jpg> <./figures/raw_data/5/mix/T_bias.jpg> <./figures/raw_data/5/mix/emi_cal.jpg>]
+Package cleveref Info: loaded `english' language definitions on input line 774.
  [37]
-Package cleveref Info: loaded `english' language definitions on input line 775.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `english' language definitions on input line 842.
  [38]
-Package cleveref Info: loaded `english' language definitions on input line 775.
+Package cleveref Info: loaded `english' language definitions on input line 842.
  [39]
-<figures/diff_rel.jpg, id=935, 578.16pt x 289.08pt>
+<figures/diff_rel.jpg, id=946, 578.16pt x 289.08pt>
 File: figures/diff_rel.jpg Graphic file (type jpg)
 <use figures/diff_rel.jpg>
-Package pdftex.def Info: figures/diff_rel.jpg  used on input line 804.
+Package pdftex.def Info: figures/diff_rel.jpg  used on input line 848.
 (pdftex.def)             Requested size: 426.79135pt x 213.39534pt.
-<figures/diff_std.jpg, id=936, 578.16pt x 289.08pt>
+<figures/diff_std.jpg, id=947, 578.16pt x 289.08pt>
 File: figures/diff_std.jpg Graphic file (type jpg)
 <use figures/diff_std.jpg>
-Package pdftex.def Info: figures/diff_std.jpg  used on input line 808.
+Package pdftex.def Info: figures/diff_std.jpg  used on input line 852.
 (pdftex.def)             Requested size: 426.79135pt x 213.39534pt.
-)
+Package cleveref Info: loaded `english' language definitions on input line 885.
+ [40 <./figures/diff_rel.jpg> <./figures/diff_std.jpg>])
 Package cleveref Info: loaded `english' language definitions on input line 106.
- [40]
-Package cleveref Info: loaded `english' language definitions on input line 106.
- [41 <./figures/diff_rel.jpg> <./figures/diff_std.jpg>]
+ [41]
 \openout2 = `source/chapter06.aux'.
 
  (./source/chapter06.tex [42
@@ -2724,441 +2783,441 @@ Chapter 6.
 
 ]
 Appendix A.
-<figures/raw_data/0/linear/T_bias.jpg, id=959, 578.16pt x 433.62pt>
+<figures/raw_data/0/linear/T_bias.jpg, id=971, 505.89pt x 433.62pt>
 File: figures/raw_data/0/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/linear/T_bias.jpg  used on input line 11.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/5/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/5/linear/T_bias.jpg  used on input line 16.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/21/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/21/linear/T_bias.jpg  used on input line 21.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/linear/T_bias.jpg, id=960, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/22/linear/T_bias.jpg, id=972, 505.89pt x 433.62pt>
 File: figures/raw_data/22/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/22/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/22/linear/T_bias.jpg  used on input line 29.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/linear/T_bias.jpg, id=961, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/23/linear/T_bias.jpg, id=973, 505.89pt x 433.62pt>
 File: figures/raw_data/23/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/23/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/23/linear/T_bias.jpg  used on input line 34.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/linear/T_bias.jpg, id=962, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/24/linear/T_bias.jpg, id=974, 505.89pt x 433.62pt>
 File: figures/raw_data/24/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/24/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/24/linear/T_bias.jpg  used on input line 39.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/linear/T_bias.jpg, id=963, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/25/linear/T_bias.jpg, id=975, 505.89pt x 433.62pt>
 File: figures/raw_data/25/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/25/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/25/linear/T_bias.jpg  used on input line 47.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/linear/T_bias.jpg, id=964, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/26/linear/T_bias.jpg, id=976, 505.89pt x 433.62pt>
 File: figures/raw_data/26/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/26/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/26/linear/T_bias.jpg  used on input line 52.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/linear/T_bias.jpg, id=965, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/31/linear/T_bias.jpg, id=977, 505.89pt x 433.62pt>
 File: figures/raw_data/31/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/linear/T_bias.jpg  used on input line 57.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/linear/T_bias.jpg, id=966, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/32/linear/T_bias.jpg, id=978, 505.89pt x 433.62pt>
 File: figures/raw_data/32/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/32/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/32/linear/T_bias.jpg  used on input line 65.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/linear/T_bias.jpg, id=967, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/33/linear/T_bias.jpg, id=979, 505.89pt x 433.62pt>
 File: figures/raw_data/33/linear/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/33/linear/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/33/linear/T_bias.jpg  used on input line 70.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/0/linear/emi_cal.jpg, id=968, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/0/linear/emi_cal.jpg, id=980, 505.89pt x 433.62pt>
 File: figures/raw_data/0/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/linear/emi_cal.jpg  used on input line 82.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/5/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/5/linear/emi_cal.jpg  used on input line 87.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/21/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/21/linear/emi_cal.jpg  used on input line 92.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/linear/emi_cal.jpg, id=969, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/22/linear/emi_cal.jpg, id=981, 505.89pt x 433.62pt>
 File: figures/raw_data/22/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/22/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/22/linear/emi_cal.jpg  used on input line 100.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/linear/emi_cal.jpg, id=970, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/23/linear/emi_cal.jpg, id=982, 505.89pt x 433.62pt>
 File: figures/raw_data/23/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/23/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/23/linear/emi_cal.jpg  used on input line 105.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/linear/emi_cal.jpg, id=971, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/24/linear/emi_cal.jpg, id=983, 505.89pt x 433.62pt>
 File: figures/raw_data/24/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/24/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/24/linear/emi_cal.jpg  used on input line 110.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/linear/emi_cal.jpg, id=972, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/25/linear/emi_cal.jpg, id=984, 505.89pt x 433.62pt>
 File: figures/raw_data/25/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/25/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/25/linear/emi_cal.jpg  used on input line 118.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/linear/emi_cal.jpg, id=973, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/26/linear/emi_cal.jpg, id=985, 505.89pt x 433.62pt>
 File: figures/raw_data/26/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/26/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/26/linear/emi_cal.jpg  used on input line 123.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/linear/emi_cal.jpg, id=974, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/31/linear/emi_cal.jpg, id=986, 505.89pt x 433.62pt>
 File: figures/raw_data/31/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/linear/emi_cal.jpg  used on input line 128.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/linear/emi_cal.jpg, id=975, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/32/linear/emi_cal.jpg, id=987, 505.89pt x 433.62pt>
 File: figures/raw_data/32/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/32/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/32/linear/emi_cal.jpg  used on input line 136.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/linear/emi_cal.jpg, id=976, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/33/linear/emi_cal.jpg, id=988, 505.89pt x 433.62pt>
 File: figures/raw_data/33/linear/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/33/linear/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/33/linear/emi_cal.jpg  used on input line 141.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 [45 <./figures/raw_data/0/linear/T_bias.jpg> <./figures/raw_data/22/linear/T_bias.jpg> <./figures/raw_data/23/linear/T_bias.jpg> <./figures/raw_data/24/linear/T_bias.jpg> <./figures/raw_data/25/linear/T_bias.jpg> <./figures/raw_data/26/linear/T_bias.jpg> <./figures/raw_data/31/linear/T_bias.jpg> <./figures/raw_data/32/linear/T_bias.jpg> <./figures/raw_data/33/linear/T_bias.jpg>]
 Package cleveref Info: loaded `english' language definitions on input line 149.
  [46 <./figures/raw_data/0/linear/emi_cal.jpg> <./figures/raw_data/22/linear/emi_cal.jpg> <./figures/raw_data/23/linear/emi_cal.jpg> <./figures/raw_data/24/linear/emi_cal.jpg> <./figures/raw_data/25/linear/emi_cal.jpg> <./figures/raw_data/26/linear/emi_cal.jpg> <./figures/raw_data/31/linear/emi_cal.jpg> <./figures/raw_data/32/linear/emi_cal.jpg> <./figures/raw_data/33/linear/emi_cal.jpg>]
-<figures/raw_data/0/lin_square/T_bias.jpg, id=987, 578.16pt x 433.62pt>
+<figures/raw_data/0/lin_square/T_bias.jpg, id=999, 505.89pt x 433.62pt>
 File: figures/raw_data/0/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/lin_square/T_bias.jpg  used on input line 157.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/5/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/5/lin_square/T_bias.jpg  used on input line 162.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/21/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/21/lin_square/T_bias.jpg  used on input line 167.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/lin_square/T_bias.jpg, id=988, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/22/lin_square/T_bias.jpg, id=1000, 505.89pt x 433.62pt>
 File: figures/raw_data/22/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/22/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/22/lin_square/T_bias.jpg  used on input line 175.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/lin_square/T_bias.jpg, id=989, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/23/lin_square/T_bias.jpg, id=1001, 505.89pt x 433.62pt>
 File: figures/raw_data/23/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/23/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/23/lin_square/T_bias.jpg  used on input line 180.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/lin_square/T_bias.jpg, id=990, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/24/lin_square/T_bias.jpg, id=1002, 505.89pt x 433.62pt>
 File: figures/raw_data/24/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/24/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/24/lin_square/T_bias.jpg  used on input line 185.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/lin_square/T_bias.jpg, id=991, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/25/lin_square/T_bias.jpg, id=1003, 505.89pt x 433.62pt>
 File: figures/raw_data/25/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/25/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/25/lin_square/T_bias.jpg  used on input line 193.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/lin_square/T_bias.jpg, id=992, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/26/lin_square/T_bias.jpg, id=1004, 505.89pt x 433.62pt>
 File: figures/raw_data/26/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/26/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/26/lin_square/T_bias.jpg  used on input line 198.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/lin_square/T_bias.jpg, id=993, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/31/lin_square/T_bias.jpg, id=1005, 505.89pt x 433.62pt>
 File: figures/raw_data/31/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/lin_square/T_bias.jpg  used on input line 203.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/lin_square/T_bias.jpg, id=994, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/32/lin_square/T_bias.jpg, id=1006, 505.89pt x 433.62pt>
 File: figures/raw_data/32/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/32/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/32/lin_square/T_bias.jpg  used on input line 211.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/lin_square/T_bias.jpg, id=995, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/33/lin_square/T_bias.jpg, id=1007, 505.89pt x 433.62pt>
 File: figures/raw_data/33/lin_square/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/33/lin_square/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/33/lin_square/T_bias.jpg  used on input line 216.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/0/lin_square/emi_cal.jpg, id=996, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/0/lin_square/emi_cal.jpg, id=1008, 505.89pt x 433.62pt>
 File: figures/raw_data/0/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/lin_square/emi_cal.jpg  used on input line 228.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/5/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/5/lin_square/emi_cal.jpg  used on input line 233.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/21/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/21/lin_square/emi_cal.jpg  used on input line 238.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/lin_square/emi_cal.jpg, id=997, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/22/lin_square/emi_cal.jpg, id=1009, 505.89pt x 433.62pt>
 File: figures/raw_data/22/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/22/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/22/lin_square/emi_cal.jpg  used on input line 246.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/lin_square/emi_cal.jpg, id=998, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/23/lin_square/emi_cal.jpg, id=1010, 505.89pt x 433.62pt>
 File: figures/raw_data/23/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/23/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/23/lin_square/emi_cal.jpg  used on input line 251.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/lin_square/emi_cal.jpg, id=999, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/24/lin_square/emi_cal.jpg, id=1011, 505.89pt x 433.62pt>
 File: figures/raw_data/24/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/24/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/24/lin_square/emi_cal.jpg  used on input line 256.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/lin_square/emi_cal.jpg, id=1000, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/25/lin_square/emi_cal.jpg, id=1012, 505.89pt x 433.62pt>
 File: figures/raw_data/25/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/25/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/25/lin_square/emi_cal.jpg  used on input line 264.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/lin_square/emi_cal.jpg, id=1001, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/26/lin_square/emi_cal.jpg, id=1013, 505.89pt x 433.62pt>
 File: figures/raw_data/26/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/26/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/26/lin_square/emi_cal.jpg  used on input line 269.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/lin_square/emi_cal.jpg, id=1002, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/31/lin_square/emi_cal.jpg, id=1014, 505.89pt x 433.62pt>
 File: figures/raw_data/31/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/lin_square/emi_cal.jpg  used on input line 274.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/lin_square/emi_cal.jpg, id=1003, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/32/lin_square/emi_cal.jpg, id=1015, 505.89pt x 433.62pt>
 File: figures/raw_data/32/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/32/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/32/lin_square/emi_cal.jpg  used on input line 282.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/lin_square/emi_cal.jpg, id=1004, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/33/lin_square/emi_cal.jpg, id=1016, 505.89pt x 433.62pt>
 File: figures/raw_data/33/lin_square/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/33/lin_square/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/33/lin_square/emi_cal.jpg  used on input line 287.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 Package cleveref Info: loaded `english' language definitions on input line 295.
  [47 <./figures/raw_data/0/lin_square/T_bias.jpg> <./figures/raw_data/22/lin_square/T_bias.jpg> <./figures/raw_data/23/lin_square/T_bias.jpg> <./figures/raw_data/24/lin_square/T_bias.jpg> <./figures/raw_data/25/lin_square/T_bias.jpg> <./figures/raw_data/26/lin_square/T_bias.jpg> <./figures/raw_data/31/lin_square/T_bias.jpg> <./figures/raw_data/32/lin_square/T_bias.jpg> <./figures/raw_data/33/lin_square/T_bias.jpg>]
 Package cleveref Info: loaded `english' language definitions on input line 295.
  [48 <./figures/raw_data/0/lin_square/emi_cal.jpg> <./figures/raw_data/22/lin_square/emi_cal.jpg> <./figures/raw_data/23/lin_square/emi_cal.jpg> <./figures/raw_data/24/lin_square/emi_cal.jpg> <./figures/raw_data/25/lin_square/emi_cal.jpg> <./figures/raw_data/26/lin_square/emi_cal.jpg> <./figures/raw_data/31/lin_square/emi_cal.jpg> <./figures/raw_data/32/lin_square/emi_cal.jpg> <./figures/raw_data/33/lin_square/emi_cal.jpg>]
-<figures/raw_data/0/quad/T_bias.jpg, id=1016, 578.16pt x 433.62pt>
+<figures/raw_data/0/quad/T_bias.jpg, id=1028, 505.89pt x 433.62pt>
 File: figures/raw_data/0/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/quad/T_bias.jpg  used on input line 303.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/5/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/5/quad/T_bias.jpg  used on input line 308.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/21/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/21/quad/T_bias.jpg  used on input line 313.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/quad/T_bias.jpg, id=1017, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/22/quad/T_bias.jpg, id=1029, 505.89pt x 433.62pt>
 File: figures/raw_data/22/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/22/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/22/quad/T_bias.jpg  used on input line 321.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/quad/T_bias.jpg, id=1018, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/23/quad/T_bias.jpg, id=1030, 505.89pt x 433.62pt>
 File: figures/raw_data/23/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/23/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/23/quad/T_bias.jpg  used on input line 326.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/quad/T_bias.jpg, id=1019, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/24/quad/T_bias.jpg, id=1031, 505.89pt x 433.62pt>
 File: figures/raw_data/24/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/24/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/24/quad/T_bias.jpg  used on input line 331.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/quad/T_bias.jpg, id=1020, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/25/quad/T_bias.jpg, id=1032, 505.89pt x 433.62pt>
 File: figures/raw_data/25/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/25/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/25/quad/T_bias.jpg  used on input line 339.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/quad/T_bias.jpg, id=1021, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/26/quad/T_bias.jpg, id=1033, 505.89pt x 433.62pt>
 File: figures/raw_data/26/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/26/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/26/quad/T_bias.jpg  used on input line 344.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/quad/T_bias.jpg, id=1022, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/31/quad/T_bias.jpg, id=1034, 505.89pt x 433.62pt>
 File: figures/raw_data/31/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/quad/T_bias.jpg  used on input line 349.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/quad/T_bias.jpg, id=1023, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/32/quad/T_bias.jpg, id=1035, 505.89pt x 433.62pt>
 File: figures/raw_data/32/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/32/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/32/quad/T_bias.jpg  used on input line 357.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/quad/T_bias.jpg, id=1024, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/33/quad/T_bias.jpg, id=1036, 505.89pt x 433.62pt>
 File: figures/raw_data/33/quad/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/33/quad/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/33/quad/T_bias.jpg  used on input line 362.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/0/quad/emi_cal.jpg, id=1025, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/0/quad/emi_cal.jpg, id=1037, 505.89pt x 433.62pt>
 File: figures/raw_data/0/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/quad/emi_cal.jpg  used on input line 374.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/5/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/5/quad/emi_cal.jpg  used on input line 379.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/21/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/21/quad/emi_cal.jpg  used on input line 384.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/quad/emi_cal.jpg, id=1026, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/22/quad/emi_cal.jpg, id=1038, 505.89pt x 433.62pt>
 File: figures/raw_data/22/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/22/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/22/quad/emi_cal.jpg  used on input line 392.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/quad/emi_cal.jpg, id=1027, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/23/quad/emi_cal.jpg, id=1039, 505.89pt x 433.62pt>
 File: figures/raw_data/23/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/23/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/23/quad/emi_cal.jpg  used on input line 397.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/quad/emi_cal.jpg, id=1028, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/24/quad/emi_cal.jpg, id=1040, 505.89pt x 433.62pt>
 File: figures/raw_data/24/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/24/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/24/quad/emi_cal.jpg  used on input line 402.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/quad/emi_cal.jpg, id=1029, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/25/quad/emi_cal.jpg, id=1041, 505.89pt x 433.62pt>
 File: figures/raw_data/25/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/25/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/25/quad/emi_cal.jpg  used on input line 410.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/quad/emi_cal.jpg, id=1030, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/26/quad/emi_cal.jpg, id=1042, 505.89pt x 433.62pt>
 File: figures/raw_data/26/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/26/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/26/quad/emi_cal.jpg  used on input line 415.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/quad/emi_cal.jpg, id=1031, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/31/quad/emi_cal.jpg, id=1043, 505.89pt x 433.62pt>
 File: figures/raw_data/31/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/quad/emi_cal.jpg  used on input line 420.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/quad/emi_cal.jpg, id=1032, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/32/quad/emi_cal.jpg, id=1044, 505.89pt x 433.62pt>
 File: figures/raw_data/32/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/32/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/32/quad/emi_cal.jpg  used on input line 428.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/quad/emi_cal.jpg, id=1033, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/33/quad/emi_cal.jpg, id=1045, 505.89pt x 433.62pt>
 File: figures/raw_data/33/quad/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/33/quad/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/33/quad/emi_cal.jpg  used on input line 433.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 Package cleveref Info: loaded `english' language definitions on input line 441.
  [49 <./figures/raw_data/0/quad/T_bias.jpg> <./figures/raw_data/22/quad/T_bias.jpg> <./figures/raw_data/23/quad/T_bias.jpg> <./figures/raw_data/24/quad/T_bias.jpg> <./figures/raw_data/25/quad/T_bias.jpg> <./figures/raw_data/26/quad/T_bias.jpg> <./figures/raw_data/31/quad/T_bias.jpg> <./figures/raw_data/32/quad/T_bias.jpg> <./figures/raw_data/33/quad/T_bias.jpg>]
 Package cleveref Info: loaded `english' language definitions on input line 441.
  [50 <./figures/raw_data/0/quad/emi_cal.jpg> <./figures/raw_data/22/quad/emi_cal.jpg> <./figures/raw_data/23/quad/emi_cal.jpg> <./figures/raw_data/24/quad/emi_cal.jpg> <./figures/raw_data/25/quad/emi_cal.jpg> <./figures/raw_data/26/quad/emi_cal.jpg> <./figures/raw_data/31/quad/emi_cal.jpg> <./figures/raw_data/32/quad/emi_cal.jpg> <./figures/raw_data/33/quad/emi_cal.jpg>]
-<figures/raw_data/0/exp/T_bias.jpg, id=1044, 578.16pt x 433.62pt>
+<figures/raw_data/0/exp/T_bias.jpg, id=1056, 505.89pt x 433.62pt>
 File: figures/raw_data/0/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/exp/T_bias.jpg  used on input line 449.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/5/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/5/exp/T_bias.jpg  used on input line 454.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/21/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/21/exp/T_bias.jpg  used on input line 459.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/exp/T_bias.jpg, id=1045, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/22/exp/T_bias.jpg, id=1057, 505.89pt x 433.62pt>
 File: figures/raw_data/22/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/22/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/22/exp/T_bias.jpg  used on input line 467.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/exp/T_bias.jpg, id=1046, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/23/exp/T_bias.jpg, id=1058, 505.89pt x 433.62pt>
 File: figures/raw_data/23/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/23/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/23/exp/T_bias.jpg  used on input line 472.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/exp/T_bias.jpg, id=1047, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/24/exp/T_bias.jpg, id=1059, 505.89pt x 433.62pt>
 File: figures/raw_data/24/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/24/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/24/exp/T_bias.jpg  used on input line 477.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/exp/T_bias.jpg, id=1048, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/25/exp/T_bias.jpg, id=1060, 505.89pt x 433.62pt>
 File: figures/raw_data/25/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/25/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/25/exp/T_bias.jpg  used on input line 485.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/exp/T_bias.jpg, id=1049, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/26/exp/T_bias.jpg, id=1061, 505.89pt x 433.62pt>
 File: figures/raw_data/26/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/26/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/26/exp/T_bias.jpg  used on input line 490.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/exp/T_bias.jpg, id=1050, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/31/exp/T_bias.jpg, id=1062, 505.89pt x 433.62pt>
 File: figures/raw_data/31/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/exp/T_bias.jpg  used on input line 495.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/exp/T_bias.jpg, id=1051, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/32/exp/T_bias.jpg, id=1063, 505.89pt x 433.62pt>
 File: figures/raw_data/32/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/32/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/32/exp/T_bias.jpg  used on input line 503.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/exp/T_bias.jpg, id=1052, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/33/exp/T_bias.jpg, id=1064, 505.89pt x 433.62pt>
 File: figures/raw_data/33/exp/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/33/exp/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/33/exp/T_bias.jpg  used on input line 508.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/0/exp/emi_cal.jpg, id=1053, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/0/exp/emi_cal.jpg, id=1065, 505.89pt x 433.62pt>
 File: figures/raw_data/0/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/exp/emi_cal.jpg  used on input line 520.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/5/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/5/exp/emi_cal.jpg  used on input line 525.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/21/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/21/exp/emi_cal.jpg  used on input line 530.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/exp/emi_cal.jpg, id=1054, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/22/exp/emi_cal.jpg, id=1066, 505.89pt x 433.62pt>
 File: figures/raw_data/22/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/22/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/22/exp/emi_cal.jpg  used on input line 538.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/exp/emi_cal.jpg, id=1055, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/23/exp/emi_cal.jpg, id=1067, 505.89pt x 433.62pt>
 File: figures/raw_data/23/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/23/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/23/exp/emi_cal.jpg  used on input line 543.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/exp/emi_cal.jpg, id=1056, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/24/exp/emi_cal.jpg, id=1068, 505.89pt x 433.62pt>
 File: figures/raw_data/24/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/24/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/24/exp/emi_cal.jpg  used on input line 548.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/exp/emi_cal.jpg, id=1057, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/25/exp/emi_cal.jpg, id=1069, 505.89pt x 433.62pt>
 File: figures/raw_data/25/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/25/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/25/exp/emi_cal.jpg  used on input line 556.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/exp/emi_cal.jpg, id=1058, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/26/exp/emi_cal.jpg, id=1070, 505.89pt x 433.62pt>
 File: figures/raw_data/26/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/26/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/26/exp/emi_cal.jpg  used on input line 561.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/exp/emi_cal.jpg, id=1059, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/31/exp/emi_cal.jpg, id=1071, 505.89pt x 433.62pt>
 File: figures/raw_data/31/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/exp/emi_cal.jpg  used on input line 566.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/exp/emi_cal.jpg, id=1060, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/32/exp/emi_cal.jpg, id=1072, 505.89pt x 433.62pt>
 File: figures/raw_data/32/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/32/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/32/exp/emi_cal.jpg  used on input line 574.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/exp/emi_cal.jpg, id=1061, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/33/exp/emi_cal.jpg, id=1073, 505.89pt x 433.62pt>
 File: figures/raw_data/33/exp/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/33/exp/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/33/exp/emi_cal.jpg  used on input line 579.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 Package cleveref Info: loaded `english' language definitions on input line 587.
  [51 <./figures/raw_data/0/exp/T_bias.jpg> <./figures/raw_data/22/exp/T_bias.jpg> <./figures/raw_data/23/exp/T_bias.jpg> <./figures/raw_data/24/exp/T_bias.jpg> <./figures/raw_data/25/exp/T_bias.jpg> <./figures/raw_data/26/exp/T_bias.jpg> <./figures/raw_data/31/exp/T_bias.jpg> <./figures/raw_data/32/exp/T_bias.jpg> <./figures/raw_data/33/exp/T_bias.jpg>]
 Package cleveref Info: loaded `english' language definitions on input line 587.
@@ -3166,107 +3225,107 @@ Package cleveref Info: loaded `english' language definitions on input line 587.
 File: figures/raw_data/0/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/0/mix/T_bias.jpg  used on input line 595.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/5/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/5/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/5/mix/T_bias.jpg  used on input line 600.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/21/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/21/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/21/mix/T_bias.jpg  used on input line 605.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/mix/T_bias.jpg, id=1072, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/22/mix/T_bias.jpg, id=1084, 505.89pt x 433.62pt>
 File: figures/raw_data/22/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/22/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/22/mix/T_bias.jpg  used on input line 613.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/mix/T_bias.jpg, id=1073, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/23/mix/T_bias.jpg, id=1085, 505.89pt x 433.62pt>
 File: figures/raw_data/23/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/23/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/23/mix/T_bias.jpg  used on input line 618.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/mix/T_bias.jpg, id=1074, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/24/mix/T_bias.jpg, id=1086, 505.89pt x 433.62pt>
 File: figures/raw_data/24/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/24/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/24/mix/T_bias.jpg  used on input line 623.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/mix/T_bias.jpg, id=1075, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/25/mix/T_bias.jpg, id=1087, 505.89pt x 433.62pt>
 File: figures/raw_data/25/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/25/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/25/mix/T_bias.jpg  used on input line 631.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/mix/T_bias.jpg, id=1076, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/26/mix/T_bias.jpg, id=1088, 505.89pt x 433.62pt>
 File: figures/raw_data/26/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/26/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/26/mix/T_bias.jpg  used on input line 636.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/mix/T_bias.jpg, id=1077, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/31/mix/T_bias.jpg, id=1089, 505.89pt x 433.62pt>
 File: figures/raw_data/31/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/31/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/31/mix/T_bias.jpg  used on input line 641.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/mix/T_bias.jpg, id=1078, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/32/mix/T_bias.jpg, id=1090, 505.89pt x 433.62pt>
 File: figures/raw_data/32/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/32/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/32/mix/T_bias.jpg  used on input line 649.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/mix/T_bias.jpg, id=1079, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
+<figures/raw_data/33/mix/T_bias.jpg, id=1091, 505.89pt x 433.62pt>
 File: figures/raw_data/33/mix/T_bias.jpg Graphic file (type jpg)
 <use figures/raw_data/33/mix/T_bias.jpg>
 Package pdftex.def Info: figures/raw_data/33/mix/T_bias.jpg  used on input line 654.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 128.0387pt x 109.74788pt.
 File: figures/raw_data/0/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/0/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/0/mix/emi_cal.jpg  used on input line 666.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/5/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/5/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/5/mix/emi_cal.jpg  used on input line 671.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 File: figures/raw_data/21/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/21/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/21/mix/emi_cal.jpg  used on input line 676.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/22/mix/emi_cal.jpg, id=1080, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/22/mix/emi_cal.jpg, id=1092, 505.89pt x 433.62pt>
 File: figures/raw_data/22/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/22/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/22/mix/emi_cal.jpg  used on input line 684.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/23/mix/emi_cal.jpg, id=1081, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/23/mix/emi_cal.jpg, id=1093, 505.89pt x 433.62pt>
 File: figures/raw_data/23/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/23/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/23/mix/emi_cal.jpg  used on input line 689.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/24/mix/emi_cal.jpg, id=1082, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/24/mix/emi_cal.jpg, id=1094, 505.89pt x 433.62pt>
 File: figures/raw_data/24/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/24/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/24/mix/emi_cal.jpg  used on input line 694.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/25/mix/emi_cal.jpg, id=1083, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/25/mix/emi_cal.jpg, id=1095, 505.89pt x 433.62pt>
 File: figures/raw_data/25/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/25/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/25/mix/emi_cal.jpg  used on input line 702.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/26/mix/emi_cal.jpg, id=1084, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/26/mix/emi_cal.jpg, id=1096, 505.89pt x 433.62pt>
 File: figures/raw_data/26/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/26/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/26/mix/emi_cal.jpg  used on input line 707.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/31/mix/emi_cal.jpg, id=1085, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/31/mix/emi_cal.jpg, id=1097, 505.89pt x 433.62pt>
 File: figures/raw_data/31/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/31/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/31/mix/emi_cal.jpg  used on input line 712.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/32/mix/emi_cal.jpg, id=1086, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/32/mix/emi_cal.jpg, id=1098, 505.89pt x 433.62pt>
 File: figures/raw_data/32/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/32/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/32/mix/emi_cal.jpg  used on input line 720.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
-<figures/raw_data/33/mix/emi_cal.jpg, id=1087, 578.16pt x 433.62pt>
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
+<figures/raw_data/33/mix/emi_cal.jpg, id=1099, 505.89pt x 433.62pt>
 File: figures/raw_data/33/mix/emi_cal.jpg Graphic file (type jpg)
 <use figures/raw_data/33/mix/emi_cal.jpg>
 Package pdftex.def Info: figures/raw_data/33/mix/emi_cal.jpg  used on input line 725.
-(pdftex.def)             Requested size: 138.70587pt x 104.02461pt.
+(pdftex.def)             Requested size: 138.70587pt x 118.89188pt.
 )
 Package cleveref Info: loaded `english' language definitions on input line 112.
  [53 <./figures/raw_data/22/mix/T_bias.jpg> <./figures/raw_data/23/mix/T_bias.jpg> <./figures/raw_data/24/mix/T_bias.jpg> <./figures/raw_data/25/mix/T_bias.jpg> <./figures/raw_data/26/mix/T_bias.jpg> <./figures/raw_data/31/mix/T_bias.jpg> <./figures/raw_data/32/mix/T_bias.jpg> <./figures/raw_data/33/mix/T_bias.jpg>]
@@ -3315,17 +3374,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69855 strings out of 477853
- 1588691 string characters out of 5833684
- 2535298 words of memory out of 5000000
- 88096 multiletter control sequences out of 15000+600000
+ 69922 strings out of 477853
+ 1591355 string characters out of 5833684
+ 2534298 words of memory out of 5000000
+ 88162 multiletter control sequences out of 15000+600000
  631198 words of font info for 412 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  109i,13n,131p,2259b,3080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><e:/Latex/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (67 pages, 34786446 bytes).
+Output written on main.pdf (67 pages, 34140243 bytes).
 PDF statistics:
- 1251 PDF objects out of 1440 (max. 8388607)
+ 1263 PDF objects out of 1440 (max. 8388607)
  244 named destinations out of 1000 (max. 500000)
- 113305 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 113360 words of extra memory for PDF output out of 128383 (max. 10000000)
 
