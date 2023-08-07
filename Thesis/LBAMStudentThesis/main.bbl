@@ -459,60 +459,72 @@
     \field{year}{2021}
   \endentry
 
-  \entry{Bammer.2010}{article}{}
+  \entry{J.Scott.2012}{book}{}
     \name{author}{5}{}{%
-      {{hash=BF}{%
-         family={Bammer},
-         familyi={B\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
+      {{hash=J}{%
+         family={{J. Scott}},
+         familyi={J\bibinitperiod},
       }}%
-      {{hash=HB}{%
-         family={Holzinger},
-         familyi={H\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
+      {{hash=N}{%
+         family={{N. Gupta}},
+         familyi={N\bibinitperiod},
       }}%
-      {{hash=HG}{%
-         family={Humenberger},
-         familyi={H\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
+      {{hash=C}{%
+         family={{C. Wember}},
+         familyi={C\bibinitperiod},
       }}%
-      {{hash=SD}{%
-         family={Schu{\"o}cker},
+      {{hash=S}{%
+         family={{S. Newsom}},
          familyi={S\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
       }}%
-      {{hash=ST}{%
-         family={Schumi},
-         familyi={S\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
+      {{hash=T}{%
+         family={{T. Caffrey}},
+         familyi={T\bibinitperiod},
       }}%
     }
-    \keyw{Bending;Diode lasers;Warm-forming}
-    \strng{namehash}{BFHBHGSDST1}
-    \strng{fullhash}{BFHBHGSDST1}
+    \strng{namehash}{JNCST1}
+    \strng{fullhash}{JNCST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Physics Procedia, 5 (2010) 205-209. doi:%
+    PDF | On Jan 1, 2012, J. Scott and others published Additive Manufacturing: Status and Opportunities | Find, read and cite all the research you need on ResearchGate%
     }
-    \verb{doi}
-    \verb 10.1016/j.phpro.2010.08.045
+    \field{title}{Additive Manufacturing: Status and Opportunities}
+    \verb{url}
+    \verb https://www.researchgate.net/profile/justin-scott-4/publication/31215
+    \verb 3354_additive_manufacturing_status_and_opportunities
     \endverb
-    \field{issn}{18753892}
-    \field{pages}{205\bibrangedash 209}
-    \field{title}{Integration of high power lasers in bending tools}
-    \field{volume}{5}
     \verb{file}
-    \verb j.phpro.2010.08.045:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
-    \verb terarbeit\\Citavi Attachments\\j.phpro.2010.08.045.pdf:pdf
+    \verb J. Scott, N. Gupta et al. 2012 - Additive Manufacturing:G\:\\Uni_File
+    \verb s\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\J.
+    \verb  Scott, N. Gupta et al. 2012 - Additive Manufacturing.pdf:pdf
     \endverb
-    \field{journaltitle}{Physics Procedia}
-    \field{year}{2010}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Hartke.2011}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HK}{%
+         family={Hartke},
+         familyi={H\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK1}
+    \strng{fullhash}{HK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Manufacturing Technology Support (MATES). Task Order 0021: Air Force Technology and Industrial Base Research and Analysis, Subtask Order 06: Direct Digital $\ldots$}
+    \verb{url}
+    \verb https://apps.dtic.mil/sti/citations/tr/ada551779
+    \endverb
+    \verb{file}
+    \verb Manufacturing Technology Support MATES 2011:G\:\\Uni_Files\\Semestera
+    \verb rbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Manufacturing
+    \verb Technology Support MATES 2011.pdf:pdf
+    \endverb
+    \field{year}{2011}
   \endentry
 
   \entry{Kuhn.1987}{book}{}
@@ -648,8 +660,7 @@
     \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
     \field{volume}{91}
     \verb{file}
-    \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
-    \verb Citavi Attachments\\50019847.pdf:pdf
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/33261433
     \endverb
     \field{journaltitle}{The Review of scientific instruments}
     \field{year}{2020}
