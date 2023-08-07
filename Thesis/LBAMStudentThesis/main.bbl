@@ -459,62 +459,6 @@
     \field{year}{2021}
   \endentry
 
-  \entry{Bammer.2010}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BF}{%
-         family={Bammer},
-         familyi={B\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=HB}{%
-         family={Holzinger},
-         familyi={H\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=HG}{%
-         family={Humenberger},
-         familyi={H\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=SD}{%
-         family={Schu{\"o}cker},
-         familyi={S\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=ST}{%
-         family={Schumi},
-         familyi={S\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \keyw{Bending;Diode lasers;Warm-forming}
-    \strng{namehash}{BFHBHGSDST1}
-    \strng{fullhash}{BFHBHGSDST1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Physics Procedia, 5 (2010) 205-209. doi:%
-    }
-    \verb{doi}
-    \verb 10.1016/j.phpro.2010.08.045
-    \endverb
-    \field{issn}{18753892}
-    \field{pages}{205\bibrangedash 209}
-    \field{title}{Integration of high power lasers in bending tools}
-    \field{volume}{5}
-    \verb{file}
-    \verb j.phpro.2010.08.045:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
-    \verb terarbeit\\Citavi Attachments\\j.phpro.2010.08.045.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physics Procedia}
-    \field{year}{2010}
-  \endentry
-
   \entry{Kuhn.1987}{book}{}
     \name{author}{1}{}{%
       {{hash=KTS}{%
