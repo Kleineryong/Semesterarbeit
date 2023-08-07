@@ -193,7 +193,7 @@ def emissivity_model(wl, a, b):
     wl1 = 1 * 10 ** (-6)
     wl_rel = (wl-wl0)/(wl1-wl0)
     # lin emi = a + b * lambda
-    emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
+    # emissivity = a + b * wl_rel   # a[0, 1], b[-1, 1]
 
     # lin exp emi = exp(a + b * lambda)
     # emissivity = math.exp(a + b * wl_rel)
@@ -202,7 +202,7 @@ def emissivity_model(wl, a, b):
     # emissivity = a + b * (wl_rel**2)
 
     # exp emi = exp(-a - b * wl)
-    # emissivity = math.exp(a + b * wl_rel)
+    emissivity = math.exp(a + b * wl_rel)
 
     # maxwell
     # emissivity = 4 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) / (2 * a * (1 + math.sqrt(1 + (wl / b) ** 2)) + 2 * math.sqrt(a * (1 + math.sqrt(1 + (wl / b) ** 2))) + 1)
@@ -223,7 +223,7 @@ def process_itg(intensity_array, qe_array, tr_array):
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-1, -1, 2500), (1, 1, 4000)), maxfev= 100000)
+        popt, cov = curve_fit(integration_solve, qe_array, intensity_array, bounds=((-3, -3, 2500), (3, 3, 4000)), maxfev= 100000)
     return popt[2], popt[0], popt[1]
 
 
@@ -269,7 +269,7 @@ def save_file(t_field, temperature_center, emissivity_set, emi_field, result_dir
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '0'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -277,7 +277,7 @@ if 1:
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '5'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -285,7 +285,7 @@ if 1:
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '21'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -293,7 +293,7 @@ if 1:
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '22'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -301,7 +301,7 @@ if 1:
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '32'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
@@ -309,7 +309,7 @@ if 1:
     compare(data_name, result_dir)
     print(data_name, 'finished')
 
-    result_dir = 'result_v060_lin'
+    result_dir = 'result_v060_exp'
     data_temperature = '3500'
     emissivity_set = '33'
     data_name = 'T' + data_temperature + '_' + emissivity_set + '_digital'
