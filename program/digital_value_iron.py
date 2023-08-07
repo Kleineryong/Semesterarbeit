@@ -22,8 +22,8 @@ def digital_value_rebuild(emissivity_set):
     image_resolution = [50, 50]                                               # [pixel] [100 * 100]
     diameter_ratio = 0.9                                                        # adjust the visualisation of data_field
     shutter_time = 200                                                          # adjust explosure time
-    temperature_center = 1900                                                 # temperature of the center_area
-    temperature_background = 1500                                                # set background temperature to 50K as black body
+    temperature_center = 3500                                                 # temperature of the center_area
+    temperature_background = 2500                                                # set background temperature to 50K as black body
     melt_temperature = 1811                                                     # set melt temperature
     emissivity_liquid = 0.07                                                    # set emissivity in liquid phase
     temperature_distribution = 'linear'                                         # gaussian / linear / sigmoid
