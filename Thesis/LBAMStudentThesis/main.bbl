@@ -527,6 +527,1177 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Mazzoli.2013}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Mazzoli},
+         familyi={M\bibinitperiod},
+         given={Alida},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Biomedical Engineering and Bioengineering;Computer Applications;Human Physiology;Imaging / Radiology}
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Selective laser sintering (SLS) is a solid freeform fabrication technique, developed by Carl Deckard for his master's thesis at the University of Texas, patented in 1989. SLS manufacturing is a technique that produces physical models through a selective solidification of a variety of fine powders. SLS technology is getting a great amount of attention in the clinical field. In this paper the characteristics features of SLS and the materials that have been developed for are reviewed together with a discussion on the principles of the above-mentioned manufacturing technique. The applications of SLS in tissue engineering, and at-large in the biomedical field, are reviewed and discussed.%
+    }
+    \verb{doi}
+    \verb 10.1007/s11517-012-1001-x
+    \endverb
+    \field{issn}{1741-0444}
+    \field{number}{3}
+    \field{pages}{245\bibrangedash 256}
+    \field{title}{Selective laser sintering in biomedical engineering}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s11517-012-1001-x
+    \endverb
+    \field{volume}{51}
+    \verb{file}
+    \verb s11517-012-1001-x:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semeste
+    \verb rarbeit\\Citavi Attachments\\s11517-012-1001-x.pdf:pdf
+    \endverb
+    \field{journaltitle}{Medical {\&} Biological Engineering {\&} Computing}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Wong.2012}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WKV}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Kaufui\bibnamedelima V.},
+         giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hernandez},
+         familyi={H\bibinitperiod},
+         given={Aldo},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKVHA1}
+    \strng{fullhash}{WKVHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5402/2012/208760
+    \endverb
+    \field{issn}{2090-5130}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{A Review of Additive Manufacturing}
+    \verb{url}
+    \verb http://dx.doi.org/10.5402/2012/208760
+    \endverb
+    \field{volume}{2012}
+    \verb{file}
+    \verb Wong, Hernandez 2012 - A Review of Additive Manufacturing:G\:\\Uni_Fi
+    \verb les\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\
+    \verb Wong, Hernandez 2012 - A Review of Additive Manufacturing.pdf:pdf
+    \endverb
+    \field{journaltitle}{ISRN Mechanical Engineering}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Fischer.2002}{article}{}
+    \name{author}{5}{}{%
+      {{hash=FP}{%
+         family={Fischer},
+         familyi={F\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Karapatis},
+         familyi={K\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Romano},
+         familyi={R\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Glardon},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WHP}{%
+         family={Weber},
+         familyi={W\bibinitperiod},
+         given={H.\bibnamedelima P.},
+         giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Characterization and Evaluation of Materials;Condensed Matter Physics;Machines;Manufacturing;Nanotechnology;Optical and Electronic Materials;Processes;Surfaces and Interfaces;Thin Films;Tools}
+    \strng{namehash}{FPKNRVGRWHP1}
+    \strng{fullhash}{FPKNRVGRWHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A thermal model of the interaction of pulsed near-infrared laser radiation from a Nd:YAG laser was made, taking the measured powder properties such as reflectance, optical penetration depth and thermal conductivity into account. It allows an estimation of the evolution of two different temperatures: the average temperature of the powder (taken over the grains in a volume given by the laser beam diameter and the optical penetration depth) and the temperature distinction within a single grain. It showed that in pulsed mode consolidation can be achieved at much lower average power as the surface of the powder particles are molten but their cores remain at nearly room temperature. This leads to a much lower average temperature and therefore a dramatic decrease in residual thermal stresses in the finished piece. The results of the model were experimentally tested and confirmed.%
+    }
+    \verb{doi}
+    \verb 10.1007/s003390101139
+    \endverb
+    \field{issn}{1432-0630}
+    \field{number}{4}
+    \field{pages}{467\bibrangedash 474}
+    \field{title}{A model for the interaction of near-infrared laser pulses with metal powders in selective laser sintering}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1007/s003390101139
+    \endverb
+    \field{volume}{74}
+    \verb{file}
+    \verb s003390101139:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarb
+    \verb eit\\Citavi Attachments\\s003390101139.pdf:pdf
+    \endverb
+    \field{journaltitle}{Applied Physics A}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Hooper.2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HPA}{%
+         family={Hooper},
+         familyi={H\bibinitperiod},
+         given={Paul\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HPA1}
+    \strng{fullhash}{HPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.addma.2018.05.032
+    \endverb
+    \field{issn}{22148604}
+    \field{number}{Supplement C}
+    \field{pages}{548\bibrangedash 559}
+    \field{title}{Melt pool temperature and cooling rates in laser powder bed fusion}
+    \field{volume}{22}
+    \verb{file}
+    \verb AM_Melt_pool_temperature_and_cooling_rates_in_laser_powder_bed_fusion
+    \verb :G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi A
+    \verb ttachments\\AM_Melt_pool_temperature_and_cooling_rates_in_laser_powde
+    \verb r_bed_fusion.pdf:pdf
+    \endverb
+    \field{journaltitle}{Additive Manufacturing}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Osakada.2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OK}{%
+         family={Osakada},
+         familyi={O\bibinitperiod},
+         given={Kozo},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Shiomi},
+         familyi={S\bibinitperiod},
+         given={Masanori},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OKSM1}
+    \strng{fullhash}{OKSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.ijmachtools.2006.01.024
+    \endverb
+    \field{issn}{0890-6955}
+    \field{number}{11}
+    \field{pages}{1188\bibrangedash 1193}
+    \field{title}{Flexible manufacturing of metallic products by selective laser melting of powder}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s0890695506000307
+    \endverb
+    \field{volume}{46}
+    \verb{file}
+    \verb j.ijmachtools.2006.01.024:G\:\\Uni_Files\\Semesterarbeit\\Literature\
+    \verb \Semesterarbeit\\Citavi Attachments\\j.ijmachtools.2006.01.024.pdf:pd
+    \verb f
+    \endverb
+    \field{journaltitle}{International Journal of Machine Tools and Manufacture}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Swift.2013}{book}{}
+    \name{editor}{2}{}{%
+      {{hash=SKG}{%
+         family={Swift},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima G.},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BJD}{%
+         family={Booker},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \keyw{Engineering Design;Manufacturing processes Planning}
+    \strng{namehash}{SKGBJD1}
+    \strng{fullhash}{SKGBJD1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780080993607}
+    \field{title}{Manufacturing process selection handbook}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \verb{file}
+    \verb B978-0-08-099360-7.00008-2:G\:\\Uni_Files\\Semesterarbeit\\Literature
+    \verb \\Semesterarbeit\\Citavi Attachments\\B978-0-08-099360-7.00008-2.pdf:
+    \verb pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{Matthews.2017}{book}{}
+    \name{editor}{6}{}{%
+      {{hash=MMJ}{%
+         family={Matthews},
+         familyi={M\bibinitperiod},
+         given={Manyalibo\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Guss},
+         familyi={G\bibinitperiod},
+         given={Gabe},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KSA}{%
+         family={Khairallah},
+         familyi={K\bibinitperiod},
+         given={Saad\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RAM}{%
+         family={Rubenchik},
+         familyi={R\bibinitperiod},
+         given={Alexander\bibnamedelima M.},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DPJ}{%
+         family={Depond},
+         familyi={D\bibinitperiod},
+         given={Philip\bibnamedelima J.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KWE}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Wayne\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{CRC Press Taylor {\&} Francis Group}}%
+    }
+    \keyw{gnd;http://d-nb.info/gnd/1072438291;http://id.loc.gov/authorities/subjects/sh2009006799;http://id.loc.gov/authorities/subjects/sh85085194;Manufacturing industries;Military aspects;Military engineering;Produktionstechnik;Three-dimensional printing}
+    \strng{namehash}{MMJGGKSARAMDPJKWE1}
+    \strng{fullhash}{MMJGGKSARAMDPJKWE1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781315119106}
+    \field{series}{Systems innovation series}
+    \field{title}{Additive manufacturing handbook: Product development for the Defense industry}
+    \list{location}{1}{%
+      {Boca Raton}%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{Krauss.2012}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=KH}{%
+         family={Krauss},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Eschey},
+         familyi={E\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZMF}{%
+         family={Zaeh},
+         familyi={Z\bibinitperiod},
+         given={M.\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{heat dissipation;process errors;Selective laser melting;temperature distribution;Thermography}
+    \strng{namehash}{KHECZMF1}
+    \strng{fullhash}{KHECZMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A lot of strategies exist to monitor and control additive layer manufacturing processes. Basically one can distinguish between coaxially monitoring the process zone and monitoring the complete layer currently being built. Since Selective Laser Melting is a thermal process, a lot of information about the process and in consequence about the resulting part quality can be gathered by monitoring the temperature distribution of a complete layer and its temporal evolution. It depends on the geometrical configuration of parts being built and the quality of the powder layer deposition. In this paper, process errors originating from insufficient heat dissipation are investigated as well as the limits for detecting pores and other irregularities by observation of the temperature distribution.%
+    }
+    \verb{doi}
+    \verb 10.26153/TSW/15406
+    \endverb
+    \field{title}{Thermography for Monitoring the Selective Laser Melting Process}
+    \verb{file}
+    \verb Krauss, Eschey et al. 2012 - Thermography for Monitoring the Selectiv
+    \verb e:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi
+    \verb Attachments\\Krauss, Eschey et al. 2012 - Thermography for Monitoring
+    \verb  the Selective.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Mani.2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MM}{%
+         family={Mani},
+         familyi={M\bibinitperiod},
+         given={Mahesh},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LBM}{%
+         family={Lane},
+         familyi={L\bibinitperiod},
+         given={Brandon\bibnamedelima M.},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DMA}{%
+         family={Donmez},
+         familyi={D\bibinitperiod},
+         given={M.\bibnamedelima Alkan},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=FSC}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Shaw\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MSP}{%
+         family={Moylan},
+         familyi={M\bibinitperiod},
+         given={Shawn\bibnamedelima P.},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMLBMDMAFSCMSP1}
+    \strng{fullhash}{MMLBMDMAFSCMSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    International Journal of Production Research, 2016. doi:10.1080/00207543.2016.1223378%
+    }
+    \verb{doi}
+    \verb 10.1080/00207543.2016.1223378
+    \endverb
+    \field{issn}{0020-7543}
+    \field{number}{5}
+    \field{pages}{1400\bibrangedash 1418}
+    \field{title}{A review on measurement science needs for real-time control of additive manufacturing metal powder bed fusion processes}
+    \field{volume}{55}
+    \verb{file}
+    \verb a review on measurement science needs for real time control of pbflbm
+    \verb :G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi A
+    \verb ttachments\\a review on measurement science needs for real time contr
+    \verb ol of pbflbm.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Journal of Production Research}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Craeghs.2010b}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CT}{%
+         family={Craeghs},
+         familyi={C\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bechmann},
+         familyi={B\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Berumen},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJP}{%
+         family={Kruth},
+         familyi={K\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTBFBSKJP1}
+    \strng{fullhash}{CTBFBSKJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Layerwise Laser Melting (LLM) is a layerwise production technique enabling the production of complex metallic parts. Thin powder layers are molten acc$\ldots$%
+    }
+    \verb{doi}
+    \verb 10.1016/j.phpro.2010.08.078
+    \endverb
+    \field{issn}{1875-3892}
+    \field{pages}{505\bibrangedash 514}
+    \field{title}{Feedback control of Layerwise Laser Melting using optical sensors}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s1875389210005043
+    \endverb
+    \field{volume}{5}
+    \verb{file}
+    \verb Feedback control of Layerwise Laser 2010:G\:\\Uni_Files\\Semesterarbe
+    \verb it\\Literature\\Semesterarbeit\\Citavi Attachments\\Feedback control
+    \verb of Layerwise Laser 2010.pdf:pdf
+    \endverb
+    \field{journaltitle}{1875-3892}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Craeghs.2012}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CT}{%
+         family={Craeghs},
+         familyi={C\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Clijsters},
+         familyi={C\bibinitperiod},
+         given={Stijn},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJP}{%
+         family={Kruth},
+         familyi={K\bibinitperiod},
+         given={Jean.-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bechmann},
+         familyi={B\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EMC}{%
+         family={Ebert},
+         familyi={E\bibinitperiod},
+         given={Marie.-Christin},
+         giveni={M\bibinithyphendelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Laser melting;Optical process monitoring;Process control}
+    \strng{namehash}{CTCSKJPBFEMC1}
+    \strng{fullhash}{CTCSKJPBFEMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    , 39 (2012) 753-759. doi:10.1016/j.phpro.2012.10.097%
+    }
+    \verb{doi}
+    \verb 10.1016/j.phpro.2012.10.097
+    \endverb
+    \field{issn}{18753892}
+    \field{pages}{753\bibrangedash 759}
+    \field{title}{Detection of Process Failures in Layerwise Laser Melting with Optical Process Monitoring}
+    \field{volume}{39}
+    \verb{file}
+    \verb 1-s2.0-S1875389212026247-main:G\:\\Uni_Files\\Semesterarbeit\\Literat
+    \verb ure\\Semesterarbeit\\Citavi Attachments\\1-s2.0-S1875389212026247-mai
+    \verb n.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics Procedia}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Chivel.2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CY}{%
+         family={Chivel},
+         familyi={C\bibinitperiod},
+         given={Yu.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Smurov},
+         familyi={S\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CYSI1}
+    \strng{fullhash}{CYSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Poor efficiency of selective laser sintering/ melting (SLS/SLM) processes and poor articles surface quality are mainly responsible for their slow manu$\ldots$%
+    }
+    \verb{doi}
+    \verb 10.1016/j.phpro.2010.08.079
+    \endverb
+    \field{issn}{1875-3892}
+    \field{pages}{515\bibrangedash 521}
+    \field{title}{On-line temperature monitoring in selective laser sintering/melting}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s1875389210005055
+    \endverb
+    \field{volume}{5}
+    \verb{file}
+    \verb 1-s2.0-S1875389210005055-main:G\:\\Uni_Files\\Semesterarbeit\\Literat
+    \verb ure\\Semesterarbeit\\Citavi Attachments\\1-s2.0-S1875389210005055-mai
+    \verb n.pdf:pdf
+    \endverb
+    \field{journaltitle}{1875-3892}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Bammer.2010}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BF}{%
+         family={Bammer},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Holzinger},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Humenberger},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Schu{\"o}cker},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Schumi},
+         familyi={S\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Bending;Diode lasers;Warm-forming}
+    \strng{namehash}{BFHBHGSDST1}
+    \strng{fullhash}{BFHBHGSDST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Physics Procedia, 5 (2010) 205-209. doi:%
+    }
+    \verb{doi}
+    \verb 10.1016/j.phpro.2010.08.045
+    \endverb
+    \field{issn}{18753892}
+    \field{pages}{205\bibrangedash 209}
+    \field{title}{Integration of high power lasers in bending tools}
+    \field{volume}{5}
+    \verb{file}
+    \verb j.phpro.2010.08.045:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
+    \verb terarbeit\\Citavi Attachments\\j.phpro.2010.08.045.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics Procedia}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Berumen.2010}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BS}{%
+         family={Berumen},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bechmann},
+         familyi={B\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lindner},
+         familyi={L\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KJP}{%
+         family={Kruth},
+         familyi={K\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Craeghs},
+         familyi={C\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{additive manufacturing;Laser melting;Melt pool;Quality control;Realtime}
+    \strng{namehash}{BSBFLSKJPCT1}
+    \strng{fullhash}{BSBFLSKJPCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Physics Procedia, 5 (2010) 617-622. doi:%
+    }
+    \verb{doi}
+    \verb 10.1016/j.phpro.2010.08.089
+    \endverb
+    \field{issn}{18753892}
+    \field{pages}{617\bibrangedash 622}
+    \field{title}{Quality control of laser- and powder bed-based Additive Manufacturing (AM) technologies}
+    \field{volume}{5}
+    \verb{file}
+    \verb j.phpro.2010.08.089:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
+    \verb terarbeit\\Citavi Attachments\\j.phpro.2010.08.089.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics Procedia}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Lott.2011}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LP}{%
+         family={Lott},
+         familyi={L\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schleifenbaum},
+         familyi={S\bibinitperiod},
+         given={Henrich},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={Meiners},
+         familyi={M\bibinitperiod},
+         given={Wilhelm},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Wissenbach},
+         familyi={W\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hinke},
+         familyi={H\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={B{\"u}ltmann},
+         familyi={B\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LPSHMWWKHCBJ1}
+    \strng{fullhash}{LPSHMWWKHCBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.phpro.2011.03.085
+    \endverb
+    \field{issn}{18753892}
+    \field{pages}{683\bibrangedash 690}
+    \field{title}{Design of an Optical system for the In Situ Process Monitoring of Selective Laser Melting (SLM)}
+    \field{volume}{12}
+    \verb{file}
+    \verb j.phpro.2011.03.085:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
+    \verb terarbeit\\Citavi Attachments\\j.phpro.2011.03.085.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physics Procedia}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Yadroitsev.2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YI}{%
+         family={Yadroitsev},
+         familyi={Y\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Krakhmalev},
+         familyi={K\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YI}{%
+         family={Yadroitsava},
+         familyi={Y\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Heat treatment;Selective laser melting;Temperature monitoring;Titanium alloys}
+    \strng{namehash}{YIKPYI1}
+    \strng{fullhash}{YIKPYI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    JOURNAL OF ALLOYS AND COMPOUNDS, Accepted manuscript. doi:10.1016/j.jallcom.2013.08.183%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jallcom.2013.08.183
+    \endverb
+    \field{issn}{09258388}
+    \field{pages}{404\bibrangedash 409}
+    \field{title}{Selective laser melting of Ti6Al4V alloy for biomedical applications: Temperature monitoring and microstructural evolution}
+    \field{volume}{583}
+    \verb{file}
+    \verb j.jallcom.2013.08.183:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Sem
+    \verb esterarbeit\\Citavi Attachments\\j.jallcom.2013.08.183.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Alloys and Compounds}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Dinwiddie.2014}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=DRB}{%
+         family={Dinwiddie},
+         familyi={D\bibinitperiod},
+         given={Ralph\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Kunc},
+         familyi={K\bibinitperiod},
+         given={Vlastimil},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LJM}{%
+         family={Lindal},
+         familyi={L\bibinitperiod},
+         given={John\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Post},
+         familyi={P\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Rachel\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Love},
+         familyi={L\bibinitperiod},
+         given={Lonnie},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DCE}{%
+         family={Duty},
+         familyi={D\bibinitperiod},
+         given={Chad\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CFP}{%
+         family={Colbert},
+         familyi={C\bibinitperiod},
+         given={Fred\bibnamedelima P.},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HSJ}{%
+         family={Hsieh},
+         familyi={H\bibinitperiod},
+         given={Sheng-Jen},
+         giveni={S\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SPIE}%
+    }
+    \strng{namehash}{DRBKVLJMPBSRJLLDCE1}
+    \strng{fullhash}{DRBKVLJMPBSRJLLDCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Thermosense: Thermal Infrared Applications XXXVI}
+    \verb{doi}
+    \verb 10.1117/12.2053425
+    \endverb
+    \field{pages}{910502}
+    \field{series}{SPIE Proceedings}
+    \field{title}{Infrared imaging of the polymer 3D-printing process}
+    \verb{file}
+    \verb 12.2053425:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
+    \verb \\Citavi Attachments\\12.2053425.pdf:pdf
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{Price.2012}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=PS}{%
+         family={Price},
+         familyi={P\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cooper},
+         familyi={C\bibinitperiod},
+         given={Ken},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chou},
+         familyi={C\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{electron beam additive manufacturing;near-infrared thermography;powder-based manufacturing}
+    \strng{namehash}{PSCKCK1}
+    \strng{fullhash}{PSCKCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Powder-based electron beam additive manufacturing (EBAM) has gained increased usage in different industries. Process monitoring such as temperatures may offer important information. However, temperature measurements in EBAM are challenging because of high temperature ranges, extreme gradients and fast transient response. In this study, temperature measurements during the EBAM process, in particular, around the electron beam scanning area, were attempted using a near-infrared thermal camera. The obtained temperature data demonstrated the feasibility of such a measuring technique. The thermal camera was able to capture the pre-heating, contour melting, and hatch melting events. Further, the achievable spatial resolution is around 12 µm when using a 350 mm lens.%
+    }
+    \verb{doi}
+    \verb 10.26153/TSW/15387
+    \endverb
+    \field{title}{Evaluations of Temperature Measurements By Near-Infrared Thermography in Powder-Based Electron-Beam Additive Manufacturing}
+    \verb{file}
+    \verb Price, Cooper et al. 2012 - Evaluations of Temperature Measurements:G
+    \verb \:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Att
+    \verb achments\\Price, Cooper et al. 2012 - Evaluations of Temperature Meas
+    \verb urements.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Price.2013}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=PS}{%
+         family={Price},
+         familyi={P\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lydon},
+         familyi={L\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cooper},
+         familyi={C\bibinitperiod},
+         given={Ken},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chou},
+         familyi={C\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{electron beam additive manufacturing;infrared thermal imager;powder-based;temperature measurements}
+    \strng{namehash}{PSLJCKCK1}
+    \strng{fullhash}{PSLJCKCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A near infrared thermal imager has been employed for temperature measurements (build part surfaces) in the powder-based electron beam additive manufacturing (EBAM) process. A methodology has also been developed to analyze temperature distributions and history around the melting scan area. The temperature profiles along the beam scanning clearly show the moving source of heat phenomenon, with the peak temperature reaching over 2000 °C (for Ti6Al-4V) followed by extremely rapid cooling opposite to the beam scanning direction, except a slow-cooling portion corresponding to the liquidus-solidus range. The build surface temperatures and the melt pool sizes, in the localized electron beam scanning area, were studied at various configurations, e.g., different build heights, also with or without an overhang.%
+    }
+    \verb{doi}
+    \verb 10.26153/TSW/15422
+    \endverb
+    \field{title}{Experimental Temperature Analysis of Powder-Based Electron Beam Additive Manufacturing}
+    \verb{file}
+    \verb Price, Lydon et al. 2013 - Experimental Temperature Analysis of Powde
+    \verb r-Based:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\C
+    \verb itavi Attachments\\Price, Lydon et al. 2013 - Experimental Temperatur
+    \verb e Analysis of Powder-Based.pdf:pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{Rodriguez.2012}{misc}{}
+    \name{author}{8}{}{%
+      {{hash=RE}{%
+         family={Rodriguez},
+         familyi={R\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Medina},
+         familyi={M\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Espalin},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Terrazas},
+         familyi={T\bibinitperiod},
+         given={Cesar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Muse},
+         familyi={M\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Henry},
+         familyi={H\bibinitperiod},
+         given={Chad},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={MacDonald},
+         familyi={M\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WRB}{%
+         family={Wicker},
+         familyi={W\bibinitperiod},
+         given={Ryan\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{Electron beam melting;fabrication control;infrared camera;thermal imaging}
+    \strng{namehash}{REMFEDTCMDHCMEWRB1}
+    \strng{fullhash}{REMFEDTCMDHCMEWRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A thermal imaging system using an infrared (IR) camera was incorporated in the fabrication process of an Arcam A2 Electron Beam Melting system to provide layer-by-layer feedback and ensure quality and defect free products. Using the IR camera, build chamber surface temperature profiles were imaged and analyzed, providing information used to modify build settings for the next build layer. Individual part temperatures were also monitored and modified to achieve a more uniform bed temperature. The thermal imaging information can also be used as a quality control tool to detect imperfections during the build. Results from the integration of the camera in the system as well as use of the thermal images in process monitoring and control is described.%
+    }
+    \verb{doi}
+    \verb 10.26153/TSW/15402
+    \endverb
+    \field{title}{Integration of a Thermal Imaging Feedback Control System in Electron Beam Melting}
+    \verb{file}
+    \verb Rodriguez, Medina et al. 2012 - Integration of a Thermal Imaging:G\:\
+    \verb \Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attach
+    \verb ments\\Rodriguez, Medina et al. 2012 - Integration of a Thermal Imagi
+    \verb ng.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Wegner.2011}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WA}{%
+         family={Wegner},
+         familyi={W\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Witt},
+         familyi={W\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Texas at Austin}}%
+    }
+    \keyw{Conference paper;laser sintering;process monitoring;thermal imaging}
+    \strng{namehash}{WAWG1}
+    \strng{fullhash}{WAWG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In laser sintering, inhomogeneous shrinkage, warpage, in-build curling and poor repeatability of part properties are well-known problems. All these effects are significantly influenced by the inhomogeneous temperature distribution on the powder bed surface. For this reason, it is often asked for the integration of additional measuring equipment into the machines for advanced process monitoring. In the research done, a thermal imaging system was successfully integrated into a laser sintering machine. Analyses were performed to understand the correlations between process parameters, the distribution of surface temperatures as well as the temperature of the melted material, and their influence on part properties.%
+    }
+    \verb{doi}
+    \verb 10.26153/tsw/15303
+    \endverb
+    \field{title}{Process Monitoring in Laser Sintering Using Thermal Imaging}
+    \verb{url}
+    \verb https://repositories.lib.utexas.edu/handle/2152/88364
+    \endverb
+    \verb{file}
+    \verb Wegner, Witt 2011 - Process Monitoring in Laser Sintering:G\:\\Uni_Fi
+    \verb les\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\
+    \verb Wegner, Witt 2011 - Process Monitoring in Laser Sintering.pdf:pdf
+    \endverb
+    \field{year}{2011}
+  \endentry
+
+  \entry{Ueda.1986}{article}{}
+    \name{author}{3}{}{%
+      {{hash=UT}{%
+         family={Ueda},
+         familyi={U\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hosokawa},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yamamoto},
+         familyi={Y\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{UTHAYA1}
+    \strng{fullhash}{UTHAYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1115/1.3187074
+    \endverb
+    \field{issn}{0022-0817}
+    \field{number}{4}
+    \field{pages}{247\bibrangedash 251}
+    \field{title}{Measurement of Grinding Temperature Using Infrared Radiation Pyrometer With Optical Fiber}
+    \field{volume}{108}
+    \verb{file}
+    \verb 1.3187074:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\
+    \verb \Citavi Attachments\\1.3187074.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Engineering for Industry}
+    \field{year}{1986}
+  \endentry
+
+  \entry{Raplee.2017}{article}{}
+    \name{author}{7}{}{%
+      {{hash=RJ}{%
+         family={Raplee},
+         familyi={R\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Plotkowski},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KMM}{%
+         family={Kirka},
+         familyi={K\bibinitperiod},
+         given={M.\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dinwiddie},
+         familyi={D\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Okello},
+         familyi={O\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DRR}{%
+         family={Dehoff},
+         familyi={D\bibinitperiod},
+         given={R.\bibnamedelima R.},
+         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BSS}{%
+         family={Babu},
+         familyi={B\bibinitperiod},
+         given={S.\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \keyw{Characterization and analytical techniques;Imaging techniques;Infrared spectroscopy;Mechanical engineering}
+    \strng{namehash}{RJPAKMMDROADRRBSS1}
+    \strng{fullhash}{RJPAKMMDROADRRBSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    To reduce the uncertainty of build performance in metal additive manufacturing, robust process monitoring systems that can detect imperfections and improve repeatability are desired. One of the most promising methods for in situ monitoring is thermographic imaging. However, there is a challenge in using this technology due to the difference in surface emittance between the metal powder and solidified part being observed that affects the accuracy of the temperature data collected. The purpose of the present study was to develop a method for properly calibrating temperature profiles from thermographic data to account for this emittance change and to determine important characteristics of the build through additional processing. The thermographic data was analyzed to identify the transition of material from metal powder to a solid as-printed part. A corrected temperature profile was then assembled for each point using calibrations for these surface conditions. Using this data, the thermal gradient and solid-liquid interface velocity were approximated and correlated to experimentally observed microstructural variation within the part. This work shows that by using a method of process monitoring, repeatability of a build could be monitored specifically in relation to microstructure control.%
+    }
+    \verb{doi}
+    \verb 10.1038/srep43554
+    \endverb
+    \field{issn}{2045-2322}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{Thermographic Microstructure Monitoring in Electron Beam Additive Manufacturing}
+    \verb{url}
+    \verb https://www.nature.com/articles/srep43554
+    \endverb
+    \field{volume}{7}
+    \verb{file}
+    \verb Raplee, Plotkowski et al. 2017 - Thermographic Microstructure Monitor
+    \verb ing in Electron:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semestera
+    \verb rbeit\\Citavi Attachments\\Raplee, Plotkowski et al. 2017 - Thermogra
+    \verb phic Microstructure Monitoring in Electron.pdf:pdf
+    \endverb
+    \field{journaltitle}{Scientific Reports}
+    \field{year}{2017}
+  \endentry
+
   \entry{Kuhn.1987}{book}{}
     \name{author}{1}{}{%
       {{hash=KTS}{%

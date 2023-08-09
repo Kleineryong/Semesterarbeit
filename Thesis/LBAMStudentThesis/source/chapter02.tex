@@ -24,7 +24,7 @@ construction speed, dimensional accuracy, etc\cite{Hartke.2011}.
 
 
 In this work, the primary focus is the monitoring process in \gls{pbflbm}.
-Hence, in this chapter, the \gls{pbflbm} technology will be initially 
+Hence, in this chapter, the \gls{pbflbm} technology will be
 introduced, followed by an exploration of the monitoring methods employed 
 in contemporary \gls{pbflbm}. Among these methods, multispectral imaging 
 has been selected as the monitoring technique utilized in this work. 
@@ -35,9 +35,121 @@ temperature estimation algorithms in use.
 %
 %
 \section{Laser-based Powder Bed Fusion of Metals}
+In 1989, Carl Deckard and Joe Beaman pioneered a technique 
+\gls{sls}. Within this methodology, high-energy density lasers are 
+focused onto the surface of metal powder, resulting in the formation of 
+a solidified metal layer\cite{Mazzoli.2013,Wong.2012}. 
+In the year 2002, Fisher et al. observed a phenomenon of partial melting 
+in metal powders. This discovery led to the potential reduction of porosity 
+in components produced through the original \gls{sls} process, subsequently 
+enhancing the mechanical properties of the materials. However, it should be 
+noted that complete elimination of porosity remains unattainable within the 
+partial melting sintering methodolgy\cite{Fischer.2002}.
 
+
+With the development of laser technology, the utilization of partial 
+melting in \gls{sls} has been supplanted by the \gls{slm} approach. 
+Within this technique, metal powder is subjected to complete melting, 
+resulting in an elevated density of the produced part. However, 
+the heightened thermal gradient inherent in this method gives rise to 
+internal stresses within the finalized components\cite{Hooper.2018}, necessitating
+heat treatment to alleviate these effects\cite{Osakada.2006}.
+
+
+\gls{pbflb} is a type of \gls{am} process that uses a 
+laser beam to selectively melt and fuse metal powder layers according 
+to a digital model\cite{Swift.2013}, which includes \gls{sls} and \gls{slm}.
+The structure of the \gls{pbflbm} machine can be found in Fig.\ref{fig: pbflbm}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/pbflbm.pdf}
+    \caption{Laser-based Powder Bed Fusion of Metals}
+    \label{fig: pbflbm}
+\end{figure}
+
+
+Oliverira et al. \cite{Oliveira.2020} have highlighted that two key operational parameters 
+exist within the context of \gls{pbflbm}: the source power and the 
+scanning velocity. These two parameters exert an influence on the energy 
+density imparted to the metal powder, consequently affecting the resulting 
+porosity of the fabricated product. Meanwhile, porosity stands as a 
+critical parameter impacting the performance of the final product. 
+The researchers \cite{Oliveira.2020} have categorized the porosity of the 
+finished product into four distinct classes:
+
+\begin{itemize}
+    \item Keyhole Porosity: Excessive energy density inhibits the conduction 
+    of the melt pool on the powder bed, leading the melt pool to transition 
+    into a keyhole mode.
+    \item Lack-of-Fusion Porosity: Insufficient energy density results in 
+    incomplete fusion of the metal powder, leading to the formation of 
+    porosity.
+    \item "Balling" (Plateau-Rayleigh instability): Simultaneously employing 
+    high source power and excessively elevated scanning velocity induces 
+    instability during the processing operation.
+    \item Fully-dense porosity: The ideal energy density enables the 
+    component to attain a fully dense part.
+\end{itemize}
+
+
+Matthews et al. \cite{Matthews.2017} pointed out that in order to determine 
+the evolution of the material's microstructure, information such as 
+cooling rate, thermal histories, and material properties are imperative. 
+This underscores the necessity of monitoring the \gls{pbflbm} process.
 
 \section{Process monitoring}%
+Li et al. \cite{Li.2019} emphasized that in-situ temperature measurement is 
+of significant importance for characterizing the mechanical properties of 
+materials. In-situ temperature measurement can be categorized into 
+in-contact technique and non-contact technique. Given that the temperature 
+of the material is high (exceeding 1000$^\circ$C), the region being heated by laser 
+is small, and the cooling rate as well as the heating rate is high, 
+contact-based measurements would encounter substantial interference, 
+thereby rendering the obtained temperature information unreliable. 
+Consequently, it becomes essential to employ non-contact-based 
+temperature measurement methods.
+
+
+In the realm of non-contact temperature measurement, 
+various measurement systems encompassing ultrasonic, acoustic, and optical 
+techniques are present. Within the context of \gls{pbflbm}, 
+optical sensors are extensively utilized\cite{Krauss.2012}.
+
+
+Mani et al. \cite{Mani.2017} pointed out that thermographic imaging in the 
+context of Additive Manufacturing (\gls{am}) can be classified into two 
+categories based on the optical pathway of the imaging system. 
+One category involves aligning the field of view of the sensor with 
+the laser beam\cite{Craeghs.2010b,Craeghs.2012,Chivel.2010,Bammer.2010,Berumen.2010,Lott.2011,Yadroitsev.2014}. 
+This alignment enables the field of view to track the laser beam, 
+allowing for the observation of the melt pool and its scan trajectory.
+In addition, an alternative approach involves placing the sensor 
+independently of the laser beam. This configuration enables the 
+field of view relative static to the material\cite{Craeghs.2012,Dinwiddie.2014,Price.2012,Price.2013,Rodriguez.2012,Wegner.2011}.
+
+
+Ueda et al. designed the first infrared pyrometer (single-wavelength temperature 
+measurement) to measure the temperature. This approach relies on the principles outlined in 
+Planck's law, which delineates the interplay between temperature, 
+wavelength, and radiative intensity, enabling the measurement of the 
+temperature of the object\cite{Ueda.1986}. Subsequently, Dinwiddie et al. 
+applied this method for temperature measurement in electron beam melting\cite{Dinwiddie.2014}. 
+Meanwhile, Krauss et al. employed this technique to identify defects 
+and discontinuous failure spots arising during the \gls{am} process\cite{Krauss.2012}.
+
+
+However, due to the intricate nature of temperature in real cases, the 
+single-wavelength temperature measurement approach may lead to 
+misrepresentations of temperature measurement. The models employed in 
+single-wavelength temperature measurement methods lack appropriate 
+parameters, rendering them susceptible to interference and unable to 
+accurately depict the phenomenon of changing emissivity with 
+increasing wavelength\cite{Raplee.2017}.
+
+
+
+
 
 %
 %
