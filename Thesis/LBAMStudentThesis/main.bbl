@@ -1365,8 +1365,8 @@
     \field{series}{SPIE Proceedings}
     \field{title}{Infrared imaging of the polymer 3D-printing process}
     \verb{file}
-    \verb 12.2053425:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
-    \verb \\Citavi Attachments\\12.2053425.pdf:pdf
+    \verb http://proceedings.spiedigitallibrary.org/proceeding.aspx?doi=10.1117
+    \verb /12.2053425
     \endverb
     \field{year}{2014}
   \endentry
@@ -1696,6 +1696,316 @@
     \endverb
     \field{journaltitle}{Scientific Reports}
     \field{year}{2017}
+  \endentry
+
+  \entry{Doubenskaia.2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DM}{%
+         family={Doubenskaia},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pavlov},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Grigoriev},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Smurov},
+         familyi={S\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DMPMGSSI1}
+    \strng{fullhash}{DMPMGSSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Laser cladding is a surface engineering technique allowing depositing material of a different nature in the form of a powder or a wire on the surface $\ldots$%
+    }
+    \verb{doi}
+    \verb 10.1016/j.surfcoat.2012.10.044
+    \endverb
+    \field{issn}{0257-8972}
+    \field{pages}{244\bibrangedash 247}
+    \field{title}{Definition of brightness temperature and restoration of true temperature in laser cladding using infrared camera}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s0257897212010146
+    \endverb
+    \field{volume}{220}
+    \verb{file}
+    \verb Definition of brightness temperature 2013:G\:\\Uni_Files\\Semesterarb
+    \verb eit\\Literature\\Semesterarbeit\\Citavi Attachments\\Definition of br
+    \verb ightness temperature 2013.pdf:pdf;j.surfcoat.2012.10.044:G\:\\Uni_Fil
+    \verb es\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\j
+    \verb .surfcoat.2012.10.044.pdf:pdf
+    \endverb
+    \field{journaltitle}{Surface and Coatings Technology}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Smurov.2013b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SI}{%
+         family={Smurov},
+         familyi={S\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Doubenskaia},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zaitsev},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SIDMZA1}
+    \strng{fullhash}{SIDMZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Laser cladding is known as flexible and efficient method for elaboration of diverse protective coatings including functionally graded, multilayered, e$\ldots$%
+    }
+    \verb{doi}
+    \verb 10.1016/j.surfcoat.2012.10.053
+    \endverb
+    \field{issn}{0257-8972}
+    \field{pages}{112\bibrangedash 121}
+    \field{title}{Comprehensive analysis of laser cladding by means of optical diagnostics and numerical simulation}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/s0257897212010237
+    \endverb
+    \field{volume}{220}
+    \verb{file}
+    \verb j.surfcoat.2012.10.053:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
+    \verb mesterarbeit\\Citavi Attachments\\j.surfcoat.2012.10.053.pdf:pdf
+    \endverb
+    \field{journaltitle}{Surface and Coatings Technology}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Muller.2012}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={Muller},
+         familyi={M\bibinitperiod},
+         given={Maryse},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fabbro},
+         familyi={F\bibinitperiod},
+         given={Remy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ERH}{%
+         family={El-Rabii},
+         familyi={E\bibinithyphendelim R\bibinitperiod},
+         given={Hazem},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hirano},
+         familyi={H\bibinitperiod},
+         given={Koji},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMFRERHHK1}
+    \strng{fullhash}{MMFRERHHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2351/1.3701400
+    \endverb
+    \field{issn}{1042-346X}
+    \field{number}{2}
+    \field{title}{Temperature measurement of laser heated metals in highly oxidizing environment using 2D single-band and spectral pyrometry}
+    \field{volume}{24}
+    \verb{file}
+    \verb Muller, Fabbro et al. 2012 - Temperature measurement of laser heated:
+    \verb G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi At
+    \verb tachments\\Muller, Fabbro et al. 2012 - Temperature measurement of la
+    \verb ser heated.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Laser Applications}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Grujic.2023}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GK}{%
+         family={Gruji{\'c}},
+         familyi={G\bibinitperiod},
+         given={Katarina},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{flow rate;infrared thermography;metallurgy;pyrometry;spectral imaging;Temperature measurement}
+    \strng{namehash}{GK1}
+    \strng{fullhash}{GK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Real-time closed-loop control of metallurgical processes is still in its infancy, mostly based on simple models and limited sensor data and challenged by extreme temperature and harsh process conditions. Contact-free thermal imaging-based measurement approaches thus appear to be particularly suitable for process monitoring. With the potential to generate vast amounts of accurate data in real time and combined with artificial intelligence methods to enable real-time analysis and integration of expert knowledge, thermal spectral imaging is identified as a promising method offering more robust and accurate identification of key parameters, such as surface temperature, morphology, composition, and flow rate.%
+    }
+    \verb{doi}
+    \verb 10.3390/s23031130
+    \endverb
+    \field{number}{3}
+    \field{title}{A Review of Thermal Spectral Imaging Methods for Monitoring High-Temperature Molten Material Streams}
+    \field{volume}{23}
+    \verb{file}
+    \verb sensors-23-01130-v2:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
+    \verb terarbeit\\Citavi Attachments\\sensors-23-01130-v2.pdf:pdf
+    \endverb
+    \field{journaltitle}{Sensors (Basel, Switzerland)}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Devesse.2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DW}{%
+         family={Devesse},
+         familyi={D\bibinitperiod},
+         given={Wim},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=dBD}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Baere},
+         familyi={B\bibinitperiod},
+         given={Dieter},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Guillaume},
+         familyi={G\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{hyperspectral imaging;laser material processing;Temperature measurement}
+    \strng{namehash}{DWBDdGP1}
+    \strng{fullhash}{DWBDdGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A contactless temperature measurement system is presented based on a hyperspectral line camera that captures the spectra in the visible and near infrared (VNIR) region of a large set of closely spaced points. The measured spectra are used in a nonlinear least squares optimization routine to calculate a one-dimensional temperature profile with high spatial resolution. Measurements of a liquid melt pool of AISI 316L stainless steel show that the system is able to determine the absolute temperatures with an accuracy of 10{\%}. The measurements are made with a spatial resolution of 12 µm/pixel, justifying its use in applications where high temperature measurements with high spatial detail are desired, such as in the laser material processing and additive manufacturing fields.%
+    }
+    \verb{doi}
+    \verb 10.3390/s17010091
+    \endverb
+    \field{number}{1}
+    \field{title}{High Resolution Temperature Measurement of Liquid Stainless Steel Using Hyperspectral Imaging}
+    \field{volume}{17}
+    \verb{file}
+    \verb sensors_17_00091:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semester
+    \verb arbeit\\Citavi Attachments\\sensors_17_00091.pdf:pdf
+    \endverb
+    \field{journaltitle}{Sensors (Basel, Switzerland)}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Spiering.1999}{patent}{}
+    \name{author}{2}{}{%
+      {{hash=SBA}{%
+         family={Spiering},
+         familyi={S\bibinitperiod},
+         given={Bruce\bibnamedelima A.},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Beach},
+         familyi={B\bibinitperiod},
+         given={Long},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SBABL1}
+    \strng{fullhash}{SBABL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5900942}
+    \field{title}{MULTI SPECTRAL IMAGING SYSTEM}
+    \verb{file}
+    \verb 19990046782:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbei
+    \verb t\\Citavi Attachments\\19990046782.pdf:pdf
+    \endverb
+    \field{type}{patent}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Hagen.2013}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Hagen},
+         familyi={H\bibinitperiod},
+         given={Nathan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KMW}{%
+         family={Kudenov},
+         familyi={K\bibinitperiod},
+         given={Michael\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HNKMW1}
+    \strng{fullhash}{HNKMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1117/1.OE.52.9.090901
+    \endverb
+    \field{issn}{0091-3286}
+    \field{number}{9}
+    \field{pages}{090901}
+    \field{title}{Review of snapshot spectral imaging technologies}
+    \field{volume}{52}
+    \verb{file}
+    \verb Hagen, Kudenov 2013 - Review of snapshot spectral imaging:G\:\\Uni_Fi
+    \verb les\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\
+    \verb Hagen, Kudenov 2013 - Review of snapshot spectral imaging.pdf:pdf
+    \endverb
+    \field{journaltitle}{Optical Engineering}
+    \field{year}{2013}
+  \endentry
+
+  \entry{BAYERB..1976}{patent}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{BAYER B.}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3971065}
+    \field{title}{Color imaging array}
+    \verb{url}
+    \verb https://cir.nii.ac.jp/crid/1572261550680217344
+    \endverb
+    \field{type}{patent}
+    \field{year}{1976}
   \endentry
 
   \entry{Kuhn.1987}{book}{}

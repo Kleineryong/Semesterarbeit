@@ -122,11 +122,25 @@ context of Additive Manufacturing (\gls{am}) can be classified into two
 categories based on the optical pathway of the imaging system. 
 One category involves aligning the field of view of the sensor with 
 the laser beam\cite{Craeghs.2010b,Craeghs.2012,Chivel.2010,Bammer.2010,Berumen.2010,Lott.2011,Yadroitsev.2014}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/co-axial.pdf}
+    \caption{System structure of co-axial monitoring system based on \cite{Craeghs.2010b}}
+    \label{fig: co-axial}
+\end{figure}
+
+Fig.\ref{fig: co-axial} presents the structure of the measurement system. 
 This alignment enables the field of view to track the laser beam, 
 allowing for the observation of the melt pool and its scan trajectory.
 In addition, an alternative approach involves placing the sensor 
 independently of the laser beam. This configuration enables the 
 field of view relative static to the material\cite{Craeghs.2012,Dinwiddie.2014,Price.2012,Price.2013,Rodriguez.2012,Wegner.2011}.
+In this work, due to the use of an observation system independent of the 
+laser beam in the actual experiments, the virtual experimental 
+platform also features a sensor separated from the laser beam system. 
+This setup facilitates system calibration and allows direct acquisition of 
+sensor parameters such as quantum efficiency.
 
 
 Ueda et al. designed the first infrared pyrometer (single-wavelength temperature 
@@ -148,12 +162,75 @@ accurately depict the phenomenon of changing emissivity with
 increasing wavelength\cite{Raplee.2017}.
 
 
+Subsequently, the emergence of multiwavelength pyrometers became notable. 
+In this technique, the intensity of radiation at two or more wavelengths 
+is measured during the processing. 
+Doubenskaia et al.\cite{Doubenskaia.2013}, Smurov et al.\cite{Smurov.2013b}, and Muller et al.\cite{Muller.2012} 
+have achieved measurement of the melt pool using this approach. 
+However, in their methods, knowledge of emissivity variation with 
+wavelength is required, which is often unknown. This necessitates 
+assuming a material to be a grey body, which that can lead to 
+inaccuracies in temperature calculations.
 
-
-
+Meanwhile, the multiwavelength pyrometer is limited to measuring the 
+temperature at a specific point. For certain applications, 
+the temperature distribution is crucial, such as detecting local hot 
+spots and cold spots, as well as assessing the temperature 
+distribution of the materials mentioned in this work. Consequently, the 
+utilization of methods with enhanced spatial resolution becomes imperative\cite{Grujic.2023}.
+To enhance the spatial resolution of temperature measurement, 
+measurement systems based on cameras have been developed. 
+These systems are primarily categorized into multispectral 
+imaging and hyperspectral imaging. The distinction between them 
+lies in the wavelength range that the sensor can capture. 
+In multispectral imaging, the sensor receives discrete wavelengths, 
+while in hyperspectral imaging, the sensor detects a continuous 
+range of wavelengths\cite{Devesse.2017}. In this work, multispectral 
+imaging was employed as the technique for temperature measurement.
 %
 %
 \section{Multispectral imaging}%
+In order to simultaneously acquire radiation information at different 
+wavelengths, a beam splitting design is deemed essential. Spering et al. 
+have pioneered a patented approach for achieving beam splitting 
+through the utilization of a series of spectral filters\cite{Spiering.1999}. 
+As shown in Fig.\ref{fig: beam_splitting}, within this system, radiation of varying wavelengths is directed towards 
+different sensors. Subsequently, these sensors receive the radiation 
+information, which is then amalgamated into a composite image through 
+post-processing techniques. However, due to the necessity of radiation 
+to traverse multiple layers of spectral filters, it becomes impractical 
+to increase the number of observation channels without compromising the 
+overall system performance.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/beam_splitting_early.pdf}
+    \caption{Beam splitting structure from Spiering et al. Reproduced from \cite{Hagen.2013}}
+    \label{fig: beam_splitting}
+\end{figure}
+
+With the development of camera manufacturing technology in the 1970s, 
+the fabrication of single-pixel-level spectral filtering became feasible\cite{BAYERB..1976}.
+Hagen et al. noted that due to the placement of all spectral filters on the 
+detection layer, this design exhibits a highly compact configuration. 
+However, this also introduces a drawback, necessitating the image to be 
+spatially bandlimited to the Nyquist limit of the filter array. 
+Failure to adhere to this requirement results in the presence of 
+aliasing effects in the acquired images. Such effects can be mitigated 
+by defocusing the image, thereby reducing the impact of the bandlimit 
+constraint\cite{Hagen.2013}.
+
+
+Due to its low utilization costs and intuitive data representation, the 
+camera in the virtual experimental platform of this work employs this 
+technique.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/pixel_level_filter.pdf}
+    \caption{System layout of a pixel-level filter. Reproduced from \cite{Hagen.2013}}
+    \label{fig: pixel_filter}
+\end{figure}
 
 %
 %
