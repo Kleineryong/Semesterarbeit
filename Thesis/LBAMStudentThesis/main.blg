@@ -25,7 +25,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12000 items from 5000.
+Reallocated field_info (elt_size=4) to 12420 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: literature/literature.bib
 Warning--I'm ignoring Dinwiddie.2014's extra "file" field
@@ -35,45 +35,45 @@ Warning--I'm ignoring Taunay.2020b's extra "file" field
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 50 entries,
+You've used 53 entries,
             6399 wiz_defined-function locations,
-            1701 strings with 46806 characters,
-and the built_in function-call counts, 525218 in all, are:
-= -- 43029
-> -- 9882
-< -- 1642
-+ -- 18602
-- -- 5897
-* -- 38824
-:= -- 64273
+            1734 strings with 48245 characters,
+and the built_in function-call counts, 554807 in all, are:
+= -- 45484
+> -- 10291
+< -- 1718
++ -- 19503
+- -- 6099
+* -- 41136
+:= -- 67819
 add.period$ -- 0
-call.type$ -- 50
-change.case$ -- 637
+call.type$ -- 53
+change.case$ -- 658
 chr.to.int$ -- 166
-cite$ -- 98
-duplicate$ -- 52724
-empty$ -- 42811
-format.name$ -- 4616
-if$ -- 102199
+cite$ -- 104
+duplicate$ -- 55693
+empty$ -- 45328
+format.name$ -- 4881
+if$ -- 108054
 int.to.chr$ -- 0
-int.to.str$ -- 116
+int.to.str$ -- 122
 missing$ -- 0
-newline$ -- 2340
-num.names$ -- 2194
-pop$ -- 18747
+newline$ -- 2477
+num.names$ -- 2308
+pop$ -- 19851
 preamble$ -- 1
-purify$ -- 1169
+purify$ -- 1220
 quote$ -- 0
-skip$ -- 10231
+skip$ -- 10789
 stack$ -- 0
-substring$ -- 83041
-swap$ -- 8962
-text.length$ -- 1561
+substring$ -- 87860
+swap$ -- 9489
+text.length$ -- 1647
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1688
+type$ -- 1790
 warning$ -- 0
-while$ -- 7426
+while$ -- 7840
 width$ -- 0
-write$ -- 2291
+write$ -- 2425
 (There were 2 warnings)

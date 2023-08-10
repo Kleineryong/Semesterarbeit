@@ -2008,143 +2008,100 @@
     \field{year}{1976}
   \endentry
 
-  \entry{Kuhn.1987}{book}{}
-    \name{author}{1}{}{%
-      {{hash=KTS}{%
-         family={Kuhn},
-         familyi={K\bibinitperiod},
-         given={Thomas\bibnamedelima S.},
-         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+  \entry{Jones.2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JJM}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MPE}{%
+         family={Mason},
+         familyi={M\bibinitperiod},
+         given={P.\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {{University of Chicago Press}}%
-    }
-    \strng{namehash}{KTS1}
-    \strng{fullhash}{KTS1}
+    \keyw{ash deposits;chars;Emissivity;Metals;refractories}
+    \strng{namehash}{JJMMPEWA1}
+    \strng{fullhash}{JJMMPEWA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    {\textquotedbl}A masterly assessment of the way the idea of quanta of radiation became part of 20th-century physics. . . . The book not only deals with a topic of importance and interest to all scientists, but is also a polished literary work, described (accurately) by one of its original reviewers as a scientific detective story.{\textquotedbl}---John Gribbin, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater} {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
+    Journal of the Energy Institute, Accepted manuscript. doi:10.1016/j.joei.2018.04.006%
     }
-    \field{isbn}{9780226458007}
-    \field{title}{Black-Body Theory and the Quantum Discontinuity, 1894-1912}
-    \field{year}{1987}
-  \endentry
-
-  \entry{Fossum.2014}{article}{}
-    \name{author}{2}{}{%
-      {{hash=FER}{%
-         family={Fossum},
-         familyi={F\bibinitperiod},
-         given={Eric\bibnamedelima R.},
-         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=HDB}{%
-         family={Hondongwa},
-         familyi={H\bibinitperiod},
-         given={Donald\bibnamedelima B.},
-         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FERHDB1}
-    \strng{fullhash}{FERHDB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.1109/JEDS.2014.2306412
+    \verb 10.1016/j.joei.2018.04.006
     \endverb
+    \field{issn}{17439671}
     \field{number}{3}
-    \field{pages}{33\bibrangedash 43}
-    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image Sensors}
-    \field{volume}{2}
+    \field{pages}{523\bibrangedash 534}
+    \field{title}{A compilation of data on the radiant emissivity of some materials at high temperatures}
+    \field{volume}{92}
     \verb{file}
-    \verb Fossum, Hondongwa 2014 - A Review of the Pinned:G\:\\Uni_Files\\Semes
-    \verb terarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Fossum, Ho
-    \verb ndongwa 2014 - A Review of the Pinned.pdf:pdf
+    \verb j.joei.2018.04.006:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semest
+    \verb erarbeit\\Citavi Attachments\\j.joei.2018.04.006.pdf:pdf
     \endverb
-    \field{journaltitle}{IEEE Journal of the Electron Devices Society}
-    \field{year}{2014}
+    \field{journaltitle}{Journal of the Energy Institute}
+    \field{year}{2019}
   \endentry
 
-  \entry{Wang.2021b}{article}{}
-    \name{author}{3}{}{%
-      {{hash=WN}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={Nian},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=SH}{%
-         family={Shen},
-         familyi={S\bibinitperiod},
-         given={Hua},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=ZR}{%
+  \entry{Zhu.2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZW}{%
          family={Zhu},
          familyi={Z\bibinitperiod},
-         given={Rihong},
-         giveni={R\bibinitperiod},
+         given={Wenjie},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Deheng},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Zunlue},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Jinfeng},
+         giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral thermometry;Temperature}
-    \strng{namehash}{WNSHZR1}
-    \strng{fullhash}{WNSHZR1}
+    \keyw{Multispectral Radiation Thermometry;Oxide layer;Spectral emissivity model;Steel 309S;Temperature measurement}
+    \strng{namehash}{ZWSDZZSJ1}
+    \strng{fullhash}{ZWSDZZSJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Measurement, 170 (2021) 108725. doi:10.1016/j.measurement.2020.108725%
+    International Journal of Heat and Mass Transfer, 109 (2017) 853-861. doi:10.1016/j.ijheatmasstransfer.2017.02.062%
     }
     \verb{doi}
-    \verb 10.1016/j.measurement.2020.108725
+    \verb 10.1016/j.ijheatmasstransfer.2017.02.062
     \endverb
-    \field{issn}{02632241}
-    \field{pages}{108725}
-    \field{title}{Constraint optimization algorithm for spectral emissivity calculation in multispectral thermometry}
-    \field{volume}{170}
+    \field{issn}{00179310}
+    \field{pages}{853\bibrangedash 861}
+    \field{title}{Spectral emissivity model of steel 309S during the growth of oxide layer at 800--1100 K}
+    \field{volume}{109}
     \verb{file}
-    \verb jmeasurement2020108725:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
-    \verb mesterarbeit\\Citavi Attachments\\jmeasurement2020108725.pdf:pdf
+    \verb j.ijheatmasstransfer.2017.02.062:G\:\\Uni_Files\\Semesterarbeit\\Lite
+    \verb rature\\Semesterarbeit\\Citavi Attachments\\j.ijheatmasstransfer.2017
+    \verb .02.062.pdf:pdf
     \endverb
-    \field{journaltitle}{Measurement}
-    \field{year}{2021}
-  \endentry
-
-  \entry{Taunay.2020b}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TPYCR}{%
-         family={Taunay},
-         familyi={T\bibinitperiod},
-         given={Pierre-Yves C.\bibnamedelima R.},
-         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=CEY}{%
-         family={Choueiri},
-         familyi={C\bibinitperiod},
-         given={Edgar\bibnamedelima Y.},
-         giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TPYCRCEY1}
-    \strng{fullhash}{TPYCRCEY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A systematic and automated procedure to calculate the temperature of a surface with unknown emissivity from radiance measurements performed at a large number of wavelengths is presented, and statistical methods are applied to quantify its accuracy and precision. Unlike existing multi-wavelength pyrometric approaches, the proposed cross-validated procedure tests multiple emissivity candidates on multiple, randomly chosen subsets of the radiance measurements. The procedure uses solely an emissivity model to provide an accurate temperature value and retrieves the true emissivity from the ratio of the measured radiance to that of a blackbody calculated from the determined temperature. For a given emissivity model, the temperature is computed using the average of all possible combinations of two-wavelength ratios. The emissivity model that minimizes the coefficient of dispersion is selected. Accuracy and precision are quantified for the case of known emissivity. It is shown that, at least in the case where wavelengths are linearly distributed, the method is accurate, the precision increases with the total number of wavelengths, and it is maximized if the ratio of the minimum to maximum wavelength is equal to 2.46. The procedure is applied to both numerical and experimental data from the literature. Excellent agreement of the calculated temperature and emissivity is obtained for both datasets.%
-    }
-    \verb{doi}
-    \verb 10.1063/5.0019847
-    \endverb
-    \field{number}{11}
-    \field{pages}{114902}
-    \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
-    \field{volume}{91}
-    \verb{file}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/33261433
-    \endverb
-    \field{journaltitle}{The Review of scientific instruments}
-    \field{year}{2020}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{year}{2017}
   \endentry
 
   \entry{Kobatake.2012}{article}{}
@@ -2240,6 +2197,186 @@
     \endverb
     \field{journaltitle}{International Journal of Thermophysics}
     \field{year}{2003}
+  \endentry
+
+  \entry{Krishnan.1997}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KS}{%
+         family={Krishnan},
+         familyi={K\bibinitperiod},
+         given={Shankar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YKJ}{%
+         family={Yugawa},
+         familyi={Y\bibinitperiod},
+         given={Koji\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NPC}{%
+         family={Nordine},
+         familyi={N\bibinitperiod},
+         given={Paul\bibnamedelima C.},
+         giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSYKJNPC1}
+    \strng{fullhash}{KSYKJNPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.55.8201
+    \endverb
+    \field{issn}{0163-1829}
+    \field{number}{13}
+    \field{pages}{8201\bibrangedash 8206}
+    \field{title}{Optical properties of liquid nickel and iron}
+    \field{volume}{55}
+    \verb{file}
+    \verb PhysRevB.55.8201:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semester
+    \verb arbeit\\Citavi Attachments\\PhysRevB.55.8201.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Taunay.2020b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TPYCR}{%
+         family={Taunay},
+         familyi={T\bibinitperiod},
+         given={Pierre-Yves C.\bibnamedelima R.},
+         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CEY}{%
+         family={Choueiri},
+         familyi={C\bibinitperiod},
+         given={Edgar\bibnamedelima Y.},
+         giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TPYCRCEY1}
+    \strng{fullhash}{TPYCRCEY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A systematic and automated procedure to calculate the temperature of a surface with unknown emissivity from radiance measurements performed at a large number of wavelengths is presented, and statistical methods are applied to quantify its accuracy and precision. Unlike existing multi-wavelength pyrometric approaches, the proposed cross-validated procedure tests multiple emissivity candidates on multiple, randomly chosen subsets of the radiance measurements. The procedure uses solely an emissivity model to provide an accurate temperature value and retrieves the true emissivity from the ratio of the measured radiance to that of a blackbody calculated from the determined temperature. For a given emissivity model, the temperature is computed using the average of all possible combinations of two-wavelength ratios. The emissivity model that minimizes the coefficient of dispersion is selected. Accuracy and precision are quantified for the case of known emissivity. It is shown that, at least in the case where wavelengths are linearly distributed, the method is accurate, the precision increases with the total number of wavelengths, and it is maximized if the ratio of the minimum to maximum wavelength is equal to 2.46. The procedure is applied to both numerical and experimental data from the literature. Excellent agreement of the calculated temperature and emissivity is obtained for both datasets.%
+    }
+    \verb{doi}
+    \verb 10.1063/5.0019847
+    \endverb
+    \field{number}{11}
+    \field{pages}{114902}
+    \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
+    \field{volume}{91}
+    \verb{file}
+    \verb http://www.ncbi.nlm.nih.gov/pubmed/33261433
+    \endverb
+    \field{journaltitle}{The Review of scientific instruments}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Wang.2021b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WN}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Nian},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Hua},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Rihong},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral thermometry;Temperature}
+    \strng{namehash}{WNSHZR1}
+    \strng{fullhash}{WNSHZR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Measurement, 170 (2021) 108725. doi:10.1016/j.measurement.2020.108725%
+    }
+    \verb{doi}
+    \verb 10.1016/j.measurement.2020.108725
+    \endverb
+    \field{issn}{02632241}
+    \field{pages}{108725}
+    \field{title}{Constraint optimization algorithm for spectral emissivity calculation in multispectral thermometry}
+    \field{volume}{170}
+    \verb{file}
+    \verb jmeasurement2020108725:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
+    \verb mesterarbeit\\Citavi Attachments\\jmeasurement2020108725.pdf:pdf
+    \endverb
+    \field{journaltitle}{Measurement}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Kuhn.1987}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KTS}{%
+         family={Kuhn},
+         familyi={K\bibinitperiod},
+         given={Thomas\bibnamedelima S.},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{University of Chicago Press}}%
+    }
+    \strng{namehash}{KTS1}
+    \strng{fullhash}{KTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    {\textquotedbl}A masterly assessment of the way the idea of quanta of radiation became part of 20th-century physics. . . . The book not only deals with a topic of importance and interest to all scientists, but is also a polished literary work, described (accurately) by one of its original reviewers as a scientific detective story.{\textquotedbl}---John Gribbin, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater} {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
+    }
+    \field{isbn}{9780226458007}
+    \field{title}{Black-Body Theory and the Quantum Discontinuity, 1894-1912}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Fossum.2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FER}{%
+         family={Fossum},
+         familyi={F\bibinitperiod},
+         given={Eric\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HDB}{%
+         family={Hondongwa},
+         familyi={H\bibinitperiod},
+         given={Donald\bibnamedelima B.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FERHDB1}
+    \strng{fullhash}{FERHDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/JEDS.2014.2306412
+    \endverb
+    \field{number}{3}
+    \field{pages}{33\bibrangedash 43}
+    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image Sensors}
+    \field{volume}{2}
+    \verb{file}
+    \verb Fossum, Hondongwa 2014 - A Review of the Pinned:G\:\\Uni_Files\\Semes
+    \verb terarbeit\\Literature\\Semesterarbeit\\Citavi Attachments\\Fossum, Ho
+    \verb ndongwa 2014 - A Review of the Pinned.pdf:pdf
+    \endverb
+    \field{journaltitle}{IEEE Journal of the Electron Devices Society}
+    \field{year}{2014}
   \endentry
 
   \entry{Asanovic.2009}{article}{}
