@@ -24,7 +24,7 @@ construction speed, dimensional accuracy, etc\cite{Hartke.2011}.
 
 
 In this work, the primary focus is the monitoring process in \gls{pbflbm}.
-Hence, in this chapter, the \gls{pbflbm} technology will be initially 
+Hence, in this chapter, the \gls{pbflbm} technology will be
 introduced, followed by an exploration of the monitoring methods employed 
 in contemporary \gls{pbflbm}. Among these methods, multispectral imaging 
 has been selected as the monitoring technique utilized in this work. 
@@ -35,21 +35,410 @@ temperature estimation algorithms in use.
 %
 %
 \section{Laser-based Powder Bed Fusion of Metals}
+In 1989, Carl Deckard and Joe Beaman pioneered a technique 
+\gls{sls}. Within this methodology, high-energy density lasers are 
+focused onto the surface of metal powder, resulting in the formation of 
+a solidified metal layer\cite{Mazzoli.2013,Wong.2012}. 
+In the year 2002, Fisher et al. observed a phenomenon of partial melting 
+in metal powders. This discovery led to the potential reduction of porosity 
+in components produced through the original \gls{sls} process, subsequently 
+enhancing the mechanical properties of the materials. However, it should be 
+noted that complete elimination of porosity remains unattainable within the 
+partial melting sintering methodolgy\cite{Fischer.2002}.
 
+
+With the development of laser technology, the utilization of partial 
+melting in \gls{sls} has been supplanted by the \gls{slm} approach. 
+Within this technique, metal powder is subjected to complete melting, 
+resulting in an elevated density of the produced part. However, 
+the heightened thermal gradient inherent in this method gives rise to 
+internal stresses within the finalized components\cite{Hooper.2018}, necessitating
+heat treatment to alleviate these effects\cite{Osakada.2006}.
+
+
+\gls{pbflb} is a type of \gls{am} process that uses a 
+laser beam to selectively melt and fuse metal powder layers according 
+to a digital model\cite{Swift.2013}, which includes \gls{sls} and \gls{slm}.
+The structure of the \gls{pbflbm} machine can be found in Fig.\ref{fig: pbflbm}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/pbflbm.pdf}
+    \caption{Laser-based Powder Bed Fusion of Metals}
+    \label{fig: pbflbm}
+\end{figure}
+
+
+Oliverira et al. \cite{Oliveira.2020} have highlighted that two key operational parameters 
+exist within the context of \gls{pbflbm}: the source power and the 
+scanning velocity. These two parameters exert an influence on the energy 
+density imparted to the metal powder, consequently affecting the resulting 
+porosity of the fabricated product. Meanwhile, porosity stands as a 
+critical parameter impacting the performance of the final product. 
+The researchers \cite{Oliveira.2020} have categorized the porosity of the 
+finished product into four distinct classes:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/porosity.pdf}
+    \caption{Influence of process parameter on porosity. Reproduced from \cite{Oliveira.2020}}
+    \label{fig: porosity}
+\end{figure}
+
+\begin{itemize}
+    \item Keyhole Porosity: Excessive energy density inhibits the conduction 
+    of the melt pool on the powder bed, leading the melt pool to transition 
+    into a keyhole mode.
+    \item Lack-of-Fusion Porosity: Insufficient energy density results in 
+    incomplete fusion of the metal powder, leading to the formation of 
+    porosity.
+    \item "Balling" (Plateau-Rayleigh instability): Simultaneously employing 
+    high source power and excessively elevated scanning velocity induces 
+    instability during the processing operation.
+    \item Fully-dense porosity: The ideal energy density enables the 
+    component to attain a fully dense part.
+\end{itemize}
+
+
+Matthews et al. \cite{Matthews.2017} pointed out that in order to determine 
+the evolution of the material's microstructure, information such as 
+cooling rate, thermal histories, and material properties are imperative. 
+This underscores the necessity of monitoring the \gls{pbflbm} process.
 
 \section{Process monitoring}%
+Li et al. \cite{Li.2019} emphasized that in-situ temperature measurement is 
+of significant importance for characterizing the mechanical properties of 
+materials. In-situ temperature measurement can be categorized into 
+in-contact technique and non-contact technique. Given that the temperature 
+of the material is high (exceeding 1000$^\circ$C), the region being heated by laser 
+is small, and the cooling rate as well as the heating rate is high, 
+contact-based measurements would encounter substantial interference, 
+thereby rendering the obtained temperature information unreliable. 
+Consequently, it becomes essential to employ non-contact-based 
+temperature measurement methods.
 
+
+In the realm of non-contact temperature measurement, 
+various measurement systems encompassing ultrasonic, acoustic, and optical 
+techniques are present. Within the context of \gls{pbflbm}, 
+optical sensors are extensively utilized\cite{Krauss.2012}.
+
+
+Mani et al. \cite{Mani.2017} pointed out that thermographic imaging in the 
+context of Additive Manufacturing (\gls{am}) can be classified into two 
+categories based on the optical pathway of the imaging system. 
+One category involves aligning the field of view of the sensor with 
+the laser beam\cite{Craeghs.2010b,Craeghs.2012,Chivel.2010,Bammer.2010,Berumen.2010,Lott.2011,Yadroitsev.2014}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/co-axial.pdf}
+    \caption{System structure of co-axial monitoring system based on \cite{Craeghs.2010b}}
+    \label{fig: co-axial}
+\end{figure}
+
+Fig.\ref{fig: co-axial} presents the structure of the measurement system. 
+This alignment enables the field of view to track the laser beam, 
+allowing for the observation of the melt pool and its scan trajectory.
+In addition, an alternative approach involves placing the sensor 
+independently of the laser beam. This configuration enables the 
+field of view relative static to the material\cite{Craeghs.2012,Dinwiddie.2014,Price.2012,Price.2013,Rodriguez.2012,Wegner.2011}.
+In this work, due to the use of an observation system independent of the 
+laser beam in the actual experiments, the virtual experimental 
+platform also features a sensor separated from the laser beam system. 
+This setup facilitates system calibration and allows direct acquisition of 
+sensor parameters such as quantum efficiency.
+
+
+Ueda et al. designed the first infrared pyrometer (single-wavelength temperature 
+measurement) to measure the temperature. This approach relies on the principles outlined in 
+Planck's law, which delineates the interplay between temperature, 
+wavelength, and radiative intensity, enabling the measurement of the 
+temperature of the object\cite{Ueda.1986}. Subsequently, Dinwiddie et al. 
+applied this method for temperature measurement in electron beam melting\cite{Dinwiddie.2014}. 
+Meanwhile, Krauss et al. employed this technique to identify defects 
+and discontinuous failure spots arising during the \gls{am} process\cite{Krauss.2012}.
+
+
+However, due to the intricate nature of temperature in real cases, the 
+single-wavelength temperature measurement approach may lead to 
+misrepresentations of temperature measurement. The models employed in 
+single-wavelength temperature measurement methods lack appropriate 
+parameters, rendering them susceptible to interference and unable to 
+accurately depict the phenomenon of changing emissivity with 
+increasing wavelength\cite{Raplee.2017}.
+
+
+Subsequently, the emergence of multiwavelength pyrometers became notable. 
+In this technique, the intensity of radiation at two or more wavelengths 
+is measured during the processing. 
+Doubenskaia et al.\cite{Doubenskaia.2013}, Smurov et al.\cite{Smurov.2013b}, and Muller et al.\cite{Muller.2012} 
+have achieved measurement of the melt pool using this approach. 
+However, in their methods, knowledge of emissivity variation with 
+wavelength is required, which is often unknown. This necessitates 
+assuming a material to be a grey body, which that can lead to 
+inaccuracies in temperature calculations.
+
+Meanwhile, the multiwavelength pyrometer is limited to measuring the 
+temperature at a specific point. For certain applications, 
+the temperature distribution is crucial, such as detecting local hot 
+spots and cold spots, as well as assessing the temperature 
+distribution of the materials mentioned in this work. Consequently, the 
+utilization of methods with enhanced spatial resolution becomes imperative\cite{Grujic.2023}.
+To enhance the spatial resolution of temperature measurement, 
+measurement systems based on cameras have been developed. 
+These systems are primarily categorized into multispectral 
+imaging and hyperspectral imaging. The distinction between them 
+lies in the wavelength range that the sensor can capture. 
+In multispectral imaging, the sensor receives discrete wavelengths, 
+while in hyperspectral imaging, the sensor detects a continuous 
+range of wavelengths\cite{Devesse.2017}. In this work, multispectral 
+imaging was employed as the technique for temperature measurement.
 %
 %
 \section{Multispectral imaging}%
+In order to simultaneously acquire radiation information at different 
+wavelengths, a beam splitting design is deemed essential. Spering et al. 
+have pioneered a patented approach for achieving beam splitting 
+through the utilization of a series of spectral filters\cite{Spiering.1999}. 
+As shown in Fig.\ref{fig: beam_splitting}, within this system, radiation of varying wavelengths is directed towards 
+different sensors. Subsequently, these sensors receive the radiation 
+information, which is then amalgamated into a composite image through 
+post-processing techniques. However, due to the necessity of radiation 
+to traverse multiple layers of spectral filters, it becomes impractical 
+to increase the number of observation channels without compromising the 
+overall system performance.
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/beam_splitting_early.pdf}
+    \caption{Beam splitting structure from Spiering et al. Reproduced from \cite{Hagen.2013}}
+    \label{fig: beam_splitting}
+\end{figure}
+
+With the development of camera manufacturing technology in the 1970s, 
+the fabrication of single-pixel-level spectral filtering became feasible\cite{BAYERB..1976}.
+Hagen et al. noted that due to the placement of all spectral filters on the 
+detection layer, this design exhibits a highly compact configuration. 
+However, this also introduces a drawback, necessitating the image to be 
+spatially bandlimited to the Nyquist limit of the filter array. 
+Failure to adhere to this requirement results in the presence of 
+aliasing effects in the acquired images. Such effects can be mitigated 
+by defocusing the image, thereby reducing the impact of the bandlimit 
+constraint\cite{Hagen.2013}.
+
+
+Due to its low utilization costs and intuitive data representation, the 
+camera in the virtual experimental platform of this work employs this 
+technique.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/pixel_level_filter.pdf}
+    \caption{System layout of a pixel-level filter. Reproduced from \cite{Hagen.2013}}
+    \label{fig: pixel_filter}
+\end{figure}
 
 %
 %
 \section{Emissivity model}%
+The previous section highlights the significant influence of a 
+material's emissivity on the actual radiative emissions it emitted, 
+which directly impacts the accuracy of data obtained through sensors. 
+Jones et al. underscore that the emissivity of all materials varies 
+with temperature and wavelength\cite{Jones.2019}. Therefore, it is 
+imperative to conduct observations of a material's emissivity.
 
+
+Numerous researchers have conducted experimental research on the 
+emissivity of various materials. Hagqvist et al. employed a narrow 
+bandwidth spot radiation pyrometer along with a calibration procedure 
+to estimate the spectral emissivity of Ti–6Al–4V\cite{Hagqvist.2013}. 
+They utilized a virtual pyrometer for measuring the reference temperature $T_r$. 
+The material's emissivity at the reference temperature could be considered 
+as known. By comparing the values obtained from the actual pyrometer and 
+the virtual pyrometer, the measured emissivity values could be derived.
+
+
+Jones et al. conducted measurements of the total normal emissivity $\varepsilon(T)$ 
+of some materials at high temperature\cite{Jones.2019}. They employed a blackbody
+material as a reference during these measurements.
+
+\begin{equation}
+    \label{eq: total_normal_emissivity}
+    \varepsilon(T) = \frac{\int_{\lambda_1}^{\lambda_2} \varepsilon(\lambda, T) \cdot I_b(\lambda, T)\,d\lambda }{\int_{\lambda_1}^{\lambda_2} I_b(\lambda, T)\,d\lambda}
+\end{equation}
+
+In their experiments, it was demonstrated that factors such as material 
+temperature, purity, composition and surface quality 
+significantly influence the total normal emissivity of the materials.
+
+
+In the emissivity measurement of 309S steel conducted by Zhu et al., 
+it was noted that the oxide layer also exerts a significant 
+influence on the emissivity\cite{Zhu.2017}.
+
+
+Hence, it can be inferred that obtaining accurate emissivity information 
+of the material is challenging. This is especially diffcult for the metallic 
+powders utilized in the present work. Consequently, performing real-time 
+emissivity estimations for the material becomes essential within the scope 
+of this work.
+
+
+Kobatake et al.\cite{Kobatake.2012}, Watanabe et al.\cite{Watanabe.2003} and Krishnan et al.\cite{Krishnan.1997} 
+conducted measurements of the emissivity of liquid iron and nickel. 
+They observed a decreasing trend in the emissivity of liquid iron with 
+increasing wavelength. Notably, Kobatake et al. also measured the emissivity 
+of iron at different temperatures specifically at a wavelength of 807nm.
+
+
+From this, it becomes evident that directly measuring the spectral 
+emissivity of materials at different temperatures presents challenges. 
+In order to facilitate numerical experiments, Taunay et al.\cite{Taunay.2020b} 
+and Wang et al.\cite{Wang.2021b} developed hypothetical emissivity 
+models. Within these simulated emissivity models, material characteristics 
+can be manually adjusted to assess the accuracy of the system when 
+dealing with various radiative properties of materials.
+
+
+Consequently, the virtual experimental platform employed in this work 
+conducted calculations based on the proposed hypothetical materials. 
+This approach serves to save the time cost associated with measuring 
+the spectral emissivity of actual materials at various temperature.
 %
 %
 \section{Temperature estimation algorithm}
+Having gobtained the emissivity model of the material, temperature estimation 
+algorithms should be employed for calculating the material's 
+temperature as well as emissivity simutaneously.
 
+
+In the dual-wavelength pyrometry, researchers introduced an assumption 
+that the material's emissivity remains constant at two 
+wavelengths of the channels. This assumption directly eliminates the 
+impact of emissivity on temperature calculations\cite{Grujic.2023}.
+
+\begin{equation}
+    \widehat{T}(\lambda_i, \lambda_j)=C_2 \frac{1/\lambda_j - 1/\lambda_i}{ln(I_i/I_j) - 5ln(\lambda_j / \lambda_i)}
+\end{equation}
+
+Devesse et al. pointed out that such simplification does not align 
+with the actual characteristics of materials and can lead to inaccuracies 
+in temperature calculations\cite{Devesse.2017}. Therefore, they proposed 
+a linear emissivity model based on the trend of decreasing emissivity with 
+increasing wavelength for metals. 
+
+\begin{equation}
+    \varepsilon(\lambda, A_{\varepsilon}, B_{\varepsilon}) = B_{\varepsilon} - \frac{A_{\varepsilon}}{2} \cdot \lambda
+\end{equation}
+
+This allowed them to reconstruct the 
+radiative intensity received by the sensor using this emissivity model.
+By adjusting the parameters $A_{\varepsilon}$ and $B_{\varepsilon}$, this 
+method can attain the desired emissivity model.
+
+
+There are also a number of methods that utilize different approaches for temperature
+estimation as alternative.
+Wang et al. developed a constraint optimization algorithm that 
+operates independently from the emissivity model\cite{Wang.2021b}. They 
+introduced an objective function $f(x)$ as follows:
+
+\begin{equation}
+    \label{eq: fun_wang_2021b}
+    f=\frac{1}{n}\sum_{n = 1}^{n}\left(T_i - \overline{T}_E \right)^2  
+\end{equation}
+
+Where $T_i$ is computed based on the radiative intensity $I_i$ received from 
+the $i_{th}$ channel and $\overline{T}_E$ is the average value of $T_i$:
+
+\begin{equation}
+    T_i=\frac{C_2}{\lambda_i}\left(ln\varepsilon_i + ln\frac{C_1}{\lambda^5_i} - lnI_i\right)^{-1}
+\end{equation}
+
+
+Subsequently, constraints were established based on the fact that emissivity 
+decreases with increasing wavelength. A genetic algorithm was employed to 
+determine the emissivity and temperature that minimize the objective 
+function. This process led to the estimation of temperature and emissivity.
+This approach enables the program to compute emissivity data of the material 
+without requiring an emissivity model. However, due to the structure of 
+the program, it can only obtain the material's emissivity at specific 
+wavelengths.
+
+
+Taunay et al. developed a temperature estimation method based on 
+multi-wavelength pyrometry\cite{Taunay.2020b}. In this approach, 
+an estimated temperature $\widehat{T}(\lambda_i, \lambda_j)$ is obtained by utilizing the radiative intensity 
+from two distinct channels ($\lambda_i, \lambda_j$):
+
+\begin{equation}
+    \widehat{T}(\lambda_i, \lambda_j)=C_2 \frac{1/\lambda_j - 1/\lambda_i}{ln(I_i/I_j) - 5ln(\lambda_j / \lambda_i) - ln(\varepsilon_i / \varepsilon_j)}
+\end{equation}
+
+
+After obtaining a series of estimated temperatures ($\widehat{T}(\lambda_i, \lambda_j)$), 
+the average of all the estimated temperatures is taken as the output result of the system $T_0$.
+
+\begin{equation}
+    T_0 = \frac{1}{N_T}\sum_{i = 1}^{N-1} \sum_{j = 1}^{N} \widehat{T}(\lambda_i, \lambda_j) 
+\end{equation}
+
+It is evident that this model necessitates an accurate emissivity model for the material. Moreover, during 
+temperature estimation\cite{Taunay.2020b}, the computational complexity increases notably 
+with an escalation in the number of channels.
 
 \section{Motivation of this thesis}
+In summary, there is significant room for development in using 
+multispectral imaging methods for temperature estimation in the 
+context of \gls{pbflbm}. 
+
+
+Firstly, real-world experiments are often affected by various non-ideal 
+factors such as material surface reflections and sensor placement, 
+which can negatively impact the experimental outcomes. Additionally, the 
+sensors themselves might capture undesirable noise signals during data 
+acquisition. In practical experiments, the performance of 
+temperature estimation algorithms can be compromised by these adverse effects.
+
+
+Secondly, the complete characterization of the material properties under 
+test is challenging. As mentioned earlier, the emissivity of a material is 
+influenced by various factors such as temperature, wavelength, surface 
+quality, degree of oxidation, and composition, etc. Particularly for the 
+metallic powders used in \gls{pbflbm}, obtaining precise emissivity data 
+for the material poses challenges. Moreover, in the use case, 
+the laser beam rapidly moves across the surface of the metallic powder, 
+leading to high temperature gradients and changing rates. This makes it 
+impractical to validate the accuracy of temperature estimation algorithms 
+under real use case conditions.
+
+Lastly, previous research has often ignore the non-idealities of the 
+sensors. In the case of a multispectral camera with pixel-level filters, 
+these filters are not ideal, as they only receive radiation at their 
+nominal wavelengths. In contrast, these channels allow radiation within 
+certain wavelength ranges to pass through, causing a deviation between 
+the measured digital value and the actual radiation intensity reaching 
+the sensor surface. Simultaneously, there exists cross talk between 
+different filters, leading to a lower peak in the quantum efficiency of 
+the sensor at different wavelengths. These factors result in a discrepancy 
+between the information obtained from the sensor and the actual conditions, 
+necessitating a novel post-processing approach to achieve temperature and 
+emissivity estimation functionalities.
+
+
+Consequently, this work introduces a novel virtual experimental platform. 
+Within this platform, experiment data of hypothetical materials without 
+interference can be generated based on specific parameters such as 
+temperature distribution and emissivity model. Subsequently, temperature 
+estimation algorithms use this experimental data to compute the 
+temperature and emissivity of the simulated test materials. 
+Since the emissivity characteristics and temperature of the hypothetical 
+materials are known, this allows for an evaluation of the performance 
+of the temperature estimation algorithms in terms of accuracy and 
+consistency. This approach thus opens up greater potential for 
+enhancing the performance of temperature estimation algorithms.
+
+
+
+

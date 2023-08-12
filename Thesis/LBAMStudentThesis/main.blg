@@ -25,52 +25,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 12420 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: literature/literature.bib
+Warning--I'm ignoring Dinwiddie.2014's extra "file" field
+--line 319 of file literature/literature.bib
 Warning--I'm ignoring Taunay.2020b's extra "file" field
---line 1205 of file literature/literature.bib
+--line 1539 of file literature/literature.bib
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 19 entries,
+You've used 53 entries,
             6399 wiz_defined-function locations,
-            1402 strings with 23895 characters,
-and the built_in function-call counts, 192847 in all, are:
-= -- 15941
-> -- 3254
-< -- 571
-+ -- 6414
-- -- 1817
-* -- 14530
-:= -- 23585
+            1734 strings with 48245 characters,
+and the built_in function-call counts, 554807 in all, are:
+= -- 45484
+> -- 10291
+< -- 1718
++ -- 19503
+- -- 6099
+* -- 41136
+:= -- 67819
 add.period$ -- 0
-call.type$ -- 19
-change.case$ -- 203
-chr.to.int$ -- 70
-cite$ -- 36
-duplicate$ -- 19079
-empty$ -- 15927
-format.name$ -- 1699
-if$ -- 37842
+call.type$ -- 53
+change.case$ -- 658
+chr.to.int$ -- 166
+cite$ -- 104
+duplicate$ -- 55693
+empty$ -- 45328
+format.name$ -- 4881
+if$ -- 108054
 int.to.chr$ -- 0
-int.to.str$ -- 41
+int.to.str$ -- 122
 missing$ -- 0
-newline$ -- 859
-num.names$ -- 771
-pop$ -- 6874
+newline$ -- 2477
+num.names$ -- 2308
+pop$ -- 19851
 preamble$ -- 1
-purify$ -- 400
+purify$ -- 1220
 quote$ -- 0
-skip$ -- 3720
+skip$ -- 10789
 stack$ -- 0
-substring$ -- 31175
-swap$ -- 3231
-text.length$ -- 584
+substring$ -- 87860
+swap$ -- 9489
+text.length$ -- 1647
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 634
+type$ -- 1790
 warning$ -- 0
-while$ -- 2728
+while$ -- 7840
 width$ -- 0
-write$ -- 841
-(There was 1 warning)
+write$ -- 2425
+(There were 2 warnings)
