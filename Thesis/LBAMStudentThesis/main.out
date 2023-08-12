@@ -32,6 +32,10 @@
 \BOOKMARK [1][-]{section.5.2}{Statistical\040results\040and\040analysis}{chapter.5}% 32
 \BOOKMARK [2][-]{subsection.5.2.1}{Performance\040of\040different\040temperature\040estimation\040algorithms}{section.5.2}% 33
 \BOOKMARK [2][-]{subsection.5.2.2}{Performance\040of\040temperature\040estimation\040algorithm\040between\040different\040materials}{section.5.2}% 34
-\BOOKMARK [0][-]{chapter.6}{Conclusion\040and\040prospects}{}% 35
-\BOOKMARK [0][-]{appendix*.57}{Bibliography}{}% 36
-\BOOKMARK [0][-]{section*.58}{List\040of\040Abbreviations}{}% 37
+\BOOKMARK [1][-]{section.5.3}{System\040limitations\040and\040boundaries}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.3.1}{Raw\040material\040data\040in\040virtual\040experiment\040platform}{section.5.3}% 36
+\BOOKMARK [2][-]{subsection.5.3.2}{Temperature\040estimation\040algorithm\040at\040high\040target\040temperature}{section.5.3}% 37
+\BOOKMARK [2][-]{subsection.5.3.3}{Emissivity\040model\040in\040temperature\040estimation\040algorithm}{section.5.3}% 38
+\BOOKMARK [0][-]{chapter.6}{Conclusion\040and\040prospects}{}% 39
+\BOOKMARK [0][-]{appendix*.57}{Bibliography}{}% 40
+\BOOKMARK [0][-]{section*.58}{List\040of\040Abbreviations}{}% 41
