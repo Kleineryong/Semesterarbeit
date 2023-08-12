@@ -913,8 +913,17 @@ experimentation platform, along with the temperature estimation system,
 are not devoid of imperfections. During utilization, they also exhibit 
 certain limitations and systemic boundaries.
 
-\subsection{Raw material data in virtual experiment platform}
 
-\subsection{Temperature estimation algorithm at high target temperature}
+\subsection{Raw material data in virtual experiment platform}
+As mentioned earlier, the emissivity of the hypothetical materials used in the virtual experiment 
+platform is primarily determined by two terms. The first term is wavelength related, while the 
+second term temperature related. It follows that when the virtual experiment platform generates 
+experimental data, the parameters of the experiment (such as the hypothetical material's 
+temperature and the wavelength range of the virtual multispectralmeter) need to fall within the 
+range of the original dataset. Although the extrapolation method was employed in the work to prevent 
+computational errors, this practice still contributes to a reduction in the reality 
+of the generated experimental data.
+
+\subsection{Performance of temperature estimation algorithm at high target temperature}
 
 \subsection{Emissivity model in temperature estimation algorithm}
