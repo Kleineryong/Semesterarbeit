@@ -2524,7 +2524,8 @@
   cross-validation of emissivity model}
     \field{volume}{91}
     \verb{file}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/33261433
+    \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
+    \verb Citavi Attachments\\50019847.pdf:pdf
     \endverb
     \field{journaltitle}{The Review of scientific instruments}
     \field{year}{2020}
@@ -2736,6 +2737,63 @@
     \endverb
     \field{journaltitle}{Communications of the ACM}
     \field{year}{2009}
+  \endentry
+
+  \entry{JamesC.Mullikin.1994}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=J}{%
+         family={{James C. Mullikin}},
+         familyi={J\bibinitperiod},
+      }}%
+      {{hash=L}{%
+         family={{Lucas J. van Vliet}},
+         familyi={L\bibinitperiod},
+      }}%
+      {{hash=H}{%
+         family={{H. Netten}},
+         familyi={H\bibinitperiod},
+      }}%
+      {{hash=F}{%
+         family={{Frank R. Boddeke}},
+         familyi={F\bibinitperiod},
+      }}%
+      {{hash=G}{%
+         family={{G. van der Feltz}},
+         familyi={G\bibinitperiod},
+      }}%
+      {{hash=I}{%
+         family={{Ian T. Young}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SPIE}%
+    }
+    \keyw{cameras;CCD cameras;Electrons;Imaging systems;Microscopes;Modulation
+  transfer functions;Quantum efficiency;Signal to noise ratio;Spatial
+  frequencies;Zoom lenses}
+    \strng{namehash}{JLHFGI1}
+    \strng{fullhash}{JLHFGI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    SPIE Digital Library Proceedings%
+    }
+    \verb{doi}
+    \verb 10.1117/12.175165
+    \endverb
+    \field{pages}{73\bibrangedash 84}
+    \field{title}{Methods for CCD camera characterization}
+    \verb{url}
+    \verb https://www.spiedigitallibrary.org/conference-proceedings-of-spie/217
+    \verb 3/0000/methods-for-ccd-camera-characterization/10.1117/12.175165.shor
+    \verb t
+    \endverb
+    \verb{file}
+    \verb 12.175165:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\
+    \verb \Citavi Attachments\\12.175165.pdf:pdf
+    \endverb
+    \field{year}{1994}
   \endentry
 \enddatalist
 \endinput

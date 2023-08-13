@@ -7,29 +7,30 @@ import matplotlib.pyplot as plt
 
 def temp_distribution(distribution):
     ratio = 0.9
-    temperature_center = 2000
-    temperature_background = 1000
+    temperature_center = 3500
+    temperature_background = 2500
     resolution = [50, 50]
     field_1 = temperature_field(resolution, ratio, temperature_center, temperature_background, distribution)
 
-    plt.imshow(field_1, cmap='viridis')
+    fig = plt.figure(figsize=(8, 6), dpi=400)
+    plt.imshow(field_1, cmap='inferno')
     plt.colorbar()
-    plt.xlabel('X_position')
-    plt.ylabel('Y_position')
-    plt.title('Temperature_map')
+    plt.xlabel('X_position', fontsize=20)
+    plt.ylabel('Y_position', fontsize=20)
+    plt.title('Temperature_map', fontsize=20)
     plt.tight_layout()
-    plt.savefig(os.path.join('t_field_' + distribution + '.jpg'))
+    plt.savefig(os.path.join('t_field_3500' + distribution + '.jpg'))
     plt.clf()
 
-    fig, axs = plt.subplots()
-
-    y_t = field_1[len(field_1) // 2]
-
-    x_radiation = np.arange(resolution[0]) + 1
-    axs.plot(x_radiation, y_t)
-    axs.set(title='temperature distribution', ylabel='temperature')
-    plt.tight_layout()
-    plt.savefig(os.path.join('t_field_' + distribution + '_plot.jpg'))
+    # fig, axs = plt.subplots()
+    #
+    # y_t = field_1[len(field_1) // 2]
+    #
+    # x_radiation = np.arange(resolution[0]) + 1
+    # axs.plot(x_radiation, y_t)
+    # axs.set(title='temperature distribution', ylabel='temperature')
+    # plt.tight_layout()
+    # plt.savefig(os.path.join('t_field_' + distribution + '_plot.jpg'))
     return 0
 
 
@@ -76,9 +77,9 @@ def distribution(x, sigma):
 if 1:
     start_time = time.perf_counter()
 
-    temp_distribution('sigmoid')
+    # temp_distribution('sigmoid')
     temp_distribution('linear')
-    temp_distribution('gaussian')
+    # temp_distribution('gaussian')
 
     end_time = time.perf_counter()
     print("calculation time: ", end_time - start_time, " second")

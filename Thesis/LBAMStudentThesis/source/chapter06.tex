@@ -1,1 +1,124 @@
 \chapter{Conclusion and prospects}
+\section*{Conslusion}
+To facilitate temperature monitoring during the processing of \gls{pbflbm}, multispectral cameras are 
+employed to capture the thermal history of the melt pool. In this study, a virtual experiment 
+platform was developed to obtain undisturbed experimental data with a low cost. Within this virtual experimental 
+platform, a virtual multispectral camera were configured to obtain the experiment data from hypothetical materials.
+
+When designing the virtual experimental platform, several considerations were taken into account:
+
+\begin{enumerate}
+    \item Imperfections of camera sensor: real multispectral 
+    cameras use pixel-level filters, whose properties can be thought of as intrinsic to the 
+    sensor. These filters are not ideal and allow radiation from wavelengths beyond those 
+    intended to pass through. This characteristic is characterized by the filter's amplitude-frequency 
+    response curve, referred to as the quantum efficiency. In this study, each channel of the 
+    virtual multispectral camera has one wavelength-related quantum efficiency.
+    This feature is employed to 
+    emulate the performance of a real multispectral camera.
+    
+    \item Imperfections of lens system: the imperfections of the camera's lens system also
+    play an important role in the overall performance. As radiation needs to pass through the lens 
+    system before reaching the sensor surface, it's important to account for these effects. 
+    In this study, the wavelength-related transparency of the lens system has been incorporated 
+    into the virtual experimental platform. This inclusion aims to simulate the non-ideal optical 
+    conditions that exist in real experiments.
+
+    \item Principle of data acquisition: the digital value obtained for each pixel on the 
+    camera's sensor is directly related to the quantity of protons that land on it during 
+    the exposure time\cite{JamesC.Mullikin.1994}. Consequently, the data obtained from the 
+    camera's sensor represents an integration of the received radiation intensity 
+    within a certain wavelength range. Therefore, in this study, the virtual 
+    multispectral camera in the virtual experimental platform employs an integration 
+    method to calculate the digital value of radiation. This approach ensures that the 
+    simulated data capture process mirrors the physical behavior of an actual multispectral 
+    camera sensor, providing a realistic basis for temperature monitoring study during 
+    the \gls{pbflbm} process.
+
+    \item The emissivity model of the hypothetical material: In real conditions, a material's 
+    emissivity is influenced by various factors such as wavelength and temperature. To simulate the 
+    emissivity characteristics of real materials, material models based on different raw
+    wavelength-realted emissivity data were developed. Within these material models, a temperature factor was 
+    employed to describe how emissivity changes with temperature. Simultaneously, these 
+    models also account for the emissivity characteristics of materials during phase transitions.
+    % By incorporating temperature and wavelength-dependent emissivity behavior and accounting 
+    % for phase transitions, the virtual experimental platform is now equipped with 
+    % hypothetical materials that exhibit comparable emissivity properties to real materials. 
+
+\end{enumerate}
+
+
+After obtaining experimental data within the virtual experiment platform, a temperature estimation 
+algorithm is applied to estimate the temperature and emissivity of the materials based on the 
+acquired data.
+
+
+The temperature estimation algorithm is based on a curve fitting approach. It reconstructs 
+the blackbody radiation and emissivity model to fit the experiment data using a curve fitting 
+algorithm. As a result, five different wavelength-related emissivity models are introduced for temperature 
+estimation: linear model, linear square model, quadratic model, exponential model and mixed model. 
+
+
+After applying these models, the algorithm analyzes the results obtained from each of them. 
+This analysis involves comparing the estimated temperature values to known reference values, 
+assessing the fit quality and consistency of the reconstructed curves, and evaluating the overall performance 
+of each emissivity model.
+
+
+The linear square model exhibits the best overall accuracy and consistency among the considered 
+models. This superiority is attributed to an additional parameter present in the model, 
+which allows it to capture more complex emissivity characteristics accurately. However, 
+this advantage comes at the cost of increased computational requirements due to the higher 
+complexity of the model.
+
+
+The fact that the linear square model continues to produce comparable results for 
+materials at high temperatures indicates that the temperature estimation algorithm can 
+indeed be applied to a broader range of temperature estimations. This suggests that the 
+algorithm is relatively robust and is capable of handling variations in temperature that 
+might lead to shifts in the radiation peak.
+
+
+On the other hand, the quadratic model faces limitations in accurately estimating 
+temperatures for the hypothetical materials mentioned in this study. This shortcoming stems 
+from the inability of its profile to effectively fit the emissivity characteristics of the materials.
+
+
+So, the influence of the emissivity model on the performance of the temperature 
+estimation algorithm is demonstrated. As mentioned earlier, the choice of an appropriate 
+emissivity model plays a crucial role in obtaining accurate temperature estimations.
+
+\newpage
+\section*{Prospect}
+The primary objective of establishing the virtual experimental platform in this study is to 
+simulate the \gls{pbflbm} process, enabling the acquisition of noise-free multispectral 
+images at a relatively low cost. This platform serves as a valuable tool for refining 
+the temperature estimation algorithm. However, there are several areas within the virtual 
+experimental platform that could benefit from improvement.
+
+
+Firstly, an enhanced material model should be introduced. Due to the limited availability 
+of accurate emissivity data for materials, the hypothetical material utilized in the virtual 
+experiment platform cannot perfectly replicate the experimental conditions of real materials. 
+Hence, the incorporation of a more realistic material model would significantly contribute to 
+enhancing the authenticity of the virtual experimentation platform.
+
+
+Secondly, the emissivity model used in temperature estimation algorithm can be further 
+improved. As mentioned earlier, the inclusion of additional parameter in the linear square 
+model significantly enhanced the performance of the temperature estimation algorithm. 
+Consequently, for more complex real materials, it is reasonable to expect the development of 
+more suitable emissivity models. This approach holds the potential to not only reduce 
+computational time but also enhance the accuracy and consistency of the calculations.
+
+
+Subsequently, the temperature estimation algorithm itself is considered. The temperature 
+estimation algorithm employed in this study is designed for single-point temperature estimation, 
+lacking the ability to capture temperature information between adjacent points. 
+However, in real systems, due to heat and mass transfer phenomenon, temperatures between 
+neighboring points are not independent of each other. Therefore, this information can also be 
+leveraged to enhance the precision of the temperature estimation algorithm.
+
+
+
+
