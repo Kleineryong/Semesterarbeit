@@ -101,6 +101,12 @@ generate the experimental data.
 
 
 \section{Virtual experiment platform}%
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/camera_model.pdf}
+    \caption{Procedure of using virtual experiment platform to generate digital values}
+    \label{fig: process_virtual_platform}
+\end{figure}
 After obtaining the physical spectral intensity of the material, a virtual experiment platform
 is used to transform the physical value into digital value, which simulate the 
 behavior of a real spectral pyrometer. As described in Fig.\ref{fig: virtual_platform}, a 
@@ -129,6 +135,23 @@ experiment platform is built.
     \caption{Structure of the virtual experiment platform and Layout of a sensor pixel}
     \label{fig: virtual_pixel}
 \end{figure}
+
+
+Similar to the method used to obtain the digital value of spectral radiation intensity 
+in the real experiment, the virtual experiment platform calculates the 
+intensity digital value in 8 channels using the virtual camera by entering 
+the material properties of the point being measured.
+
+
+Fig.\ref{fig: process_virtual_platform} shows the working procedure of the 
+virtual experiment platform. 
+To enable the virtual experimental platform to run on various devices, 
+the entire platform has been implemented using Python as the 
+programming language and packaged into a .py file. Furthermore, all 
+functions have been vectorized to facilitate the generation of image 
+outputs resembling those captured by a physical camera. Additionally, 
+the parallel computing package in Python has been utilized to minimize 
+computation time.
 
 
 \section{Camera model}
@@ -173,7 +196,7 @@ surface area of the powder bed and the camera system is constantly set to 1.
 \end{comment}
 
 
-\subsection{Frequency response}
+\subsection{Wavelength response}
 After obtaining the virtual experiment platform and knowing the external setup of the 
 sensor, the internal effects of the camera system should also be taken into account 
 in the complete virtual experiment platform.
@@ -284,31 +307,6 @@ denotes the total efficiency of the camera in Eq.\ref{eq: cam_efficiency}. $q$ i
 of the sensor.
 
 
-\subsection{Implementation}
-Similar to the method used to obtain the digital value of spectral radiation intensity 
-in the real experiment, the virtual experiment platform calculates the 
-intensity digital value in 8 channels using the virtual camera by entering 
-the material properties of the point being measured.
-
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.95\textwidth]{figures/camera_model.pdf}
-    \caption{Procedure of using virtual experiment platform to generate digital values}
-    \label{fig: process_virtual_platform}
-\end{figure}
-
-Fig.\ref{fig: process_virtual_platform} shows the working procedure of the 
-virtual experiment platform. 
-To enable the virtual experimental platform to run on various devices, 
-the entire platform has been implemented using Python as the 
-programming language and packaged into a .py file. Furthermore, all 
-functions have been vectorized to facilitate the generation of image 
-outputs resembling those captured by a physical camera. Additionally, 
-the parallel computing package in Python has been utilized to minimize 
-computation time.
-
-
 \section{Temperature estimation algorithm}
 After obtaining the experimental data calculated by the virtual experiment platform, 
 a temperature estimation algorithm should be developed to calculate the temperature 
@@ -363,7 +361,7 @@ is linear.
 
 Given an initial guess of the status parameters, namely 
 temperature($T_0$) and parameters in emissivity model($k_0$). Then, an curve fit 
-algorithm is applied to minimize the difference between the reconstructed digital value $(I_{rec})$ 
+algorithm is applied to minimize the difference between the reconstructed physical value $(I_{rec})$ 
 and the actual digital value $(I_{act})$ in Eq.\ref{eq: reconstruct_optimization}.
 
 \begin{equation}
@@ -393,6 +391,11 @@ into the overall calculation process. In order to provide a more general descrip
 the trend of emissivity with wavelength, an additional parameter ($k$) in the 
 emissivity model used for temperature estimation has been introduced.
 
+\begin{equation}
+    \label{eq: emi}
+    \varepsilon = \varepsilon(\lambda, k, T)
+\end{equation}
+
 
 Due to the inherent complexity of this trend, it is often impossible to describe 
 the emissivity using a single parameter. Therefore, the parameter ($k$) is normally 
@@ -401,5 +404,18 @@ concise mathematical representation and the incorporation of more
 intricate emissivity models into the temperature estimation algorithm.
 
 
+Within the scope of this work, the primary utilization encompassed several emissivity models 
+for the temperature estimation algorithm, including:
+
+\begin{enumerate}
+    \item Linear model
+    \item Linear square model
+    \item Quadradic model
+    \item Exponential model
+    \item Mixed model
+\end{enumerate}
+
+
+The specifics of these emissivity models will be comprehensively introduced in the subsequent chapter.
 %
 %

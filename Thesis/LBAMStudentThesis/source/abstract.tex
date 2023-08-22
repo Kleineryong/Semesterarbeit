@@ -3,7 +3,10 @@
 	%
 	% Abstract English:
 	Temperature is one of the most important parameters in \gls{pbflbm}. 
-	so, monitoring the temperature at melt pool necessary. It is still challenging to get 
+	Due to the rapid change of temperature in metallic powders upon exposure to the laser beam, 
+	facilitating phase transition between liquid and solid phases. 
+	The material's thermal history is relevant for the product's quality.
+	So, monitoring the temperature at melt pool necessary. It is still challenging to get 
 	multispectral image without interference.
 	In oder to achieve this, a numerical experiment platform is formed.
 	Within this virtual experimentation platform, a virtual multispectral camera has been 
@@ -12,11 +15,15 @@
 	of radiance intensity over wavelength. Then, hypothetical material models have been 
 	developed based on various sets of raw emissivity data. Within these hypothetical material 
 	models, emissivity values are configured to be wavelength and temperature-dependent, 
-	effectively simulating the phase transition phenomena observed in real materials. 
+	also effectively simulating the phenomenon of melting observed in real materials. 
 	This approach enables the emulation of emissivity characteristics akin to those found in 
 	actual materials. Lastly, based on the generated experimental data, a temperature 
 	estimation algorithm has been developed. This algorithm is capable of simultaneously 
 	estimating the temperature and emissivity of the material using the experimental data. 
+	In the conducted tests within this work, the temperature estimation algorithm with linear square 
+	emissivity model has demonstrated 
+	the capability to achieve temperature estimations for actual iron materials with a relative error 
+	less than 3\%.
 	By comparing and analyzing different temperature estimation algorithms, the importance 
 	of emissivity model selection within the temperature estimation algorithm has been demonstrated. 
 	Through calculations involving materials within various temperature ranges, the 
@@ -25,7 +32,11 @@
 }{%
 	%
 	% Zusammenfassung Deutsch
-	Temperatur ist einer der wichtigsten Parameter im \gls{pbflbm}. Daher ist die Überwachung der 
+	Temperatur ist einer der wichtigsten Parameter im \gls{pbflbm}. Aufgrund der schnellen 
+	Temperaturänderung in metallischen Pulvern bei Bestrahlung mit dem Laserstrahl kommt es zu 
+	Phasenübergängen zwischen den flüssigen und festen Phasen. Die thermische Geschichte des 
+	Materials ist relevant für die Qualität des Produkts.
+	Daher ist die Überwachung der 
 	Temperatur am Melt-pool notwendig. Es bleibt jedoch eine Herausforderung, multispektrale 
 	Bilder ohne Störungen zu erhalten. Um dies zu erreichen, wurde eine numerische 
 	Experimentierplattform entwickelt. Innerhalb dieser virtuellen Experimentierplattform 
@@ -35,12 +46,16 @@
 	berechnet. Anschließend wurden hypothetische Materialmodelle basierend auf verschiedenen 
 	Sätzen von rohen Emissionsdaten entwickelt. Innerhalb dieser hypothetischen Materialmodelle 
 	werden Emissionswerte konfiguriert, die wellenlängen- und temperaturabhängig sind und 
-	somit Phasenübergangsphänomene simulieren, wie sie in realen Materialien beobachtet werden. 
+	somit Schmelzphänomen simulieren, wie sie in realen Materialien beobachtet werden. 
 	Dieser Ansatz ermöglicht die Simulation von Emissionscharakteristika, ähnlich denen in 
 	tatsächlichen Materialien. Schließlich wurde basierend auf den generierten experimentellen 
 	Daten ein Temperaturschätzalgorithmus entwickelt. Dieser Algorithmus ist in der Lage, 
 	die Temperatur und Emissivität des Materials gleichzeitig unter Verwendung der 
-	experimentellen Daten abzuschätzen. Durch den Vergleich und die Analyse 
+	experimentellen Daten abzuschätzen. 
+	In den durchgeführten Tests in dieser Arbeit hat der Temperaturabschätzalgorithmus mit 
+	linearem quadratischem Emissivitätsmodell die Fähigkeit gezeigt, Temperaturabschätzungen 
+	für tatsächliche Eisenmaterialien mit einem relativen Fehler von weniger als 3\% zu erzielen.
+	Durch den Vergleich und die Analyse 
 	verschiedener Temperaturschätzalgorithmen wurde die Bedeutung der Auswahl 
 	des Emissionsmodells innerhalb des Temperaturschätzalgorithmus demonstriert. 
 	Durch Berechnungen von Materialien in verschiedenen Temperaturbereichen wurde die 

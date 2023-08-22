@@ -13,11 +13,10 @@
 \contentsline {chapter}{\numberline {3}Theory and methodology}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Physical value of radiation}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Virtual experiment platform}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Camera model}{15}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Frequency response}{17}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.3}Camera model}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Wavelength response}{17}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Integration method}{18}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Implementation}{19}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Temperature estimation algorithm}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Temperature estimation algorithm}{19}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Emissivity model in temperature estimation algorithm}{21}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Approach}{23}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Experiment data generation}{23}{section.4.1}%
@@ -25,56 +24,56 @@
 \contentsline {subsection}{\numberline {4.1.2}Emissivity model}{26}{subsection.4.1.2}%
 \contentsline {subsubsection}{Black body and gray body}{26}{subsubsection*.22}%
 \contentsline {subsubsection}{Hypothetical material}{26}{subsubsection*.23}%
-\contentsline {subsubsection}{Real emissivity data from iron}{29}{subsubsection*.25}%
+\contentsline {subsubsection}{Real emissivity data from iron}{30}{subsubsection*.26}%
 \contentsline {subsection}{\numberline {4.1.3}Camera model}{31}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Temperature estimation algorithm}{32}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Rebuild physical value of spectral radiation intensity}{32}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Emissivity model used for calculation}{32}{subsection.4.2.2}%
-\contentsline {subsubsection}{Linear model}{34}{subsubsection*.29}%
-\contentsline {subsubsection}{Linear square model}{34}{subsubsection*.30}%
-\contentsline {subsubsection}{Quadratic model}{34}{subsubsection*.31}%
-\contentsline {subsubsection}{Exponential model}{34}{subsubsection*.32}%
-\contentsline {subsubsection}{Mixed model}{35}{subsubsection*.33}%
-\contentsline {subsection}{\numberline {4.2.3}Curve fit algorithm}{35}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Parameters in temperature estimation algorithm}{36}{subsection.4.2.4}%
-\contentsline {subsubsection}{Wavelength range}{36}{subsubsection*.35}%
-\contentsline {subsubsection}{Boundary condition of estimated temperature}{36}{subsubsection*.36}%
-\contentsline {subsubsection}{Boundary condition of estimated emissivity}{37}{subsubsection*.37}%
+\contentsline {subsection}{\numberline {4.2.2}Emissivity model used for calculation}{33}{subsection.4.2.2}%
+\contentsline {subsubsection}{Linear model}{34}{subsubsection*.30}%
+\contentsline {subsubsection}{Linear square model}{34}{subsubsection*.31}%
+\contentsline {subsubsection}{Quadratic model}{35}{subsubsection*.32}%
+\contentsline {subsubsection}{Exponential model}{35}{subsubsection*.33}%
+\contentsline {subsubsection}{Mixed model}{35}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {4.2.3}Curve fit algorithm}{36}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Parameters in temperature estimation algorithm}{37}{subsection.4.2.4}%
+\contentsline {subsubsection}{Wavelength range}{37}{subsubsection*.36}%
+\contentsline {subsubsection}{Boundary condition of estimated temperature}{37}{subsubsection*.37}%
+\contentsline {subsubsection}{Boundary condition of estimated emissivity}{37}{subsubsection*.38}%
 \contentsline {chapter}{\numberline {5}Calcualtion results and analysis}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Calculation results}{39}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Raw experiment data from virtual experiment platform}{40}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Estimated temperature field and emissivity field}{42}{subsection.5.1.2}%
-\contentsline {subsubsection}{Linear model}{44}{subsubsection*.41}%
-\contentsline {subsubsection}{Linear square model}{45}{subsubsection*.43}%
-\contentsline {subsubsection}{Quadratic model}{45}{subsubsection*.45}%
-\contentsline {subsubsection}{Exponential model}{46}{subsubsection*.47}%
-\contentsline {subsubsection}{Mixed model}{48}{subsubsection*.49}%
+\contentsline {subsubsection}{Linear model}{44}{subsubsection*.42}%
+\contentsline {subsubsection}{Linear square model}{45}{subsubsection*.44}%
+\contentsline {subsubsection}{Quadratic model}{45}{subsubsection*.46}%
+\contentsline {subsubsection}{Exponential model}{46}{subsubsection*.48}%
+\contentsline {subsubsection}{Mixed model}{48}{subsubsection*.50}%
 \contentsline {section}{\numberline {5.2}Statistical results and analysis}{50}{section.5.2}%
-\contentsline {subsubsection}{Mean Difference}{50}{subsubsection*.51}%
-\contentsline {subsubsection}{Mean Relative Error}{51}{subsubsection*.52}%
-\contentsline {subsubsection}{Standard Deviation}{51}{subsubsection*.53}%
-\contentsline {subsubsection}{Min. and Max. Relative Error}{51}{subsubsection*.54}%
+\contentsline {subsubsection}{Mean Difference}{50}{subsubsection*.52}%
+\contentsline {subsubsection}{Mean Relative Error}{51}{subsubsection*.53}%
+\contentsline {subsubsection}{Standard Deviation}{51}{subsubsection*.54}%
+\contentsline {subsubsection}{Min. and Max. Relative Error}{51}{subsubsection*.55}%
 \contentsline {subsection}{\numberline {5.2.1}Performance of different temperature estimation algorithms}{51}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Performance of temperature estimation algorithm between different materials}{54}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}System limitations and boundaries}{55}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Raw material data in virtual experiment platform}{55}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Range of material data in virtual experiment platform}{55}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Performance of temperature estimation algorithm at high target temperature}{56}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Emissivity model in temperature estimation algorithm}{57}{subsection.5.3.3}%
-\contentsline {subsubsection}{Linear model}{58}{subsubsection*.60}%
-\contentsline {subsubsection}{Linear square model}{58}{subsubsection*.62}%
-\contentsline {subsubsection}{Exponential model}{59}{subsubsection*.64}%
-\contentsline {chapter}{\numberline {6}Conclusion and prospects}{61}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Appendices}{65}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Calculation result of temperature estimation algorithm}{65}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Linear model}{65}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Linear square model}{68}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Quadratic model}{71}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Exponential model}{74}{subsection.A.1.4}%
-\contentsline {subsection}{\numberline {A.1.5}Mixed model}{77}{subsection.A.1.5}%
-\contentsline {section}{\numberline {A.2}Calaulation results of temperature estimation algorithm at high temperature}{80}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Linear model}{80}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Linear square model}{81}{subsection.A.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Exponential model}{82}{subsection.A.2.3}%
-\contentsline {chapter}{Bibliography}{83}{appendix*.87}%
-\contentsline {chapter}{List of Abbreviations}{89}{section*.88}%
+\contentsline {subsubsection}{Linear model}{58}{subsubsection*.61}%
+\contentsline {subsubsection}{Linear square model}{58}{subsubsection*.63}%
+\contentsline {subsubsection}{Exponential model}{59}{subsubsection*.65}%
+\contentsline {chapter}{\numberline {6}Conclusion and prospects}{63}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Appendices}{67}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Calculation result of temperature estimation algorithm}{67}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Linear model}{67}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Linear square model}{70}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Quadratic model}{73}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Exponential model}{76}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Mixed model}{79}{subsection.A.1.5}%
+\contentsline {section}{\numberline {A.2}Calaulation results of temperature estimation algorithm at high temperature}{82}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Linear model}{82}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Linear square model}{83}{subsection.A.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Exponential model}{84}{subsection.A.2.3}%
+\contentsline {chapter}{Bibliography}{85}{appendix*.89}%
+\contentsline {chapter}{List of Abbreviations}{91}{section*.90}%
 \contentsfinish 

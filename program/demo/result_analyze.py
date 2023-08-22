@@ -10,9 +10,9 @@ def result_analyze(result_dir):
     homefolder = os.path.dirname(currentdir)
 
     # read real temperature field and choose the focused area.
-    t_field_raw = np.array(pd.read_excel(os.path.join(homefolder, 'data', 'T1900_0_digital', 't_field_1900.xlsx'),
+    t_field_raw = np.array(pd.read_excel(os.path.join(homefolder, 'data', 'T3500_0_digital', 't_field_3500.xlsx'),
                                          header=None))
-    t_index = t_field_raw > 1200
+    t_index = t_field_raw > 2700
     t_true = t_field_raw[t_index]
 
     t_field_raw_5 = np.array(pd.read_excel(os.path.join(homefolder, 'data', 'T1900_5_digital', 't_field_1900.xlsx'),
@@ -66,22 +66,21 @@ def save_result(result_dir, t_diff_abs, t_diff_rel, t_diff_std, t_diff_max, t_di
 
 
 def read_result(result_dir, t_index, t_index_5):
-    dir_list = ['T1900_0_digital',
-                'T1900_5_digital', 'T1900_21_digital', 'T1900_22_digital', 'T1900_23_digital',
-                'T1900_24_digital', 'T1900_25_digital', 'T1900_26_digital', 'T1900_31_digital',
-                'T1900_32_digital', 'T1900_33_digital', 'T1900_34_digital']
+    dir_list = ['T3500_0_digital',
+                'T3500_5_digital', 'T3500_21_digital', 'T3500_22_digital',
+                'T3500_32_digital', 'T3500_33_digital']
     result_raw = {}
     for result in dir_list:
         if result == 'T1900_5_digital':
             result_raw[result] = np.array(pd.read_excel(os.path.join(result_dir, result, 't_cal_1900.xlsx'), header=None))[t_index_5]
         else:
-            result_raw[result] = np.array(pd.read_excel(os.path.join(result_dir, result, 't_cal_1900.xlsx'), header=None))[t_index]
+            result_raw[result] = np.array(pd.read_excel(os.path.join(result_dir, result, 't_cal_3500.xlsx'), header=None))[t_index]
     return result_raw
 
 
 if 1:
     start_time = time.perf_counter()
-    result_dir = 'result_v024_lin'
+    result_dir = 'result_v060_exp'
     result_analyze(result_dir)
 
     end_time = time.perf_counter()

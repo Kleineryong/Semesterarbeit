@@ -8,21 +8,20 @@ platform, a virtual multispectral camera were configured to obtain the experimen
 When designing the virtual experimental platform, several considerations were taken into account:
 
 \begin{enumerate}
-    \item Imperfections of camera sensor: real multispectral 
+    \item Imperfections of camera sensor and lens system: real multispectral 
     cameras use pixel-level filters, whose properties can be thought of as intrinsic to the 
     sensor. These filters are not ideal and allow radiation from wavelengths beyond those 
     intended to pass through. This characteristic is characterized by the filter's amplitude-frequency 
     response curve, referred to as the quantum efficiency. In this study, each channel of the 
     virtual multispectral camera has one wavelength-related quantum efficiency.
-    This feature is employed to 
-    emulate the performance of a real multispectral camera.
+    This feature is employed to emulate the performance of a real multispectral camera.
     
-    \item Imperfections of lens system: the imperfections of the camera's lens system also
-    play an important role in the overall performance. As radiation needs to pass through the lens 
-    system before reaching the sensor surface, it's important to account for these effects. 
-    In this study, the wavelength-related transparency of the lens system has been incorporated 
-    into the virtual experimental platform. This inclusion aims to simulate the non-ideal optical 
-    conditions that exist in real experiments.
+    %\item Imperfections of lens system: the imperfections of the camera's lens system also
+    %play an important role in the overall performance. As radiation needs to pass through the lens 
+    %system before reaching the sensor surface, it's important to account for these effects. 
+    %In this study, the wavelength-related transparency of the lens system has been incorporated 
+    %into the virtual experimental platform. This inclusion aims to simulate the non-ideal optical 
+    %conditions that exist in real experiments.
 
     \item Principle of data acquisition: the digital value obtained for each pixel on the 
     camera's sensor is directly related to the quantity of protons that land on it during 
@@ -64,8 +63,9 @@ This analysis involves comparing the estimated temperature values to known refer
 assessing the fit quality and consistency of the reconstructed curves, and evaluating the overall performance 
 of each emissivity model.
 
+\begin{itemize}
 
-The linear square model exhibits the best overall accuracy and consistency among the considered 
+\item Linear square model: the linear square model exhibits the best overall accuracy and consistency among the considered 
 models. This superiority is attributed to an additional parameter present in the model, 
 which allows it to capture more complex emissivity characteristics accurately. However, 
 this advantage comes at the cost of increased computational requirements due to the higher 
@@ -79,10 +79,11 @@ algorithm is relatively robust and is capable of handling variations in temperat
 might lead to shifts in the radiation peak.
 
 
-On the other hand, the quadratic model faces limitations in accurately estimating 
+\item On the other hand, the quadratic model faces limitations in accurately estimating 
 temperatures for the hypothetical materials mentioned in this study. This shortcoming stems 
 from the inability of its profile to effectively fit the emissivity characteristics of the materials.
 
+\end{itemize}
 
 So, the influence of the emissivity model on the performance of the temperature 
 estimation algorithm is demonstrated. As mentioned earlier, the choice of an appropriate 

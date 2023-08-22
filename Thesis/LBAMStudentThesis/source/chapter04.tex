@@ -286,8 +286,8 @@ emitted from the hypothetical material.
     
     \caption{Raw emissivity data used in virtual experiment platform. (\subref{fig: emi_0}), 
     (\subref{fig: emi_1}) are black body and gray body; (\subref{fig: emi_21}) - (\subref{fig: emi_26})
-    are hypothetical materials\cite{Wang.2021b}; (\subref{fig: emi_31}) - 
-    (\subref{fig: emi_33}) are real materials\cite{Taunay.2020b}.}
+    are hypothetical materials introduced by Wang et al.\cite{Wang.2021b}; (\subref{fig: emi_31}) - 
+    (\subref{fig: emi_33}) are hypothetical materials introduced by Taunay et al.\cite{Taunay.2020b}}
     \label{fig: emi_model}
 \end{figure}
 
@@ -336,6 +336,12 @@ diversity of hypothetical materials than what may be feasible in real
 experiments.
 
 
+\mbox{Model 7} to 9 describe the emissivity introduced by Taunay et al.\cite{Taunay.2020b}.
+Among these, \mbox{Model 7} corresponds to the quadratic emissivity model, \mbox{Model 8} pertains 
+to the logistic emissivity model, 
+and \mbox{Model 9} encapsulates the emissivity of tantalum at 573K.
+
+
 Therefore, it is essential to incorporate certain hypothetical materials 
 that do not exist in reality within the virtual experimental platform. 
 By doing so, it becomes possible to assess the consistency of temperature 
@@ -365,10 +371,15 @@ With
 
 
 This temperature factor describes the tendency 
-of emissivity to decrease with increasing temperature between $T_{lb}$ and $T_{ub}$, 
+of emissivity to decrease with increasing temperature between lower temperature boundary $T_{lb}$ 
+and upper temperature boundary $T_{ub}$, 
 on the other hand, it also describes the change of emissivity due to the 
 phase change of the hypothetical material that occurs at melting 
-temperature $T_{melt}$.
+temperature $T_{melt}$. In this application, the boundaries were set as $T_{lb} = 1500K$ and $T_{ub} = 2000K$.
+This approach allows for the comprehensive coverage of all temperature ranges in this work. 
+Simultaneously, it enables the derivation of normalized temperature, facilitating computations 
+within broader temperature extents.
+
 
 \begin{figure}[htbp]
   \centering
@@ -389,6 +400,21 @@ the hypothetical material, emissivity decreases to a value lower than $0.1$.
 Thus, the phase change phenomenon of hypothetical material is also characterized, 
 which gives the virtual experiment platform more potential to simulate 
 real experiments.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/co-axial-raw.jpg}
+  \caption{Generated radiation intensity from channel 1, 5, 9 and real co-axial experiment data.}
+  \label{fig: real_virtual_comp}
+\end{figure}
+
+
+Fig.\ref{fig: real_virtual_comp} illustrates the comparison between real experiment data and 
+generated experiment data by virtual experiment platform. 
+It is evident that both sets of experimental data exhibit a discernible, relatively darker halo, 
+attributed to the emissivity of the liquid-state material. This observation further corroborates 
+the efficacy of the employed emissivity model in accurately characterizing the properties of real 
+materials.
 
 
 \subsubsection{Real emissivity data from iron}

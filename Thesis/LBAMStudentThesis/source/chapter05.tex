@@ -740,7 +740,7 @@ of the temperature estimation algorithm's results.
     \label{tab: statistic_results}
     \begin{tabular}{lccccccccccc}
         \hline
-        & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Real data} & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 & Model 6 & Model 7 & Model 8 & Model 9 \\ \hline
+        & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Iron} & Model 1 & Model 2 & Model 3 & Model 4 & Model 5 & Model 6 & Model 7 & Model 8 & Model 9 \\ \hline
         \multicolumn{12}{c}{Linear}                                                                                                                                                         \\ \hline
         Difference {[}K{]}      & 20.7                           & -151.7                        & 129.5   & 38.8    & 58.6    & 116.5   & -4.8    & -39.6   & -161.6  & 445.5   & 27.2     \\
         Rel. difference         & 0.02                           & 0.08                          & 0.08    & 0.03    & 0.04    & 0.08    & 0.02    & 0.04    & 0.11    & 0.32    & 0.02     \\
@@ -915,13 +915,15 @@ are not devoid of imperfections. During utilization, they also exhibit
 certain limitations and systemic boundaries.
 
 
-\subsection{Raw material data in virtual experiment platform}
+\subsection{Range of material data in virtual experiment platform}
 As mentioned earlier, the emissivity of the hypothetical materials used in the virtual experiment 
 platform is primarily determined by two terms. The first term is wavelength related, while the 
-second term temperature related. It follows that when the virtual experiment platform generates 
-experimental data, the parameters of the experiment (such as the hypothetical material's 
-temperature and the wavelength range of the virtual multispectralmeter) need to fall within the 
-range of the original dataset. Although the extrapolation method was employed in the work to prevent 
+second term temperature related. 
+$$0\varepsilon(\lambda, T) = \varepsilon _{raw}(\lambda) \cdot K_T(T)$$
+It follows that when the virtual experiment platform generates 
+experimental data, the physical meaning of the parameters of the experiment setup (such as temperature of the hypothetical material 
+and the wavelength range of the virtual multispectralmeter) needs to be ensured. 
+Although the extrapolation method was employed in the work to extend the range of emissivity data and prevent 
 computational errors, this practice still contributes to a reduction in the reality 
 of the generated experimental data.
 
@@ -1060,15 +1062,20 @@ Additionally, since phase transitions are absent in the virtual experiments cond
 with the hypothetical materials, the use of a mixed model is deemed unnecessary.
 
 
+
+
 Therefore, the evaluation of temperature estimation algorithm's performance 
 on the hypothetical material at high temperatures involves testing of the linear model, 
 linear square model and exponential model.
+
 
 \subsubsection{Linear model}
 It is apparent that the linear model cannot provide accurate temperature estimations 
 for the hypothetical materials at high temperatures. This limitation stems from the 
 relatively low degrees of freedom inherent to the linear model. The precision of the 
-temperature estimation algorithm at 3500K is lower than that at 1900K. Nevertheless, 
+temperature estimation algorithm at 3500K is lower than that at 1900K. The details 
+can be found in table\ref{tab: statistic_results_3500}.
+Nevertheless, 
 the program is still capable of reliably calculating the trend of temperature variations. 
 This observation underscores that the radiation peak can be fitted by the 
 program.
@@ -1117,8 +1124,9 @@ program.
 It can be observed that the linear square model achieves relative errors 
 within 10\% for temperature estimation on both iron-based materials and materials based on \mbox{model 1}. 
 This model accurately computes the temperatures of various hypothetical materials. 
-However, it still has limitations. Specifically, this algorithm struggles to precisely 
-estimate emissivity at high temperatures. This issue arises due to the complexity introduced 
+However, it still has limitations. Specifically, estimation of emissivity at high temperatures still has 
+potential to be improved. 
+This issue arises due to the complexity introduced 
 by the peak in intensity values resulting from the simultaneous fitting of the 
 emissivity model and blackbody radiation to experimental data. 
 Consequently, the accuracy of emissivity calculations is compromised.
@@ -1208,3 +1216,35 @@ estimation of high-temperature materials.
     \caption{Calculation results of exponential model at 3500K}
     \label{fig: result_exp_model_3500}
 \end{figure}
+
+
+{\linespread{1}
+\begin{table}[htbp]
+    \centering
+    \caption{Calculation results from different models at 3500K}
+    \label{tab: statistic_results_3500}
+    \begin{tabular}{lcccccc}
+        \hline
+        & \multicolumn{1}{c}{Black body} & \multicolumn{1}{c}{Iron} & Model 1 & Model 2 & Model 8 & Model 9 \\ \hline
+        \multicolumn{7}{c}{Linear}                                                                                                                                                         \\ \hline
+        Difference {[}K{]}      & 278.4           & 384.2    & 209.2   & 152.8   & 110     & 31.4     \\
+        Rel. difference         & 0.09            & 0.13     & 0.07    & 0.04    & 0.04    & 0.01     \\
+        SD {[}K{]}              & 138.52          & 93.29    & 10.48   & 22.78   & 18.25   & 57.24    \\
+        Max. difference {[}K{]} & 0.199           & 0.208    & 0.084   & 0.062   & 0.05    & 0.077    \\
+        Min. difference {[}K{]} & 0.01            & 0.065    & 0.053   & 0.04    & 0.01    & 0.0003   \\ \hline
+        \multicolumn{7}{c}{Linear square}                                                                                                                                                   \\ \hline
+        Difference {[}K{]}      & 7.7             & 44.7     & 231.9   & -219.9  & 531.3   & -79.58   \\
+        Rel. difference         & 0.002           & 0.02     & 0.08    & 0.07    & 0.18    & 0.02    \\
+        SD {[}K{]}              & 0.60            & 18.9     & 79.39   & 51.98   & 192.3   & 44.44   \\
+        Max. difference {[}K{]} & 0.003           & 0.033    & 0.105   & 0.117   & 0.294   & 0.067   \\
+        Min. difference {[}K{]} & 0.00            & 0.00     & 0.01    & 0.055   & 0.018   & 0.01  \\ \hline
+        \multicolumn{7}{c}{Exponential}                                                                                                                                                   \\ \hline
+        Difference {[}K{]}      & 7.7             & -411.4   & -183.4  & -222.9  & -197.4  & -79.58   \\
+        Rel. difference         & 0.002           & 0.136    & 0.06    & 0.07    & 0.065   & 0.026    \\
+        SD {[}K{]}              & 0.560           & 118.5    & 50.38   & 57.8    & 44.14   & 44.44  \\
+        Max. difference {[}K{]} & 0.003           & 0.195    & 0.10    & 0.117   & 0.099   & 0.067   \\
+        Min. difference {[}K{]} & 0.001           & 0.075    & 0.044   & 0.055   & 0.053   & 0.01
+        
+    \end{tabular}
+\end{table}
+}
