@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
@@ -26,53 +26,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12506 items from 5000.
+Reallocated field_info (elt_size=4) to 12840 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: literature/literature.bib
 Warning--I'm ignoring Dinwiddie.2014's extra "file" field
---line 333 of file literature/literature.bib
-Biblatex version: 3.13
+--line 345 of file literature/literature.bib
+Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 54 entries,
-            6365 wiz_defined-function locations,
-            1735 strings with 48801 characters,
-and the built_in function-call counts, 437681 in all, are:
-= -- 31198
-> -- 10507
-< -- 1758
-+ -- 13718
-- -- 6219
-* -- 33770
-:= -- 50901
+You've used 56 entries,
+            6399 wiz_defined-function locations,
+            1760 strings with 49679 characters,
+and the built_in function-call counts, 588168 in all, are:
+= -- 48285
+> -- 10820
+< -- 1840
++ -- 20476
+- -- 6358
+* -- 43736
+:= -- 71710
 add.period$ -- 0
-call.type$ -- 54
-change.case$ -- 670
+call.type$ -- 56
+change.case$ -- 715
 chr.to.int$ -- 166
-cite$ -- 106
-duplicate$ -- 42967
-empty$ -- 37195
-format.name$ -- 5015
-if$ -- 86663
+cite$ -- 110
+duplicate$ -- 58807
+empty$ -- 48126
+format.name$ -- 5199
+if$ -- 114793
 int.to.chr$ -- 0
-int.to.str$ -- 125
+int.to.str$ -- 130
 missing$ -- 0
-newline$ -- 2533
-num.names$ -- 2353
-pop$ -- 19465
+newline$ -- 2618
+num.names$ -- 2462
+pop$ -- 20984
 preamble$ -- 1
-purify$ -- 1250
+purify$ -- 1316
 quote$ -- 0
-skip$ -- 11027
+skip$ -- 11497
 stack$ -- 0
-substring$ -- 57907
-swap$ -- 9675
-text.length$ -- 1689
+substring$ -- 93482
+swap$ -- 10025
+text.length$ -- 1748
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1824
+type$ -- 1892
 warning$ -- 0
-while$ -- 6444
+while$ -- 8252
 width$ -- 0
-write$ -- 2480
+write$ -- 2563
 (There was 1 warning)

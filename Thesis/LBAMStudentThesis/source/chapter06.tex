@@ -63,27 +63,15 @@ This analysis involves comparing the estimated temperature values to known refer
 assessing the fit quality and consistency of the reconstructed curves, and evaluating the overall performance 
 of each emissivity model.
 
-\begin{itemize}
+\begin{enumerate}
 
-\item Linear square model: the linear square model exhibits the best overall accuracy and consistency among the considered 
-models. This superiority is attributed to an additional parameter present in the model, 
-which allows it to capture more complex emissivity characteristics accurately. However, 
-this advantage comes at the cost of increased computational requirements due to the higher 
-complexity of the model.
+\item The emissivity model plays a crucial role in the performance of the temperature estimation algorithm. It impacts the accuracy and consistency of the program's execution. Consequently, when performing temperature estimation for materials, it is imperative to select an appropriate emissivity model.
 
 
-The fact that the linear square model continues to produce comparable results for 
-materials at high temperatures indicates that the temperature estimation algorithm can 
-indeed be applied to a broader range of temperature estimations. This suggests that the 
-algorithm is relatively robust and is capable of handling variations in temperature that 
-might lead to shifts in the radiation peak.
+\item The utilization of a mixed model holds the potential to facilitate fitting more intricate radiation behaviors. When the emissivity model is appropriately chosen, it can yield optimal computational performance, without compromising the consistency of computational operations for programmers,
 
-
-\item On the other hand, the quadratic model faces limitations in accurately estimating 
-temperatures for the hypothetical materials mentioned in this study. This shortcoming stems 
-from the inability of its profile to effectively fit the emissivity characteristics of the materials.
-
-\end{itemize}
+\item In principle, the temperature estimation algorithm is feasible. However, it requires a specialized emissivity model. Due to the variations in spectral radiation profiles at elevated temperatures, the conventional emissivity model introduces additional perturbations. Hence, an additional emissivity model is necessary to achieve accurate temperature estimation for high-temperature materials.
+\end{enumerate}
 
 So, the influence of the emissivity model on the performance of the temperature 
 estimation algorithm is demonstrated. As mentioned earlier, the choice of an appropriate 

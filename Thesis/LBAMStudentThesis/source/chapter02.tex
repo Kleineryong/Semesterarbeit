@@ -114,7 +114,7 @@ is small, and the cooling rate as well as the heating rate is high,
 contact-based measurements would encounter substantial interference, 
 thereby rendering the obtained temperature information unreliable. 
 Consequently, it becomes essential to employ non-contact-based 
-temperature measurement methods.
+temperature measurement methods\cite{Qu.2020}.
 
 
 In the realm of non-contact temperature measurement, 
@@ -318,9 +318,9 @@ that the material's emissivity remains constant at two
 wavelengths of the channels. This assumption directly eliminates the 
 impact of emissivity on temperature calculations\cite{Grujic.2023}.
 
-\begin{equation}
-    \widehat{T}(\lambda_i, \lambda_j)=C_2 \frac{1/\lambda_j - 1/\lambda_i}{ln(I_i/I_j) - 5ln(\lambda_j / \lambda_i)}
-\end{equation}
+%\begin{equation}
+%    \widehat{T}(\lambda_i, \lambda_j)=C_2 \frac{1/\lambda_j - 1/\lambda_i}{ln(I_i/I_j) - 5ln(\lambda_j / \lambda_i)}
+%\end{equation}
 
 Devesse et al. pointed out that such simplification does not align 
 with the actual characteristics of materials and can lead to inaccuracies 
@@ -387,6 +387,24 @@ the average of all the estimated temperatures is taken as the output result of t
 It is evident that this model necessitates an accurate emissivity model for the material. Moreover, during 
 temperature estimation\cite{Taunay.2020b}, the computational complexity increases notably 
 with an escalation in the number of channels.
+
+
+Qu et al. have developed an temperature algorithm based on curve fit algorithm\cite{Qu.2020}.
+In their study, the oretical signal $S_t$ was fitted to the detected signal $S_i$ based on 
+a simplified linear emissivity model. 
+
+\begin{equation}
+    \label{eq: curve_fit_Qu}
+    \min_{k, T}\sum_{i=1}^{N}  \frac{[S_i - S_t(T, \varepsilon, \lambda)]^2}{\sigma^2_i}
+\end{equation} 
+
+In this manner, it is possible to obtain temperature and emissivity data 
+by leveraging the intensity relationships between different channels, 
+without significantly augmenting computational demand. However, this 
+algorithm does not account for the imperfections of the sensor. As a 
+result, this algorithm imposes a relatively high demand for accuracy 
+on the sensor.
+
 
 \section{Motivation of this thesis}
 In summary, there is significant room for development in using 

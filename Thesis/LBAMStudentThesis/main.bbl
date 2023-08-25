@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -26,25 +26,13 @@
          giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \keyw{Characterization and Evaluation of Materials;Corrosion and
-  Coatings;Engineering Design;Quality control;Reliability;Safety and
-  Risk;Tribology}
+    \keyw{Characterization and Evaluation of Materials;Corrosion and Coatings;Engineering Design;Quality control;Reliability;Safety and Risk;Tribology}
     \strng{namehash}{FWE1}
     \strng{fullhash}{FWE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    This paper reviews the state-of-the-art of an important, rapidly emerging,
-  manufacturing technology that is alternatively called additive manufacturing
-  (AM), direct digital manufacturing, free form fabrication, or 3D printing,
-  etc. A broad contextual overview of metallic AM is provided. AM has the
-  potential to revolutionize the global parts manufacturing and logistics
-  landscape. It enables distributed manufacturing and the productions of
-  parts-on-demand while offering the potential to reduce cost, energy
-  consumption, and carbon footprint. This paper explores the material science,
-  processes, and business consideration associated with achieving these
-  performance gains. It is concluded that a paradigm shift is required in order
-  to fully exploit AM potential.%
+    This paper reviews the state-of-the-art of an important, rapidly emerging, manufacturing technology that is alternatively called additive manufacturing (AM), direct digital manufacturing, free form fabrication, or 3D printing, etc. A broad contextual overview of metallic AM is provided. AM has the potential to revolutionize the global parts manufacturing and logistics landscape. It enables distributed manufacturing and the productions of parts-on-demand while offering the potential to reduce cost, energy consumption, and carbon footprint. This paper explores the material science, processes, and business consideration associated with achieving these performance gains. It is concluded that a paradigm shift is required in order to fully exploit AM potential.%
     }
     \verb{doi}
     \verb 10.1007/s11665-014-0958-z
@@ -139,8 +127,7 @@
     \field{issn}{0007-8506}
     \field{number}{2}
     \field{pages}{603\bibrangedash 614}
-    \field{title}{Material Incress Manufacturing by Rapid Prototyping
-  Techniques}
+    \field{title}{Material Incress Manufacturing by Rapid Prototyping Techniques}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0007850607611366
     \endverb
@@ -180,8 +167,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{55\bibrangedash 67}
-    \field{title}{Metal additive manufacturing technologies: literature review
-  of current status and prosthodontic applications}
+    \field{title}{Metal additive manufacturing technologies: literature review of current status and prosthodontic applications}
     \verb{file}
     \verb Metal_additive_manufacturing_technologie:G\:\\Uni_Files\\Semesterarbe
     \verb it\\Literature\\Semesterarbeit\\Citavi Attachments\\Metal_additive_ma
@@ -221,8 +207,7 @@
     \endverb
     \field{issn}{0264-1275}
     \field{pages}{108762}
-    \field{title}{Processing parameters in laser powder bed fusion metal
-  additive manufacturing}
+    \field{title}{Processing parameters in laser powder bed fusion metal additive manufacturing}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0264127520302963
     \endverb
@@ -309,8 +294,7 @@
     \field{issn}{00796425}
     \field{number}{5}
     \field{pages}{112\bibrangedash 224}
-    \field{title}{Additive manufacturing of metallic components -- Process,
-  structure and properties}
+    \field{title}{Additive manufacturing of metallic components -- Process, structure and properties}
     \field{volume}{92}
     \verb{file}
     \verb debroy2018:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit
@@ -350,27 +334,12 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Additive manufacturing (AM) is important in industrial and economical
-  domains but still lacking process accuracy. In-situ measurement and process
-  control can offer an effective solution. In AM based on metals, the
-  temperature field of melting pool has critical impacts on phase
-  transformation and mechanical properties. Researchers have developed various
-  approaches to track real-time temperature during ultrahigh temperature in AM.
-  Nevertheless, large temperature gradient around the energy source demands a
-  capable measurement system and method due to the limitations of the
-  conventional infrared cameras and pyrometers. This study will explore the
-  deficiency and improvement of the existing approaches with a focus on the
-  cutting-edge methods of AM process temperature measurement, along with a
-  critical thinking about the follow-up usage of the collected data.
-  Specifically, it will report the status and trends in employing various
-  machine learning and advanced control techniques with the in-situ sensor data
-  for process qualification purposes.%
+    Additive manufacturing (AM) is important in industrial and economical domains but still lacking process accuracy. In-situ measurement and process control can offer an effective solution. In AM based on metals, the temperature field of melting pool has critical impacts on phase transformation and mechanical properties. Researchers have developed various approaches to track real-time temperature during ultrahigh temperature in AM. Nevertheless, large temperature gradient around the energy source demands a capable measurement system and method due to the limitations of the conventional infrared cameras and pyrometers. This study will explore the deficiency and improvement of the existing approaches with a focus on the cutting-edge methods of AM process temperature measurement, along with a critical thinking about the follow-up usage of the collected data. Specifically, it will report the status and trends in employing various machine learning and advanced control techniques with the in-situ sensor data for process qualification purposes.%
     }
     \verb{doi}
     \verb 10.26153/TSW/17384
     \endverb
-    \field{title}{Overview of In-Situ Temperature Measurement for Metallic
-  Additive Manufacturing: How and then What}
+    \field{title}{Overview of In-Situ Temperature Measurement for Metallic Additive Manufacturing: How and then What}
     \verb{file}
     \verb Li, Liu et al. 2019 - Overview of In-Situ Temperature Measurement:G\:
     \verb \\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attac
@@ -411,8 +380,7 @@
     \field{issn}{02632241}
     \field{number}{2}
     \field{pages}{871\bibrangedash 880}
-    \field{title}{Emissivity estimation for high temperature radiation
-  pyrometry on Ti--6Al--4V}
+    \field{title}{Emissivity estimation for high temperature radiation pyrometry on Ti--6Al--4V}
     \field{volume}{46}
     \verb{file}
     \verb j.measurement.2012.10.019:G\:\\Uni_Files\\Semesterarbeit\\Literature\
@@ -468,27 +436,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    The complex thermal cycles and temperature distributions observed in
-  additive manufacturing (AM) are of particular interest as these define the
-  microstructure and the associated properties of the part being built. Due to
-  the intrinsic, layer-by-layer material stacking performed, contact methods to
-  measure temperature are not suitable, and contactless methods need to be
-  considered. Contactless infrared irradiation techniques were applied by
-  carrying out thermal imaging and point measurement methods using pyrometers
-  to determine the spatial and temporal temperature distribution in wire-based
-  electron beam AM. Due to the vacuum, additional challenges such as element
-  evaporation must be overcome and additional shielding measures were taken to
-  avoid interference with the contactless techniques. The emissivities were
-  calibrated by thermocouple readings and geometric boundary conditions.
-  Thermal cycles and temperature profiles were recorded during deposition; the
-  temperature gradients are described and the associated temperature transients
-  are derived. In the temperature range of the \textgreek{a}+\textgreek{b}
-  field, the cooling rates fall within the range of 180 to 350 °C/s, and the
-  microstructural characterisation indicates an associated expected
-  transformation of \textgreek{b}$\rightarrow$\textgreek{a}'+\textgreek{a} with
-  corresponding cooling rates. Fine acicular \textgreek{a} and \textgreek{a}'
-  formed and local misorientation was observed within \textgreek{a} as a result
-  of the temperature gradient and the formation of the \textgreek{a}'.%
+    The complex thermal cycles and temperature distributions observed in additive manufacturing (AM) are of particular interest as these define the microstructure and the associated properties of the part being built. Due to the intrinsic, layer-by-layer material stacking performed, contact methods to measure temperature are not suitable, and contactless methods need to be considered. Contactless infrared irradiation techniques were applied by carrying out thermal imaging and point measurement methods using pyrometers to determine the spatial and temporal temperature distribution in wire-based electron beam AM. Due to the vacuum, additional challenges such as element evaporation must be overcome and additional shielding measures were taken to avoid interference with the contactless techniques. The emissivities were calibrated by thermocouple readings and geometric boundary conditions. Thermal cycles and temperature profiles were recorded during deposition; the temperature gradients are described and the associated temperature transients are derived. In the temperature range of the \textgreek{a}+\textgreek{b} field, the cooling rates fall within the range of 180 to 350 °C/s, and the microstructural characterisation indicates an associated expected transformation of \textgreek{b}$\rightarrow$\textgreek{a}'+\textgreek{a} with corresponding cooling rates. Fine acicular \textgreek{a} and \textgreek{a}' formed and local misorientation was observed within \textgreek{a} as a result of the temperature gradient and the formation of the \textgreek{a}'.%
     }
     \verb{doi}
     \verb 10.1007/s40194-021-01097-0
@@ -496,8 +444,7 @@
     \field{issn}{1878-6669}
     \field{number}{7}
     \field{pages}{1307\bibrangedash 1322}
-    \field{title}{Contactless temperature measurement in wire-based electron
-  beam additive manufacturing Ti-6Al-4V}
+    \field{title}{Contactless temperature measurement in wire-based electron beam additive manufacturing Ti-6Al-4V}
     \verb{url}
     \verb https://link.springer.com/article/10.1007/s40194-021-01097-0
     \endverb
@@ -540,9 +487,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    PDF | On Jan 1, 2012, J. Scott and others published Additive Manufacturing:
-  Status and Opportunities | Find, read and cite all the research you need on
-  ResearchGate%
+    PDF | On Jan 1, 2012, J. Scott and others published Additive Manufacturing: Status and Opportunities | Find, read and cite all the research you need on ResearchGate%
     }
     \field{title}{Additive Manufacturing: Status and Opportunities}
     \verb{url}
@@ -570,9 +515,7 @@
     \strng{fullhash}{HK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Manufacturing Technology Support (MATES). Task Order 0021:
-  Air Force Technology and Industrial Base Research and Analysis, Subtask Order
-  06: Direct Digital $\ldots$}
+    \field{title}{Manufacturing Technology Support (MATES). Task Order 0021: Air Force Technology and Industrial Base Research and Analysis, Subtask Order 06: Direct Digital $\ldots$}
     \verb{url}
     \verb https://apps.dtic.mil/sti/citations/tr/ada551779
     \endverb
@@ -593,23 +536,13 @@
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{Biomedical Engineering and Bioengineering;Computer Applications;Human
-  Physiology;Imaging / Radiology}
+    \keyw{Biomedical Engineering and Bioengineering;Computer Applications;Human Physiology;Imaging / Radiology}
     \strng{namehash}{MA1}
     \strng{fullhash}{MA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Selective laser sintering (SLS) is a solid freeform fabrication technique,
-  developed by Carl Deckard for his master's thesis at the University of Texas,
-  patented in 1989. SLS manufacturing is a technique that produces physical
-  models through a selective solidification of a variety of fine powders. SLS
-  technology is getting a great amount of attention in the clinical field. In
-  this paper the characteristics features of SLS and the materials that have
-  been developed for are reviewed together with a discussion on the principles
-  of the above-mentioned manufacturing technique. The applications of SLS in
-  tissue engineering, and at-large in the biomedical field, are reviewed and
-  discussed.%
+    Selective laser sintering (SLS) is a solid freeform fabrication technique, developed by Carl Deckard for his master's thesis at the University of Texas, patented in 1989. SLS manufacturing is a technique that produces physical models through a selective solidification of a variety of fine powders. SLS technology is getting a great amount of attention in the clinical field. In this paper the characteristics features of SLS and the materials that have been developed for are reviewed together with a discussion on the principles of the above-mentioned manufacturing technique. The applications of SLS in tissue engineering, and at-large in the biomedical field, are reviewed and discussed.%
     }
     \verb{doi}
     \verb 10.1007/s11517-012-1001-x
@@ -701,26 +634,13 @@
          giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
-    \keyw{Characterization and Evaluation of Materials;Condensed Matter
-  Physics;Machines;Manufacturing;Nanotechnology;Optical and Electronic
-  Materials;Processes;Surfaces and Interfaces;Thin Films;Tools}
+    \keyw{Characterization and Evaluation of Materials;Condensed Matter Physics;Machines;Manufacturing;Nanotechnology;Optical and Electronic Materials;Processes;Surfaces and Interfaces;Thin Films;Tools}
     \strng{namehash}{FPKNRVGRWHP1}
     \strng{fullhash}{FPKNRVGRWHP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A thermal model of the interaction of pulsed near-infrared laser radiation
-  from a Nd:YAG laser was made, taking the measured powder properties such as
-  reflectance, optical penetration depth and thermal conductivity into account.
-  It allows an estimation of the evolution of two different temperatures: the
-  average temperature of the powder (taken over the grains in a volume given by
-  the laser beam diameter and the optical penetration depth) and the
-  temperature distinction within a single grain. It showed that in pulsed mode
-  consolidation can be achieved at much lower average power as the surface of
-  the powder particles are molten but their cores remain at nearly room
-  temperature. This leads to a much lower average temperature and therefore a
-  dramatic decrease in residual thermal stresses in the finished piece. The
-  results of the model were experimentally tested and confirmed.%
+    A thermal model of the interaction of pulsed near-infrared laser radiation from a Nd:YAG laser was made, taking the measured powder properties such as reflectance, optical penetration depth and thermal conductivity into account. It allows an estimation of the evolution of two different temperatures: the average temperature of the powder (taken over the grains in a volume given by the laser beam diameter and the optical penetration depth) and the temperature distinction within a single grain. It showed that in pulsed mode consolidation can be achieved at much lower average power as the surface of the powder particles are molten but their cores remain at nearly room temperature. This leads to a much lower average temperature and therefore a dramatic decrease in residual thermal stresses in the finished piece. The results of the model were experimentally tested and confirmed.%
     }
     \verb{doi}
     \verb 10.1007/s003390101139
@@ -728,8 +648,7 @@
     \field{issn}{1432-0630}
     \field{number}{4}
     \field{pages}{467\bibrangedash 474}
-    \field{title}{A model for the interaction of near-infrared laser pulses
-  with metal powders in selective laser sintering}
+    \field{title}{A model for the interaction of near-infrared laser pulses with metal powders in selective laser sintering}
     \verb{url}
     \verb https://link.springer.com/article/10.1007/s003390101139
     \endverb
@@ -761,8 +680,7 @@
     \field{issn}{22148604}
     \field{number}{Supplement C}
     \field{pages}{548\bibrangedash 559}
-    \field{title}{Melt pool temperature and cooling rates in laser powder bed
-  fusion}
+    \field{title}{Melt pool temperature and cooling rates in laser powder bed fusion}
     \field{volume}{22}
     \verb{file}
     \verb AM_Melt_pool_temperature_and_cooling_rates_in_laser_powder_bed_fusion
@@ -799,8 +717,7 @@
     \field{issn}{0890-6955}
     \field{number}{11}
     \field{pages}{1188\bibrangedash 1193}
-    \field{title}{Flexible manufacturing of metallic products by selective
-  laser melting of powder}
+    \field{title}{Flexible manufacturing of metallic products by selective laser melting of powder}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0890695506000307
     \endverb
@@ -810,8 +727,7 @@
     \verb \Semesterarbeit\\Citavi Attachments\\j.ijmachtools.2006.01.024.pdf:pd
     \verb f
     \endverb
-    \field{journaltitle}{International Journal of Machine Tools and
-  Manufacture}
+    \field{journaltitle}{International Journal of Machine Tools and Manufacture}
     \field{year}{2006}
   \endentry
 
@@ -893,21 +809,83 @@
     \list{publisher}{1}{%
       {{CRC Press Taylor {\&} Francis Group}}%
     }
-  \keyw{gnd;http://d-nb.info/gnd/1072438291;http://id.loc.gov/authorities/subjects/sh2009006799;http://id.loc.gov/authorities/subjects/sh85085194;Manufacturing
-  industries;Military aspects;Military
-  engineering;Produktionstechnik;Three-dimensional printing}
+    \keyw{gnd;http://d-nb.info/gnd/1072438291;http://id.loc.gov/authorities/subjects/sh2009006799;http://id.loc.gov/authorities/subjects/sh85085194;Manufacturing industries;Military aspects;Military engineering;Produktionstechnik;Three-dimensional printing}
     \strng{namehash}{MMJGGKSARAMDPJKWE1}
     \strng{fullhash}{MMJGGKSARAMDPJKWE1}
     \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
     \field{isbn}{9781315119106}
     \field{series}{Systems innovation series}
-    \field{title}{Additive manufacturing handbook: Product development for the
-  Defense industry}
+    \field{title}{Additive manufacturing handbook: Product development for the Defense industry}
     \list{location}{1}{%
       {Boca Raton}%
     }
     \field{year}{2017}
+  \endentry
+
+  \entry{Qu.2020}{article}{}
+    \name{author}{6}{}{%
+      {{hash=QDX}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={Dong-Xia},
+         giveni={D\bibinithyphendelim X\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CNP}{%
+         family={Calta},
+         familyi={C\bibinitperiod},
+         given={Nicholas\bibnamedelima P.},
+         giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=CMF}{%
+         family={Crumb},
+         familyi={C\bibinitperiod},
+         given={Michael\bibnamedelima F.},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Guss},
+         familyi={G\bibinitperiod},
+         given={Gabe},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MMJ}{%
+         family={Matthews},
+         familyi={M\bibinitperiod},
+         given={Manyalibo\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{doi:10.1103/PhysRevApplied.14.014031 url:https://doi.org/10.1103/PhysRevApplied.14.014031}
+    \strng{namehash}{QDXBJCNPCMFGGMMJ1}
+    \strng{fullhash}{QDXBJCNPCMFGGMMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    doi:10.1103/PhysRevApplied.14.014031 url:https://doi.org/10.1103/PhysRevApplied.14.014031%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevApplied.14.014031
+    \endverb
+    \field{number}{1}
+    \field{pages}{67}
+    \field{title}{Temperature Measurement of Laser-Irradiated Metals Using Hyperspectral Imaging}
+    \field{volume}{14}
+    \verb{file}
+    \verb AM_Dong_Xia_Qu_2020_Temperature_Measurement_of_Laser_Irradiated_Metal
+    \verb s_Using_Hyperspectral_Imaging:G\:\\Uni_Files\\Semesterarbeit\\Literat
+    \verb ure\\Semesterarbeit\\Citavi Attachments\\AM_Dong_Xia_Qu_2020_Temperat
+    \verb ure_Measurement_of_Laser_Irradiated_Metals_Using_Hyperspectral_Imagin
+    \verb g.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review Applied}
+    \field{year}{2020}
   \endentry
 
   \entry{Krauss.2012}{misc}{}
@@ -934,30 +912,18 @@
     \list{publisher}{1}{%
       {{University of Texas at Austin}}%
     }
-    \keyw{heat dissipation;process errors;Selective laser melting;temperature
-  distribution;Thermography}
+    \keyw{heat dissipation;process errors;Selective laser melting;temperature distribution;Thermography}
     \strng{namehash}{KHECZMF1}
     \strng{fullhash}{KHECZMF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A lot of strategies exist to monitor and control additive layer
-  manufacturing processes. Basically one can distinguish between coaxially
-  monitoring the process zone and monitoring the complete layer currently being
-  built. Since Selective Laser Melting is a thermal process, a lot of
-  information about the process and in consequence about the resulting part
-  quality can be gathered by monitoring the temperature distribution of a
-  complete layer and its temporal evolution. It depends on the geometrical
-  configuration of parts being built and the quality of the powder layer
-  deposition. In this paper, process errors originating from insufficient heat
-  dissipation are investigated as well as the limits for detecting pores and
-  other irregularities by observation of the temperature distribution.%
+    A lot of strategies exist to monitor and control additive layer manufacturing processes. Basically one can distinguish between coaxially monitoring the process zone and monitoring the complete layer currently being built. Since Selective Laser Melting is a thermal process, a lot of information about the process and in consequence about the resulting part quality can be gathered by monitoring the temperature distribution of a complete layer and its temporal evolution. It depends on the geometrical configuration of parts being built and the quality of the powder layer deposition. In this paper, process errors originating from insufficient heat dissipation are investigated as well as the limits for detecting pores and other irregularities by observation of the temperature distribution.%
     }
     \verb{doi}
     \verb 10.26153/TSW/15406
     \endverb
-    \field{title}{Thermography for Monitoring the Selective Laser Melting
-  Process}
+    \field{title}{Thermography for Monitoring the Selective Laser Melting Process}
     \verb{file}
     \verb Krauss, Eschey et al. 2012 - Thermography for Monitoring the Selectiv
     \verb e:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi
@@ -1005,8 +971,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    International Journal of Production Research, 2016.
-  doi:10.1080/00207543.2016.1223378%
+    International Journal of Production Research, 2016. doi:10.1080/00207543.2016.1223378%
     }
     \verb{doi}
     \verb 10.1080/00207543.2016.1223378
@@ -1014,8 +979,7 @@
     \field{issn}{0020-7543}
     \field{number}{5}
     \field{pages}{1400\bibrangedash 1418}
-    \field{title}{A review on measurement science needs for real-time control
-  of additive manufacturing metal powder bed fusion processes}
+    \field{title}{A review on measurement science needs for real-time control of additive manufacturing metal powder bed fusion processes}
     \field{volume}{55}
     \verb{file}
     \verb a review on measurement science needs for real time control of pbflbm
@@ -1059,17 +1023,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Layerwise Laser Melting (LLM) is a layerwise production technique enabling
-  the production of complex metallic parts. Thin powder layers are molten
-  acc$\ldots$%
+    Layerwise Laser Melting (LLM) is a layerwise production technique enabling the production of complex metallic parts. Thin powder layers are molten acc$\ldots$%
     }
     \verb{doi}
     \verb 10.1016/j.phpro.2010.08.078
     \endverb
     \field{issn}{1875-3892}
     \field{pages}{505\bibrangedash 514}
-    \field{title}{Feedback control of Layerwise Laser Melting using optical
-  sensors}
+    \field{title}{Feedback control of Layerwise Laser Melting using optical sensors}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s1875389210005043
     \endverb
@@ -1129,8 +1090,7 @@
     \endverb
     \field{issn}{18753892}
     \field{pages}{753\bibrangedash 759}
-    \field{title}{Detection of Process Failures in Layerwise Laser Melting with
-  Optical Process Monitoring}
+    \field{title}{Detection of Process Failures in Layerwise Laser Melting with Optical Process Monitoring}
     \field{volume}{39}
     \verb{file}
     \verb 1-s2.0-S1875389212026247-main:G\:\\Uni_Files\\Semesterarbeit\\Literat
@@ -1161,17 +1121,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Poor efficiency of selective laser sintering/ melting (SLS/SLM) processes
-  and poor articles surface quality are mainly responsible for their slow
-  manu$\ldots$%
+    Poor efficiency of selective laser sintering/ melting (SLS/SLM) processes and poor articles surface quality are mainly responsible for their slow manu$\ldots$%
     }
     \verb{doi}
     \verb 10.1016/j.phpro.2010.08.079
     \endverb
     \field{issn}{1875-3892}
     \field{pages}{515\bibrangedash 521}
-    \field{title}{On-line temperature monitoring in selective laser
-  sintering/melting}
+    \field{title}{On-line temperature monitoring in selective laser sintering/melting}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s1875389210005055
     \endverb
@@ -1274,8 +1231,7 @@
          giveni={T\bibinitperiod},
       }}%
     }
-    \keyw{additive manufacturing;Laser melting;Melt pool;Quality
-  control;Realtime}
+    \keyw{additive manufacturing;Laser melting;Melt pool;Quality control;Realtime}
     \strng{namehash}{BSBFLSKJPCT1}
     \strng{fullhash}{BSBFLSKJPCT1}
     \field{labelnamesource}{author}
@@ -1288,8 +1244,7 @@
     \endverb
     \field{issn}{18753892}
     \field{pages}{617\bibrangedash 622}
-    \field{title}{Quality control of laser- and powder bed-based Additive
-  Manufacturing (AM) technologies}
+    \field{title}{Quality control of laser- and powder bed-based Additive Manufacturing (AM) technologies}
     \field{volume}{5}
     \verb{file}
     \verb j.phpro.2010.08.089:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
@@ -1347,8 +1302,7 @@
     \endverb
     \field{issn}{18753892}
     \field{pages}{683\bibrangedash 690}
-    \field{title}{Design of an Optical system for the In Situ Process
-  Monitoring of Selective Laser Melting (SLM)}
+    \field{title}{Design of an Optical system for the In Situ Process Monitoring of Selective Laser Melting (SLM)}
     \field{volume}{12}
     \verb{file}
     \verb j.phpro.2011.03.085:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
@@ -1379,23 +1333,20 @@
          giveni={I\bibinitperiod},
       }}%
     }
-    \keyw{Heat treatment;Selective laser melting;Temperature
-  monitoring;Titanium alloys}
+    \keyw{Heat treatment;Selective laser melting;Temperature monitoring;Titanium alloys}
     \strng{namehash}{YIKPYI1}
     \strng{fullhash}{YIKPYI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    JOURNAL OF ALLOYS AND COMPOUNDS, Accepted manuscript.
-  doi:10.1016/j.jallcom.2013.08.183%
+    JOURNAL OF ALLOYS AND COMPOUNDS, Accepted manuscript. doi:10.1016/j.jallcom.2013.08.183%
     }
     \verb{doi}
     \verb 10.1016/j.jallcom.2013.08.183
     \endverb
     \field{issn}{09258388}
     \field{pages}{404\bibrangedash 409}
-    \field{title}{Selective laser melting of Ti6Al4V alloy for biomedical
-  applications: Temperature monitoring and microstructural evolution}
+    \field{title}{Selective laser melting of Ti6Al4V alloy for biomedical applications: Temperature monitoring and microstructural evolution}
     \field{volume}{583}
     \verb{file}
     \verb j.jallcom.2013.08.183:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Sem
@@ -1509,30 +1460,18 @@
     \list{publisher}{1}{%
       {{University of Texas at Austin}}%
     }
-    \keyw{electron beam additive manufacturing;near-infrared
-  thermography;powder-based manufacturing}
+    \keyw{electron beam additive manufacturing;near-infrared thermography;powder-based manufacturing}
     \strng{namehash}{PSCKCK1}
     \strng{fullhash}{PSCKCK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Powder-based electron beam additive manufacturing (EBAM) has gained
-  increased usage in different industries. Process monitoring such as
-  temperatures may offer important information. However, temperature
-  measurements in EBAM are challenging because of high temperature ranges,
-  extreme gradients and fast transient response. In this study, temperature
-  measurements during the EBAM process, in particular, around the electron beam
-  scanning area, were attempted using a near-infrared thermal camera. The
-  obtained temperature data demonstrated the feasibility of such a measuring
-  technique. The thermal camera was able to capture the pre-heating, contour
-  melting, and hatch melting events. Further, the achievable spatial resolution
-  is around 12 µm when using a 350 mm lens.%
+    Powder-based electron beam additive manufacturing (EBAM) has gained increased usage in different industries. Process monitoring such as temperatures may offer important information. However, temperature measurements in EBAM are challenging because of high temperature ranges, extreme gradients and fast transient response. In this study, temperature measurements during the EBAM process, in particular, around the electron beam scanning area, were attempted using a near-infrared thermal camera. The obtained temperature data demonstrated the feasibility of such a measuring technique. The thermal camera was able to capture the pre-heating, contour melting, and hatch melting events. Further, the achievable spatial resolution is around 12 µm when using a 350 mm lens.%
     }
     \verb{doi}
     \verb 10.26153/TSW/15387
     \endverb
-    \field{title}{Evaluations of Temperature Measurements By Near-Infrared
-  Thermography in Powder-Based Electron-Beam Additive Manufacturing}
+    \field{title}{Evaluations of Temperature Measurements By Near-Infrared Thermography in Powder-Based Electron-Beam Additive Manufacturing}
     \verb{file}
     \verb Price, Cooper et al. 2012 - Evaluations of Temperature Measurements:G
     \verb \:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Att
@@ -1572,31 +1511,18 @@
     \list{publisher}{1}{%
       {{University of Texas at Austin}}%
     }
-    \keyw{electron beam additive manufacturing;infrared thermal
-  imager;powder-based;temperature measurements}
+    \keyw{electron beam additive manufacturing;infrared thermal imager;powder-based;temperature measurements}
     \strng{namehash}{PSLJCKCK1}
     \strng{fullhash}{PSLJCKCK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A near infrared thermal imager has been employed for temperature
-  measurements (build part surfaces) in the powder-based electron beam additive
-  manufacturing (EBAM) process. A methodology has also been developed to
-  analyze temperature distributions and history around the melting scan area.
-  The temperature profiles along the beam scanning clearly show the moving
-  source of heat phenomenon, with the peak temperature reaching over 2000 °C
-  (for Ti6Al-4V) followed by extremely rapid cooling opposite to the beam
-  scanning direction, except a slow-cooling portion corresponding to the
-  liquidus-solidus range. The build surface temperatures and the melt pool
-  sizes, in the localized electron beam scanning area, were studied at various
-  configurations, e.g., different build heights, also with or without an
-  overhang.%
+    A near infrared thermal imager has been employed for temperature measurements (build part surfaces) in the powder-based electron beam additive manufacturing (EBAM) process. A methodology has also been developed to analyze temperature distributions and history around the melting scan area. The temperature profiles along the beam scanning clearly show the moving source of heat phenomenon, with the peak temperature reaching over 2000 °C (for Ti6Al-4V) followed by extremely rapid cooling opposite to the beam scanning direction, except a slow-cooling portion corresponding to the liquidus-solidus range. The build surface temperatures and the melt pool sizes, in the localized electron beam scanning area, were studied at various configurations, e.g., different build heights, also with or without an overhang.%
     }
     \verb{doi}
     \verb 10.26153/TSW/15422
     \endverb
-    \field{title}{Experimental Temperature Analysis of Powder-Based Electron
-  Beam Additive Manufacturing}
+    \field{title}{Experimental Temperature Analysis of Powder-Based Electron Beam Additive Manufacturing}
     \verb{file}
     \verb Price, Lydon et al. 2013 - Experimental Temperature Analysis of Powde
     \verb r-Based:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\C
@@ -1660,30 +1586,18 @@
     \list{publisher}{1}{%
       {{University of Texas at Austin}}%
     }
-    \keyw{Electron beam melting;fabrication control;infrared camera;thermal
-  imaging}
+    \keyw{Electron beam melting;fabrication control;infrared camera;thermal imaging}
     \strng{namehash}{REMFEDTCMDHCMEWRB1}
     \strng{fullhash}{REMFEDTCMDHCMEWRB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A thermal imaging system using an infrared (IR) camera was incorporated in
-  the fabrication process of an Arcam A2 Electron Beam Melting system to
-  provide layer-by-layer feedback and ensure quality and defect free products.
-  Using the IR camera, build chamber surface temperature profiles were imaged
-  and analyzed, providing information used to modify build settings for the
-  next build layer. Individual part temperatures were also monitored and
-  modified to achieve a more uniform bed temperature. The thermal imaging
-  information can also be used as a quality control tool to detect
-  imperfections during the build. Results from the integration of the camera in
-  the system as well as use of the thermal images in process monitoring and
-  control is described.%
+    A thermal imaging system using an infrared (IR) camera was incorporated in the fabrication process of an Arcam A2 Electron Beam Melting system to provide layer-by-layer feedback and ensure quality and defect free products. Using the IR camera, build chamber surface temperature profiles were imaged and analyzed, providing information used to modify build settings for the next build layer. Individual part temperatures were also monitored and modified to achieve a more uniform bed temperature. The thermal imaging information can also be used as a quality control tool to detect imperfections during the build. Results from the integration of the camera in the system as well as use of the thermal images in process monitoring and control is described.%
     }
     \verb{doi}
     \verb 10.26153/TSW/15402
     \endverb
-    \field{title}{Integration of a Thermal Imaging Feedback Control System in
-  Electron Beam Melting}
+    \field{title}{Integration of a Thermal Imaging Feedback Control System in Electron Beam Melting}
     \verb{file}
     \verb Rodriguez, Medina et al. 2012 - Integration of a Thermal Imaging:G\:\
     \verb \Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\Citavi Attach
@@ -1717,16 +1631,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    In laser sintering, inhomogeneous shrinkage, warpage, in-build curling and
-  poor repeatability of part properties are well-known problems. All these
-  effects are significantly influenced by the inhomogeneous temperature
-  distribution on the powder bed surface. For this reason, it is often asked
-  for the integration of additional measuring equipment into the machines for
-  advanced process monitoring. In the research done, a thermal imaging system
-  was successfully integrated into a laser sintering machine. Analyses were
-  performed to understand the correlations between process parameters, the
-  distribution of surface temperatures as well as the temperature of the melted
-  material, and their influence on part properties.%
+    In laser sintering, inhomogeneous shrinkage, warpage, in-build curling and poor repeatability of part properties are well-known problems. All these effects are significantly influenced by the inhomogeneous temperature distribution on the powder bed surface. For this reason, it is often asked for the integration of additional measuring equipment into the machines for advanced process monitoring. In the research done, a thermal imaging system was successfully integrated into a laser sintering machine. Analyses were performed to understand the correlations between process parameters, the distribution of surface temperatures as well as the temperature of the melted material, and their influence on part properties.%
     }
     \verb{doi}
     \verb 10.26153/tsw/15303
@@ -1774,8 +1679,7 @@
     \field{issn}{0022-0817}
     \field{number}{4}
     \field{pages}{247\bibrangedash 251}
-    \field{title}{Measurement of Grinding Temperature Using Infrared Radiation
-  Pyrometer With Optical Fiber}
+    \field{title}{Measurement of Grinding Temperature Using Infrared Radiation Pyrometer With Optical Fiber}
     \field{volume}{108}
     \verb{file}
     \verb 1.3187074:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\
@@ -1830,31 +1734,13 @@
          giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \keyw{Characterization and analytical techniques;Imaging
-  techniques;Infrared spectroscopy;Mechanical engineering}
+    \keyw{Characterization and analytical techniques;Imaging techniques;Infrared spectroscopy;Mechanical engineering}
     \strng{namehash}{RJPAKMMDROADRRBSS1}
     \strng{fullhash}{RJPAKMMDROADRRBSS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    To reduce the uncertainty of build performance in metal additive
-  manufacturing, robust process monitoring systems that can detect
-  imperfections and improve repeatability are desired. One of the most
-  promising methods for in situ monitoring is thermographic imaging. However,
-  there is a challenge in using this technology due to the difference in
-  surface emittance between the metal powder and solidified part being observed
-  that affects the accuracy of the temperature data collected. The purpose of
-  the present study was to develop a method for properly calibrating
-  temperature profiles from thermographic data to account for this emittance
-  change and to determine important characteristics of the build through
-  additional processing. The thermographic data was analyzed to identify the
-  transition of material from metal powder to a solid as-printed part. A
-  corrected temperature profile was then assembled for each point using
-  calibrations for these surface conditions. Using this data, the thermal
-  gradient and solid-liquid interface velocity were approximated and correlated
-  to experimentally observed microstructural variation within the part. This
-  work shows that by using a method of process monitoring, repeatability of a
-  build could be monitored specifically in relation to microstructure control.%
+    To reduce the uncertainty of build performance in metal additive manufacturing, robust process monitoring systems that can detect imperfections and improve repeatability are desired. One of the most promising methods for in situ monitoring is thermographic imaging. However, there is a challenge in using this technology due to the difference in surface emittance between the metal powder and solidified part being observed that affects the accuracy of the temperature data collected. The purpose of the present study was to develop a method for properly calibrating temperature profiles from thermographic data to account for this emittance change and to determine important characteristics of the build through additional processing. The thermographic data was analyzed to identify the transition of material from metal powder to a solid as-printed part. A corrected temperature profile was then assembled for each point using calibrations for these surface conditions. Using this data, the thermal gradient and solid-liquid interface velocity were approximated and correlated to experimentally observed microstructural variation within the part. This work shows that by using a method of process monitoring, repeatability of a build could be monitored specifically in relation to microstructure control.%
     }
     \verb{doi}
     \verb 10.1038/srep43554
@@ -1862,8 +1748,7 @@
     \field{issn}{2045-2322}
     \field{number}{1}
     \field{pages}{1\bibrangedash 16}
-    \field{title}{Thermographic Microstructure Monitoring in Electron Beam
-  Additive Manufacturing}
+    \field{title}{Thermographic Microstructure Monitoring in Electron Beam Additive Manufacturing}
     \verb{url}
     \verb https://www.nature.com/articles/srep43554
     \endverb
@@ -1910,17 +1795,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Laser cladding is a surface engineering technique allowing depositing
-  material of a different nature in the form of a powder or a wire on the
-  surface $\ldots$%
+    Laser cladding is a surface engineering technique allowing depositing material of a different nature in the form of a powder or a wire on the surface $\ldots$%
     }
     \verb{doi}
     \verb 10.1016/j.surfcoat.2012.10.044
     \endverb
     \field{issn}{0257-8972}
     \field{pages}{244\bibrangedash 247}
-    \field{title}{Definition of brightness temperature and restoration of true
-  temperature in laser cladding using infrared camera}
+    \field{title}{Definition of brightness temperature and restoration of true temperature in laser cladding using infrared camera}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0257897212010146
     \endverb
@@ -1962,17 +1844,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Laser cladding is known as flexible and efficient method for elaboration of
-  diverse protective coatings including functionally graded, multilayered,
-  e$\ldots$%
+    Laser cladding is known as flexible and efficient method for elaboration of diverse protective coatings including functionally graded, multilayered, e$\ldots$%
     }
     \verb{doi}
     \verb 10.1016/j.surfcoat.2012.10.053
     \endverb
     \field{issn}{0257-8972}
     \field{pages}{112\bibrangedash 121}
-    \field{title}{Comprehensive analysis of laser cladding by means of optical
-  diagnostics and numerical simulation}
+    \field{title}{Comprehensive analysis of laser cladding by means of optical diagnostics and numerical simulation}
     \verb{url}
     \verb https://www.sciencedirect.com/science/article/pii/s0257897212010237
     \endverb
@@ -2021,8 +1900,7 @@
     \endverb
     \field{issn}{1042-346X}
     \field{number}{2}
-    \field{title}{Temperature measurement of laser heated metals in highly
-  oxidizing environment using 2D single-band and spectral pyrometry}
+    \field{title}{Temperature measurement of laser heated metals in highly oxidizing environment using 2D single-band and spectral pyrometry}
     \field{volume}{24}
     \verb{file}
     \verb Muller, Fabbro et al. 2012 - Temperature measurement of laser heated:
@@ -2043,30 +1921,19 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{flow rate;infrared thermography;metallurgy;pyrometry;spectral
-  imaging;Temperature measurement}
+    \keyw{flow rate;infrared thermography;metallurgy;pyrometry;spectral imaging;Temperature measurement}
     \strng{namehash}{GK1}
     \strng{fullhash}{GK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Real-time closed-loop control of metallurgical processes is still in its
-  infancy, mostly based on simple models and limited sensor data and challenged
-  by extreme temperature and harsh process conditions. Contact-free thermal
-  imaging-based measurement approaches thus appear to be particularly suitable
-  for process monitoring. With the potential to generate vast amounts of
-  accurate data in real time and combined with artificial intelligence methods
-  to enable real-time analysis and integration of expert knowledge, thermal
-  spectral imaging is identified as a promising method offering more robust and
-  accurate identification of key parameters, such as surface temperature,
-  morphology, composition, and flow rate.%
+    Real-time closed-loop control of metallurgical processes is still in its infancy, mostly based on simple models and limited sensor data and challenged by extreme temperature and harsh process conditions. Contact-free thermal imaging-based measurement approaches thus appear to be particularly suitable for process monitoring. With the potential to generate vast amounts of accurate data in real time and combined with artificial intelligence methods to enable real-time analysis and integration of expert knowledge, thermal spectral imaging is identified as a promising method offering more robust and accurate identification of key parameters, such as surface temperature, morphology, composition, and flow rate.%
     }
     \verb{doi}
     \verb 10.3390/s23031130
     \endverb
     \field{number}{3}
-    \field{title}{A Review of Thermal Spectral Imaging Methods for Monitoring
-  High-Temperature Molten Material Streams}
+    \field{title}{A Review of Thermal Spectral Imaging Methods for Monitoring High-Temperature Molten Material Streams}
     \field{volume}{23}
     \verb{file}
     \verb sensors-23-01130-v2:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semes
@@ -2099,31 +1966,19 @@
          giveni={P\bibinitperiod},
       }}%
     }
-    \keyw{hyperspectral imaging;laser material processing;Temperature
-  measurement}
+    \keyw{hyperspectral imaging;laser material processing;Temperature measurement}
     \strng{namehash}{DWBDdGP1}
     \strng{fullhash}{DWBDdGP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A contactless temperature measurement system is presented based on a
-  hyperspectral line camera that captures the spectra in the visible and near
-  infrared (VNIR) region of a large set of closely spaced points. The measured
-  spectra are used in a nonlinear least squares optimization routine to
-  calculate a one-dimensional temperature profile with high spatial resolution.
-  Measurements of a liquid melt pool of AISI 316L stainless steel show that the
-  system is able to determine the absolute temperatures with an accuracy of
-  10{\%}. The measurements are made with a spatial resolution of 12 µm/pixel,
-  justifying its use in applications where high temperature measurements with
-  high spatial detail are desired, such as in the laser material processing and
-  additive manufacturing fields.%
+    A contactless temperature measurement system is presented based on a hyperspectral line camera that captures the spectra in the visible and near infrared (VNIR) region of a large set of closely spaced points. The measured spectra are used in a nonlinear least squares optimization routine to calculate a one-dimensional temperature profile with high spatial resolution. Measurements of a liquid melt pool of AISI 316L stainless steel show that the system is able to determine the absolute temperatures with an accuracy of 10{\%}. The measurements are made with a spatial resolution of 12 µm/pixel, justifying its use in applications where high temperature measurements with high spatial detail are desired, such as in the laser material processing and additive manufacturing fields.%
     }
     \verb{doi}
     \verb 10.3390/s17010091
     \endverb
     \field{number}{1}
-    \field{title}{High Resolution Temperature Measurement of Liquid Stainless
-  Steel Using Hyperspectral Imaging}
+    \field{title}{High Resolution Temperature Measurement of Liquid Stainless Steel Using Hyperspectral Imaging}
     \field{volume}{17}
     \verb{file}
     \verb sensors_17_00091:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semester
@@ -2245,8 +2100,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Journal of the Energy Institute, Accepted manuscript.
-  doi:10.1016/j.joei.2018.04.006%
+    Journal of the Energy Institute, Accepted manuscript. doi:10.1016/j.joei.2018.04.006%
     }
     \verb{doi}
     \verb 10.1016/j.joei.2018.04.006
@@ -2254,8 +2108,7 @@
     \field{issn}{17439671}
     \field{number}{3}
     \field{pages}{523\bibrangedash 534}
-    \field{title}{A compilation of data on the radiant emissivity of some
-  materials at high temperatures}
+    \field{title}{A compilation of data on the radiant emissivity of some materials at high temperatures}
     \field{volume}{92}
     \verb{file}
     \verb j.joei.2018.04.006:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semest
@@ -2292,23 +2145,20 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Multispectral Radiation Thermometry;Oxide layer;Spectral emissivity
-  model;Steel 309S;Temperature measurement}
+    \keyw{Multispectral Radiation Thermometry;Oxide layer;Spectral emissivity model;Steel 309S;Temperature measurement}
     \strng{namehash}{ZWSDZZSJ1}
     \strng{fullhash}{ZWSDZZSJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    International Journal of Heat and Mass Transfer, 109 (2017) 853-861.
-  doi:10.1016/j.ijheatmasstransfer.2017.02.062%
+    International Journal of Heat and Mass Transfer, 109 (2017) 853-861. doi:10.1016/j.ijheatmasstransfer.2017.02.062%
     }
     \verb{doi}
     \verb 10.1016/j.ijheatmasstransfer.2017.02.062
     \endverb
     \field{issn}{00179310}
     \field{pages}{853\bibrangedash 861}
-    \field{title}{Spectral emissivity model of steel 309S during the growth of
-  oxide layer at 800--1100 K}
+    \field{title}{Spectral emissivity model of steel 309S during the growth of oxide layer at 800--1100 K}
     \field{volume}{109}
     \verb{file}
     \verb j.ijheatmasstransfer.2017.02.062:G\:\\Uni_Files\\Semesterarbeit\\Lite
@@ -2350,8 +2200,7 @@
     \field{issn}{1073-5623}
     \field{number}{7}
     \field{pages}{2466\bibrangedash 2472}
-    \field{title}{Normal Spectral Emissivity Measurement of Liquid Iron and
-  Nickel Using Electromagnetic Levitation in Direct Current Magnetic Field}
+    \field{title}{Normal Spectral Emissivity Measurement of Liquid Iron and Nickel Using Electromagnetic Levitation in Direct Current Magnetic Field}
     \field{volume}{43}
     \verb{file}
     \verb s11661-012-1101-0:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semeste
@@ -2388,30 +2237,13 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{Classical Mechanics;Condensed Matter Physics;Industrial
-  Chemistry/Chemical Engineering;Physical Chemistry}
+    \keyw{Classical Mechanics;Condensed Matter Physics;Industrial Chemistry/Chemical Engineering;Physical Chemistry}
     \strng{namehash}{WHSMFHNK1}
     \strng{fullhash}{WHSMFHNK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Normal spectral emissivities of liquid and solid Fe, Co, and Ni have been
-  determined at their melting points at wavelengths from 650 to 800 nm and from
-  1000 to 1900 nm using an apparatus that consists of a cold crucible and
-  diffraction grating spectroscopes. For all three metals, the emissivities of
-  the liquid phases are slightly larger than those of the solid phases both in
-  the visible and near-infrared regions. For iron, the near-infrared
-  emissivities decreased progressively with each additional measurement series
-  and settled down after three series. A possible explanation to this behavior
-  is offered. The present results for iron were assessed by comparisons with
-  previously reported results and with predictions based upon the Hagen--Rubens
-  relation for the ratio of the emissivity of the liquid to that of the solid
-  (\textgreek{e} Liquid/\textgreek{e} Solid). The measured emissivities for all
-  three metals are in good agreement with previous results at and near the
-  melting point. The results for \textgreek{e} Liquid/\textgreek{e} Solid in
-  the near-infrared region demonstrate that the phase (liquid/solid) dependence
-  of the infrared emissivity is consistent with that of the dc resistivity for
-  all the metals at their melting points.%
+    Normal spectral emissivities of liquid and solid Fe, Co, and Ni have been determined at their melting points at wavelengths from 650 to 800 nm and from 1000 to 1900 nm using an apparatus that consists of a cold crucible and diffraction grating spectroscopes. For all three metals, the emissivities of the liquid phases are slightly larger than those of the solid phases both in the visible and near-infrared regions. For iron, the near-infrared emissivities decreased progressively with each additional measurement series and settled down after three series. A possible explanation to this behavior is offered. The present results for iron were assessed by comparisons with previously reported results and with predictions based upon the Hagen--Rubens relation for the ratio of the emissivity of the liquid to that of the solid (\textgreek{e} Liquid/\textgreek{e} Solid). The measured emissivities for all three metals are in good agreement with previous results at and near the melting point. The results for \textgreek{e} Liquid/\textgreek{e} Solid in the near-infrared region demonstrate that the phase (liquid/solid) dependence of the infrared emissivity is consistent with that of the dc resistivity for all the metals at their melting points.%
     }
     \verb{doi}
     \verb 10.1023/A:1022924105951
@@ -2419,8 +2251,7 @@
     \field{issn}{1572-9567}
     \field{number}{2}
     \field{pages}{473\bibrangedash 488}
-    \field{title}{Phase (Liquid/Solid) Dependence of the Normal Spectral
-  Emissivity for Iron, Cobalt, and Nickel at Melting Points}
+    \field{title}{Phase (Liquid/Solid) Dependence of the Normal Spectral Emissivity for Iron, Cobalt, and Nickel at Melting Points}
     \verb{url}
     \verb https://link.springer.com/article/10.1023/a:1022924105951
     \endverb
@@ -2480,8 +2311,7 @@
          family={Taunay},
          familyi={T\bibinitperiod},
          given={Pierre-Yves C.\bibnamedelima R.},
-         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim
-  C\bibinitperiod\bibinitdelim R\bibinitperiod},
+         giveni={P\bibinithyphendelim Y\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
       {{hash=CEY}{%
          family={Choueiri},
@@ -2495,33 +2325,14 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A systematic and automated procedure to calculate the temperature of a
-  surface with unknown emissivity from radiance measurements performed at a
-  large number of wavelengths is presented, and statistical methods are applied
-  to quantify its accuracy and precision. Unlike existing multi-wavelength
-  pyrometric approaches, the proposed cross-validated procedure tests multiple
-  emissivity candidates on multiple, randomly chosen subsets of the radiance
-  measurements. The procedure uses solely an emissivity model to provide an
-  accurate temperature value and retrieves the true emissivity from the ratio
-  of the measured radiance to that of a blackbody calculated from the
-  determined temperature. For a given emissivity model, the temperature is
-  computed using the average of all possible combinations of two-wavelength
-  ratios. The emissivity model that minimizes the coefficient of dispersion is
-  selected. Accuracy and precision are quantified for the case of known
-  emissivity. It is shown that, at least in the case where wavelengths are
-  linearly distributed, the method is accurate, the precision increases with
-  the total number of wavelengths, and it is maximized if the ratio of the
-  minimum to maximum wavelength is equal to 2.46. The procedure is applied to
-  both numerical and experimental data from the literature. Excellent agreement
-  of the calculated temperature and emissivity is obtained for both datasets.%
+    A systematic and automated procedure to calculate the temperature of a surface with unknown emissivity from radiance measurements performed at a large number of wavelengths is presented, and statistical methods are applied to quantify its accuracy and precision. Unlike existing multi-wavelength pyrometric approaches, the proposed cross-validated procedure tests multiple emissivity candidates on multiple, randomly chosen subsets of the radiance measurements. The procedure uses solely an emissivity model to provide an accurate temperature value and retrieves the true emissivity from the ratio of the measured radiance to that of a blackbody calculated from the determined temperature. For a given emissivity model, the temperature is computed using the average of all possible combinations of two-wavelength ratios. The emissivity model that minimizes the coefficient of dispersion is selected. Accuracy and precision are quantified for the case of known emissivity. It is shown that, at least in the case where wavelengths are linearly distributed, the method is accurate, the precision increases with the total number of wavelengths, and it is maximized if the ratio of the minimum to maximum wavelength is equal to 2.46. The procedure is applied to both numerical and experimental data from the literature. Excellent agreement of the calculated temperature and emissivity is obtained for both datasets.%
     }
     \verb{doi}
     \verb 10.1063/5.0019847
     \endverb
     \field{number}{11}
     \field{pages}{114902}
-    \field{title}{Multi-wavelength pyrometry based on robust statistics and
-  cross-validation of emissivity model}
+    \field{title}{Multi-wavelength pyrometry based on robust statistics and cross-validation of emissivity model}
     \field{volume}{91}
     \verb{file}
     \verb 50019847:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Semesterarbeit\\
@@ -2552,8 +2363,7 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral
-  thermometry;Temperature}
+    \keyw{Constraint optimization;Emissivity;Genetic algorithm;Multispectral thermometry;Temperature}
     \strng{namehash}{WNSHZR1}
     \strng{fullhash}{WNSHZR1}
     \field{labelnamesource}{author}
@@ -2566,8 +2376,7 @@
     \endverb
     \field{issn}{02632241}
     \field{pages}{108725}
-    \field{title}{Constraint optimization algorithm for spectral emissivity
-  calculation in multispectral thermometry}
+    \field{title}{Constraint optimization algorithm for spectral emissivity calculation in multispectral thermometry}
     \field{volume}{170}
     \verb{file}
     \verb jmeasurement2020108725:G\:\\Uni_Files\\Semesterarbeit\\Literature\\Se
@@ -2594,14 +2403,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    {\textquotedbl}A masterly assessment of the way the idea of quanta of
-  radiation became part of 20th-century physics. . . . The book not only deals
-  with a topic of importance and interest to all scientists, but is also a
-  polished literary work, described (accurately) by one of its original
-  reviewers as a scientific detective story.{\textquotedbl}---John Gribbin,
-  {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}
-  {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul
-  Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
+    {\textquotedbl}A masterly assessment of the way the idea of quanta of radiation became part of 20th-century physics. . . . The book not only deals with a topic of importance and interest to all scientists, but is also a polished literary work, described (accurately) by one of its original reviewers as a scientific detective story.{\textquotedbl}---John Gribbin, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater} {\textquotedbl}Every scientist should have this book.{\textquotedbl}---Paul Davies, {\textless}i{\textgreater}New Scientist{\textless}/i{\textgreater}%
     }
     \field{isbn}{9780226458007}
     \field{title}{Black-Body Theory and the Quantum Discontinuity, 1894-1912}
@@ -2632,8 +2434,7 @@
     \endverb
     \field{number}{3}
     \field{pages}{33\bibrangedash 43}
-    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image
-  Sensors}
+    \field{title}{A Review of the Pinned Photodiode for CCD and CMOS Image Sensors}
     \field{volume}{2}
     \verb{file}
     \verb Fossum, Hondongwa 2014 - A Review of the Pinned:G\:\\Uni_Files\\Semes
@@ -2642,6 +2443,26 @@
     \endverb
     \field{journaltitle}{IEEE Journal of the Electron Devices Society}
     \field{year}{2014}
+  \endentry
+
+  \entry{Chen.2023}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chenyuan},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CC1}
+    \strng{fullhash}{CC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Process Monitoring in Laser-Based Additive Manufacgturing Using a Multispectral Camera}
+    \list{institution}{1}{%
+      {Technical University of Munich}%
+    }
+    \field{year}{2023}
   \endentry
 
   \entry{Asanovic.2009}{article}{}
@@ -2769,9 +2590,7 @@
     \list{publisher}{1}{%
       {SPIE}%
     }
-    \keyw{cameras;CCD cameras;Electrons;Imaging systems;Microscopes;Modulation
-  transfer functions;Quantum efficiency;Signal to noise ratio;Spatial
-  frequencies;Zoom lenses}
+    \keyw{cameras;CCD cameras;Electrons;Imaging systems;Microscopes;Modulation transfer functions;Quantum efficiency;Signal to noise ratio;Spatial frequencies;Zoom lenses}
     \strng{namehash}{JLHFGI1}
     \strng{fullhash}{JLHFGI1}
     \field{labelnamesource}{author}
